@@ -2987,7 +2987,9 @@
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
           "__typeHash__": 3089331074,
-          "hOptionalUIControlConsoleInputFields": {}
+          "hOptionalUIControlConsoleInputFields": {
+           "szOnButton3": "UI_Customization_Blank_Func"
+          }
          },
          "hOptionalUIWindowStyleFields": {
           "nTooltip": "UI_Customization_OnCosmeticTooltip",
@@ -3234,6 +3236,58 @@
             "name": "StyleWindows"
            },
            "szControlName": 2831495942
+          }
+         },
+         "tConsoleInput": {
+          "__type__": "UIControlConsoleInput",
+          "__typeHash__": 3089331074,
+          "hOptionalUIControlConsoleInputFields": {}
+         },
+         "hOptionalUIWindowStyleFields": {
+          "nHeight": 30,
+          "nBottom": 8,
+          "nRight": 2,
+          "nWidth": 30
+         }
+        }
+       ],
+       "arChildren": [],
+       "ptTemplateInstanceConfig": []
+      },
+      {
+       "__type__": "UIControlTemplate",
+       "__typeHash__": 641859515,
+       "szName": "Transmog_ReliquaryItem_Icon",
+       "ptInlineStyle": [
+        {
+         "__type__": "UIWindowStyle",
+         "__typeHash__": 506492871,
+         "dwType": 506492871,
+         "hParentStyle": {
+          "__type__": "UIControlHandle",
+          "__typeHash__": 3063971755,
+          "snoUI": null,
+          "szControlName": 0
+         },
+         "unk_441f783": "0",
+         "hOptionalUIControlStyleFields": {
+          "bActive": {
+           "property": "IsReliquaryItem",
+           "value": 0
+          },
+          "hTemplate": {
+           "__type__": "UIControlHandle",
+           "__typeHash__": 3063971755,
+           "snoUI": {
+            "__raw__": 207620,
+            "__group__": 46,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/UI/StyleWindows.ui",
+            "groupName": "UI",
+            "name": "StyleWindows"
+           },
+           "szControlName": 4205956292
           }
          },
          "tConsoleInput": {
@@ -4238,7 +4292,8 @@
       "__typeHash__": 3089331074,
       "hOptionalUIControlConsoleInputFields": {
        "szOnButton1Held": "UI_Customization_ClickDyeHeld",
-       "szOnButton1": "UI_Customization_ClickDye"
+       "szOnButton1": "UI_Customization_ClickDye",
+       "szOnButton3": "UI_Customization_Blank_Func"
       }
      },
      "hOptionalUIWindowStyleFields": {
@@ -21959,7 +22014,7 @@
         "szOnController": "UI_Wardrobe_CloseClick",
         "eFixedControllerButton": 1,
         "unk_ccd9967": "UI_Wardrobe_CloseClick",
-        "eHotkey": 125
+        "eHotkey": 126
        }
       }
      ],

@@ -670,6 +670,12 @@
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
+   "unk_b7f0241": false,
+   "eStackingBehavior": 0,
+   "eStackingScope": 0,
+   "unk_9261403": false,
+   "unk_d291777": false,
+   "unk_db6680": false,
    "bVisibleInUI": false,
    "bShowDuration": false,
    "bCancellable": false,
@@ -779,6 +785,12 @@
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
+   "unk_b7f0241": false,
+   "eStackingBehavior": 0,
+   "eStackingScope": 0,
+   "unk_9261403": false,
+   "unk_d291777": false,
+   "unk_db6680": false,
    "bVisibleInUI": false,
    "bShowDuration": false,
    "bCancellable": false,
@@ -888,6 +900,12 @@
     "value": "SF_12",
     "compiled": "BQAAABIAAAAAAAAAAAAAAAAAAAAAAAAA"
    },
+   "unk_b7f0241": false,
+   "eStackingBehavior": 0,
+   "eStackingScope": 0,
+   "unk_9261403": false,
+   "unk_d291777": false,
+   "unk_db6680": false,
    "bVisibleInUI": false,
    "bShowDuration": false,
    "bCancellable": false,
@@ -1048,7 +1066,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_2#legendary_generic_043 / 100",
-    "compiled": "BQAAAAAAAABdBAAAltQIAAAAAAAGAAAAAADIQg4AAAAAAAAA"
+    "compiled": "BQAAAAAAAABlBAAAltQIAAAAAAAGAAAAAADIQg4AAAAAAAAA"
    }
   },
   {
@@ -1207,17 +1225,17 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_f0290f2": [
+   "arBuffsToApply": [
     {
-     "__type__": "Type_4de0b8e8",
+     "__type__": "PowerPayloadBuffApplicationData",
      "__typeHash__": 1306573032,
-     "unk_c347fae": 3719984410,
+     "dwBuffToApplyDataID": 3719984410,
      "unk_45cb7c4": false,
      "unk_984edf3": false,
-     "unk_b8e877a": false
+     "bApplyBeforeDamage": false
     }
    ],
-   "unk_c1c7b04": false,
+   "bApplyVulnerableDebuff": false,
    "tVulnerableDurationSecondsOverride": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
@@ -1320,8 +1338,8 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_f0290f2": [],
-   "unk_c1c7b04": true,
+   "arBuffsToApply": [],
+   "bApplyVulnerableDebuff": true,
    "tVulnerableDurationSecondsOverride": {
     "value": "SF_22",
     "compiled": "BQAAABwAAAAAAAAAAAAAAAAAAAAAAAAA"

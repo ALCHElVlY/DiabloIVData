@@ -8,6 +8,7 @@
  "dwFlagsEx": 0,
  "snoAppearance": {
   "__raw__": 2099174,
+  "__encrypted__": "665198d2e8358929",
   "__group__": 9,
   "__type__": "DT_SNO",
   "__typeHash__": 2764331143,
@@ -61,9 +62,9 @@
   "__type__": "AABB",
   "__typeHash__": 2408934,
   "wp": {
-   "x": 0,
-   "y": 0,
-   "z": 0
+   "x": 1,
+   "y": 1,
+   "z": 1
   },
   "wvExt": {
    "x": 0.6000000238418579,
@@ -75,24 +76,24 @@
   "__type__": "Sphere",
   "__typeHash__": 3384912071,
   "wpCenter": {
-   "x": -7.450580596923828e-9,
-   "y": -0.046411845833063126,
-   "z": -0.06984753906726837
+   "x": -0.14033791422843933,
+   "y": -0.0353228934109211,
+   "z": 0.14464038610458374
   },
-  "wdRadius": 0.9755620360374451
+  "wdRadius": 1.231112003326416
  },
  "aabbAppearanceBoundingBox": {
   "__type__": "AABB",
   "__typeHash__": 2408934,
   "wp": {
-   "x": 0,
-   "y": -0.046411845833063126,
-   "z": -0.06984753906726837
+   "x": -0.14033788442611694,
+   "y": -0.035322897136211395,
+   "z": 0.14464038610458374
   },
   "wvExt": {
-   "x": 0.2096717655658722,
-   "y": 0.06697861850261688,
-   "z": 0.22922371327877045
+   "x": 0.39387887716293335,
+   "y": 0.08065219968557358,
+   "z": 0.4780951738357544
   }
  },
  "wpLocationPowerSrc": {
@@ -273,32 +274,32 @@
     {
      "__type__": "FoleyMaterialTag",
      "__typeHash__": 2077459498,
-     "szTag": 4077680
+     "szTag": 537949273
     },
     {
      "__type__": "FoleyMaterialTag",
      "__typeHash__": 2077459498,
-     "szTag": 4077680
+     "szTag": 537949273
     },
     {
      "__type__": "FoleyMaterialTag",
      "__typeHash__": 2077459498,
-     "szTag": 4077680
+     "szTag": 537949273
     },
     {
      "__type__": "FoleyMaterialTag",
      "__typeHash__": 2077459498,
-     "szTag": 4077680
+     "szTag": 537949273
     },
     {
      "__type__": "FoleyMaterialTag",
      "__typeHash__": 2077459498,
-     "szTag": 4077680
+     "szTag": 537949273
     },
     {
      "__type__": "FoleyMaterialTag",
      "__typeHash__": 2077459498,
-     "szTag": 4077680
+     "szTag": 537949273
     }
    ],
    "unk_472eb5b": null,
@@ -564,7 +565,35 @@
      "__type__": "MountHardpointOffsets",
      "__typeHash__": 4204420342,
      "unk_b71ce07": true,
-     "arMountOffsetsPerType": []
+     "arMountOffsetsPerType": [
+      {
+       "__type__": "HardpointOffset",
+       "__typeHash__": 3697422160,
+       "tHardpointLink": {
+        "__type__": "HardpointLink",
+        "__typeHash__": 3639617719,
+        "tInfo": {
+         "__type__": "HardpointInfo",
+         "__typeHash__": 3639515093,
+         "dwHash": 982636814,
+         "dwHashFlag": 0
+        }
+       },
+       "vecOffset": {
+        "x": -0.03999999910593033,
+        "y": -0.009999999776482582,
+        "z": 0
+       },
+       "qRotationOffset": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       }
+      }
+     ]
     },
     {
      "__type__": "MountHardpointOffsets",
@@ -666,6 +695,8 @@
    "unk_e3dc66d": false,
    "unk_a94748a": 0,
    "unk_a0b181c": 0,
+   "unk_c122f9c": false,
+   "snoReputation": null,
    "unk_124af06": false,
    "unk_8527f49": null,
    "hMinimapIcon": 0,

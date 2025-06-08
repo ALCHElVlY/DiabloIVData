@@ -649,7 +649,7 @@
           },
           "unk_4e673ad": {},
           "hOptionalUIStackPanelStyleFields": {
-           "nStackSpacing": 13,
+           "nStackSpacing": 5,
            "bHorizontal": 1
           }
          }
@@ -1418,7 +1418,7 @@
           },
           "unk_4e673ad": {},
           "hOptionalUIStackPanelStyleFields": {
-           "nStackSpacing": 13,
+           "nStackSpacing": 5,
            "bHorizontal": 1
           }
          }
@@ -1492,9 +1492,9 @@
      "szName": "Loadout_Slot_Button",
      "ptInlineStyle": [
       {
-       "__type__": "UIButtonStyle",
-       "__typeHash__": 3357404523,
-       "dwType": 3357404523,
+       "__type__": "UIRadioButtonStyle",
+       "__typeHash__": 424839738,
+       "dwType": 424839738,
        "hParentStyle": {
         "__type__": "UIControlHandle",
         "__typeHash__": 3063971755,
@@ -1544,15 +1544,7 @@
         "__type__": "UIControlClickSounds",
         "__typeHash__": 2562866241,
         "hOptionalUIControlClickSoundsFields": {
-         "snoClickSound": {
-          "__raw__": 137607,
-          "__group__": 40,
-          "__type__": "DT_SNO",
-          "__typeHash__": 2764331143,
-          "__targetFileName__": "base/meta/Sound/Play_UI_Menu_Generic_Button_Click.snd",
-          "groupName": "Sound",
-          "name": "Play_UI_Menu_Generic_Button_Click"
-         },
+         "snoClickSound": null,
          "snoMouseOverSound": {
           "__raw__": 157384,
           "__group__": 40,
@@ -1564,7 +1556,20 @@
          }
         }
        },
-       "hOptionalUIButtonStyleFields": {}
+       "hOptionalUIButtonStyleFields": {
+        "szOnGainedFocus": "UI_Armory_SlotGainedFocus"
+       },
+       "hOptionalUIRadioButtonStyleFields": {
+        "snoOnSelectedSound": {
+         "__raw__": 137607,
+         "__group__": 40,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/Sound/Play_UI_Menu_Generic_Button_Click.snd",
+         "groupName": "Sound",
+         "name": "Play_UI_Menu_Generic_Button_Click"
+        }
+       }
       }
      ],
      "arChildren": [
@@ -3655,7 +3660,7 @@
             "nMaxWidth": -1,
             "nWidth": 0,
             "snoTiledStyle": null,
-            "eHorizontalAnchoring": 1,
+            "eHorizontalAnchoring": 3,
             "dwAlpha": 255
            },
            "tFont": {
@@ -3687,7 +3692,7 @@
             "szPreviewText": "",
             "bShrinkToFit": 1,
             "eTextJustifyVertical": 6,
-            "eResizeToFit": 1,
+            "eResizeToFit": 3,
             "eTextJustify": 2,
             "bTextAllCaps": 1
            }
@@ -4888,7 +4893,7 @@
             "nMaxWidth": -1,
             "nWidth": 0,
             "snoTiledStyle": null,
-            "eHorizontalAnchoring": 1,
+            "eHorizontalAnchoring": 3,
             "dwAlpha": 255
            },
            "tFont": {
@@ -4920,7 +4925,7 @@
             "szPreviewText": "",
             "bShrinkToFit": 1,
             "eTextJustifyVertical": 6,
-            "eResizeToFit": 1,
+            "eResizeToFit": 3,
             "eTextJustify": 2,
             "bTextAllCaps": 1
            }
@@ -5675,7 +5680,7 @@
             "nMaxWidth": -1,
             "nWidth": 0,
             "snoTiledStyle": null,
-            "eHorizontalAnchoring": 1,
+            "eHorizontalAnchoring": 3,
             "dwAlpha": 255
            },
            "tFont": {
@@ -5707,7 +5712,7 @@
             "szPreviewText": "",
             "bShrinkToFit": 1,
             "eTextJustifyVertical": 6,
-            "eResizeToFit": 1,
+            "eResizeToFit": 3,
             "eTextJustify": 2,
             "bTextAllCaps": 1
            }
@@ -6197,7 +6202,7 @@
        "hOptionalUIControlStyleFields": {},
        "hOptionalUIHotkeyStyleFields": {
         "unk_ccd9967": "UIScreenManager_OnClose",
-        "eHotkey": 125
+        "eHotkey": 126
        }
       }
      ],
@@ -6816,7 +6821,7 @@
            },
            "hOptionalUIHotkeyStyleFields": {
             "szOnController": "UIGeneric_SelectRadioButtonGroupNext",
-            "eHotkey": 128
+            "eHotkey": 129
            }
           }
          ],
@@ -6844,7 +6849,7 @@
            },
            "hOptionalUIHotkeyStyleFields": {
             "szOnController": "UIGeneric_SelectRadioButtonGroupPrevious",
-            "eHotkey": 127
+            "eHotkey": 128
            }
           }
          ],
@@ -8141,6 +8146,7 @@
                     "hOptionalUIControlFontFields": {}
                    },
                    "hOptionalUITextStyleFields": {
+                    "bShowPreviewText": 0,
                     "hText": {
                      "__type__": "StringLabelHandleEx",
                      "__typeHash__": 721585600,
@@ -8153,8 +8159,9 @@
                       "groupName": "StringList",
                       "name": "Armory"
                      },
-                     "szLabel": 4005376
-                    }
+                     "szLabel": 123969892
+                    },
+                    "szPreviewText": ""
                    },
                    "tIcon": {
                     "__type__": "UIControlIcon",
@@ -8260,7 +8267,8 @@
                       "name": "Armory"
                      },
                      "szLabel": 4242383
-                    }
+                    },
+                    "szPreviewText": "Lorem Ipsum Dolor Sit Amet"
                    },
                    "tIcon": {
                     "__type__": "UIControlIcon",
@@ -8383,7 +8391,8 @@
                       "name": "Armory"
                      },
                      "szLabel": 290307928
-                    }
+                    },
+                    "szPreviewText": "Lorem Ipsum Dolor Sit Amet"
                    },
                    "tIcon": {
                     "__type__": "UIControlIcon",
@@ -8473,6 +8482,7 @@
                     "hOptionalUIControlFontFields": {}
                    },
                    "hOptionalUITextStyleFields": {
+                    "bShowPreviewText": 0,
                     "hText": {
                      "__type__": "StringLabelHandleEx",
                      "__typeHash__": 721585600,
@@ -8486,7 +8496,8 @@
                       "name": "Armory"
                      },
                      "szLabel": 121400679
-                    }
+                    },
+                    "szPreviewText": ""
                    },
                    "tIcon": {
                     "__type__": "UIControlIcon",

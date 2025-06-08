@@ -4431,6 +4431,8 @@
                        },
                        "hOptionalUITextStyleFields": {
                         "flTextPaddingL": 15,
+                        "bWordWrap": 0,
+                        "bShowPreviewText": 0,
                         "hText": {
                          "__type__": "StringLabelHandleEx",
                          "__typeHash__": 721585600,
@@ -4438,6 +4440,8 @@
                          "szLabel": 0
                         },
                         "szPreviewText": "WWWWWWWWWWWWWWWWWWWW",
+                        "bShrinkToFit": 1,
+                        "unk_a9fa0f6": 1,
                         "eResizeToFit": 3
                        }
                       }
@@ -4957,6 +4961,7 @@
                      },
                      "hOptionalUITextStyleFields": {
                       "flTextPaddingL": 15,
+                      "bShowPreviewText": 0,
                       "hText": {
                        "__type__": "StringLabelHandleEx",
                        "__typeHash__": 721585600,
@@ -6936,7 +6941,10 @@
           "__typeHash__": 3089331074,
           "hOptionalUIControlConsoleInputFields": {}
          },
-         "hOptionalUIWindowStyleFields": {}
+         "hOptionalUIWindowStyleFields": {
+          "nTop": 0,
+          "nBottom": 0
+         }
         }
        ],
        "arChildren": [],
@@ -6999,7 +7007,7 @@
        "hOptionalUIControlStyleFields": {},
        "hOptionalUIHotkeyStyleFields": {
         "unk_ccd9967": "UIScreenManager_OnClose",
-        "eHotkey": 125
+        "eHotkey": 126
        }
       }
      ],
@@ -7024,7 +7032,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {},
        "hOptionalUIHotkeyStyleFields": {
-        "eHotkey": 124
+        "eHotkey": 125
        }
       }
      ],

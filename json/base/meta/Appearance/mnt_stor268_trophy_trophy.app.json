@@ -38,14 +38,14 @@
      "__type__": "AABB",
      "__typeHash__": 2408934,
      "wp": {
-      "x": 0,
-      "y": -0.046411845833063126,
-      "z": -0.06984753906726837
+      "x": -0.14033788442611694,
+      "y": -0.035322897136211395,
+      "z": 0.14464038610458374
      },
      "wvExt": {
-      "x": 0.2096717655658722,
-      "y": 0.06697861850261688,
-      "z": 0.22922371327877045
+      "x": 0.39387887716293335,
+      "y": 0.08065219968557358,
+      "z": 0.4780951738357544
      }
     },
     "ptLODs": [
@@ -114,14 +114,14 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 0.0016745999455451965,
-          "y": -0.034402795135974884,
-          "z": -0.04228401184082031
+          "x": 0.0019257962703704834,
+          "y": -0.02513926476240158,
+          "z": -0.038149476051330566
          },
          "wvExt": {
-          "x": 0.1380716860294342,
-          "y": 0.05496956408023834,
-          "z": 0.14686694741249084
+          "x": 0.15878242254257202,
+          "y": 0.0632149949669838,
+          "z": 0.16889698803424835
          }
         },
         "ptShapes": {
@@ -235,13 +235,13 @@
          "__typeHash__": 2408934,
          "wp": {
           "x": -7.450580596923828e-9,
-          "y": -0.05113575607538223,
-          "z": -0.06984753906726837
+          "y": -0.04438217729330063,
+          "z": -0.06984753161668777
          },
          "wvExt": {
-          "x": 0.2096717655658722,
-          "y": 0.06225470080971718,
-          "z": 0.22922371327877045
+          "x": 0.2411225438117981,
+          "y": 0.07159291207790375,
+          "z": 0.2636072635650635
          }
         },
         "ptShapes": {
@@ -292,10 +292,370 @@
          "y": 0,
          "z": 0
         }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 2147418112,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 2,
+        "dwSubObjectHash": 4171665853,
+        "nVertBufferIndex": 0,
+        "nIndexBufferIndex": 0,
+        "nBaseLODSubObjectIndex": -1,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": -1,
+        "dwShaderMapOverride": 4294967295,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.0020527690649032593,
+          "y": -0.020766697824001312,
+          "z": -0.029907479882240295
+         },
+         "wvExt": {
+          "x": 0.25559377670288086,
+          "y": 0.0660960003733635,
+          "z": 0.2737388610839844
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 45,
+          "nVertOffset": 88440,
+          "nIndexCount": 210,
+          "nIndexOffset": 9849
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 2147418112,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 3,
+        "dwSubObjectHash": 894285693,
+        "nVertBufferIndex": 0,
+        "nIndexBufferIndex": 0,
+        "nBaseLODSubObjectIndex": -1,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": -1,
+        "dwShaderMapOverride": 4294967295,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.060835547745227814,
+          "y": -0.04928935319185257,
+          "z": 0.12977401912212372
+         },
+         "wvExt": {
+          "x": 0.3011201024055481,
+          "y": 0.06108681857585907,
+          "z": 0.24629975855350494
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 203,
+          "nVertOffset": 90420,
+          "nIndexCount": 1008,
+          "nIndexOffset": 10059
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 2147418112,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 4,
+        "dwSubObjectHash": 2008846569,
+        "nVertBufferIndex": 0,
+        "nIndexBufferIndex": 0,
+        "nBaseLODSubObjectIndex": -1,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": -1,
+        "dwShaderMapOverride": 4294967295,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.1469661295413971,
+          "y": -0.04928935319185257,
+          "z": 0.25310492515563965
+         },
+         "wvExt": {
+          "x": 0.3872506618499756,
+          "y": 0.06108681857585907,
+          "z": 0.3696306347846985
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 290,
+          "nVertOffset": 99352,
+          "nIndexCount": 1512,
+          "nIndexOffset": 11067
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
        }
       ],
       "ptBaseSubObjectIndexMap": [],
-      "flLODDistance": 5.436570167541504
+      "flLODDistance": 7.7216057777404785
      },
      {
       "__type__": "GeoSet",
@@ -362,14 +722,14 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 0.0016745999455451965,
-          "y": -0.034402795135974884,
-          "z": -0.04228401184082031
+          "x": 0.0019257962703704834,
+          "y": -0.02513926476240158,
+          "z": -0.038149476051330566
          },
          "wvExt": {
-          "x": 0.1380716860294342,
-          "y": 0.05496956408023834,
-          "z": 0.14686694741249084
+          "x": 0.15878242254257202,
+          "y": 0.0632149949669838,
+          "z": 0.16889698803424835
          }
         },
         "ptShapes": {
@@ -404,9 +764,9 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 218,
+          "nVertCount": 212,
           "nVertOffset": 0,
-          "nIndexCount": 840,
+          "nIndexCount": 810,
           "nIndexOffset": 0
          }
         ],
@@ -483,13 +843,13 @@
          "__typeHash__": 2408934,
          "wp": {
           "x": -7.450580596923828e-9,
-          "y": -0.05113575607538223,
-          "z": -0.06984753906726837
+          "y": -0.04438217729330063,
+          "z": -0.06984753161668777
          },
          "wvExt": {
-          "x": 0.2096717655658722,
-          "y": 0.06225470080971718,
-          "z": 0.22922371327877045
+          "x": 0.2411225438117981,
+          "y": 0.07159291207790375,
+          "z": 0.2636072635650635
          }
         },
         "ptShapes": {
@@ -524,10 +884,370 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 1263,
-          "nVertOffset": 9592,
-          "nIndexCount": 6054,
-          "nIndexOffset": 840
+          "nVertCount": 1242,
+          "nVertOffset": 9328,
+          "nIndexCount": 5880,
+          "nIndexOffset": 810
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 2,
+        "dwSubObjectHash": 4171665853,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 2,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.0020527690649032593,
+          "y": -0.020766697824001312,
+          "z": -0.029907479882240295
+         },
+         "wvExt": {
+          "x": 0.25559377670288086,
+          "y": 0.0660960003733635,
+          "z": 0.2737388610839844
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 45,
+          "nVertOffset": 63976,
+          "nIndexCount": 210,
+          "nIndexOffset": 6690
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 3,
+        "dwSubObjectHash": 894285693,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 3,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.060835547745227814,
+          "y": -0.04928935319185257,
+          "z": 0.12977401912212372
+         },
+         "wvExt": {
+          "x": 0.3011201024055481,
+          "y": 0.06108681857585907,
+          "z": 0.24629975855350494
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 146,
+          "nVertOffset": 65956,
+          "nIndexCount": 648,
+          "nIndexOffset": 6900
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 4,
+        "dwSubObjectHash": 2008846569,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 4,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.1469661295413971,
+          "y": -0.04928935319185257,
+          "z": 0.25310492515563965
+         },
+         "wvExt": {
+          "x": 0.3872506618499756,
+          "y": 0.06108681857585907,
+          "z": 0.3696306347846985
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 262,
+          "nVertOffset": 72380,
+          "nIndexCount": 1254,
+          "nIndexOffset": 7548
          }
         ],
         "wpFixedPointPosOffset": {
@@ -543,7 +1263,7 @@
        }
       ],
       "ptBaseSubObjectIndexMap": [],
-      "flLODDistance": 6.849587440490723
+      "flLODDistance": 9.725933074951172
      },
      {
       "__type__": "GeoSet",
@@ -610,14 +1330,14 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 0.0016745999455451965,
-          "y": -0.034402795135974884,
-          "z": -0.04228401184082031
+          "x": 0.0019257962703704834,
+          "y": -0.02513926476240158,
+          "z": -0.038149476051330566
          },
          "wvExt": {
-          "x": 0.1380716860294342,
-          "y": 0.05496956408023834,
-          "z": 0.14686694741249084
+          "x": 0.15878242254257202,
+          "y": 0.0632149949669838,
+          "z": 0.16889698803424835
          }
         },
         "ptShapes": {
@@ -652,10 +1372,10 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 192,
-          "nVertOffset": 65164,
+          "nVertCount": 196,
+          "nVertOffset": 83908,
           "nIndexCount": 726,
-          "nIndexOffset": 6894
+          "nIndexOffset": 8802
          }
         ],
         "wpFixedPointPosOffset": {
@@ -731,13 +1451,13 @@
          "__typeHash__": 2408934,
          "wp": {
           "x": -7.450580596923828e-9,
-          "y": -0.05113575607538223,
-          "z": -0.06984753906726837
+          "y": -0.04438217729330063,
+          "z": -0.06984753161668777
          },
          "wvExt": {
-          "x": 0.2096717655658722,
-          "y": 0.06225470080971718,
-          "z": 0.22922371327877045
+          "x": 0.2411225438117981,
+          "y": 0.07159291207790375,
+          "z": 0.2636072635650635
          }
         },
         "ptShapes": {
@@ -772,10 +1492,370 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 901,
-          "nVertOffset": 73612,
-          "nIndexCount": 4095,
-          "nIndexOffset": 7620
+          "nVertCount": 888,
+          "nVertOffset": 92532,
+          "nIndexCount": 3975,
+          "nIndexOffset": 9528
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 2,
+        "dwSubObjectHash": 4171665853,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 2,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.0020527690649032593,
+          "y": -0.020766697824001312,
+          "z": -0.029907479882240295
+         },
+         "wvExt": {
+          "x": 0.25559377670288086,
+          "y": 0.0660960003733635,
+          "z": 0.2737388610839844
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 45,
+          "nVertOffset": 131604,
+          "nIndexCount": 210,
+          "nIndexOffset": 13503
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 3,
+        "dwSubObjectHash": 894285693,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 3,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.060835547745227814,
+          "y": -0.04928935319185257,
+          "z": 0.12977401912212372
+         },
+         "wvExt": {
+          "x": 0.3011201024055481,
+          "y": 0.06108681857585907,
+          "z": 0.24629975855350494
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 98,
+          "nVertOffset": 133584,
+          "nIndexCount": 417,
+          "nIndexOffset": 13713
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 4,
+        "dwSubObjectHash": 2008846569,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 4,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.1469661295413971,
+          "y": -0.04928935319185257,
+          "z": 0.25310492515563965
+         },
+         "wvExt": {
+          "x": 0.3872506618499756,
+          "y": 0.06108681857585907,
+          "z": 0.3696306347846985
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 174,
+          "nVertOffset": 137896,
+          "nIndexCount": 831,
+          "nIndexOffset": 14130
          }
         ],
         "wpFixedPointPosOffset": {
@@ -791,7 +1871,7 @@
        }
       ],
       "ptBaseSubObjectIndexMap": [],
-      "flLODDistance": 8.409178733825684
+      "flLODDistance": 11.686528205871582
      },
      {
       "__type__": "GeoSet",
@@ -858,14 +1938,14 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 0.0016745999455451965,
-          "y": -0.034402795135974884,
-          "z": -0.04228401184082031
+          "x": 0.0019257962703704834,
+          "y": -0.02513926476240158,
+          "z": -0.038149476051330566
          },
          "wvExt": {
-          "x": 0.1380716860294342,
-          "y": 0.05496956408023834,
-          "z": 0.14686694741249084
+          "x": 0.15878242254257202,
+          "y": 0.0632149949669838,
+          "z": 0.16889698803424835
          }
         },
         "ptShapes": {
@@ -900,10 +1980,10 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 178,
-          "nVertOffset": 113256,
-          "nIndexCount": 654,
-          "nIndexOffset": 11715
+          "nVertCount": 173,
+          "nVertOffset": 145552,
+          "nIndexCount": 624,
+          "nIndexOffset": 14961
          }
         ],
         "wpFixedPointPosOffset": {
@@ -979,13 +2059,13 @@
          "__typeHash__": 2408934,
          "wp": {
           "x": -7.450580596923828e-9,
-          "y": -0.05113575607538223,
-          "z": -0.06984753906726837
+          "y": -0.04438217729330063,
+          "z": -0.06984753161668777
          },
          "wvExt": {
-          "x": 0.2096717655658722,
-          "y": 0.06225470080971718,
-          "z": 0.22922371327877045
+          "x": 0.2411225438117981,
+          "y": 0.07159291207790375,
+          "z": 0.2636072635650635
          }
         },
         "ptShapes": {
@@ -1020,10 +2100,370 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 623,
-          "nVertOffset": 121088,
-          "nIndexCount": 2715,
-          "nIndexOffset": 12369
+          "nVertCount": 585,
+          "nVertOffset": 153164,
+          "nIndexCount": 2508,
+          "nIndexOffset": 15585
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 2,
+        "dwSubObjectHash": 4171665853,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 2,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.0020527690649032593,
+          "y": -0.020766697824001312,
+          "z": -0.029907479882240295
+         },
+         "wvExt": {
+          "x": 0.25559377670288086,
+          "y": 0.0660960003733635,
+          "z": 0.2737388610839844
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 45,
+          "nVertOffset": 178904,
+          "nIndexCount": 210,
+          "nIndexOffset": 18093
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 3,
+        "dwSubObjectHash": 894285693,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 3,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.060835547745227814,
+          "y": -0.04928935319185257,
+          "z": 0.12977401912212372
+         },
+         "wvExt": {
+          "x": 0.3011201024055481,
+          "y": 0.06108681857585907,
+          "z": 0.24629975855350494
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 71,
+          "nVertOffset": 180884,
+          "nIndexCount": 282,
+          "nIndexOffset": 18303
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 4,
+        "dwSubObjectHash": 2008846569,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 4,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.1469661295413971,
+          "y": -0.04928935319185257,
+          "z": 0.25310492515563965
+         },
+         "wvExt": {
+          "x": 0.3872506618499756,
+          "y": 0.06108681857585907,
+          "z": 0.3696306347846985
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 147,
+          "nVertOffset": 184008,
+          "nIndexCount": 687,
+          "nIndexOffset": 18585
          }
         ],
         "wpFixedPointPosOffset": {
@@ -1039,7 +2479,7 @@
        }
       ],
       "ptBaseSubObjectIndexMap": [],
-      "flLODDistance": 10.385292053222656
+      "flLODDistance": 14.705228805541992
      },
      {
       "__type__": "GeoSet",
@@ -1106,14 +2546,14 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 0.0016745999455451965,
-          "y": -0.034402795135974884,
-          "z": -0.04228401184082031
+          "x": 0.0019257962703704834,
+          "y": -0.02513926476240158,
+          "z": -0.038149476051330566
          },
          "wvExt": {
-          "x": 0.1380716860294342,
-          "y": 0.05496956408023834,
-          "z": 0.14686694741249084
+          "x": 0.15878242254257202,
+          "y": 0.0632149949669838,
+          "z": 0.16889698803424835
          }
         },
         "ptShapes": {
@@ -1148,10 +2588,10 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 156,
-          "nVertOffset": 148500,
-          "nIndexCount": 564,
-          "nIndexOffset": 15084
+          "nVertCount": 152,
+          "nVertOffset": 190476,
+          "nIndexCount": 534,
+          "nIndexOffset": 19272
          }
         ],
         "wpFixedPointPosOffset": {
@@ -1227,13 +2667,13 @@
          "__typeHash__": 2408934,
          "wp": {
           "x": -7.450580596923828e-9,
-          "y": -0.05113575607538223,
-          "z": -0.06984753906726837
+          "y": -0.04438217729330063,
+          "z": -0.06984753161668777
          },
          "wvExt": {
-          "x": 0.2096717655658722,
-          "y": 0.06225470080971718,
-          "z": 0.22922371327877045
+          "x": 0.2411225438117981,
+          "y": 0.07159291207790375,
+          "z": 0.2636072635650635
          }
         },
         "ptShapes": {
@@ -1268,10 +2708,370 @@
           "pBoneIDs": [
            1
           ],
-          "nVertCount": 426,
-          "nVertOffset": 155364,
-          "nIndexCount": 1794,
-          "nIndexOffset": 15648
+          "nVertCount": 394,
+          "nVertOffset": 197164,
+          "nIndexCount": 1614,
+          "nIndexOffset": 19806
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 2,
+        "dwSubObjectHash": 4171665853,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 2,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.0020527690649032593,
+          "y": -0.020766697824001312,
+          "z": -0.029907479882240295
+         },
+         "wvExt": {
+          "x": 0.25559377670288086,
+          "y": 0.0660960003733635,
+          "z": 0.2737388610839844
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 43,
+          "nVertOffset": 214500,
+          "nIndexCount": 198,
+          "nIndexOffset": 21420
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 3,
+        "dwSubObjectHash": 894285693,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 3,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.060835547745227814,
+          "y": -0.04928935319185257,
+          "z": 0.12977401912212372
+         },
+         "wvExt": {
+          "x": 0.3011201024055481,
+          "y": 0.06108681857585907,
+          "z": 0.24629975855350494
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 50,
+          "nVertOffset": 216392,
+          "nIndexCount": 201,
+          "nIndexOffset": 21618
+         }
+        ],
+        "wpFixedPointPosOffset": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        },
+        "wpFixedPointPosScale": {
+         "x": 0,
+         "y": 0,
+         "z": 0
+        }
+       },
+       {
+        "__type__": "SubObject",
+        "__typeHash__": 4121622049,
+        "dwFlags": 2097152,
+        "unk_334eb2d": 0,
+        "ptClothData": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 2666466548,
+          "__type__": "ClothData",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "unk_26f39c1": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1913132816,
+          "__type__": "Type_72081710",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "dwBASegment": 0,
+        "unk_87b4c64": 0,
+        "dwBASize": 0,
+        "unk_4c43adc": 0,
+        "tNameInfo": {
+         "__type__": "SubObjectNameInfo",
+         "__typeHash__": 3300608366,
+         "eType": 0,
+         "dwFlags": 0,
+         "dwPersona": 0,
+         "dwState": 0,
+         "dwStyle": 0,
+         "dwSlotHash": 0,
+         "dwNPCComponentNameHash": 0,
+         "dwDetailHash": 0,
+         "unk_c15f7d2": 0,
+         "unk_92fdd14": 0,
+         "unk_b0b7d46": 0
+        },
+        "nMaterialIndex": 4,
+        "dwSubObjectHash": 2008846569,
+        "nVertBufferIndex": 1,
+        "nIndexBufferIndex": 1,
+        "nBaseLODSubObjectIndex": 4,
+        "unk_a1b71f5": 1,
+        "nSubObjectMaxLOD": 0,
+        "dwShaderMapOverride": 0,
+        "snoCampaignVisibilityCondition": null,
+        "aabbBounds": {
+         "__type__": "AABB",
+         "__typeHash__": 2408934,
+         "wp": {
+          "x": -0.1469661295413971,
+          "y": -0.04928935319185257,
+          "z": 0.25310492515563965
+         },
+         "wvExt": {
+          "x": 0.3872506618499756,
+          "y": 0.06108681857585907,
+          "z": 0.3696306347846985
+         }
+        },
+        "ptShapes": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 540613693,
+          "__type__": "CollisionShape",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptBaseBoneInfluences": {
+         "__type__": "DT_VARIABLEARRAY",
+         "__typeHash__": 3244749660,
+         "__flags__": 2097152,
+         "__external__": true,
+         "value": {
+          "__typeHash__": 1028015787,
+          "__type__": "DT_BYTE",
+          "dataOffset": 0,
+          "dataSize": 0
+         }
+        },
+        "ptPostprocessed": "0",
+        "ptSegments": [
+         {
+          "__type__": "SubObjectSegment",
+          "__typeHash__": 1370930836,
+          "pBoneIDs": [
+           1
+          ],
+          "nVertCount": 101,
+          "nVertOffset": 218592,
+          "nIndexCount": 468,
+          "nIndexOffset": 21819
          }
         ],
         "wpFixedPointPosOffset": {
@@ -1287,7 +3087,7 @@
        }
       ],
       "ptBaseSubObjectIndexMap": [],
-      "flLODDistance": 12.404922485351562
+      "flLODDistance": 18.060535430908203
      }
     ],
     "ptChunkVertexBuffers": [
@@ -1385,8 +3185,8 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 209840,
-        "dataSize": 88440
+        "dataOffset": 268448,
+        "dataSize": 112112
        }
       },
       "vbid": -1,
@@ -1489,7 +3289,7 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 832,
-        "dataSize": 174108
+        "dataSize": 223036
        }
       },
       "vbid": -1,
@@ -1510,8 +3310,8 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 298288,
-        "dataSize": 19698
+        "dataOffset": 380560,
+        "dataSize": 25158
        }
       },
       "ibid": -1,
@@ -1528,8 +3328,8 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 174944,
-        "dataSize": 34884
+        "dataOffset": 223872,
+        "dataSize": 44574
        }
       },
       "ibid": -1,
@@ -1725,24 +3525,24 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 0.032644763588905334,
-    "y": -0.03533684462308884,
-    "z": -0.039240121841430664
+    "x": -0.10396301746368408,
+    "y": -0.024867074564099312,
+    "z": 0.16532637178897858
    },
-   "wdRadius": 0.2626511752605438
+   "wdRadius": 0.5680941343307495
   },
   "aabbBounds": {
    "__type__": "AABB",
    "__typeHash__": 2408934,
    "wp": {
-    "x": 0,
-    "y": -0.046411845833063126,
-    "z": -0.06984753906726837
+    "x": -0.14033788442611694,
+    "y": -0.035322897136211395,
+    "z": 0.14464038610458374
    },
    "wvExt": {
-    "x": 0.2096717655658722,
-    "y": 0.06697861850261688,
-    "z": 0.22922371327877045
+    "x": 0.39387887716293335,
+    "y": 0.08065219968557358,
+    "z": 0.4780951738357544
    }
   },
   "nLowQualityLOD": 1,
@@ -1770,6 +3570,7 @@
      "dwFlags": 3,
      "snoMaterial": {
       "__raw__": 2099173,
+      "__encrypted__": "665198d2e8358929",
       "__group__": 57,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
@@ -1803,12 +3604,124 @@
      "dwFlags": 1,
      "snoMaterial": {
       "__raw__": 2099173,
+      "__encrypted__": "665198d2e8358929",
       "__group__": 57,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
       "__targetFileName__": "base/meta/Material/mnt_stor268_trophy_TPY_mat.mat",
       "groupName": "Material",
       "name": "mnt_stor268_trophy_TPY_mat"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null
+     ],
+     "snoEffectGroup": {
+      "__raw__": 2196650,
+      "__encrypted__": "665198d2e8358929",
+      "__group__": 14,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/EffectGroup/mnt_stor268_trophy.efg",
+      "groupName": "EffectGroup",
+      "name": "mnt_stor268_trophy"
+     },
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    }
+   ]
+  },
+  {
+   "__type__": "AppearanceMaterial",
+   "__typeHash__": 4040942623,
+   "dwMaterialHash": 2643577745,
+   "fPersonaMaterial": false,
+   "dwPersona": 0,
+   "ptSOAs": [
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 3,
+     "snoMaterial": {
+      "__raw__": 2196732,
+      "__encrypted__": "665198d2e8358929",
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/mnt_stor268_trophy_smoke_in.mat",
+      "groupName": "Material",
+      "name": "mnt_stor268_trophy_smoke_in"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    }
+   ]
+  },
+  {
+   "__type__": "AppearanceMaterial",
+   "__typeHash__": 4040942623,
+   "dwMaterialHash": 3275915185,
+   "fPersonaMaterial": false,
+   "dwPersona": 0,
+   "ptSOAs": [
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 3,
+     "snoMaterial": {
+      "__raw__": 2190094,
+      "__encrypted__": "665198d2e8358929",
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/mnt_stor268_trophy_aura.mat",
+      "groupName": "Material",
+      "name": "mnt_stor268_trophy_aura"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    }
+   ]
+  },
+  {
+   "__type__": "AppearanceMaterial",
+   "__typeHash__": 4040942623,
+   "dwMaterialHash": 1941548295,
+   "fPersonaMaterial": false,
+   "dwPersona": 0,
+   "ptSOAs": [
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 3,
+     "snoMaterial": {
+      "__raw__": 2189374,
+      "__encrypted__": "665198d2e8358929",
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/mnt_stor268_trophy_smoke.mat",
+      "groupName": "Material",
+      "name": "mnt_stor268_trophy_smoke"
      },
      "snoOverrideMaterial": null,
      "snoCloth": null,

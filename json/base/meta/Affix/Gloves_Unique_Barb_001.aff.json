@@ -40,17 +40,17 @@
    "__typeHash__": 501899601,
    "bIgnoreLegendaryScaling": false,
    "bLowerIsBetter": false,
-   "unk_1cbe733": false,
+   "bIgnoreAffixBonuses": false,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1116,
+    "eAttribute": 1124,
     "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(20, 50, 80)",
-     "compiled": "BgAAAAAAoEEGAAAAAABIQgYAAAAAAKBCAQAAAGQAAAAAAAAA"
+     "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(20, 3, 6)",
+     "compiled": "BgAAAAAAoEEGAAAAAABAQAYAAAAAAMBAAQAAAGQAAAAAAAAA"
     },
     "gbidFormula": null,
     "unk_dffdf28": {
@@ -61,7 +61,9 @@
   }
  ],
  "arStaticValues": [
-  2
+  3,
+  0.4000000059604645,
+  1
  ],
  "snoPassivePower": {
   "__raw__": 388773,
