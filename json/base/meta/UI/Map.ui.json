@@ -7596,7 +7596,7 @@
          },
          "hOptionalUIWindowStyleFields": {
           "szOnClick": "UI_TreeFolder_OnCheckboxClick",
-          "unk_354e749": 1,
+          "bOnlyReadChildren": 1,
           "nBottom": -42,
           "nRight": -412,
           "nLeft": 0,
@@ -8108,7 +8108,7 @@
            "a": 255
           },
           "nHeight": 31,
-          "unk_354e749": 1,
+          "bOnlyReadChildren": 1,
           "unk_3dc9f06": 6,
           "unk_3dc9f07": 6,
           "nBottom": -42,
@@ -21157,7 +21157,7 @@
        },
        "hOptionalUIWindowStyleFields": {
         "eVerticalAnchoring": 1,
-        "nWidth": 350,
+        "nWidth": 400,
         "eHorizontalAnchoring": 1
        },
        "unk_4e673ad": {},
@@ -22434,6 +22434,7 @@
                 "hOptionalUIControlFontFields": {}
                },
                "hOptionalUITextStyleFields": {
+                "bShowPreviewText": 1,
                 "hText": {
                  "__type__": "StringLabelHandleEx",
                  "__typeHash__": 721585600,
@@ -22446,7 +22447,7 @@
                   "groupName": "StringList",
                   "name": "Map"
                  },
-                 "szLabel": 1349608208
+                 "szLabel": 1894005080
                 }
                }
               }
