@@ -26,7 +26,7 @@
  "ptInitialDyes": [],
  "eComponentStyleType": 0,
  "dwComponentStyle": 0,
- "nMaxStackSize": 50,
+ "nMaxStackSize": 100,
  "nBaseCostCurrency": 28575,
  "unk_11efbc0": 1,
  "eCurrencyType": 0,
@@ -52,6 +52,7 @@
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "snoSetItemBonus": null,
+ "arItemFamilies": [],
  "snoPower": null,
  "nFixedIPowerLevel": 0,
  "eForcedItemQualityModifier": 0,
@@ -61,7 +62,7 @@
   {
    "__type__": "AttributeSpecifier",
    "__typeHash__": 3218190286,
-   "eAttribute": 726,
+   "eAttribute": 750,
    "__eAttribute_name__": "GemQuality",
    "dwID": 954993826,
    "nParam": -1,
@@ -70,7 +71,7 @@
     "compiled": "BgAAAAAAgD8AAAAA"
    },
    "gbidFormula": null,
-   "unk_dffdf28": {
+   "szFlatAttribLevelFormula": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    }
@@ -80,6 +81,7 @@
  "arInherentAffixes": [],
  "arForcedAffixes": [],
  "fUsableByClass": [
+  1,
   1,
   1,
   1,
@@ -97,7 +99,7 @@
     {
      "__type__": "AttributeSpecifier",
      "__typeHash__": 3218190286,
-     "eAttribute": 240,
+     "eAttribute": 253,
      "__eAttribute_name__": "Damage_Percent_Bonus_Per_Skill_Tag",
      "dwID": 432656371,
      "nParam": -954965341,
@@ -106,7 +108,7 @@
       "compiled": "BgAAAM3MTD0AAAAA"
      },
      "gbidFormula": null,
-     "unk_dffdf28": {
+     "szFlatAttribLevelFormula": {
       "value": "0",
       "compiled": "BgAAAAAAAAAAAAAA"
      }
@@ -123,7 +125,7 @@
     {
      "__type__": "AttributeSpecifier",
      "__typeHash__": 3218190286,
-     "eAttribute": 3,
+     "eAttribute": 5,
      "__eAttribute_name__": "Intelligence",
      "dwID": 432656372,
      "nParam": -1,
@@ -132,7 +134,7 @@
       "compiled": "BgAAAAAAoEAAAAAA"
      },
      "gbidFormula": null,
-     "unk_dffdf28": {
+     "szFlatAttribLevelFormula": {
       "value": "0",
       "compiled": "BgAAAAAAAAAAAAAA"
      }
@@ -149,16 +151,16 @@
     {
      "__type__": "AttributeSpecifier",
      "__typeHash__": 3218190286,
-     "eAttribute": 72,
+     "eAttribute": 73,
      "__eAttribute_name__": "Resistance",
      "dwID": 432656373,
      "nParam": 2,
      "szAttributeFormula": {
-      "value": "0.05",
-      "compiled": "BgAAAM3MTD0AAAAA"
+      "value": "20",
+      "compiled": "BgAAAAAAoEEAAAAA"
      },
      "gbidFormula": null,
-     "unk_dffdf28": {
+     "szFlatAttribLevelFormula": {
       "value": "15",
       "compiled": "BgAAAAAAcEEAAAAA"
      }
@@ -220,6 +222,12 @@
    "__typeHash__": 3633779953,
    "hDefaultImage": 0,
    "hFemaleImage": 0
+  },
+  {
+   "__type__": "GenderSpecificImages",
+   "__typeHash__": 3633779953,
+   "hDefaultImage": 0,
+   "hFemaleImage": 0
   }
  ],
  "unk_75d565b": 0,
@@ -227,13 +235,15 @@
  "fMustKeepInInventory": false,
  "eItemUseType": 0,
  "snoPowerUpPower": null,
+ "snoModalNotification": null,
  "tRequirementsToBeActive": {
   "__type__": "RequirementsToBeActive",
   "__typeHash__": 1459584362,
   "arSeasons": []
  },
  "bSeasonItem": false,
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
+ "unk_302f566": [],
  "unk_1b959e8": false,
  "szItemUseCursor": "",
  "snoItemUseActivationSound": null,

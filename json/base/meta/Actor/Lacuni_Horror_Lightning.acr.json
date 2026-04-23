@@ -66,7 +66,6 @@
   "name": "Monster_Lacuni_Horror_AnimTree"
  },
  "arActorAppearanceAddOnEntries": [],
- "snoDamageRemap": null,
  "snoVisualRemap": null,
  "gbidPartyFinderTag": null,
  "arUniqueSubObjectNameInfoPerAppearance": [],
@@ -159,7 +158,7 @@
  "flHitFlashPower": 2,
  "flHitFlashMultiplier": 0.6000000238418579,
  "flOverlayPower": 1,
- "eTopology": 2,
+ "eTopology": 12,
  "ptMsgTriggeredEvents": [
   {
    "__type__": "MsgTriggeredEvent",
@@ -215,9 +214,7 @@
       "__group__": 14,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/EffectGroup/actor_death_hellFire.efg",
-      "groupName": "EffectGroup",
-      "name": "actor_death_hellFire"
+      "groupName": "EffectGroup"
      },
      "tHardpointLinks": [
       {
@@ -684,7 +681,6 @@
     "hSpiritBondIcon": 0,
     "snoReputation": null
    },
-   "eHirelingClass": -1,
    "fConvertsDamageToDamageStates": false,
    "unk_6bce993": [],
    "unk_6b4a81d": 0,
@@ -698,7 +694,7 @@
     "name": "Lacuni"
    },
    "szArchetype": 4205942844,
-   "eBaseElement": 2,
+   "eBaseElement": -1,
    "snoMainHand": {
     "__raw__": 1269626,
     "__group__": 98,
@@ -760,7 +756,7 @@
     {
      "__type__": "SummonActorEntry",
      "__typeHash__": 2990129354,
-     "dwWeight": 60,
+     "dwWeight": 100,
      "snoSummonActor": {
       "__raw__": 1587207,
       "__group__": 1,
@@ -772,16 +768,17 @@
      },
      "unk_ce494ef": false,
      "tSummonRange": {
-      "rangeValue1": 1,
+      "rangeValue1": 3,
       "rangeValue2": 0
      },
      "dwMaxConcurrentCount": 3,
-     "snoCondition": null
+     "snoCondition": null,
+     "bCanBeMinion": true
     },
     {
      "__type__": "SummonActorEntry",
      "__typeHash__": 2990129354,
-     "dwWeight": 40,
+     "dwWeight": 100,
      "snoSummonActor": {
       "__raw__": 1587217,
       "__group__": 1,
@@ -793,16 +790,17 @@
      },
      "unk_ce494ef": false,
      "tSummonRange": {
-      "rangeValue1": 1,
+      "rangeValue1": 3,
       "rangeValue2": 0
      },
-     "dwMaxConcurrentCount": 2,
-     "snoCondition": null
+     "dwMaxConcurrentCount": 3,
+     "snoCondition": null,
+     "bCanBeMinion": true
     },
     {
      "__type__": "SummonActorEntry",
      "__typeHash__": 2990129354,
-     "dwWeight": 60,
+     "dwWeight": 100,
      "snoSummonActor": {
       "__raw__": 1587212,
       "__group__": 1,
@@ -814,16 +812,17 @@
      },
      "unk_ce494ef": false,
      "tSummonRange": {
-      "rangeValue1": 1,
+      "rangeValue1": 3,
       "rangeValue2": 0
      },
-     "dwMaxConcurrentCount": 4,
-     "snoCondition": null
+     "dwMaxConcurrentCount": 3,
+     "snoCondition": null,
+     "bCanBeMinion": true
     },
     {
      "__type__": "SummonActorEntry",
      "__typeHash__": 2990129354,
-     "dwWeight": 60,
+     "dwWeight": 100,
      "snoSummonActor": {
       "__raw__": 1587215,
       "__group__": 1,
@@ -835,32 +834,12 @@
      },
      "unk_ce494ef": false,
      "tSummonRange": {
-      "rangeValue1": 1,
+      "rangeValue1": 3,
       "rangeValue2": 0
      },
-     "dwMaxConcurrentCount": 4,
-     "snoCondition": null
-    },
-    {
-     "__type__": "SummonActorEntry",
-     "__typeHash__": 2990129354,
-     "dwWeight": 20,
-     "snoSummonActor": {
-      "__raw__": 1582888,
-      "__group__": 1,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Actor/Lacuni_Horror_Lightning.acr",
-      "groupName": "Actor",
-      "name": "Lacuni_Horror_Lightning"
-     },
-     "unk_ce494ef": false,
-     "tSummonRange": {
-      "rangeValue1": 1,
-      "rangeValue2": 0
-     },
-     "dwMaxConcurrentCount": 2,
-     "snoCondition": null
+     "dwMaxConcurrentCount": 3,
+     "snoCondition": null,
+     "bCanBeMinion": true
     }
    ],
    "unk_43a5b25": [],
@@ -896,14 +875,14 @@
      "__group__": 107,
      "__type__": "DT_SNO",
      "__typeHash__": 2764331143,
-     "__targetFileName__": "base/meta/MonsterAffix/Multishot.maf",
+     "__targetFileName__": "base/meta/MonsterAffix/Multishot_DEPRECATED.maf",
      "groupName": "MonsterAffix",
-     "name": "Multishot"
+     "name": "Multishot_DEPRECATED"
     }
    ],
    "arForcedMonsterTags": [],
-   "eAITargetStyleNormal": 8,
-   "eAITargetStyleElite": 8,
+   "eAITargetStyleNormal": 11,
+   "eAITargetStyleElite": 11,
    "gbidAITargetingStyleNormal": null,
    "gbidAITargetingStyleElite": null,
    "dwLookAtTargetingFlags": 7,
@@ -923,10 +902,10 @@
    "eOverriddenMonsterRarity": -1,
    "unk_7859c5b": false,
    "bIsWorldBoss": false,
-   "unk_bc58cee": false,
-   "unk_7fdab9c": 10,
-   "unk_e7ee8f1": 3,
-   "unk_828c56a": false,
+   "unk_4b1672a": false,
+   "unk_1e3ad71": 10,
+   "unk_2fc83ba": 3,
+   "unk_68f046c": false,
    "unk_e4c90d3": false,
    "unk_12ecd6a": false,
    "unk_c0565bf": false,
@@ -1055,6 +1034,15 @@
      "__targetFileName__": "base/meta/EffectGroup/actor_death_shadow.efg",
      "groupName": "EffectGroup",
      "name": "actor_death_shadow"
+    },
+    {
+     "__raw__": 2264624,
+     "__group__": 14,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/EffectGroup/actor_death_holy.efg",
+     "groupName": "EffectGroup",
+     "name": "actor_death_holy"
     }
    ],
    "gbidActorResurrectDataOverride": null
@@ -1145,6 +1133,7 @@
    },
    "unk_f190641": false,
    "unk_557e468": false,
+   "unk_e1eb9fc": false,
    "unk_d2a4d05": false,
    "unk_88f4495": false
   }

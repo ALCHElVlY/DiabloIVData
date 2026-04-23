@@ -43,7 +43,7 @@
     "fAlphaMaskEnable": false,
     "eFillMode": 0,
     "fIndependentAlphaBlendEnable": false,
-    "tAlphaBlend": [
+    "arAlphaBlend": [
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
@@ -51,86 +51,6 @@
       "eBlendOp": 1,
       "eSrcBlendFactor": 5,
       "eDestBlendFactor": 2,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
       "fSeparateAlphaBlendEnable": false,
       "eBlendOpAlpha": 1,
       "eSrcBlendFactorAlpha": 5,
@@ -171,12 +91,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-3c2459e69580d446",
+       "dwKey": "4ed1ac3ab66779b3",
        "unk_8e5f439": [
         671105024,
         33554432,
         2,
-        50331648,
+        100663296,
         0,
         0
        ],
@@ -189,12 +109,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "e2c389d59aad857",
+       "dwKey": "6b1e7a75ef9e49bb",
        "unk_8e5f439": [
         3538948,
         403767296,
         640,
-        32,
+        64,
         0,
         0
        ],
@@ -439,6 +359,202 @@
      "__type__": "MaterialScalarValuesUsed",
      "__typeHash__": 3952663046,
      "snoMaterialValue": {
+      "__raw__": 2087793,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Main Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Main Hue VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087794,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Hue Range VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Hue Range VFX"
+     },
+     "flDefaultValue": 0.05000000074505806
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087795,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Roughness Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Roughness Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087796,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Saturation Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Saturation Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087797,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Value Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Value Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087798,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Replace Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Replace Hue VFX"
+     },
+     "flDefaultValue": 0.41999998688697815
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092745,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Main Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Main Hue VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092746,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Hue Range VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Hue Range VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092754,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Value Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Value Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092755,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Saturation Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Saturation Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092756,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Replace Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Replace Hue VFX"
+     },
+     "flDefaultValue": 0.699999988079071
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092827,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Enable Recolor VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Enable Recolor VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2117146,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Value Multiply VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Value Multiply VFX"
+     },
+     "flDefaultValue": 1
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2117147,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Value Multiply VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Value Multiply VFX"
+     },
+     "flDefaultValue": 1
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
       "__raw__": 2167854,
       "__group__": 81,
       "__type__": "DT_SNO",
@@ -462,6 +578,20 @@
       "name": "Use Alpha Soft Fade Out Distance"
      },
      "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2450951,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Enable Damage Remap.mtv",
+      "groupName": "MaterialValue",
+      "name": "Enable Damage Remap"
+     },
+     "flDefaultValue": 1
     }
    ],
    "tUsedVectorMaterialValues": [
@@ -555,7 +685,7 @@
     "fAlphaMaskEnable": false,
     "eFillMode": 0,
     "fIndependentAlphaBlendEnable": false,
-    "tAlphaBlend": [
+    "arAlphaBlend": [
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
@@ -563,86 +693,6 @@
       "eBlendOp": 1,
       "eSrcBlendFactor": 5,
       "eDestBlendFactor": 2,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
       "fSeparateAlphaBlendEnable": false,
       "eBlendOpAlpha": 1,
       "eSrcBlendFactorAlpha": 5,
@@ -716,12 +766,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-540ce5ea0108689b",
+       "dwKey": "-4688b9482492916d",
        "unk_8e5f439": [
         16388,
         404291584,
         1664,
-        32,
+        64,
         0,
         0
        ],
@@ -961,6 +1011,202 @@
      "__type__": "MaterialScalarValuesUsed",
      "__typeHash__": 3952663046,
      "snoMaterialValue": {
+      "__raw__": 2087793,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Main Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Main Hue VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087794,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Hue Range VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Hue Range VFX"
+     },
+     "flDefaultValue": 0.05000000074505806
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087795,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Roughness Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Roughness Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087796,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Saturation Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Saturation Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087797,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Value Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Value Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2087798,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Replace Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Replace Hue VFX"
+     },
+     "flDefaultValue": 0.41999998688697815
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092745,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Main Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Main Hue VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092746,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Hue Range VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Hue Range VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092754,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Value Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Value Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092755,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Saturation Offset VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Saturation Offset VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092756,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Replace Hue VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Replace Hue VFX"
+     },
+     "flDefaultValue": 0.699999988079071
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2092827,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Enable Recolor VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Enable Recolor VFX"
+     },
+     "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2117146,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Secondary Recolor Value Multiply VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Secondary Recolor Value Multiply VFX"
+     },
+     "flDefaultValue": 1
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2117147,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Recolor Value Multiply VFX.mtv",
+      "groupName": "MaterialValue",
+      "name": "Recolor Value Multiply VFX"
+     },
+     "flDefaultValue": 1
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
       "__raw__": 2167854,
       "__group__": 81,
       "__type__": "DT_SNO",
@@ -984,6 +1230,20 @@
       "name": "Use Alpha Soft Fade Out Distance"
      },
      "flDefaultValue": 0
+    },
+    {
+     "__type__": "MaterialScalarValuesUsed",
+     "__typeHash__": 3952663046,
+     "snoMaterialValue": {
+      "__raw__": 2450951,
+      "__group__": 81,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/MaterialValue/Enable Damage Remap.mtv",
+      "groupName": "MaterialValue",
+      "name": "Enable Damage Remap"
+     },
+     "flDefaultValue": 1
     }
    ],
    "tUsedVectorMaterialValues": [
@@ -1055,7 +1315,7 @@
    "__typeHash__": 1028015787,
    "__type__": "DT_BYTE",
    "dataOffset": 32,
-   "dataSize": 35774
+   "dataSize": 35938
   }
  }
 }

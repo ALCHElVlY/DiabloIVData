@@ -43,23 +43,23 @@
  "bApplyPowerToSeasonalPet": true,
  "unk_5148745": true,
  "bShowXPProgress": false,
- "unk_791be0": false,
+ "dwUpgradeType": 2,
  "bOverrideItemTypeDescription": false,
  "unk_cd71fc0": true,
  "ptAttributes": [
   {
    "__type__": "AttributeSpecifier",
    "__typeHash__": 3218190286,
-   "eAttribute": 1282,
+   "eAttribute": 1316,
    "__eAttribute_name__": "Collectible_Power_Value_1",
    "dwID": 0,
    "nParam": -1,
    "szAttributeFormula": {
     "value": "1 + GetCollectiblePowerLevel(SNO.CollectiblePower.S03_Tuning_PierceProjectile)",
-    "compiled": "BgAAAAAAgD8FAAAAWQAAAPv+GQAAAAAAAAAAAAEAAABmAAAACwAAAAAAAAA="
+    "compiled": "BgAAAAAAgD8FAAAAWQAAAPv+GQAAAAAAAAAAAAEAAABsAAAACwAAAAAAAAA="
    },
    "gbidFormula": null,
-   "unk_dffdf28": {
+   "szFlatAttribLevelFormula": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    }
@@ -83,12 +83,15 @@
  },
  "snoBlockedCollectiblePowers": [],
  "eRarity": 0,
+ "bUseRankBasedAppearances": false,
+ "arRankBasedAppearances": [],
  "arRankUnlocks": [],
  "arUpgradeCosts": [],
+ "snoVisibleCondition": null,
  "snoEnabledCondition": null,
  "unk_2d04376": 0,
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "eDependencyType": 0,
  "arRequiredCollectiblePowers": [],
- "unk_93d883f": []
+ "arNotificationText": []
 }

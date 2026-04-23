@@ -21,7 +21,7 @@
   "groupName": "ItemType",
   "name": "S07_LTE_MOTG_Cache"
  },
- "eMagicType": 1,
+ "eMagicType": 0,
  "dwFlags": 16785434,
  "ptInitialDyes": [],
  "eComponentStyleType": 0,
@@ -52,6 +52,7 @@
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "snoSetItemBonus": null,
+ "arItemFamilies": [],
  "snoPower": null,
  "nFixedIPowerLevel": 0,
  "eForcedItemQualityModifier": 0,
@@ -62,6 +63,7 @@
  "arInherentAffixes": [],
  "arForcedAffixes": [],
  "fUsableByClass": [
+  1,
   1,
   1,
   1,
@@ -123,6 +125,12 @@
    "__typeHash__": 3633779953,
    "hDefaultImage": 0,
    "hFemaleImage": 0
+  },
+  {
+   "__type__": "GenderSpecificImages",
+   "__typeHash__": 3633779953,
+   "hDefaultImage": 0,
+   "hFemaleImage": 0
   }
  ],
  "unk_75d565b": 0,
@@ -130,13 +138,15 @@
  "fMustKeepInInventory": false,
  "eItemUseType": 61,
  "snoPowerUpPower": null,
+ "snoModalNotification": null,
  "tRequirementsToBeActive": {
   "__type__": "RequirementsToBeActive",
   "__typeHash__": 1459584362,
   "arSeasons": []
  },
  "bSeasonItem": false,
- "unk_5e84277": 1,
+ "dwContentLicenseRequirements": 8,
+ "unk_302f566": [],
  "unk_1b959e8": false,
  "szItemUseCursor": "",
  "snoItemUseActivationSound": null,
@@ -148,15 +158,7 @@
   "szLabel": 0
  },
  "eActivationInventorySlot": -1,
- "snoUseCondition": {
-  "__raw__": 2208770,
-  "__group__": 51,
-  "__type__": "DT_SNO",
-  "__typeHash__": 2764331143,
-  "__targetFileName__": "base/meta/Condition/X1_Undercity_Tribute_Cache_Drop_Unlocked.cnd",
-  "groupName": "Condition",
-  "name": "X1_Undercity_Tribute_Cache_Drop_Unlocked"
- },
+ "snoUseCondition": null,
  "unk_9af95a9": true,
  "unk_3d100c2": 2,
  "unk_d085fd9": false,
@@ -168,7 +170,7 @@
  "unk_cbbccc1": 0,
  "unk_9b60982": 0,
  "arPreviewCameraPositioningOverrides": [],
- "eDisplayedQualityLevel": -1,
+ "eDisplayedQualityLevel": 5,
  "snoPowerPassive": null,
  "bIsTransmog": false
 }

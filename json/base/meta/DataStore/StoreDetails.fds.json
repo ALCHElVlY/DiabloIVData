@@ -87,12 +87,12 @@
      "tValue": true
     },
     {
-     "__type__": "DataStoreVariableString",
-     "__typeHash__": 3835220004,
-     "dwType": 3835220004,
+     "__type__": "DataStoreVariableInt",
+     "__typeHash__": 1096634712,
+     "dwType": 1096634712,
      "tName": "TimeLeftValue",
      "dwFlags": 0,
-     "tValue": ""
+     "tValue": "28"
     },
     {
      "__type__": "DataStoreVariableStringLabelHandle",
@@ -487,7 +487,26 @@
      "tValue": "0"
     }
    ],
-   "tObjects": [],
+   "tObjects": [
+    {
+     "__type__": "DataStoreFolder",
+     "__typeHash__": 684499971,
+     "tName": "PlatinumParams",
+     "tVariables": [
+      {
+       "__type__": "DataStoreVariableInt",
+       "__typeHash__": 1096634712,
+       "dwType": 1096634712,
+       "tName": "Amount",
+       "dwFlags": 0,
+       "tValue": "0"
+      }
+     ],
+     "tObjects": [],
+     "tObjectCollections": [],
+     "dwFlags": 0
+    }
+   ],
    "tObjectCollections": [],
    "dwFlags": 0
   },
@@ -1142,6 +1161,14 @@
       "snoStringList": null,
       "szLabel": 0
      }
+    },
+    {
+     "__type__": "DataStoreVariableBool",
+     "__typeHash__": 1828956601,
+     "dwType": 1828956601,
+     "tName": "ReactiveCosmeticsActive",
+     "dwFlags": 0,
+     "tValue": false
     }
    ],
    "tObjects": [],

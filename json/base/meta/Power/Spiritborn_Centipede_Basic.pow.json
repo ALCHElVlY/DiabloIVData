@@ -157,6 +157,31 @@
        "bInverse": false,
        "eSubject": 0,
        "snoAffix": {
+        "__raw__": 2389432,
+        "__group__": 104,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/Affix/S10_Quarterstaff_Unique_Spiritborn_012_x1.aff",
+        "groupName": "Affix",
+        "name": "S10_Quarterstaff_Unique_Spiritborn_012_x1"
+       }
+      }
+     ],
+     "bEnd": false
+    },
+    {
+     "__type__": "PhaseJumpImmediate",
+     "__typeHash__": 3485436892,
+     "dwType": 3485436892,
+     "tPhaseToJumpTo": 141431864,
+     "arConditions": [
+      {
+       "__type__": "PowerConditionHasAffixEquipped",
+       "__typeHash__": 619659323,
+       "dwType": 619659323,
+       "bInverse": false,
+       "eSubject": 0,
+       "snoAffix": {
         "__raw__": 1987314,
         "__group__": 104,
         "__type__": "DT_SNO",
@@ -190,7 +215,16 @@
         "groupName": "Power",
         "name": "Spiritborn_Centipede_Basic"
        },
-       "dwBuffDataID": 2754027687
+       "tBuffs": [
+        {
+         "__type__": "PowerBuffReference",
+         "__typeHash__": 1210777375,
+         "unk_3fe2c27": false,
+         "snoBuffFromPower": null,
+         "dwBuffToUseDataID": 2754027687
+        }
+       ],
+       "eCheckMethod": 0
       }
      ],
      "bEnd": false
@@ -216,7 +250,16 @@
         "groupName": "Power",
         "name": "Spiritborn_Centipede_Basic"
        },
-       "dwBuffDataID": 803152361
+       "tBuffs": [
+        {
+         "__type__": "PowerBuffReference",
+         "__typeHash__": 1210777375,
+         "unk_3fe2c27": false,
+         "snoBuffFromPower": null,
+         "dwBuffToUseDataID": 803152361
+        }
+       ],
+       "eCheckMethod": 0
       }
      ],
      "bEnd": false
@@ -273,7 +316,7 @@
  "unk_4bf03ff": true,
  "tAttackSpeed": {
   "value": "Attacks_Per_Second_Total",
-  "compiled": "BQAAAAAAAADUAAAA/v///wAAAAAAAAAA"
+  "compiled": "BQAAAAAAAADeAAAA/v///wAAAAAAAAAA"
  },
  "unk_6deb090": false,
  "unk_ed2bdad": false,
@@ -281,6 +324,7 @@
  "unk_7a86b64": true,
  "eDamageType": 4,
  "unk_752edeb": false,
+ "unk_c41a01d": false,
  "tCombatEffectChance": {
   "value": "SF_24",
   "compiled": "BQAAAB4AAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -827,23 +871,19 @@
     "value": "SF_4",
     "compiled": "BQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -886,7 +926,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -942,23 +983,19 @@
     "value": "SF_4",
     "compiled": "BQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -1001,7 +1038,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -1057,23 +1095,19 @@
     "value": "SF_4",
     "compiled": "BQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -1116,7 +1150,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -1172,23 +1207,19 @@
     "value": "SF_7",
     "compiled": "BQAAAA0AAAAAAAAAAAAAAAAAAAAAAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -1231,7 +1262,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": 5,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": 5,
     "bHasCombatEffectOverride": true,
     "tCombatEffectOverride": {
      "value": "SF_25",
@@ -1287,23 +1319,19 @@
     "value": "SF_4",
     "compiled": "BQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -1346,7 +1374,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -1402,23 +1431,19 @@
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -1461,7 +1486,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -1517,23 +1543,19 @@
     "value": "1.5",
     "compiled": "BgAAAAAAwD8AAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "3",
     "compiled": "BgAAAAAAQEAAAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -1576,7 +1598,120 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
+    "bHasCombatEffectOverride": false,
+    "tCombatEffectOverride": {
+     "value": "100",
+     "compiled": "BgAAAAAAyEIAAAAA"
+    },
+    "bHideDamageEffects": false,
+    "bHideGlobalApplicationEffect": false
+   },
+   "tCrowdControl": {
+    "__type__": "PowerBuffCrowdControl",
+    "__typeHash__": 4138865712,
+    "unk_c63f49e": true,
+    "dwCCFlags": 0,
+    "bUseGlobalSlowAmount": false,
+    "eGlobalSlowAmountType": 0,
+    "tSlowAmount": {
+     "value": "0",
+     "compiled": "BgAAAAAAAAAAAAAA"
+    },
+    "tChillAmount": {
+     "value": "0",
+     "compiled": "BgAAAAAAAAAAAAAA"
+    },
+    "tStaggerMultiplier": {
+     "value": "1",
+     "compiled": "BgAAAAAAgD8AAAAA"
+    }
+   },
+   "bHasDamageShield": false,
+   "tDamageShield": {
+    "__type__": "HitpointSpecifier",
+    "__typeHash__": 1185241065,
+    "eType": 0,
+    "tHitpointScalar": {
+     "value": "0",
+     "compiled": "BgAAAAAAAAAAAAAA"
+    },
+    "tFlatLevel": {
+     "value": "0",
+     "compiled": "BgAAAAAAAAAAAAAA"
+    }
+   },
+   "dwShaderMapOverride": 4294967295
+  },
+  {
+   "__type__": "PowerBuffDefinition",
+   "__typeHash__": 1071057721,
+   "dwID": 1553771337,
+   "dwBuffId": 13,
+   "bHarmful": false,
+   "bInfinite": false,
+   "tDuration": {
+    "value": "1.5",
+    "compiled": "BgAAAAAAwD8AAAAA"
+   },
+   "tMaxExtendDuration": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
+   "bMoveOnSkillCategoryCooldown": false,
+   "unk_dcb22bd": false,
+   "tMaxStackCount": {
+    "value": "3",
+    "compiled": "BgAAAAAAQEAAAAAA"
+   },
+   "gbidBuffPreset": null,
+   "bVisibleInUI": false,
+   "nVisualPriority": 0,
+   "bShowDuration": false,
+   "bCancellable": false,
+   "unk_99b5752": false,
+   "unk_93cd85f": false,
+   "unk_4bdaef2": false,
+   "bVisibleInHotbarUI": false,
+   "bShowsActiveStateOnHotbar": false,
+   "bShowsDurationOnHotbar": false,
+   "bShowsStackCountOnHotbar": false,
+   "unk_71ba554": false,
+   "unk_1375622": false,
+   "unk_d2dd47": false,
+   "unk_8a5f69e": false,
+   "hIcon": 0,
+   "hFloatingIcon": 0,
+   "hFloatingTextLabel": 0,
+   "flFloatingTextIconRange": 0,
+   "unk_395ccd6": false,
+   "bDealsDOT": false,
+   "tDOT": {
+    "__type__": "PowerBuffDOTDamage",
+    "__typeHash__": 3824324374,
+    "unk_c3d4c36": false,
+    "eDamageType": -1,
+    "tDamage": {
+     "__type__": "HitpointSpecifier",
+     "__typeHash__": 1185241065,
+     "eType": 0,
+     "tHitpointScalar": {
+      "value": "0",
+      "compiled": "BgAAAAAAAAAAAAAA"
+     },
+     "tFlatLevel": {
+      "value": "0",
+      "compiled": "BgAAAAAAAAAAAAAA"
+     }
+    },
+    "unk_89dc285": false,
+    "flFlatDamageBonusScalar": 1,
+    "unk_f551941": -1,
+    "bDamageIgnoresInvulnerable": false,
+    "bDamageIgnoresBonuses": false,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -1632,23 +1767,19 @@
     "value": "SF_12",
     "compiled": "BQAAABIAAAAAAAAAAAAAAAAAAAAAAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -1691,7 +1822,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -1855,16 +1987,16 @@
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "6",
-    "compiled": "BgAAAAAAwEAAAAAA"
+    "value": "SF_28 ? (6 * SF_29) : 6",
+    "compiled": "BQAAACIAAAAAAAAAAAAAAAAAAAAGAAAAAADAQAUAAAAjAAAAAAAAAAAAAAAAAAAADQAAAAYAAAAAAMBAEAAAAAAAAAA="
    }
   },
   {
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "SF_14 + 1.3",
-    "compiled": "BQAAABQAAAAAAAAAAAAAAAAAAAAGAAAAZmamPwsAAAAAAAAA"
+    "value": "SF_14 + (SF_28 ? (1.3 * SF_29) : 1.3)",
+    "compiled": "BQAAABQAAAAAAAAAAAAAAAAAAAAFAAAAIgAAAAAAAAAAAAAAAAAAAAYAAABmZqY/BQAAACMAAAAAAAAAAAAAAAAAAAANAAAABgAAAGZmpj8QAAAACwAAAAAAAAA="
    }
   },
   {
@@ -1912,7 +2044,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Min(1 + (AoE_Size_Bonus_Per_Power#Spiritborn_Centipede_Basic / 2), PowerTag.SystemsTuningGlobals.\"Script Formula 3\")",
-    "compiled": "BgAAAAAAgD8FAAAAAAAAAOADAADn/RsAAAAAAAYAAAAAAABADgAAAAsAAAAFAAAABQAAAM1tEAADAAAAAAAAAAEAAAAAAAAAAAAAAA=="
+    "compiled": "BgAAAAAAgD8FAAAAAAAAAAAEAADn/RsAAAAAAAYAAAAAAABADgAAAAsAAAAFAAAABQAAAM1tEAADAAAAAAAAAAEAAAAAAAAAAAAAAA=="
    }
   },
   {
@@ -1920,7 +2052,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Bonus_Percent_Per_Power#Spiritborn_Centipede_Basic + SF_27",
-    "compiled": "BQAAAAAAAAC1AwAA5/0bAAAAAAAFAAAAIQAAAAAAAAAAAAAAAAAAAAsAAAAAAAAA"
+    "compiled": "BQAAAAAAAADVAwAA5/0bAAAAAAAFAAAAIQAAAAAAAAAAAAAAAAAAAAsAAAAAAAAA"
    }
   },
   {
@@ -1960,7 +2092,23 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Generic_Chance_For_Double_Damage_Per_SkillTag#Skill_Primary_Basic",
-    "compiled": "BQAAAAAAAACLAACAo2IUxwAAAAAAAAAA"
+    "compiled": "BQAAAAAAAACQAACAo2IUxwAAAAAAAAAA"
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "((GetCollectiblePowerEquippedSlotIndex(SNO.CollectiblePower.S10_ChaosPerk_Spiritborn_Magic_001)) > -1) ? 1 : 0",
+    "compiled": "BQAAAFkAAAAU6yMAAAAAAAAAAAABAAAAbgAAAAYAAAAAAIA/EQAAAAgAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAAAAAA="
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "PowerTag.S10_ChaosPerk_Spiritborn_Magic_001.\"Script Formula 2\" + 1",
+    "compiled": "BQAAAAUAAACD6iMAAgAAAAAAAAAGAAAAAACAPwsAAAAAAAAA"
    }
   }
  ],
@@ -1994,6 +2142,11 @@
    "arBuffsToApply": [],
    "bApplyVulnerableDebuff": false,
    "tVulnerableDurationSecondsOverride": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
@@ -2037,7 +2190,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": 5,
+   "eClassBaseDamageScalar": 5,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -2101,6 +2254,11 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
    "tFortifiedHealth": {
     "__type__": "HitpointSpecifier",
     "__typeHash__": 1185241065,
@@ -2141,7 +2299,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": 5,
+   "eClassBaseDamageScalar": 5,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -2205,6 +2363,11 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
    "tFortifiedHealth": {
     "__type__": "HitpointSpecifier",
     "__typeHash__": 1185241065,
@@ -2245,7 +2408,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": 5,
+   "eClassBaseDamageScalar": 5,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -2309,6 +2472,11 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
    "tFortifiedHealth": {
     "__type__": "HitpointSpecifier",
     "__typeHash__": 1185241065,
@@ -2349,7 +2517,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": true,
    "unk_e842c84": false,
-   "unk_b8f2b": 5,
+   "eClassBaseDamageScalar": 5,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -2405,6 +2573,11 @@
     "value": "2",
     "compiled": "BgAAAAAAAEAAAAAA"
    },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
    "tFortifiedHealth": {
     "__type__": "HitpointSpecifier",
     "__typeHash__": 1185241065,
@@ -2445,7 +2618,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": -1,
+   "eClassBaseDamageScalar": -1,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -2483,7 +2656,7 @@
    "bBulletPointDescription": true,
    "bAffectsEnchantmentDescription": false,
    "unk_b1d89c5": false,
-   "arSkillTags": [
+   "arSkillTagsToAdd": [
     {
      "__type__": "SkillTagStruct",
      "__typeHash__": 4000554560,
@@ -2509,6 +2682,7 @@
      "bSearchOnly": false
     }
    ],
+   "arSkillTagsToRemove": [],
    "eModType": 1,
    "hIconNormalOverride": 0,
    "hIconMouseoverOverride": 0,
@@ -2527,7 +2701,7 @@
    "bBulletPointDescription": true,
    "bAffectsEnchantmentDescription": false,
    "unk_b1d89c5": false,
-   "arSkillTags": [
+   "arSkillTagsToAdd": [
     {
      "__type__": "SkillTagStruct",
      "__typeHash__": 4000554560,
@@ -2553,6 +2727,7 @@
      "bSearchOnly": false
     }
    ],
+   "arSkillTagsToRemove": [],
    "eModType": 2,
    "hIconNormalOverride": 0,
    "hIconMouseoverOverride": 0,
@@ -2571,7 +2746,7 @@
    "bBulletPointDescription": true,
    "bAffectsEnchantmentDescription": false,
    "unk_b1d89c5": false,
-   "arSkillTags": [
+   "arSkillTagsToAdd": [
     {
      "__type__": "SkillTagStruct",
      "__typeHash__": 4000554560,
@@ -2609,6 +2784,7 @@
      "bSearchOnly": false
     }
    ],
+   "arSkillTagsToRemove": [],
    "eModType": 3,
    "hIconNormalOverride": 0,
    "hIconMouseoverOverride": 0,
@@ -2630,6 +2806,7 @@
  },
  "flCastingEffectGroupDuration": 0.5,
  "arCastingEffectOverrides": [],
+ "arCastingEffectOverridesByVisualRemap": [],
  "arDamageRemapConditions": [],
  "arPetSpawns": [],
  "unk_143fe9f": {
@@ -2645,5 +2822,7 @@
  "unk_376802e": false,
  "unk_bf25f64": 0,
  "arRecastPowerSequence": [],
- "arProjectileOverrides": []
+ "arModifierProfiles": [],
+ "arProjectileOverrides": [],
+ "arConditionalDependencies": []
 }

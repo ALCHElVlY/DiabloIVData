@@ -12,9 +12,23 @@ const snoFileInfo = require('./json/snoFileInfo.json');
 
 process.chdir(__dirname);
 
+function isEmpty(obj) {
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      return false;
+    }
+  }
+  return true;
+};
+
+
+let dataDir = ""
+let baseDir = ""
 let toc = {};
 let tocflat = {};
 let formatHashes = {};
+let typeHashForFormatHash = {};
+let typeHashForSNOGroup = {};
 let replacedSnos = {};
 let encryptedSnos = {};
 let encryptedNames = {};
@@ -221,24 +235,61 @@ fs.readdirSync('data/base').filter(fn => fn.startsWith('EncryptedNameDict-')).fo
 
     encryptedNames[snoGroup] = encryptedNames[snoGroup] || {};
     encryptedNames[snoGroup][snoId] = name;
+    toc[snoGroup] = toc[snoGroup] || {};
+    toc[snoGroup][snoId] = name;
     tocflat[snoId] = [name, snoGroup];
   }
 
   fs.writeFileSync('json/base/EncryptedNameDict.dat.json', JSON.stringify(encryptedNames, null, ' '));
 });
 
-
-function getTypeHashFromFormatHash (dwFormatHash) {
-  for (let key of Object.keys(definitions)) {
-    if (definitions[key].dwFormatHash === dwFormatHash) {
-      return key;
-    }
+for (const [typeHash, type] of Object.entries(definitions)) {
+  if (type.dwFormatHash) {
+    typeHashForFormatHash[type.dwFormatHash] = typeHash;
+    typeHashForSNOGroup[type.snoGroup] = typeHash;
   }
-
-  return null;
 }
 
-function getType (hash) {
+// Automatically map format hashes to types
+if (isEmpty(typeHashForFormatHash)) {
+  function getDefinitionNameFromSNOGroup(snoGroup, groupName) {
+    switch (snoGroup) {
+      case 6:
+        return "AnimationDefinition";
+      case 7:
+        return "Animation2DDefinition";
+      case 46:
+        return "UIDialogDefinition";
+      case 150:
+        return "UIModalDefinition";
+      default:
+        break;
+    }
+
+    return groupName + "Definition";
+  }
+
+  for (const [snoGroup, pair] of Object.entries(snoFileInfo)) {
+    const [groupName, ext] = pair;
+    const dwFormatHash = formatHashes[snoGroup];
+    if (!dwFormatHash) {
+      continue;
+    }
+
+    const typeName = getDefinitionNameFromSNOGroup(Number(snoGroup), groupName);
+    const dwTypeHash = typeHash(typeName);
+    if (!definitions[dwTypeHash]) {
+      continue;
+    }
+    typeHashForFormatHash[dwFormatHash] = dwTypeHash;
+  }
+}
+
+function getTypeHashFromFormatHash(dwFormatHash) {
+  return typeHashForFormatHash[dwFormatHash];
+}
+
+function getType(hash) {
   return definitions[hash];
 }
 
@@ -262,8 +313,8 @@ function getType (hash) {
   return getTypeSize(type.slice(1));
 }*/
 
-function getBasicTypeAlignment (typeDef, typeHashes, inTagMap = false) {
-  switch(typeDef.hash) {
+function getBasicTypeAlignment(typeDef, typeHashes, inTagMap = false) {
+  switch (typeDef.hash) {
     case 1683664497: // DT_POLYMORPHIC_VARIABLEARRAY
     case 2450313795: // DT_STRING_FORMULA
     case 3244749660: // DT_VARIABLEARRAY
@@ -287,7 +338,7 @@ function getBasicTypeAlignment (typeDef, typeHashes, inTagMap = false) {
   }
 }
 
-function getTypeAlignment (typeHashes, inTagMap = false) {
+function getTypeAlignment(typeHashes, inTagMap = false) {
   if (!Array.isArray(typeHashes)) {
     typeHashes = [typeHashes];
   }
@@ -558,8 +609,8 @@ let basicTypes = {
               break;
             }
             if (typeIndex >= 1
-                && fieldInfo.fieldTypeHashes[0] == 322094989 // DT_BINDABLEPROPERTY
-                && fieldInfo.fieldTypeHashes[1] == 3846829457 // DT_CSTRING
+              && fieldInfo.fieldTypeHashes[0] == 322094989 // DT_BINDABLEPROPERTY
+              && fieldInfo.fieldTypeHashes[1] == 3846829457 // DT_CSTRING
             ) {
               // DT_BINDABLEPROPERTY<DT_CSTRING> does not have an entry for DT_BYTE
               break;
@@ -787,7 +838,6 @@ let basicTypes = {
     const padding = file.readBigInt64LE(offset);
     let stringOffset = file.readInt32LE(offset + 8);
     let stringSize = file.readInt32LE(offset + 12);
-
     results.readLength += 16;
 
     if (padding) {
@@ -884,24 +934,29 @@ let basicTypes = {
   "DT_BINDABLEPROPERTY": function (ret, file, typeHashes, offset, field, fieldPath, results = { readLength: 0 }) {
     //readLog.push({fieldPath: fieldPath.join('.') + ' @ ' + offset, value: ret});
 
-    // DT_CSTRING
-    const datastore = readStructure.bind(this)(file, [3846829457], offset, field, [...fieldPath, "datastore"]);
-    if (datastore) {
-      ret.datastore = datastore;
-    }
-    offset += 16;
-    results.readLength += 16;
-
-    // DT_CSTRING
-    const property = readStructure.bind(this)(file, [3846829457], offset, field, [...fieldPath, "property"]);
-    if (property) {
-      ret.property = property;
+    // DT_CSTRING DataStore; // 0x00 (0)
+    const DataStore = readStructure.bind(this)(file, [3846829457], offset, field, [...fieldPath, "DataStore"]);
+    if (DataStore) {
+      ret.DataStore = DataStore;
     }
     offset += 16;
     results.readLength += 16;
 
 
-    const unknown = file.readUInt32LE(offset);
+    // DT_CSTRING DataPath; // 0x10 (16)
+    const DataPath = readStructure.bind(this)(file, [3846829457], offset, field, [...fieldPath, "DataPath"]);
+    if (DataPath) {
+      ret.DataPath = DataPath;
+    }
+    offset += 16;
+    results.readLength += 16;
+
+
+    // DT_UINT FormatterId; // 0x20 (32)
+    const FormatterId = file.readInt32LE(offset);
+    if (FormatterId) {
+      ret.FormatterId = FormatterId;
+    }
     offset += 4;
     results.readLength += 4;
 
@@ -913,13 +968,15 @@ let basicTypes = {
       console.error('      @', offset, 'DT_BINDABLEPROPERTY[', getType(typeHashes[1]).name, ']: Unexpected value in padding1:', padding1, padding1.toString(16), 'fieldPath:', fieldPath.slice(-3).join('.'), fieldPath[0]);
     }
 
-    const flags = file.readInt32LE(offset);
-    if (flags & 0xffcd != 0) {
-    //if (flags != 2 && flags != 16 && flags != 18 && flags != 32 && flags != 34 && flags != 50) {
-      console.warn('      @', offset, 'DT_BINDABLEPROPERTY[', getType(typeHashes[1]).name, ']: Unexpected flag:', flags, 'next int:', file.readInt32LE(offset + 16), 'fieldPath:', fieldPath.slice(-3).join('.'));
-    }
+
+    // DT_UINT PropertyFlags; // 0x28 (40)
+    // const PropertyFlags = file.readInt32LE(offset);
+    // if (PropertyFlags) {
+    //   ret.PropertyFlags = PropertyFlags;
+    // }
     offset += 4;
     results.readLength += 4;
+
 
     const padding2 = file.readInt32LE(offset);
     if (padding2 != 0) {
@@ -928,6 +985,7 @@ let basicTypes = {
     }
     offset += 4;
     results.readLength += 4;
+
 
     let subresults = { readLength: 0 };
     ret.value = readStructure.bind(this)(file, typeHashes.slice(1), offset, field, [...fieldPath, "value"], subresults);
@@ -1022,47 +1080,119 @@ function readStructure(file, typeHashes, offset, field, fieldPath, results = { r
 
 let fileNames = [];
 let fileNamesGB = [];
+let fileNamesCombinedMeta = [];
 let dirNames = {};
 let success = 0;
 let total = 0;
 
 function getAllFiles(path, files) {
-    if (fs.statSync(path).isDirectory()) {
-      while (path.slice(-1) === '/') {
-        path = path.slice(0, -1);
-      }
+  if (fs.statSync(path).isDirectory()) {
+    while (path.slice(-1) === '/') {
+      path = path.slice(0, -1);
+    }
 
-      if (path.endsWith("GameBalance")) {
-        fs.readdirSync(path).forEach((file) => {
-          getAllFiles(path + '/' + file, fileNamesGB);
-        })
-      } else {
-        fs.readdirSync(path).forEach((file) => {
-          getAllFiles(path + '/' + file, files);
-        })
+    if (path.endsWith("GameBalance")) {
+      fs.readdirSync(path).forEach((file) => {
+        getAllFiles(path + '/' + file, fileNamesGB);
+      })
+    } else {
+      fs.readdirSync(path).forEach((file) => {
+        getAllFiles(path + '/' + file, files);
+      })
+    }
+  }
+  else {
+    const dirName = node_path.dirname(path)
+    dirNames[dirName] = dirName;
+    files.push(path);
+  }
+}
+
+function collectCombinedMetaFiles(snoGroup) {
+  const snoGroupName = snoGroups[snoGroup];
+  const snoGroupFilePrefix = snoGroupName + '-';
+  fs.readdirSync(baseDir).forEach((file) => {
+    if (!file.startsWith(snoGroupFilePrefix)) {
+      return;
+    }
+
+    const parts = file.slice(0, -4).split('-');
+    if (parts.length < 3 || parts.length > 4) {
+      console.warn("Unexpected meta file:", file, "The number of segments should be 3 or 4.")
+      return;
+    }
+    const language = parts[2];
+    if (!(language == 'Global' || language == 'enUS')) {
+      return;
+    }
+
+    const category = parts[1];
+
+    let dirName = dataDir + '/';
+    if (language == 'Global') {
+      dirName += 'base';
+    } else {
+      dirName += language + '_' + category;
+    }
+    dirName += '/meta/' + snoGroupName;
+
+
+    dirNames[dirName] = dirName;
+    fileNamesCombinedMeta.push(
+      {
+        "dirName": dirName,
+        "fileName": baseDir + '/' + file,
+        "snoGroup": snoGroup,
+        "snoGroupName": snoGroupName,
+        "category": category,
+        "language": language,
+      }
+    );
+  })
+}
+
+function getBaseDir(path) {
+  while (path && path != '.') {
+    while (path.slice(-1) === '/') {
+      path = path.slice(0, -1);
+    }
+
+    for (const tocLocation of ['/base/CoreTOC.dat', '/CoreTOC.dat']) {
+      filePathCoreToc = path + tocLocation;
+      if (fs.existsSync(filePathCoreToc)) {
+        baseDir = filePathCoreToc.slice(0, -12);
+        while (baseDir.slice(-1) === '/') {
+          baseDir = baseDir.slice(0, -1);
+        }
+        dataDir = node_path.dirname(baseDir);
+        return;
       }
     }
-    else {
-      const dirName = node_path.dirname(path)
-      dirNames[dirName] = dirName;
-      files.push(path);
-    }
+    path = node_path.dirname(path);
+  }
 }
 
 console.log("Collecting files...")
 for (let c = 2; c < process.argv.length; c++) {
-  const path = process.argv[c];
+  let path = process.argv[c];
   if (!fs.existsSync(path)) {
     console.error("Directory '%s' does not exist", path);
     continue;
   }
+
+  if (!dataDir) {
+    getBaseDir(path);
+  }
+
   getAllFiles(path, fileNames);
 }
-if (fileNames.length == 0 && fileNamesGB.length == 0) {
+collectCombinedMetaFiles(42); // StringList
+collectCombinedMetaFiles(44); // Texture
+if (fileNames.length == 0 && fileNamesGB.length == 0 && fileNamesCombinedMeta.length == 0) {
   console.error("No files were found in the given directories.");
   process.exit(1);
 }
-console.log("Collected", fileNames.length + fileNamesGB.length, "files in", Object.keys(dirNames).length, "directories.")
+console.log("Collected", fileNames.length + fileNamesGB.length + fileNamesCombinedMeta.length, "files in", Object.keys(dirNames).length, "directories.")
 
 dirNames = Object.values(dirNames);
 
@@ -1078,34 +1208,60 @@ dirNames.forEach(dirName => {
 
 let gbMap = {};
 
+
+function parseFileData(dwFormatHash, fileData, fileName, index) {
+  total++;
+
+  let globals = {
+    test: true,
+  };
+
+  // console.log('#' + index, fileName);
+
+  const snoID = fileData.readUInt32LE(0);
+  const typeHash = getTypeHashFromFormatHash(dwFormatHash);
+  if (typeHash == null) {
+    throw new Error("Couldn't get typeHash from formatHash: " + dwFormatHash);
+  }
+  let data = readStructure.bind(globals)(fileData, [typeHash], 0, null, [fileName]);
+
+  if (globals.references) {
+    let refs = Object.values(globals.references);
+
+    refs.forEach(snoIDTarget => {
+      incoming[snoIDTarget] = incoming[snoIDTarget] || {};
+      incoming[snoIDTarget][snoID] = snoID;
+      outgoing[snoID] = outgoing[snoID] || {};
+      outgoing[snoID][snoIDTarget] = snoIDTarget;
+    });
+  }
+
+  return data;
+}
+
 function collectGameBalanceReferences(fileName, index) {
   try {
     let file = fs.readFileSync(fileName);
+    if (file.length < 16) {
+      throw new Error('File size < 16!');
+    }
 
-    if (file.length >= 16) {
-      const header = file.subarray(0, 16);
+    const dwSignature = file.readUInt32LE(0);
+    if (dwSignature !== 0xdeadbeef) {
+      throw new Error('Invalid file signature!');
+    }
 
-      file = file.subarray(16);
+    let dwFormatHash = file.readUInt32LE(4);
+    if (dwFormatHash == 0) {
+      const snoID = file.readUInt32LE(16);
+      const snoGroup = tocflat[snoID][1];
+      dwFormatHash = formatHashes[snoGroup];
+    }
 
-      const dwSignature = header.readUInt32LE(0);
-      let dwFormatHash = header.readUInt32LE(4);
-      if (dwFormatHash == 0) {
-        const snoId = file.readUInt32LE(0);
-        const snoGroup = tocflat[snoId][1];
-        dwFormatHash = formatHashes[snoGroup];
-      }
+    const data = parseFileData(dwFormatHash, file.subarray(16), fileName, index);
 
-      if (dwSignature === 0xdeadbeef) {
-        let globals = {
-          test: true,
-        };
-
-        const data = readStructure.bind(globals)(file, [getTypeHashFromFormatHash(dwFormatHash)], 0, null, [fileName]);
-
-        if (!Object.keys(data).length) {
-          debugger;
-        }
-      }
+    if (!Object.keys(data).length) {
+      debugger;
     }
   } catch (err) {
     console.error('Error parsing #' + index, fileName);
@@ -1113,86 +1269,75 @@ function collectGameBalanceReferences(fileName, index) {
   }
 }
 
-function parseFile(fileName, index) {
+function getOutputFileName(fileName) {
   let newFileName = fileName.split('/');
-
-  //readLog = [];
 
   if (newFileName[0] === 'data') {
     newFileName[0] = 'json';
   }
 
-  newFileName = newFileName.join('/') + '.json';
+  return newFileName.join('/') + '.json';
+}
+
+function parseFile(fileName, index) {
+  if (fileName.endsWith('.dat')) {
+    return;
+  }
+
+  const newFileName = getOutputFileName(fileName);
+
+  //readLog = [];
 
   try {
-    total++;
-
     let file = fs.readFileSync(fileName);
+    if (file.length < 16) {
+      throw new Error('File size < 16!');;
+    }
 
-    if (file.length >= 16) {
-      let header = file.subarray(0, 16);
+    const dwSignature = file.readUInt32LE(0);
+    if (dwSignature !== 0xdeadbeef) {
+      throw new Error('Invalid file signature!');
+    }
+    const snoID = file.readUInt32LE(16);
 
-      file = file.subarray(16);
+    let dwFormatHash = file.readUInt32LE(4);
+    if (dwFormatHash == 0) {
+      const snoGroup = tocflat[snoID][1];
+      dwFormatHash = formatHashes[snoGroup];
+    }
 
-      let dwSignature = header.readUInt32LE(0);
-      if (dwSignature === 0xdeadbeef) {
-        const snoID = file.readUInt32LE(0);
-        let dwFormatHash = header.readUInt32LE(4);
-        if (dwFormatHash == 0) {
-          const snoGroup = tocflat[snoID][1];
-          dwFormatHash = formatHashes[snoGroup];
-        }
-        let globals = {
-          test: true,
-        };
+    const data = parseFileData(dwFormatHash, file.subarray(16), fileName, index);
 
-        //console.log('#' + index, newFileName);
-
-        let data = readStructure.bind(globals)(file, [getTypeHashFromFormatHash(dwFormatHash)], 0, null, [fileName]);
-
-        if (globals.references) {
-          let refs = Object.values(globals.references);
-
-          refs.forEach(snoIDTarget => {
-            incoming[snoIDTarget] = incoming[snoIDTarget] || {};
-            incoming[snoIDTarget][snoID] = snoID;
-            outgoing[snoID] = outgoing[snoID] || {};
-            outgoing[snoID][snoIDTarget] = snoIDTarget;
-          });
-        }
-
-        if (data.eGameBalanceType !== null && data.eGameBalanceType !== undefined) {
-          gbMap[data.eGameBalanceType] = gbMap[data.eGameBalanceType] || [];
-          if (gbMap[data.eGameBalanceType].indexOf(newFileName) < 0) {
-            gbMap[data.eGameBalanceType].push(newFileName);
-          }
-        }
-
-        let payloadName = fileName.replace(/^data\/base\/meta/g, 'base/payload');
-
-        if (!Object.keys(data).length) {
-          debugger;
-        }
-
-        if (snoPayloadMap[payloadName]) {
-          fs.writeFileSync(newFileName, JSON.stringify(Object.assign({
-            __fileName__: fileName.replace(/^data\//g, ''),
-            __snoID__: snoID,
-            __payloadOverride__: snoPayloadMap[payloadName],
-          }, data), null, ' ') + '\n');
-        }
-        else {
-          fs.writeFileSync(newFileName, JSON.stringify(Object.assign({
-            __fileName__: fileName.replace(/^data\//g, ''),
-            __snoID__: snoID,
-          }, data), null, ' ') + '\n');
-        }
-
-        success++;
+    if (data.eGameBalanceType !== null && data.eGameBalanceType !== undefined) {
+      gbMap[data.eGameBalanceType] = gbMap[data.eGameBalanceType] || [];
+      if (gbMap[data.eGameBalanceType].indexOf(newFileName) < 0) {
+        gbMap[data.eGameBalanceType].push(newFileName);
       }
     }
+
+    let payloadName = fileName.replace(/^data\/base\/meta/g, 'base/payload');
+
+    if (!Object.keys(data).length) {
+      debugger;
+    }
+
+    if (snoPayloadMap[payloadName]) {
+      fs.writeFileSync(newFileName, JSON.stringify(Object.assign({
+        __fileName__: fileName.replace(/^data\//g, ''),
+        __snoID__: snoID,
+        __payloadOverride__: snoPayloadMap[payloadName],
+      }, data), null, ' ') + '\n');
+    }
+    else {
+      fs.writeFileSync(newFileName, JSON.stringify(Object.assign({
+        __fileName__: fileName.replace(/^data\//g, ''),
+        __snoID__: snoID,
+      }, data), null, ' ') + '\n');
+    }
+
+    success++;
   } catch (err) {
-    console.error('Error parsing #' + index, newFileName);
+    console.error('Error parsing #' + index, fileName);
     console.error(err);
     fs.writeFileSync(newFileName, JSON.stringify({
       err,
@@ -1200,6 +1345,77 @@ function parseFile(fileName, index) {
   }
 
   return newFileName;
+}
+
+function parseCombinedMetaFile(fileInfo, index) {
+  try {
+    console.debug("Reading", fileInfo.fileName);
+    const file = fs.readFileSync(fileInfo.fileName);
+    if (file.length < 16) {
+      throw new Error('File size < 16!');
+    }
+    const dwSignature = file.readUInt32LE(0);
+    if (dwSignature !== 0x44CF00F5) {
+      throw new Error('Invalid file signature!');
+    }
+
+    const snoGroup = fileInfo.snoGroup;
+    const extension = snoFileInfo[snoGroup][1]
+    const dwFileCount = file.readUInt32LE(4);
+    let snoFiles = [];
+
+    for (var i = 0; i < dwFileCount; ++i) {
+      const sno = file.readInt32LE(8 + i * 8);
+      const size = file.readUInt32LE(12 + i * 8);
+      snoFiles.push({
+        "sno": sno,
+        "size": size,
+      });
+    }
+
+    const tocGroup = toc[snoGroup];
+    const formatHash = formatHashes[snoGroup];
+
+    const alignment = 8;
+    let fileDataOffset = 8 + dwFileCount * 8;
+    let idx = 0;
+    for (const snoFileInfo of snoFiles) {
+      const originalOffset = fileDataOffset;
+      const alignedOffset = (((fileDataOffset + 8 - 1) / alignment) >> 0) * alignment;
+      fileDataOffset = alignedOffset;
+      if (snoGroup == 44) {
+        fileDataOffset += 8;
+      }
+
+      const snoId = file.readInt32LE(fileDataOffset);
+      if (snoId != snoFileInfo.sno) {
+        console.debug(" Reading SNO #", idx, snoFileInfo.sno, "@ offset", fileDataOffset, "size:", snoFileInfo.size);
+        console.debug("  aligning offset", originalOffset, "to", alignedOffset, "Value:", file.readInt32LE(alignedOffset));
+        throw Error(`Invalid offset: ${fileDataOffset}. Value: ${snoId}, expected: ${snoFileInfo.sno}.`);
+      }
+
+      const fileName = fileInfo.dirName + '/' + tocGroup[snoId] + '.' + extension;
+      const data = parseFileData(formatHash, file.subarray(fileDataOffset, fileDataOffset + snoFileInfo.size), fileName, index);
+      const newFileName = getOutputFileName(fileName);
+      fs.writeFileSync(newFileName, JSON.stringify(Object.assign({
+        __fileName__: fileName.replace(/^data\//g, ''),
+        __snoID__: snoId,
+      }, data), null, ' ') + '\n');
+      ++success;
+
+
+      fileDataOffset += snoFileInfo.size;
+      ++idx;
+    }
+    console.debug(" contains", idx, "files");
+
+  } catch (err) {
+    console.error('Error parsing #' + index, fileInfo.fileName);
+    console.error(err);
+    fs.writeFileSync(newFileName, JSON.stringify({
+      err,
+    }));
+  }
 }
 
 fileNamesGB.some((fileName, index) => {
@@ -1222,6 +1438,8 @@ fileNamesGB.some((fileName, index) => {
 fileNamesGB.forEach(collectGameBalanceReferences);
 fileNamesGB.forEach(parseFile);
 fileNames.forEach(parseFile);
+fileNamesCombinedMeta.forEach(parseCombinedMetaFile);
+
 
 if (Object.values(gbMap).length) {
   fs.writeFileSync('json/eGameBalanceType.json', JSON.stringify(gbMap, null, ' '));

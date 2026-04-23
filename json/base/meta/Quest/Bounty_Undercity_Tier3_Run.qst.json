@@ -83,6 +83,8 @@
    "dwUID": 0,
    "dwFlags": 2,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -114,7 +116,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
@@ -217,6 +219,8 @@
    "dwUID": 5,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -248,7 +252,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -364,7 +368,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -474,7 +478,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -584,7 +588,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -623,6 +627,116 @@
          "__targetFileName__": "base/meta/Actor/X1_Undercity_Lacuni_Boss.acr",
          "groupName": "Actor",
          "name": "X1_Undercity_Lacuni_Boss"
+        }
+       ],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 0,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      },
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 18,
+       "dwFlags": 6,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 89,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140265,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamSelf",
+            "__typeHash__": 1210992754,
+            "dwType": 1210992754,
+            "eParamType": 11,
+            "idValue": 0
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140251,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamActor",
+            "__typeHash__": 1286645889,
+            "dwType": 1286645889,
+            "eParamType": 4,
+            "snoActor": {
+             "__raw__": 2406866,
+             "__group__": 1,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Actor/S11_Andariel_Boss_KUC.acr",
+             "groupName": "Actor",
+             "name": "S11_Andariel_Boss_KUC"
+            }
+           }
+          ]
+         }
+        ],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 3,
+       "snoWorld": null,
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [
+        {
+         "__raw__": 2406866,
+         "__group__": 1,
+         "__type__": "DT_SNO_NAME",
+         "__typeHash__": 3339108615,
+         "__targetFileName__": "base/meta/Actor/S11_Andariel_Boss_KUC.acr",
+         "groupName": "Actor",
+         "name": "S11_Andariel_Boss_KUC"
         }
        ],
        "szFontColorOverride": "",
@@ -689,6 +803,8 @@
    "dwUID": 8,
    "dwFlags": 12,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -713,7 +829,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -808,6 +924,8 @@
    "dwUID": 9,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 3,
    "arCallbackSets": [],
    "unk_4b2de13": 4294967295,
@@ -849,6 +967,8 @@
    "dwUID": 10,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 3,
    "arCallbackSets": [],
    "unk_4b2de13": 4294967295,
@@ -890,6 +1010,8 @@
    "dwUID": 11,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 3,
    "arCallbackSets": [],
    "unk_4b2de13": 4294967295,
@@ -931,6 +1053,8 @@
    "dwUID": 12,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 3,
    "arCallbackSets": [],
    "unk_4b2de13": 4294967295,
@@ -972,6 +1096,8 @@
    "dwUID": 13,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 3,
    "arCallbackSets": [],
    "unk_4b2de13": 4294967295,
@@ -1019,6 +1145,8 @@
   "arSeasons": []
  },
  "dwRestrictions": 0,
+ "unk_baaed01": false,
+ "unk_3b0b41a": null,
  "unk_9c72d73": [],
  "gbidZoneEventConfig": null,
  "unk_376dcd8": false,

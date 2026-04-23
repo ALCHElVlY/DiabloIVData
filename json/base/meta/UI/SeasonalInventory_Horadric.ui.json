@@ -799,7 +799,14 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
-      "szOnOpen": "",
+      "tOnOpen": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": -1
+      },
       "hTemplate": {
        "__type__": "UIControlHandle",
        "__typeHash__": 3063971755,
@@ -941,8 +948,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→ActivateEquipAreaVFX",
-          "szOnClose": "SeasonalInventory_UI→DeactivateEquipAreaVFX",
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 3952071906,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2969292971,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -1052,7 +1089,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {
@@ -1362,8 +1406,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→DisableIdleVFX_Catalyst",
-          "szOnClose": "SeasonalInventory_UI→ActivateIdleVFX_Catalyst"
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2679141930,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2145634119,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          }
          },
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
@@ -1412,18 +1486,31 @@
           "nHeight": 0,
           "eClipBehavior": 2,
           "eVerticalAnchoring": 2,
-          "nBottom": -10,
+          "nBottom": -12,
           "nRight": 0,
-          "nWidth": 120,
+          "nWidth": 84,
           "nLeft": 0,
-          "eHorizontalAnchoring": 3
+          "eHorizontalAnchoring": 1
          },
          "tFont": {
           "__type__": "UIControlFont",
           "__typeHash__": 1698657718,
-          "hOptionalUIControlFontFields": {}
+          "hOptionalUIControlFontFields": {
+           "snoFont": {
+            "__raw__": 1300,
+            "__group__": 19,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/Font/SansSerif.fnt",
+            "groupName": "Font",
+            "name": "SansSerif"
+           },
+           "dwFontSize": 20
+          }
          },
          "hOptionalUITextStyleFields": {
+          "bWordWrap": 0,
+          "nFontSizeFallback": 12,
           "hText": {
            "__type__": "StringLabelHandleEx",
            "__typeHash__": 721585600,
@@ -1438,7 +1525,8 @@
            },
            "szLabel": 1906240356
           },
-          "eTextJustifyVertical": 7,
+          "eTextJustifyVertical": 2,
+          "unk_ad7d5ca": 1,
           "eResizeToFit": 3,
           "eTextJustify": 2
          }
@@ -1466,7 +1554,14 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
-      "szOnOpen": "",
+      "tOnOpen": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": -1
+      },
       "hTemplate": {
        "__type__": "UIControlHandle",
        "__typeHash__": 3063971755,
@@ -1607,8 +1702,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→ActivateEquipAreaVFX",
-          "szOnClose": "SeasonalInventory_UI→DeactivateEquipAreaVFX",
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 3952071906,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2969292971,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -1718,7 +1843,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {
@@ -2028,8 +2160,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→DisableIdleVFX_Catalyst",
-          "szOnClose": "SeasonalInventory_UI→ActivateIdleVFX_Catalyst"
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2679141930,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2145634119,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          }
          },
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
@@ -2078,11 +2240,11 @@
           "nHeight": 0,
           "eClipBehavior": 2,
           "eVerticalAnchoring": 2,
-          "nBottom": -10,
+          "nBottom": -12,
           "nRight": 0,
-          "nWidth": 120,
+          "nWidth": 84,
           "nLeft": 0,
-          "eHorizontalAnchoring": 3
+          "eHorizontalAnchoring": 1
          },
          "tFont": {
           "__type__": "UIControlFont",
@@ -2090,6 +2252,8 @@
           "hOptionalUIControlFontFields": {}
          },
          "hOptionalUITextStyleFields": {
+          "bWordWrap": 0,
+          "nFontSizeFallback": 12,
           "hText": {
            "__type__": "StringLabelHandleEx",
            "__typeHash__": 721585600,
@@ -2104,7 +2268,10 @@
            },
            "szLabel": 1906240357
           },
-          "eTextJustifyVertical": 7,
+          "bShrinkToFit": 0,
+          "eTextJustifyVertical": 2,
+          "unk_a9fa0f6": 0,
+          "unk_ad7d5ca": 1,
           "eResizeToFit": 3,
           "eTextJustify": 2
          }
@@ -2132,7 +2299,14 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
-      "szOnOpen": "",
+      "tOnOpen": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": -1
+      },
       "hTemplate": {
        "__type__": "UIControlHandle",
        "__typeHash__": 3063971755,
@@ -2273,8 +2447,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→ActivateEquipAreaVFX",
-          "szOnClose": "SeasonalInventory_UI→DeactivateEquipAreaVFX",
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 3952071906,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2969292971,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -2384,7 +2588,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {
@@ -2694,8 +2905,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→DisableIdleVFX_Catalyst",
-          "szOnClose": "SeasonalInventory_UI→ActivateIdleVFX_Catalyst"
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2679141930,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2145634119,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          }
          },
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
@@ -2744,11 +2985,11 @@
           "nHeight": 0,
           "eClipBehavior": 2,
           "eVerticalAnchoring": 2,
-          "nBottom": -10,
+          "nBottom": -12,
           "nRight": 0,
-          "nWidth": 120,
+          "nWidth": 84,
           "nLeft": 0,
-          "eHorizontalAnchoring": 3
+          "eHorizontalAnchoring": 1
          },
          "tFont": {
           "__type__": "UIControlFont",
@@ -2756,6 +2997,8 @@
           "hOptionalUIControlFontFields": {}
          },
          "hOptionalUITextStyleFields": {
+          "bWordWrap": 0,
+          "nFontSizeFallback": 12,
           "hText": {
            "__type__": "StringLabelHandleEx",
            "__typeHash__": 721585600,
@@ -2770,7 +3013,7 @@
            },
            "szLabel": 1906240358
           },
-          "eTextJustifyVertical": 7,
+          "eTextJustifyVertical": 2,
           "eResizeToFit": 3,
           "eTextJustify": 2
          }
@@ -2798,7 +3041,14 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
-      "szOnOpen": "",
+      "tOnOpen": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": -1
+      },
       "hTemplate": {
        "__type__": "UIControlHandle",
        "__typeHash__": 3063971755,
@@ -2939,8 +3189,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→ActivateEquipAreaVFX",
-          "szOnClose": "SeasonalInventory_UI→DeactivateEquipAreaVFX",
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 3952071906,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2969292971,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -3050,7 +3330,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {
@@ -3360,8 +3647,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→DisableIdleVFX_Catalyst",
-          "szOnClose": "SeasonalInventory_UI→ActivateIdleVFX_Catalyst"
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2679141930,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2145634119,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          }
          },
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
@@ -3410,11 +3727,11 @@
           "nHeight": 0,
           "eClipBehavior": 2,
           "eVerticalAnchoring": 2,
-          "nBottom": -10,
+          "nBottom": -12,
           "nRight": 0,
-          "nWidth": 120,
+          "nWidth": 84,
           "nLeft": 0,
-          "eHorizontalAnchoring": 3
+          "eHorizontalAnchoring": 1
          },
          "tFont": {
           "__type__": "UIControlFont",
@@ -3422,6 +3739,8 @@
           "hOptionalUIControlFontFields": {}
          },
          "hOptionalUITextStyleFields": {
+          "bWordWrap": 0,
+          "nFontSizeFallback": 12,
           "hText": {
            "__type__": "StringLabelHandleEx",
            "__typeHash__": 721585600,
@@ -3436,7 +3755,7 @@
            },
            "szLabel": 1906240359
           },
-          "eTextJustifyVertical": 7,
+          "eTextJustifyVertical": 2,
           "eResizeToFit": 3,
           "eTextJustify": 2
          }
@@ -3464,7 +3783,14 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
-      "szOnOpen": "",
+      "tOnOpen": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": -1
+      },
       "hTemplate": {
        "__type__": "UIControlHandle",
        "__typeHash__": 3063971755,
@@ -3605,8 +3931,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→ActivateEquipAreaVFX",
-          "szOnClose": "SeasonalInventory_UI→DeactivateEquipAreaVFX",
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 3952071906,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2969292971,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -3716,7 +4072,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {
@@ -4026,8 +4389,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→DisableIdleVFX_Catalyst",
-          "szOnClose": "SeasonalInventory_UI→ActivateIdleVFX_Catalyst"
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2679141930,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2145634119,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          }
          },
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
@@ -4076,11 +4469,11 @@
           "nHeight": 0,
           "eClipBehavior": 2,
           "eVerticalAnchoring": 2,
-          "nBottom": -10,
+          "nBottom": -12,
           "nRight": 0,
-          "nWidth": 120,
+          "nWidth": 84,
           "nLeft": 0,
-          "eHorizontalAnchoring": 3
+          "eHorizontalAnchoring": 1
          },
          "tFont": {
           "__type__": "UIControlFont",
@@ -4088,6 +4481,8 @@
           "hOptionalUIControlFontFields": {}
          },
          "hOptionalUITextStyleFields": {
+          "bWordWrap": 0,
+          "nFontSizeFallback": 12,
           "hText": {
            "__type__": "StringLabelHandleEx",
            "__typeHash__": 721585600,
@@ -4102,7 +4497,7 @@
            },
            "szLabel": 2060283799
           },
-          "eTextJustifyVertical": 7,
+          "eTextJustifyVertical": 2,
           "eResizeToFit": 3,
           "eTextJustify": 2
          }
@@ -4130,7 +4525,14 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
-      "szOnOpen": "",
+      "tOnOpen": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": -1
+      },
       "hTemplate": {
        "__type__": "UIControlHandle",
        "__typeHash__": 3063971755,
@@ -4271,8 +4673,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→ActivateEquipAreaVFX",
-          "szOnClose": "SeasonalInventory_UI→DeactivateEquipAreaVFX",
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 3952071906,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2969292971,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -4382,7 +4814,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {
@@ -4692,8 +5131,38 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnOpen": "SeasonalInventory_UI→DisableIdleVFX_Catalyst",
-          "szOnClose": "SeasonalInventory_UI→ActivateIdleVFX_Catalyst"
+          "tOnOpen": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2679141930,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          },
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 2145634119,
+           "behaviorContainerSno": {
+            "__raw__": 2318445,
+            "__group__": 166,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/BehaviorContainer/SeasonalInventory_UI.bvr",
+            "groupName": "BehaviorContainer",
+            "name": "SeasonalInventory_UI"
+           },
+           "enumVal": -1
+          }
          },
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
@@ -4742,11 +5211,11 @@
           "nHeight": 0,
           "eClipBehavior": 2,
           "eVerticalAnchoring": 2,
-          "nBottom": -10,
+          "nBottom": -12,
           "nRight": 0,
-          "nWidth": 120,
+          "nWidth": 84,
           "nLeft": 0,
-          "eHorizontalAnchoring": 3
+          "eHorizontalAnchoring": 1
          },
          "tFont": {
           "__type__": "UIControlFont",
@@ -4754,6 +5223,8 @@
           "hOptionalUIControlFontFields": {}
          },
          "hOptionalUITextStyleFields": {
+          "bWordWrap": 0,
+          "nFontSizeFallback": 12,
           "hText": {
            "__type__": "StringLabelHandleEx",
            "__typeHash__": 721585600,
@@ -4768,7 +5239,7 @@
            },
            "szLabel": 4189410299
           },
-          "eTextJustifyVertical": 7,
+          "eTextJustifyVertical": 2,
           "eResizeToFit": 3,
           "eTextJustify": 2
          }
@@ -4943,7 +5414,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -5057,7 +5535,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {
@@ -5553,7 +6038,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -5663,7 +6155,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
-          "szOnClose": "",
+          "tOnClose": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": -1
+          },
           "bActive": 0
          },
          "tConsoleInput": {

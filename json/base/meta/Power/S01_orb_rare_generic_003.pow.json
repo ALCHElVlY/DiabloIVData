@@ -67,7 +67,7 @@
  "unk_4bf03ff": true,
  "tAttackSpeed": {
   "value": "Attacks_Per_Second_Total",
-  "compiled": "BQAAAAAAAADUAAAA/v///wAAAAAAAAAA"
+  "compiled": "BQAAAAAAAADeAAAA/v///wAAAAAAAAAA"
  },
  "unk_6deb090": false,
  "unk_ed2bdad": false,
@@ -75,6 +75,7 @@
  "unk_7a86b64": true,
  "eDamageType": 0,
  "unk_752edeb": false,
+ "unk_c41a01d": false,
  "tCombatEffectChance": {
   "value": "0",
   "compiled": "BgAAAAAAAAAAAAAA"
@@ -547,23 +548,19 @@
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -606,7 +603,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -659,7 +657,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#s01_orb_rare_generic_003 / 100",
-    "compiled": "BQAAAAAAAABmBAAAnZsWAAAAAAAGAAAAAADIQg4AAAAAAAAA"
+    "compiled": "BQAAAAAAAACFBAAAnZsWAAAAAAAGAAAAAADIQg4AAAAAAAAA"
    }
   },
   {
@@ -667,7 +665,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_2#s01_orb_rare_generic_003 / 100",
-    "compiled": "BQAAAAAAAABnBAAAnZsWAAAAAAAGAAAAAADIQg4AAAAAAAAA"
+    "compiled": "BQAAAAAAAACGBAAAnZsWAAAAAAAGAAAAAADIQg4AAAAAAAAA"
    }
   }
  ],
@@ -687,6 +685,7 @@
  },
  "flCastingEffectGroupDuration": 0.5,
  "arCastingEffectOverrides": [],
+ "arCastingEffectOverridesByVisualRemap": [],
  "arDamageRemapConditions": [],
  "arPetSpawns": [],
  "unk_143fe9f": {
@@ -702,5 +701,7 @@
  "unk_376802e": false,
  "unk_bf25f64": 0,
  "arRecastPowerSequence": [],
- "arProjectileOverrides": []
+ "arModifierProfiles": [],
+ "arProjectileOverrides": [],
+ "arConditionalDependencies": []
 }

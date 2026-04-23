@@ -124,6 +124,7 @@ AdvancedNodeContent
 AffixDefinition
 AffixMessage
 AffixSortGroup
+AffixSubstitutePair
 AfterCreditsScenes
 AimTargetMessage
 AllLogicSubcondition
@@ -198,6 +199,7 @@ AssignTechniqueSlotMessage
 AtLeastLogicSubcondition
 AttachActorToActorMessage
 AttachCarryableToPlayerMessage
+AttribKeyUserData
 AttributeFormulaEntry
 AttributeFormulaEntry_Table
 AttributeFormulaRange
@@ -227,8 +229,10 @@ BehaviorContainerConstructorBehaviorNode
 BehaviorContainerDefinition
 BehaviorContainerDestructorBehaviorNode
 BehaviorContainerEvent
+BehaviorCustomArg
 BehaviorEventArg
 BehaviorFunction
+BehaviorFunctionVarCollection
 BehaviorGraph
 BehaviorMessage
 BehaviorMessageDispatcherBehaviorNode
@@ -247,6 +251,7 @@ BehaviorUserDataBool
 BehaviorUserDataColor
 BehaviorUserDataDataPath
 BehaviorUserDataDataStore
+BehaviorUserDataDataStoreEntry
 BehaviorUserDataFloat
 BehaviorUserDataInt
 BehaviorUserDataQuat
@@ -298,6 +303,7 @@ BoostCheatEntry
 BoostDefinition
 BossDoorGizmoData
 BossDoorInstanceData
+BossEncounterRemoveMessage
 BossEncounterSettings
 BossEncounterStateMessage
 BountyData
@@ -314,6 +320,8 @@ BroadcastTextMessage
 BuffCallbackBase
 BuffExclusiveType
 BuffExclusiveType_Table
+BuffPreset
+BuffPreset_Table
 BuffStackCountSubcondition
 BuffSubcondition
 ButtonBinding
@@ -338,6 +346,7 @@ CapsuleProximityData
 CardArt
 CarryableGizmoData
 CarryableReceptacleGizmoData
+CategoryIndicatorParameters
 CeilingBehaviorNode
 ChairGizmoData
 ChallengeCategory
@@ -374,6 +383,7 @@ ClassPassiveSkillSaveData
 ClassPassiveSkillSlotData
 ClassPassiveSkillTypeSaveData
 ClassSpecificGenericTreeData
+CleanupUIRActorBehaviorNode
 ClearInputFocusBehaviorNode
 ClientArgs
 ClientDebugLogMessage
@@ -403,6 +413,7 @@ CollectiblePowerEquipSlotSoundOverride
 CollectiblePowerItemTypeDescription
 CollectiblePowerModified
 CollectiblePowerNode
+CollectiblePowerNotif
 CollectiblePowerRankUnlock
 CollectiblePowerSetExperienceMessage
 CollectiblePowerSlot
@@ -442,6 +453,7 @@ ConditionalAudioStateSetter
 ConditionalMaterialOverride
 ConditionalSkillTag
 ConditionalTemperLimit
+ConditionedReputationScalar
 ConfirmDungeonKeyUseMessage
 ConnectionEstablishedMessage
 ConnectorProperties
@@ -506,6 +518,7 @@ CurrencyPrice
 CurrentLevelAreaSubcondition
 CurrentWorldSubcondition
 CurrentZoneSubcondition
+CustomBehaviorMessage
 CustomBuffCallback
 CustomClientArgs
 CustomClientEvent
@@ -609,6 +622,7 @@ DamageSourceNameContext
 DamageTakenBuffCallback
 DataAttribute
 DataAttribute_Table
+DataBindingsFormatter
 DataBoolSelectorFixedBehaviorNode
 DataIDDataMessage
 DataSelectorFixedBehaviorNode
@@ -654,6 +668,7 @@ DeathMaterialTemplate
 DeathPowerRemap
 DeathPowerType
 DeathTemplate
+DebugActivateKeyedDungeon
 DebugActorTooltipMessage
 DebugDataBlockMessage
 DebugDataFinishedMessage
@@ -685,6 +700,15 @@ DemonScrollRewardChoicePickedMessage
 DemonSummoningQuestBucket
 DemonSummoningQuestBucket_Table
 DemonSummoningRitualQuests
+DesignerModalNotificationMessage
+DesignerNotificationButtonPressMessage
+DesignerNotificationControl
+DesignerNotificationControlData
+DesignerNotificationShowMessage
+DesignerTelemetryMessageParams
+DesignerTelemetryMessageParams_Table
+DesignerTelemetryMessageTypes
+DesignerTelemetryMessageTypes_Table
 DesignerVariable
 DesignerVariableChanged
 DesignerVariablePayload
@@ -701,6 +725,7 @@ DestroyOnProximityGizmoData
 DestroySceneMessage
 DestroyableObjectGizmoData
 DetachCarryableFromPlayerMessage
+DeviceRecoveryMessage
 DifficultyTierEntry
 DifficultyTierEntry_Table
 DifficultyTierSubcondition
@@ -723,14 +748,17 @@ DungeonAffixRange
 DungeonAffixSubcondition
 DungeonArchetypeData
 DungeonArchetypeData_Table
+DungeonButtonConditionData
 DungeonFlavorData
 DungeonFlavorData_Table
+DungeonFloorSubcondition
 DungeonKeyBlockedMessage
 DungeonList
 DungeonSigilTierSubcondition
 DungeonSpawningPoolEntry
 DungeonSpawningPoolEntry_Table
 DungeonStateSubcondition
+DungeonStates
 DungeonStatesEntry
 DungeonStatesEntry_Table
 DungeonTuningEffect
@@ -798,6 +826,7 @@ EnterKnownLookOverrides
 EnterKnownShaderMapOverrides
 EnterWorldMessage
 EnterWorldPlayer
+EntranceIcon
 EntryBehaviorNode
 Environment
 EqualsBehaviorNode
@@ -805,6 +834,7 @@ EquippedCollectiblePower
 ErrorWithContextMessage
 EssencePowerTierEntry
 EssencePowerTierEntry_Table
+EternalSubcondition
 EventCallbackSubcondition
 EventCurrencyData
 EventHandlerBehaviorNode
@@ -815,6 +845,7 @@ ExecutionFlowBehaviorNode
 ExecutionSignalBehaviorNode
 ExecutionTerminusBehaviorNode
 ExpansionBundles
+ExpansionIndicatorParameters
 ExpansionInfo
 ExpansionModalData
 ExperienceLevel
@@ -839,6 +870,8 @@ FavorLevel_Table
 FavorSeason
 FavorSeason_Table
 FinishedGameSetupMessage
+FireCustomGlobalEventBehaviorNode
+FireGlobalEventBehaviorNode
 FlagLookup
 FlagSetDefinition
 FlippyConfiguration
@@ -869,6 +902,7 @@ ForcedArmorPactCount
 ForcedPrefetchData
 ForcedPrefetchEntry
 FrameAnim
+FreeIndicatorParameters
 FreezeDirectionMessage
 FrontEndTooltipBullet
 FunctionBehaviorNode
@@ -939,18 +973,24 @@ GemTypeSubcondition
 GenderSpecificImages
 GeneratorToItemMessage
 GeneratorToItemResponseMessage
+GenericBehaviorMessage
 GenericBlobMessage
 GenericBlobRequestMessage
 GenericBlobResponseMessage
 GenericConstantNode
 GenericConversionNode
 GenericEventHandlerBehaviorNode
+GenericGraphAnnotation
 GenericGraphContainer
 GenericGraphItem
 GenericGraphNode
+GenericGraphNodeContent
 GenericGraphNodeContentBase
 GenericGraphNodePlug
+GenericGraphPlugContent
 GenericGraphPlugContentBase
+GenericGraphStickyNodeContent
+GenericMessageHandlerBehaviorNode
 GenericNodeConnection
 GenericNodeGraph
 GenericNodeGraphDefinition
@@ -964,6 +1004,7 @@ GenericSkillTreeNodeMessage
 GenericSkillTreeSaveData
 GenericTreeNode
 GenericTreeNodeConnection
+GenericUIAction
 GenericVariableGetterBehaviorNode
 GenericVariableSetterBehaviorNode
 GeoChunk
@@ -975,6 +1016,7 @@ GetColorPropertiesBehaviorNode
 GetControlEnabledBehaviorNode
 GetControlIsActiveBehaviorNode
 GetCurrentStoryboardTimeBehaviorNode
+GetDataStoreEntryValueBehaviorNode
 GetDataStoreValueBehaviorNode
 GetFocusPropertiesBehaviorNode
 GetImagePropertiesBehaviorNode
@@ -983,11 +1025,13 @@ GetInventoryLocationMessage
 GetInventoryLocationResponseMessage
 GetListBoxItemBehaviorNode
 GetLocalVariableBehaviorNode
+GetObjectBindingBehaviorNode
 GetParentControlBehaviorNode
 GetRadioButtonSelectionBehaviorNode
 GetTextControlPropertiesBehaviorNode
 GetTextStylePropertiesBehaviorNode
 GetTotalStoryboardDurationBehaviorNode
+GetUsingControllerBehaviorNode
 GetVariableBehaviorNode
 GetWindowLayoutPropertiesBehaviorNode
 GizmoConditionData
@@ -997,6 +1041,7 @@ GlobalAVData
 GlobalAchievementHierarchy
 GlobalAffixData
 GlobalBase
+GlobalBehaviorsEventsData
 GlobalBountyData
 GlobalChallengerRift
 GlobalCharacterPresets
@@ -1020,6 +1065,7 @@ GlobalGenericSkillTreeData
 GlobalHealerEvents
 GlobalHealthPotionData
 GlobalIntensityLevels
+GlobalItemMigrationData
 GlobalMarkerActor
 GlobalMarkerActorData
 GlobalMarkerActorHiddenCacheData
@@ -1051,6 +1097,8 @@ GlobalWorldMarkerPingData
 GlobalZoneProgressData
 GlyphChanceUpgradeEntry
 GoToWaypointMessage
+GrantedClassInfo
+GreaterAffixSpecifier
 GreaterOrEqualsBehaviorNode
 GreaterThanBehaviorNode
 GroundNormalTests
@@ -1065,6 +1113,7 @@ HairColors
 HairStateGenderOverrides
 HairStyleChoice
 HairStyleDefinition
+HardcoreSubcondition
 Hardpoint
 HardpointInfo
 HardpointLink
@@ -1073,6 +1122,7 @@ HardpointOffset
 HardpointOffsets
 HasParentControlBehaviorNode
 HdrSettings
+HeadComponentCompatibility
 HeadstoneGizmoData
 HealthPotionData
 HearthPortalInfoMessage
@@ -1089,6 +1139,7 @@ HeroPreset
 HeroStateData
 HeroStateHiddenCachesMessage
 HeroStateMessage
+HeroStatePOIsUnlockedMessage
 HeroStateRewardsMessage
 HeroStateWaypointsActivatedMessage
 HeroStatusDataMessage
@@ -1116,6 +1167,7 @@ IKLeg
 IKLegBoneChain
 IKRopeTraversal
 IKWindow
+IQMSpecifier
 IRect2D
 IconAnchorPoint
 IconAnchorPointOptionalFieldMapDefaults
@@ -1130,6 +1182,7 @@ ImprintAffixResultMessage
 ImprintRecipe
 IncludePath
 IndexedTriangle
+IndicatorDefinition
 IndicatorGroup
 IndicatorIdString
 IndicatorInfo
@@ -1175,6 +1228,8 @@ ItemAffixAttribute
 ItemCountSubcondition
 ItemDefinition
 ItemDungeonKeyDataMessage
+ItemFamily
+ItemFamily_Table
 ItemIconPreloadHelper
 ItemImageHandleReference
 ItemLabelGroups
@@ -1214,19 +1269,23 @@ JumpToEndStoryboardBehaviorNode
 JumpToTimeStoryboardBehaviorNode
 KeyedDungeonDataMessage
 KeyedDungeonIsActiveSubcondition
+KeyedDungeonPopulationData
 KeyedDungeonTierEntry
 KeyedDungeonTierEntry_Table
 KeyedDungeonTierSubcondition
 KeyedDungeonTypeSubcondition
 KeyedDungeonTypes
 KeyedDungeonTypes_Table
+KeyedDungeonWorldData
 KillCountMessage
+KillStreakData
 KnownListUpdateQuestACDObjectives
 LabelEntry
 LabelGBID
 LabelGBID_Table
 LabelRule
 LabelRuleSet
+LabeledMarkerSetPreloadHelper
 LargeBiomeObject
 LastClientError
 LayerData
@@ -1235,6 +1294,7 @@ LayerVertexAO
 LeaderboardPlatform
 LeaderboardRule
 LearnedLore
+LegComponentCompatibility
 LessOrEqualsBehaviorNode
 LessThanBehaviorNode
 LevelAreaDefinition
@@ -1369,6 +1429,8 @@ MarkerPortalDestGizmoData
 MarkerPortalGizmoData
 MarkerPrefabData
 MarkerRecipeEventGizmoData
+MarkerReference
+MarkerReferenceSnapshot
 MarkerReflectionProbeData
 MarkerSavePointGizmoData
 MarkerServerData
@@ -1385,6 +1447,7 @@ MarkingColorChoice
 MarkingColorDefinition
 MarkingShapeChoice
 MarkingShapeDefinition
+MasterworkData
 MasterworkItemMessage
 MasterworkRankData
 MatchmakingRating
@@ -1435,6 +1498,8 @@ ModifiersOptionalFieldMapDefaults
 ModifyCurrencyMessage
 ModuloBehaviorNode
 MonsterACDInfo
+MonsterAffixCategory
+MonsterAffixCategory_Table
 MonsterAffixDefinition
 MonsterAwarenessInfo
 MonsterDamageStateThresholds
@@ -1458,12 +1523,16 @@ MountACDInfo
 MountClearMessage
 MountHardpointOffsets
 MountLoadingScreen
+MountParams
+MountParams_Table
 MountPreset
 MountProfile
 MountProfileDefinition
 MountSelectMessage
 MountSetMessage
 MountTypeFootstep
+MovableGenericGraphItem
+MovableGenericGraphItemWrapper
 MovieDefinition
 MsgTriggeredEvent
 MultiplyBehaviorNode
@@ -1548,6 +1617,7 @@ OnAttackBuffCallback
 OnBerserkAppliedCallback
 OnBerserkRemovedCallback
 OnBlockBuffCallback
+OnChangeLevelAreaBuffCallback
 OnContactFramePowerCallback
 OnCooldownStartCallback
 OnCreatePowerCallback
@@ -1574,6 +1644,7 @@ OnHitSounds
 OnHitWithCCBuffCallback
 OnInitializeAttackBuffCallback
 OnInitializeDamageBuffCallback
+OnInitializeDamageBuffTakenCallback
 OnInterruptPowerCallback
 OnItemPickupBuffCallback
 OnKillBuffCallback
@@ -1590,6 +1661,8 @@ OnPetDeathBuffCallback
 OnPhaseContactFramePowerCallback
 OnPhaseEnteredPowerCallback
 OnPhaseExitedPowerCallback
+OnPlayerKillStreakEndedCallback
+OnPlayerKillStreakStartedCallback
 OnPowerStoppedChannelingCallback
 OnProjectileCreateBuffCallback
 OnProjectileImpactBuffCallback
@@ -1638,6 +1711,8 @@ PVPShrineEventParticipatingMessage
 PVPShrineEventStartingMessage
 PVPShrineEventUpdateMessage
 PaintedSceneGrid
+PaladinOathData
+PaladinSelectOathMessage
 ParagonBoardDefinition
 ParagonEquipBoardMessage
 ParagonGlyphAffixAttribute
@@ -1684,6 +1759,7 @@ PassivePowerContainerDefinition
 PathLink
 PathModifier
 PayloadOnHitMessage
+PerRarityCategoryData
 PeriodicBehaviorNode
 PeriodicBuffCallback
 PersistentEventUpdateMessage
@@ -1693,6 +1769,7 @@ PetDetachMessage
 PetMessage
 PetType
 PetType_Table
+PhaseJumpAIEntryInterrupted
 PhaseJumpAnimEnd
 PhaseJumpBase
 PhaseJumpDestinationReached
@@ -1712,6 +1789,7 @@ PlatformAccountHandle
 PlayAnimationMessage
 PlayAnimationMessageSpec
 PlayConvLineMessage
+PlayConversationSoundMessage
 PlayCutsceneMessage
 PlayEffectMessage
 PlayErrorSoundMessage
@@ -1725,6 +1803,7 @@ PlayMusicOverlayMessage
 PlayNonPositionalSoundMessage
 PlayPlayerMountSoundMessage
 PlaySoundBehaviorNode
+PlayStoryboardMessage
 PlayerACDInfo
 PlayerActorSetInitialMessage
 PlayerAltLevelMessage
@@ -1737,6 +1816,7 @@ PlayerClassDefinition
 PlayerClassDruidData
 PlayerClassIsInGameSubcondition
 PlayerClassNecroData
+PlayerClassPaladinData
 PlayerClassResourceData
 PlayerClassRogueData
 PlayerClassSorcererData
@@ -1758,6 +1838,8 @@ PlayerFoleyOverridePreloadHelper
 PlayerFootstepTableEntry
 PlayerForceShapeshiftMessage
 PlayerGenderSubcondition
+PlayerHasBaseGameEntitlementSubcondition
+PlayerHasClaimableSeasonAbilityPointSubcondition
 PlayerHasCollectiblePowerEquippedInSlotSubcondition
 PlayerHasContentLicenseSubcondition
 PlayerHasEarnedAchievementSubcondition
@@ -1802,6 +1884,7 @@ PlayerQuestRewardHistoryUpdateMessage
 PlayerSavedData
 PlayerSavedDataMessage
 PlayerSealMessage
+PlayerSeasonalRankingSubcondition
 PlayerSetCameraDefaultsMessage
 PlayerSkillModPointsSubcondition
 PlayerSkillRankSubcondition
@@ -1821,6 +1904,7 @@ PlayerWarpedMessage
 PlayerWeaponExpertiseLevelMessage
 PlayerWorldTierEligibilityMessage
 PlayerWorldTierSubcondition
+PluggableGenericGraphItem
 PolymorphicBase
 PolytopeData
 PopGroupHandle
@@ -1841,10 +1925,12 @@ PowerBuffCrowdControl
 PowerBuffDOTDamage
 PowerBuffDefinition
 PowerBuffIdentifier
+PowerBuffReference
 PowerBuffSaveAttribute
 PowerCallbackBase
 PowerCameraFocusOverride
 PowerCastingEffectOverride
+PowerCastingEffectOverrideByVisualRemap
 PowerConditionAILocalVariableEqualTo
 PowerConditionAILocalVariableLessThan
 PowerConditionBase
@@ -1854,6 +1940,8 @@ PowerConditionCanOverpower
 PowerConditionDamageDeliveryMechanism
 PowerConditionDamageHasFortified
 PowerConditionDamageHasVulnerable
+PowerConditionDamageHasWeakened
+PowerConditionDamageInstanceSetToIgnoreDamageBonuses
 PowerConditionDamageIsCrit
 PowerConditionDamageIsCrushingBlow
 PowerConditionDamageIsDot
@@ -1866,10 +1954,12 @@ PowerConditionDungeonTier
 PowerConditionHasActorTarget
 PowerConditionHasAffixEquipped
 PowerConditionHasBuff
+PowerConditionHasCooldownOrCharges
 PowerConditionHasDOTToCurrentHealthRatioCompare
 PowerConditionHasDamage
 PowerConditionHasDamageShield
 PowerConditionHasDot
+PowerConditionHasEquippedPowerOnCooldown
 PowerConditionHasExposedWeakness
 PowerConditionHasFortifiedHealth
 PowerConditionHasHealth
@@ -1884,6 +1974,7 @@ PowerConditionHasSkillTagEquipped
 PowerConditionHasVulnerableHealth
 PowerConditionIsActorAlive
 PowerConditionIsActorBerserk
+PowerConditionIsActorType
 PowerConditionIsActorUnstoppable
 PowerConditionIsActorValid
 PowerConditionIsAutoCast
@@ -1897,10 +1988,12 @@ PowerConditionIsHealthy
 PowerConditionIsHidden
 PowerConditionIsInActorGroup
 PowerConditionIsInCombat
+PowerConditionIsInTown
 PowerConditionIsInjured
 PowerConditionIsMonsterFamilyArchetype
 PowerConditionIsMonsterRarity
 PowerConditionIsPet
+PowerConditionIsPlayer
 PowerConditionIsPlayerActiveSkill
 PowerConditionIsPower
 PowerConditionIsPowerOwner
@@ -1914,16 +2007,21 @@ PowerConditionIsTormentTier
 PowerConditionIsTrackedActor
 PowerConditionIsValidForWeaponExpertise
 PowerConditionIsVulnerable
+PowerConditionIsWeakened
 PowerConditionIsWieldingWeaponAffix
 PowerConditionIsWreckableObject
+PowerConditionKillStreakKillCountEquals
+PowerConditionKillStreakKillCountMultipleOf
 PowerConditionOnChance
 PowerConditionParagonGlyphAffixIsActive
 PowerConditionParagonNodeIsPurchased
 PowerConditionPetCountCompare
 PowerConditionPlayerAssignedSkill
+PowerConditionPowerChargeCountCompare
 PowerConditionScriptFormulaCompare
 PowerConditionSkillRankCompare
 PowerConditionStoredValueEquals
+PowerConditionalDependency
 PowerCoreStatBenefitEntry
 PowerCrowdControlInfo
 PowerDefinition
@@ -1935,6 +2033,9 @@ PowerICDDefinition
 PowerLimitedActorType
 PowerLimitedActorType_Table
 PowerMod
+PowerModifierDefinition
+PowerModifierDefinitionOptionalFieldMapDefaults
+PowerModifierProfile
 PowerOverride
 PowerPayloadBuffApplicationData
 PowerPayloadDefinition
@@ -1945,6 +2046,7 @@ PowerPhaseInitialization
 PowerPhaseLoop
 PowerPhaseOneShot
 PowerPhasePreplay
+PowerPreloadHelper
 PowerProjectileOverride
 PowerQueryConditionBase
 PowerRecastDefinition
@@ -2020,6 +2122,7 @@ QuestItemRemovalData
 QuestKillAllMonstersUpdatedMessage
 QuestObjectiveSet
 QuestObjectiveSetLink
+QuestObjectiveVFXUpdatedMessage
 QuestPartyWideCallbackSubcondition
 QuestPartyWideSubcondition
 QuestPhase
@@ -2056,6 +2159,7 @@ RandomAffixChoice
 RandomAmbientSoundParams
 RandomItemUnluckyBonuses
 RandomNumberGenerator
+RankBasedAppearance
 RareItemName
 RareItemNameMessage
 RareMonsterNamesEntry
@@ -2084,6 +2188,11 @@ ReputationAvailability
 ReputationBonusObjective
 ReputationClaimRewardMessage
 ReputationDefinition
+ReputationGainMonsterActor
+ReputationGainMonsterFamily
+ReputationGainMonsterRarity
+ReputationGainMonsterTag
+ReputationGainQuest
 ReputationGainedMessage
 ReputationIncrementMessage
 ReputationItemReward
@@ -2102,6 +2211,7 @@ RequiredMessageHeader
 RequiredRequestMessageHeader
 RequiredResponseMessageHeader
 RequirementsToBeActive
+ResetAndStartStoryboardBehaviorNode
 ResetStoryboardBehaviorNode
 ResolvedPortalDestination
 ResourceTrainingTreeNode
@@ -2150,6 +2260,8 @@ SNOPreloadListData_Table
 SalvageResultItem
 SalvageResultsMessage
 SalvagedItemLabelSubcondition
+SanctifyActionChoice
+SanctifyItemResultMessage
 SavePointPortalGizmoData
 SavedCameraState
 SavedCameraStates
@@ -2162,6 +2274,7 @@ SavedWorldCameraState
 ScalarFunctionFormula
 ScaleCurve
 ScaleKey
+SceneAppearancePreloadHelper
 SceneChunk
 SceneClientSubzoneMarkerSetPreloadHelper
 SceneCommonSpecAudioVisual
@@ -2243,13 +2356,21 @@ SearchPreset
 SeasonDefinition
 SeasonDifficultyDescription
 SeasonJourneyBlessingData
+SeasonLeaderboardActivity
+SeasonLeaderboardActivityTrackedData
+SeasonLeaderboardActivity_Table
 SeasonSubcondition
 SeasonWorldTierData
 SeasonalDungeonState
 SeasonalInventoryTab
 SeasonalItemTooltip
 SeasonalItemTooltipSection
+SeasonalLaurels
+SeasonalLaurels_Table
 SeasonalPostCampaignCompleteSubcondition
+SeasonalRanks
+SeasonalRanks_Table
+SeasonalSubcondition
 SelectNextRadioButtonBehaviorNode
 SelectPreviousRadioButtonBehaviorNode
 SerialDataInfo
@@ -2265,6 +2386,7 @@ SetButtonImagesBehaviorNode
 SetColorPropertiesBehaviorNode
 SetControlActiveBehaviorNode
 SetControlEnabledBehaviorNode
+SetDataStoreEntryValueBehaviorNode
 SetDataStoreValueBehaviorNode
 SetDynamicDistanceCleansingRitualMessage
 SetFocusPropertiesBehaviorNode
@@ -2274,6 +2396,7 @@ SetImagePropertiesBehaviorNode
 SetInputFocusBehaviorNode
 SetItemBonusDefinition
 SetLocalVariableBehaviorNode
+SetObjectBindingBehaviorNode
 SetRadioButtonSelectionBehaviorNode
 SetTetherInfoForPlayerMessage
 SetTextBehaviorNode
@@ -2332,6 +2455,8 @@ SkillTreeReward
 SkillTreeReward_Table
 SkillTreeSkillRankMod
 SkuInfo
+SkuInfoOptionalFieldMapDefaults
+SkuUIVariations
 SkyColorSettings
 SkyColorSettingsOptionalFieldMapDefaults
 SkyProfile
@@ -2359,6 +2484,7 @@ SpeakerActorOverride
 SpeakerDefinition
 SpecialProductInfo
 SpecialProductInfoPageData
+SpecialProductInfoPageDataCollection
 SpeedTree8BranchWindLevel
 SpeedTree8RippleGroup
 SpeedTree9BranchWindLevel
@@ -2465,6 +2591,7 @@ SubObjectSegment
 Subcondition
 SubtractBehaviorNode
 SubzoneDefinition
+SubzoneModifierConditionedWeatherOverride
 SubzoneModifierStateMessage
 SubzoneModifierTagsEntry
 SubzoneModifierTagsEntry_Table
@@ -2486,6 +2613,8 @@ SurveyTypeEntry_Table
 SwitchBehaviorGizmoData
 SwitchGizmoData
 SyncIdleAnimationMessage
+SyncPowerModifierData
+SyncPowerModifiersMessage
 SyncedRunewordData
 TGCoeffs
 TalentRankAssignedMessage
@@ -2512,11 +2641,13 @@ TexFrame
 TextureContent
 TextureDefinition
 TextureOverride
+TileImageVariation
 TiledStyleDefinition
 TiledStyleDefinitionOptionalFieldMapDefaults
 TiledWindowPieces
 TimeSinceEventSubcondition
 TimedSpawningData
+TorsoComponentCompatibility
 TownPortalBindLocationMessage
 TownPortalCosmetic
 TownPortalCosmeticDefinition
@@ -2536,6 +2667,7 @@ TranslationCurve
 TranslationKey
 Transmog
 TransmogEnableMessage
+TransmogMountSlotMessage
 TransmogMultipleSlotsMessage
 TransmogSaveSnapshotMessage
 TransmogSlot
@@ -2580,6 +2712,7 @@ TriggerEventChangeLookDuration
 TriggerEventChangePhysicsParameters
 TriggerEventChangeShaderMapOverride
 TriggerEventChangeShaderMapOverrideDuration
+TriggerEventConstantFlash
 TriggerEventCutsceneUIKeyFrame
 TriggerEventDeleteAllObjects
 TriggerEventDeleteObject
@@ -2677,6 +2810,7 @@ TutorialDefinition
 TutorialScreen
 TypedPlugContent
 UIActionArgs
+UIActionMessage
 UIActionMessageHandlerBehaviorNode
 UIActorProgressBarStyle
 UIActorProgressBarStyleOptionalFieldMapDefaults
@@ -2721,6 +2855,14 @@ UIControlTemplate
 UICutsceneStyle
 UIDateTimeSettings
 UIDateTimeStyle
+UIDefaultAction
+UIDesignerNotificationDataInitializerType
+UIDesignerNotificationDataInitializerType_Table
+UIDesignerNotificationDefinition
+UIDesignerNotificationReference
+UIDesignerNotificationReference_Table
+UIDesignerNotificationTemplate
+UIDesignerNotificationTemplate_Table
 UIDialogDefinition
 UIDownloadImageStyle
 UIDrawHookStyle
@@ -2740,6 +2882,7 @@ UIHotkeyStyle
 UIHotkeyStyleOptionalFieldMapDefaults
 UIIDArg
 UIImageHandleReference
+UIIndicatorStyle
 UIItemButtonStyle
 UIItemButtonStyleOptionalFieldMapDefaults
 UIItemTagStyle
@@ -2800,7 +2943,9 @@ UITreeFolderStyleOptionalFieldMapDefaults
 UITreeStyle
 UITreeStyleOptionalFieldMapDefaults
 UITutorialStyle
+UIUpdateAction
 UIUpdateArgs
+UIUpdateMessage
 UIUpdateMessageHandlerBehaviorNode
 UIWindowStyle
 UIWindowStyleOptionalFieldMapDefaults
@@ -2820,6 +2965,22 @@ UpsellInfo
 UserCustomClientEvent
 ValidComponent
 ValidComponents
+VariantContainer
+VariantDataBase
+VariantDataFloat
+VariantDataFloatRange
+VariantDataFloatWithRange
+VariantDataInput
+VariantDataInt
+VariantDataIntRange
+VariantDataIntWithRange
+VariantDataOutput
+VariantDataString
+VariantInputData
+VariantMarkerInputData
+VariantMarkerOutputData
+VariantOutputData
+VariantSnoInputData
 VectorFieldDefinition
 VectorPath
 VendorDefinition
@@ -2891,11 +3052,13 @@ WorldTierSubcondition
 WorldTierUnlockedMessage
 WorldToDPOQuestList
 WwiseAudioBus
+WwiseAudioDeviceShareset
 WwiseChildFile
 WwiseConversationSoundBank
 WwiseExternalSource
 WwiseExternalSourceSoundBank
 WwiseGameParameter
+WwiseInMemoryAudio
 WwiseInitSoundBank
 WwiseMetaDataSoundBank
 WwiseMusicPlaylistItem
@@ -2917,6 +3080,7 @@ ZoneMapSecretCondition
 ZoneMapSecretTexture
 ZoneProgressClaimRewardsMessage
 ZoneProgressEarnedMessage
+ZoneProgressHeroStateDataPerZone
 ZoneProgressPerZoneData
 ZoneProgressRewardData
 ZoneProgressRewardInfoMessage

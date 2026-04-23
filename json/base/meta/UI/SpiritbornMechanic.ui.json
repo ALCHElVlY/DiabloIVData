@@ -2363,7 +2363,8 @@
            "a": 255
           },
           "eVerticalAnchoring": 1,
-          "nMaxWidth": 570
+          "nMaxWidth": 570,
+          "nMaxHeight": 230
          },
          "tFont": {
           "__type__": "UIControlFont",
@@ -2399,6 +2400,7 @@
            "szLabel": 1838043546
           },
           "szPreviewText": "This is a very long description of the currently selected passive skill. This is very very long so I just use lorem ipsum dolor, and more lorem ipsum dolor instead. ",
+          "bShrinkToFit": 1,
           "eResizeToFit": 1,
           "eTextJustify": 2,
           "bTextAllCaps": 0
@@ -2442,8 +2444,15 @@
         "hOptionalUIControlConsoleInputFields": {}
        },
        "hOptionalUIWindowStyleFields": {
-        "szOnClick": "UI_SpiritbornMechanic_OnSelectSpiritSun",
         "eVerticalAnchoring": 2,
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 941
+        },
         "nBottom": 40,
         "eHorizontalAnchoring": 1
        },
@@ -2569,8 +2578,15 @@
       "hOptionalUIControlConsoleInputFields": {}
      },
      "hOptionalUIWindowStyleFields": {
-      "szOnClick": "UI_SpiritbornMechanic_OnSelectSpiritPassive",
       "nHeight": 130,
+      "tOnClick": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 943
+      },
       "nBottom": 0,
       "nMaxWidth": 130,
       "nMinWidth": -1,
@@ -2611,15 +2627,43 @@
       }
      },
      "hOptionalUIButtonStyleFields": {
-      "szOnHitRegionExit": "UI_SpiritbornMechanic_OnHighlightSpiritButtonEnd",
-      "szOnGainedFocus": "UI_SpiritbornMechanic_OnHighlightSpiritButton",
+      "tOnLostFocus": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 945
+      },
+      "tOnHitRegionExit": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 945
+      },
+      "tOnHitRegionEnter": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 944
+      },
       "hImageFrameMouseOver": {
        "__type__": "UIImageHandleReference",
        "__typeHash__": 1797021084,
        "hImageHandle": 0
       },
-      "szOnLostFocus": "UI_SpiritbornMechanic_OnHighlightSpiritButtonEnd",
-      "szOnHitRegionEnter": "UI_SpiritbornMechanic_OnHighlightSpiritButton"
+      "tOnGainedFocus": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 944
+      }
      },
      "hOptionalUIRadioButtonStyleFields": {
       "hRadioButtonImageFrame": {
@@ -2900,8 +2944,22 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
-      "szOnOpen": "UI_SpiritbornMechanic_OnOpen",
-      "szOnClose": "UI_SpiritbornMechanic_OnClose",
+      "tOnOpen": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 937
+      },
+      "tOnClose": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 938
+      },
       "bActive": 1,
       "snoOnOpenSound": {
        "__raw__": 157380,
@@ -2993,9 +3051,23 @@
        "hOptionalUIControlStyleFields": {},
        "hOptionalUIHotkeyStyleFields": {
         "eFixedKey": 0,
-        "szOnController": "UI_SpiritbornMechanic_OnCloseCurrentScreen",
-        "unk_ccd9967": "UI_SpiritbornMechanic_OnCloseCurrentScreen",
-        "eHotkey": 126
+        "tOnController": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 939
+        },
+        "eHotkey": 129,
+        "unk_f68242e": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 939
+        }
        }
       }
      ],
@@ -3020,8 +3092,15 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {},
        "hOptionalUIHotkeyStyleFields": {
-        "unk_ccd9967": "UI_SpiritbornMechanic_OnTrackUnlockQuest",
-        "eHotkey": 22
+        "eHotkey": 22,
+        "unk_f68242e": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 946
+        }
        }
       }
      ],
@@ -3307,8 +3386,15 @@
                },
                "hOptionalUIWindowStyleFields": {
                 "nTop": 30,
-                "szOnClick": "UI_SpiritbornMechanic_OnSelectSpiritMoon",
-                "eVerticalAnchoring": 0
+                "eVerticalAnchoring": 0,
+                "tOnClick": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 942
+                }
                },
                "tFont": {
                 "__type__": "UIControlFont",
@@ -4046,7 +4132,14 @@
             "hOptionalUIControlConsoleInputFields": {}
            },
            "hOptionalUIWindowStyleFields": {
-            "szOnClick": "UI_SpiritbornMechanic_OnCloseCurrentScreen"
+            "tOnClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 939
+            }
            },
            "tFont": {
             "__type__": "UIControlFont",
@@ -5338,7 +5431,14 @@
                 "hOptionalUIControlConsoleInputFields": {}
                },
                "hOptionalUIWindowStyleFields": {
-                "szOnClick": "UI_SpiritbornMechanic_OnSpiritSelectionCloseOverlay",
+                "tOnClick": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 940
+                },
                 "eVisibilityCondition": 0
                },
                "tFont": {
@@ -5521,8 +5621,15 @@
                "hOptionalUIControlStyleFields": {},
                "hOptionalUIHotkeyStyleFields": {
                 "eFixedControllerButton": 1,
-                "unk_ccd9967": "UI_SpiritbornMechanic_OnSpiritSelectionCloseOverlay",
-                "eHotkey": 126
+                "eHotkey": 129,
+                "unk_f68242e": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 940
+                }
                }
               }
              ],
@@ -5548,7 +5655,14 @@
                "hOptionalUIControlStyleFields": {},
                "hOptionalUIHotkeyStyleFields": {
                 "eFixedControllerButton": 0,
-                "unk_ccd9967": ""
+                "unk_f68242e": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": -1
+                }
                }
               }
              ],

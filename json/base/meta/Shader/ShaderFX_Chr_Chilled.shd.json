@@ -43,7 +43,7 @@
     "fAlphaMaskEnable": false,
     "eFillMode": 0,
     "fIndependentAlphaBlendEnable": true,
-    "tAlphaBlend": [
+    "arAlphaBlend": [
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
@@ -112,32 +112,32 @@
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
       "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
+      "eBlendOp": 0,
+      "eSrcBlendFactor": 0,
+      "eDestBlendFactor": 0,
       "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
+      "eBlendOpAlpha": 0,
+      "eSrcBlendFactorAlpha": 0,
+      "eDestBlendFactorAlpha": 0,
+      "fRWriteEnable": false,
+      "fGWriteEnable": false,
+      "fBWriteEnable": false,
       "fAWriteEnable": false
      },
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
       "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
+      "eBlendOp": 0,
+      "eSrcBlendFactor": 0,
+      "eDestBlendFactor": 0,
       "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
+      "eBlendOpAlpha": 0,
+      "eSrcBlendFactorAlpha": 0,
+      "eDestBlendFactorAlpha": 0,
+      "fRWriteEnable": false,
+      "fGWriteEnable": false,
+      "fBWriteEnable": false,
       "fAWriteEnable": false
      }
     ]
@@ -192,14 +192,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-3dc1a645cb13f775",
+       "dwKey": "-2ff473f3a5b2b081",
        "unk_8e5f439": [
         2684354560,
         2332033024,
         19922946,
         0,
-        98304,
-        32768
+        196608,
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -210,12 +210,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "2cf15c3867d5b51",
+       "dwKey": "75700ebfd46ec81b",
        "unk_8e5f439": [
         545325056,
         134283264,
         12582912,
-        256,
+        512,
         0,
         0
        ],
@@ -270,14 +270,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "214fca75f9882a5",
+       "dwKey": "-3964f8e01c165452",
        "unk_8e5f439": [
         2684354560,
         2332033024,
         19922946,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -288,12 +288,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "2cf15c3867d5b51",
+       "dwKey": "75700ebfd46ec81b",
        "unk_8e5f439": [
         545325056,
         134283264,
         12582912,
-        256,
+        512,
         0,
         0
        ],
@@ -348,14 +348,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-4b8104ef637701ad",
+       "dwKey": "-1f76615910b5fa18",
        "unk_8e5f439": [
         2684403712,
         134217728,
         19922944,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -366,7 +366,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-54b2817f3335e77c",
+       "dwKey": "-3d7fb8ef40692d5d",
        "unk_8e5f439": [
         545325056,
         134283264,
@@ -426,14 +426,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "292d29272aafc434",
+       "dwKey": "30c867c69909c003",
        "unk_8e5f439": [
         2684403712,
         134217728,
         19922944,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -444,7 +444,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-54b2817f3335e77c",
+       "dwKey": "-3d7fb8ef40692d5d",
        "unk_8e5f439": [
         545325056,
         134283264,
@@ -504,14 +504,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-531e237a707fa37c",
+       "dwKey": "-3bcde0078af48e37",
        "unk_8e5f439": [
         2684354560,
         2332033024,
         19922946,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -522,12 +522,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "2cf15c3867d5b51",
+       "dwKey": "75700ebfd46ec81b",
        "unk_8e5f439": [
         545325056,
         134283264,
         12582912,
-        256,
+        512,
         0,
         0
        ],
@@ -582,14 +582,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-3dc1a645cb13f775",
+       "dwKey": "-2ff473f3a5b2b081",
        "unk_8e5f439": [
         2684354560,
         2332033024,
         19922946,
         0,
-        98304,
-        32768
+        196608,
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -600,12 +600,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "2cf15c3867d5b51",
+       "dwKey": "75700ebfd46ec81b",
        "unk_8e5f439": [
         545325056,
         134283264,
         12582912,
-        256,
+        512,
         0,
         0
        ],
@@ -660,14 +660,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "214fca75f9882a5",
+       "dwKey": "-3964f8e01c165452",
        "unk_8e5f439": [
         2684354560,
         2332033024,
         19922946,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -678,12 +678,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "2cf15c3867d5b51",
+       "dwKey": "75700ebfd46ec81b",
        "unk_8e5f439": [
         545325056,
         134283264,
         12582912,
-        256,
+        512,
         0,
         0
        ],
@@ -738,14 +738,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "5e9c25c91f348e9",
+       "dwKey": "-6fd0670f93d045e",
        "unk_8e5f439": [
         2684403712,
         134217728,
         19922944,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -756,7 +756,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-54b2817f3335e77c",
+       "dwKey": "-3d7fb8ef40692d5d",
        "unk_8e5f439": [
         545325056,
         134283264,
@@ -816,14 +816,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-3b4159ef1670ce5e",
+       "dwKey": "360301c3a2680158",
        "unk_8e5f439": [
         2684403712,
         134217728,
         19922944,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -834,7 +834,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-54b2817f3335e77c",
+       "dwKey": "-3d7fb8ef40692d5d",
        "unk_8e5f439": [
         545325056,
         134283264,
@@ -894,14 +894,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-531e237a707fa37c",
+       "dwKey": "-3bcde0078af48e37",
        "unk_8e5f439": [
         2684354560,
         2332033024,
         19922946,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -912,12 +912,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "2cf15c3867d5b51",
+       "dwKey": "75700ebfd46ec81b",
        "unk_8e5f439": [
         545325056,
         134283264,
         12582912,
-        256,
+        512,
         0,
         0
        ],
@@ -972,13 +972,13 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-c8bd82ce8b30cd8",
+       "dwKey": "-697175425019939c",
        "unk_8e5f439": [
         2684354560,
         2197815296,
         19924994,
         0,
-        98304,
+        196608,
         0
        ],
        "unk_d4d5dbb": [],
@@ -990,12 +990,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "502d00b24e6d67ca",
+       "dwKey": "164b428dbfac36f3",
        "unk_8e5f439": [
         545325056,
         65536,
         12584960,
-        256,
+        512,
         0,
         0
        ],
@@ -1050,7 +1050,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-27c3f1730ded5188",
+       "dwKey": "4ff3ec3c7984270c",
        "unk_8e5f439": [
         2684354560,
         2197815296,
@@ -1068,12 +1068,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "502d00b24e6d67ca",
+       "dwKey": "164b428dbfac36f3",
        "unk_8e5f439": [
         545325056,
         65536,
         12584960,
-        256,
+        512,
         0,
         0
        ],
@@ -1128,7 +1128,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-3445bd0d160ba84",
+       "dwKey": "716ddfbd1ec84ee2",
        "unk_8e5f439": [
         2684403712,
         0,
@@ -1146,7 +1146,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-652336cdc7e64802",
+       "dwKey": "-16e5938896028a3c",
        "unk_8e5f439": [
         545325056,
         65536,
@@ -1206,7 +1206,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "345ee6336ccc3b28",
+       "dwKey": "-4afe3028e4ebe41a",
        "unk_8e5f439": [
         2684403712,
         0,
@@ -1224,7 +1224,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-652336cdc7e64802",
+       "dwKey": "-16e5938896028a3c",
        "unk_8e5f439": [
         545325056,
         65536,
@@ -1284,7 +1284,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-47039fd418f49763",
+       "dwKey": "-50ee14b18292b4ef",
        "unk_8e5f439": [
         2684354560,
         2197815296,
@@ -1302,12 +1302,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "502d00b24e6d67ca",
+       "dwKey": "164b428dbfac36f3",
        "unk_8e5f439": [
         545325056,
         65536,
         12584960,
-        256,
+        512,
         0,
         0
        ],
@@ -1544,87 +1544,7 @@
     "fAlphaMaskEnable": false,
     "eFillMode": 0,
     "fIndependentAlphaBlendEnable": false,
-    "tAlphaBlend": [
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
-     {
-      "__type__": "AlphaBlendFactors",
-      "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": false
-     },
+    "arAlphaBlend": [
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
@@ -1726,14 +1646,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "49c5724ce5e35938",
+       "dwKey": "-2cd10ff31b752a50",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
-        256,
+        512,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -1818,14 +1738,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-652e3bbe2be087c3",
+       "dwKey": "36dc28762280a092",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
-        256,
+        512,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -1910,14 +1830,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "42218a9ab0f7b0e7",
+       "dwKey": "6fee810db1c80894",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2002,14 +1922,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-53f7dd1a5a1d43fe",
+       "dwKey": "-3d3a0a4d6e4eee0a",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2094,14 +2014,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-653c88e42cc470a0",
+       "dwKey": "-52d10ec4fe38ef02",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
-        256,
+        512,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2186,14 +2106,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "30a0e6c08c448333",
+       "dwKey": "3e9988e633fd6e8e",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
-        256,
+        512,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2278,14 +2198,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "12f763aee4ab8531",
+       "dwKey": "472febf4ad950643",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
-        256,
+        512,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2370,14 +2290,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-12d1aed916f21316",
+       "dwKey": "-1c88ebc3df057e02",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2462,14 +2382,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "213aa85b351cf6f2",
+       "dwKey": "72d7591e6b834e6",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2554,14 +2474,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "486ad5f04f6baf93",
+       "dwKey": "198766b12b80d49",
        "unk_8e5f439": [
         81920,
         134742016,
         15729792,
-        256,
+        512,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [
         6,
@@ -2646,12 +2566,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-13d827deb5722d26",
+       "dwKey": "-4616b2db96017124",
        "unk_8e5f439": [
         81920,
         524288,
         15731840,
-        256,
+        512,
         0,
         0
        ],
@@ -2738,12 +2658,12 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "1782412faecb507e",
+       "dwKey": "55883f191b29bb79",
        "unk_8e5f439": [
         81920,
         524288,
         15731840,
-        256,
+        512,
         0,
         0
        ],
@@ -2830,99 +2750,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "1e7a93a0542e84dc",
-       "unk_8e5f439": [
-        81920,
-        524288,
-        15731840,
-        0,
-        0,
-        0
-       ],
-       "unk_d4d5dbb": [
-        6,
-        7,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        8,
-        9,
-        11,
-        10,
-        12,
-        13,
-        14
-       ],
-       "ptResourceSlot": [
-        0,
-        40
-       ],
-       "unk_6f6dbab": [
-        0,
-        0,
-        0,
-        0,
-        160,
-        1,
-        159,
-        3,
-        86
-       ]
-      }
-     ]
-    },
-    {
-     "__type__": "ShaderPermutation",
-     "__typeHash__": 3001537487,
-     "unk_e3331b5": [
-      1,
-      3,
-      86
-     ],
-     "unk_a2b58a8": [],
-     "tPrograms": [
-      {
-       "__type__": "ShaderPermShaderProgram",
-       "__typeHash__": 1801469402,
-       "pShaderProgram": [],
-       "pStateObject": [],
-       "dwKey": "0",
-       "unk_8e5f439": [],
-       "unk_d4d5dbb": [],
-       "ptResourceSlot": [],
-       "unk_6f6dbab": []
-      },
-      {
-       "__type__": "ShaderPermShaderProgram",
-       "__typeHash__": 1801469402,
-       "pShaderProgram": [],
-       "pStateObject": [],
-       "dwKey": "0",
-       "unk_8e5f439": [],
-       "unk_d4d5dbb": [],
-       "ptResourceSlot": [],
-       "unk_6f6dbab": []
-      },
-      {
-       "__type__": "ShaderPermShaderProgram",
-       "__typeHash__": 1801469402,
-       "pShaderProgram": [],
-       "pStateObject": [],
-       "dwKey": "0",
-       "unk_8e5f439": [],
-       "unk_d4d5dbb": [],
-       "ptResourceSlot": [],
-       "unk_6f6dbab": []
-      },
-      {
-       "__type__": "ShaderPermShaderProgram",
-       "__typeHash__": 1801469402,
-       "pShaderProgram": [],
-       "pStateObject": [],
-       "dwKey": "-4decadcef8dc8931",
+       "dwKey": "-309317feeb356887",
        "unk_8e5f439": [
         81920,
         524288,
@@ -3014,12 +2842,104 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-1c176d1f330e3af9",
+       "dwKey": "1444c53886d7582a",
        "unk_8e5f439": [
         81920,
         524288,
         15731840,
-        256,
+        0,
+        0,
+        0
+       ],
+       "unk_d4d5dbb": [
+        6,
+        7,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        11,
+        10,
+        12,
+        13,
+        14
+       ],
+       "ptResourceSlot": [
+        0,
+        40
+       ],
+       "unk_6f6dbab": [
+        0,
+        0,
+        0,
+        0,
+        160,
+        1,
+        159,
+        3,
+        86
+       ]
+      }
+     ]
+    },
+    {
+     "__type__": "ShaderPermutation",
+     "__typeHash__": 3001537487,
+     "unk_e3331b5": [
+      1,
+      3,
+      86
+     ],
+     "unk_a2b58a8": [],
+     "tPrograms": [
+      {
+       "__type__": "ShaderPermShaderProgram",
+       "__typeHash__": 1801469402,
+       "pShaderProgram": [],
+       "pStateObject": [],
+       "dwKey": "0",
+       "unk_8e5f439": [],
+       "unk_d4d5dbb": [],
+       "ptResourceSlot": [],
+       "unk_6f6dbab": []
+      },
+      {
+       "__type__": "ShaderPermShaderProgram",
+       "__typeHash__": 1801469402,
+       "pShaderProgram": [],
+       "pStateObject": [],
+       "dwKey": "0",
+       "unk_8e5f439": [],
+       "unk_d4d5dbb": [],
+       "ptResourceSlot": [],
+       "unk_6f6dbab": []
+      },
+      {
+       "__type__": "ShaderPermShaderProgram",
+       "__typeHash__": 1801469402,
+       "pShaderProgram": [],
+       "pStateObject": [],
+       "dwKey": "0",
+       "unk_8e5f439": [],
+       "unk_d4d5dbb": [],
+       "ptResourceSlot": [],
+       "unk_6f6dbab": []
+      },
+      {
+       "__type__": "ShaderPermShaderProgram",
+       "__typeHash__": 1801469402,
+       "pShaderProgram": [],
+       "pStateObject": [],
+       "dwKey": "55c77ba303eb1507",
+       "unk_8e5f439": [
+        81920,
+        524288,
+        15731840,
+        512,
         0,
         0
        ],
@@ -3233,7 +3153,7 @@
    "__typeHash__": 1028015787,
    "__type__": "DT_BYTE",
    "dataOffset": 32,
-   "dataSize": 456215
+   "dataSize": 456747
   }
  }
 }

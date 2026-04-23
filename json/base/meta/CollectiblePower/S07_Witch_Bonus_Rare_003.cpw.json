@@ -54,23 +54,23 @@
  "bApplyPowerToSeasonalPet": false,
  "unk_5148745": true,
  "bShowXPProgress": false,
- "unk_791be0": true,
+ "dwUpgradeType": 3,
  "bOverrideItemTypeDescription": false,
  "unk_cd71fc0": true,
  "ptAttributes": [
   {
    "__type__": "AttributeSpecifier",
    "__typeHash__": 3218190286,
-   "eAttribute": 1282,
+   "eAttribute": 1316,
    "__eAttribute_name__": "Collectible_Power_Value_1",
    "dwID": 0,
    "nParam": -1,
    "szAttributeFormula": {
     "value": "0.4 + (0.02 * GetCollectiblePowerLevel(SNO.CollectiblePower.S07_Witch_Bonus_Rare_003))",
-    "compiled": "BgAAAM3MzD4GAAAACtejPAUAAABZAAAATYYgAAAAAAAAAAAAAQAAAGYAAAANAAAACwAAAAAAAAA="
+    "compiled": "BgAAAM3MzD4GAAAACtejPAUAAABZAAAATYYgAAAAAAAAAAAAAQAAAGwAAAANAAAACwAAAAAAAAA="
    },
    "gbidFormula": null,
-   "unk_dffdf28": {
+   "szFlatAttribLevelFormula": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    }
@@ -88,6 +88,8 @@
  },
  "snoBlockedCollectiblePowers": [],
  "eRarity": 0,
+ "bUseRankBasedAppearances": false,
+ "arRankBasedAppearances": [],
  "arRankUnlocks": [
   {
    "__type__": "CollectiblePowerRankUnlock",
@@ -134,10 +136,11 @@
    "dwCost": 500
   }
  ],
+ "snoVisibleCondition": null,
  "snoEnabledCondition": null,
  "unk_2d04376": 0,
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "eDependencyType": 0,
  "arRequiredCollectiblePowers": [],
- "unk_93d883f": []
+ "arNotificationText": []
 }

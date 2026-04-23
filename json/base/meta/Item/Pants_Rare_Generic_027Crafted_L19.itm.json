@@ -91,6 +91,7 @@
   "name": "RareNameStrings_Suffix_Armor_Leg"
  },
  "snoSetItemBonus": null,
+ "arItemFamilies": [],
  "snoPower": null,
  "nFixedIPowerLevel": 0,
  "eForcedItemQualityModifier": 0,
@@ -101,6 +102,7 @@
  "arInherentAffixes": [],
  "arForcedAffixes": [],
  "fUsableByClass": [
+  1,
   1,
   1,
   1,
@@ -162,6 +164,12 @@
    "__typeHash__": 3633779953,
    "hDefaultImage": 3221154136,
    "hFemaleImage": 3220902577
+  },
+  {
+   "__type__": "GenderSpecificImages",
+   "__typeHash__": 3633779953,
+   "hDefaultImage": 3058244393,
+   "hFemaleImage": 3057992834
   }
  ],
  "unk_75d565b": 0,
@@ -169,13 +177,15 @@
  "fMustKeepInInventory": false,
  "eItemUseType": 0,
  "snoPowerUpPower": null,
+ "snoModalNotification": null,
  "tRequirementsToBeActive": {
   "__type__": "RequirementsToBeActive",
   "__typeHash__": 1459584362,
   "arSeasons": []
  },
  "bSeasonItem": false,
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
+ "unk_302f566": [],
  "unk_1b959e8": false,
  "szItemUseCursor": "",
  "snoItemUseActivationSound": null,

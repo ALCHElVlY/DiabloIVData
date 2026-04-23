@@ -197,14 +197,14 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Resistance",
-   "szText": "+[{VALUE2}*100|1%|] {VALUE1} Resistance",
+   "szText": "+[{VALUE2}] {VALUE1} Resistance",
    "hLabel": 2326671089
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Resistance_All",
-   "szText": "+[{VALUE}*100|1%|] Resistance to All Elements",
+   "szText": "+[{VALUE}] Resistance to All Elements",
    "hLabel": 2203320937
   },
   {
@@ -1632,7 +1632,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Block_Chance",
-   "szText": "[{vALUE}*100|%|] Block Chance",
+   "szText": "[{vALUE}*100|%1|] Block Chance",
    "hLabel": 198908268
   },
   {
@@ -2045,35 +2045,35 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Resistance#Cold_Gem",
-   "szText": "+[{VALUE}*100|1%|] Cold Resistance",
+   "szText": "+[{VALUE}] Cold Resistance",
    "hLabel": 3500293582
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Resistance#Shadow_Gem",
-   "szText": "+[{VALUE}*100|1%|] Shadow Resistance",
+   "szText": "+[{VALUE}] Shadow Resistance",
    "hLabel": 2466740850
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Resistance#Fire_Gem",
-   "szText": "+[{VALUE}*100|1%|] Fire Resistance",
+   "szText": "+[{VALUE}] Fire Resistance",
    "hLabel": 3583728690
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Resistance#Lightning_Gem",
-   "szText": "+[{VALUE}*100|1%|] Lightning Resistance",
+   "szText": "+[{VALUE}] Lightning Resistance",
    "hLabel": 215144560
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Resistance#Poison_Gem",
-   "szText": "+[{VALUE}*100|1%|] Poison Resistance",
+   "szText": "+[{VALUE}] Poison Resistance",
    "hLabel": 2590259172
   },
   {
@@ -2822,7 +2822,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Spiritborn_Spirit_Bonus#spiritborn_centipede_sun_passive",
-   "szText": "+[{VALUE2} * 100|1%|] Primary Centipede Spirit Hall Potency",
+   "szText": "+[{VALUE2} * 100|1%|] Primary Centipede Spirit Hall Damage",
    "hLabel": 3170390586
   },
   {
@@ -2857,21 +2857,21 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Spiritborn_Spirit_Bonus#spiritborn_eagle_sun_passive_alternate",
-   "szText": "+[{VALUE2} * 100|1%|] Primary Eagle Spirit Hall Potency",
+   "szText": "+[{VALUE2} * 100|1%|] Primary Eagle Spirit Hall Damage",
    "hLabel": 3717054694
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Spiritborn_Spirit_Bonus#spiritborn_gorilla_sun_passive",
-   "szText": "+[{VALUE2} * 100|1%|] Primary Gorilla Spirit Hall Potency",
+   "szText": "+[{VALUE2} * 100|1%|] Primary Gorilla Spirit Hall Damage",
    "hLabel": 2302277971
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "Spiritborn_Spirit_Bonus#spiritborn_jaguar_sun_passive",
-   "szText": "+[{VALUE2} * 100|1%|] Primary Jaguar Spirit Hall Potency",
+   "szText": "+[{VALUE2} * 100|1%|] Primary Jaguar Spirit Hall Damage",
    "hLabel": 3107461347
   },
   {
@@ -3888,6 +3888,391 @@
    "szLabel": "Socketable_Willbreaker",
    "szText": "{c:FFB3A99B}+120 Armor and [6|0%|] Resistance to All Elements\r\n\r\n{c_unique}Physical damage you deal shatters enemies' spirits, causing them to take {c_number}[Affix.S09_Socketable_16.\"Static Value 0\"*100|0%x|]{/c} {c_unique}more Physical damage for {c_number}[Affix.S09_Socketable_16.\"Static Value 1\"||]{/c} {c_unique}seconds. \r\n\r\nThis effect applies when first damaging a Boss or Elite, or when they are affected by Crowd Control.",
    "hLabel": 2601718352
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Proc_Resource_On_Hit_Flat_All_Primary",
+   "szText": "{c_label}Lucky Hit:{/c} Up to a 15% Chance to Restore +[{VALUE}] Primary Resource",
+   "hLabel": 1919322556
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Sorc_CracklingEnergy_HitAdditionalTargets",
+   "szText": "+[{VALUE2} * 100|1%|] Chance for {c_important}Crackling Energy{/c} to Zap up to Three Additional Targets",
+   "hLabel": 2407544837
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Resistance_All_Bonus",
+   "szText": "+[{VALUE}] Resistance to All Elements",
+   "hLabel": 506897359
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Resistance#Physical_Gem",
+   "szText": "+[{VALUE}] Physical Resistance",
+   "hLabel": 2351413769
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Rogue_DoK_Dodge",
+   "szText": "+[{VALUE} * 100|%|] Dodge Chance while Channeling {c_important}Dance of Knives{/c}",
+   "hLabel": 3578186945
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Resistance_All_Bonus_Percent",
+   "szText": "+[{VALUE}*100|1%|] Total Resistance",
+   "hLabel": 2928774527
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Resistance_Bonus_Percent",
+   "szText": "+[{VALUE}] Resistance to All Elements",
+   "hLabel": 2419787783
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Judgement_Damage",
+   "szText": "+[{VALUE2}*100|1%|] {c_important}Judgement{/c} Damage",
+   "hLabel": 2641871609
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Arbiter_WingStrike_Damage",
+   "szText": "+[{VALUE2}*100|1%|] {c_important}Wing Strike{/c} Damage",
+   "hLabel": 2362831845
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Judgement_DamageTakenWhileJudged",
+   "szText": "+[{VALUE2}*100|1%|] Damage to {c_important}Judged{/c} Enemies",
+   "hLabel": 2506440984
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Arbiter_AdditionalArmor",
+   "szText": "+[{VALUE2}*100|1%|] Armor in {c_important}Arbiter{/c} Form",
+   "hLabel": 1455877562
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Damage_Percent_Bonus_While_Affected_By_Power#Paladin_Sub_Angel",
+   "szText": "+[{VALUE2}*100|1%|] Damage while in {c_important}Arbiter{/c} Form",
+   "hLabel": 3126664911
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Aura_Potency",
+   "szText": "+[{VALUE2}*100|1%|] {c_important}Aura{/c} Potency",
+   "hLabel": 3848824226
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Aura_Enhancement_Potency",
+   "szText": "+[{VALUE2}*100|1%|] {c_important}Aura{/c} Enhancement Potency",
+   "hLabel": 2344409415
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Juggernaut_Damage_When_Spending_Resolve",
+   "szText": "+[{VALUE2}*100|1%|] Damage when Spending{c_important}Resolve{/c}",
+   "hLabel": 532322937
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "CC_Duration_Bonus_Percent_Per_Power",
+   "szText": "+[{VALUE2}*100|1%|] {c_important}{VALUE1}{/c} Crowd Control Duration",
+   "hLabel": 3594248563
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Paladin_Aura_Potency_Per_Skill",
+   "szText": "+[{VALUE2}*100|1%|] {c_important}{VALUE1}{/c} Potency",
+   "hLabel": 2572303814
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Damage_Bonus_Percent_To_Weakened",
+   "szText": "+[{VALUE}*100|1%|] Damage to Weakened Enemies",
+   "hLabel": 2512333018
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "Item_Refinement_Bonus",
+   "szText": "+[{VALUE}] Item Quality",
+   "hLabel": 119652833
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_MovementSpeed",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Movement Speed per Kill Streak Tier",
+   "hLabel": 244684564
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_AttackSpeed",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Attack Speed per Kill Streak Tier",
+   "hLabel": 3761103937
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_ResourceCostReduction",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Resource Cost Reduction per Kill Streak Tier",
+   "hLabel": 36263718
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_LuckyHitChance",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Lucky Hit Chance per Kill Streak Tier",
+   "hLabel": 3408161127
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_Lifesteal",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}] Life On Hit per Kill Streak Tier",
+   "hLabel": 4293558321
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_MaxLife",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Maximum Life per Kill Streak Tier",
+   "hLabel": 755445086
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_CooldownReduction",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|1%|] Cooldown Reduction per Kill Streak Tier",
+   "hLabel": 1587679338
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_CriticalStrikeChance",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Critical Strike Chance per Kill Streak Tier",
+   "hLabel": 95162423
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Feast_CooldownReset",
+   "szText": "{c:FFf74444}{i}Feast{/i}:{/c} Every {c_number}40{/c} Kills, reset [{VALUE}] random |4Cooldown:Cooldowns;",
+   "hLabel": 3153913220
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_BasicSkill",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} After you Cast a Basic Skill, [{VALUE}*100|%|] chance for +1 Kill to your Kill Streak",
+   "hLabel": 3221309011
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Feast_Rampage",
+   "szText": "{c:FFf74444}{i}Feast{/i}:{/c} Every {c_number}25{/c} Kills, gain Berserking for [{VALUE}] |4second:seconds; ",
+   "hLabel": 1027194073
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Feast_NextCastDamage",
+   "szText": "{c:FFf74444}{i}Feast{/i}:{/c} Every {c_number}15{/c} Kills, your next Core Skill Cast deals [{VALUE}] additional damage",
+   "hLabel": 706938309
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Feast_Bloodsplosion",
+   "szText": "{c:FFf74444}{i}Feast{/i}:{/c} Every {c_number}10{/c} Kills, release a Bloodsplosion for [(Owner.Weapon_Damage_Min_Total + Owner.Weapon_Damage_Delta_Total) * {VALUE}] damage",
+   "hLabel": 2000292547
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Feast_Bite",
+   "szText": "{c:FFf74444}{i}Feast{/i}:{/c} Every {c_number}20{/c} Kills, savagely bite [{VALUE}] |4time:times; for {c_number}[(Owner.Weapon_Damage_Min_Total + Owner.Weapon_Damage_Delta_Total) * 1.5]{/c} damage and apply Vulnerable",
+   "hLabel": 2557057760
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Feast_Chains",
+   "szText": "{c:FFf74444}{i}Feast{/i}:{/c} Every {c_number}30{/c} Kills, chains hook [{VALUE}] nearby enemies",
+   "hLabel": 1534367602
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_LuckyHit",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} Lucky Hit: Up to a [{VALUE}*100|%|] chance for +1 Kill to your Kill Streak",
+   "hLabel": 1909036383
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_OnKIll",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} After you kill an enemy, [{VALUE}*100|%|] chance for +1 Kill to your Kill Streak",
+   "hLabel": 2686545435
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_CooldownUsed",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} After you Cast a Cooldown, +1 Kill to your Kill Streak",
+   "hLabel": 1668471560
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_ResourceSpent",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} Every {c_number}100{/c} Resource, [{VALUE}*100|%|] chance for +1 Kill to your Kill Streak",
+   "hLabel": 415804356
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_FeastItems",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*10|%|] increased chance for Feast Items during your Kill Streaks",
+   "hLabel": 775574215
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_Ancestral",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} Elites drop [{VALUE}*5|%|] more Ancestral Items during your Kill Streak.",
+   "hLabel": 628213263
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_Gold",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*25|%|] increased chance for additional Gold during Kill Streaks",
+   "hLabel": 1907111000
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_HungerItems",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*10|%|] increased chance for Hunger Items during Kill Streaks",
+   "hLabel": 2847462109
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_KillStreakRep",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*15|%|] increased Reputation from Kill Streaks",
+   "hLabel": 1883262159
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_KillStreakXP",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*15|%|] increased Experience from Kill Streaks",
+   "hLabel": 187219280
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_RampageItems",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*10|%|] increased chance for Rampage Items during Kill Streaks",
+   "hLabel": 1771080337
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_Runes",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*10|%|] increased chance for Runes during your Kill Streaks",
+   "hLabel": 2818383935
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Hunger_Salvage",
+   "szText": "{c:FFf74444}{i}Hunger{/i}:{/c} [{VALUE}*20|%|] increased chance for additional Salvage Materials during your Kill Streaks",
+   "hLabel": 3120438965
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Feast_RestoreResource",
+   "szText": "{c:FFf74444}{i}Feast{/i}:{/c} Every {c_number}15{/c} Kills, restore [{VALUE}*100|%|] of your maximum Primary Resource",
+   "hLabel": 866582504
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_AprilFools_Unique_Bow_CluckThrice",
+   "szText": "+[{VALUE}*100|%|] Chance to Cluck Thrice",
+   "hLabel": 3218636189
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_AprilFools_Unique_DamageToPoultry",
+   "szText": "+[{VALUE}*100|%|] Damage to Poultry",
+   "hLabel": 519601766
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_AprilFools_Unique_NegativeInt",
+   "szText": "-[{VALUE}] Intelligence",
+   "hLabel": 939660803
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_DexterityPercent",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Dexterity per Kill Streak Tier",
+   "hLabel": 1477669195
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_IntelligencePercent",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Intelligence per Kill Streak Tier",
+   "hLabel": 4131533084
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_WillpowerPercent",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Willpower per Kill Streak Tier",
+   "hLabel": 84105838
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "S12_KillStreak_Massacre_StrengthPercent",
+   "szText": "{c:FFf74444}{i}Rampage{/i}:{/c} +[{VALUE}*100|%|] Strength per Kill Streak Tier",
+   "hLabel": 4267867960
   }
  ],
  "ptMapStringTable": "0"

@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAgD8AAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": {
   "__raw__": 464217,
   "__group__": 42,
@@ -44,18 +43,21 @@
   1,
   1,
   1,
+  1,
   1
  ],
  "arAllowedItemLabels": [
   19
  ],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 255,
  "eAffixType": 2,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -67,8 +69,8 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 73,
-    "__eAttribute_name__": "Resistance_All",
+    "eAttribute": 77,
+    "__eAttribute_name__": "Resistance_All_Bonus",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
@@ -76,13 +78,13 @@
      "compiled": "BgAAAAAAAAAAAAAA"
     },
     "gbidFormula": {
-     "__raw__": 66028220,
+     "__raw__": 4066088645,
      "__type__": "DT_GBID",
      "__typeHash__": 1028170061,
      "group": 22,
-     "name": "InherentAffixAnyResist_Ring"
+     "name": "InherentAffixAllResist_Jewelry_Flat"
     },
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -97,5 +99,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

@@ -21,7 +21,6 @@
  "arStoreAnimSets": [],
  "snoAnimTree": null,
  "arActorAppearanceAddOnEntries": [],
- "snoDamageRemap": null,
  "snoVisualRemap": null,
  "gbidPartyFinderTag": null,
  "arUniqueSubObjectNameInfoPerAppearance": [],
@@ -335,9 +334,7 @@
       "__group__": 1,
       "__type__": "DT_SNO_NAME",
       "__typeHash__": 3339108615,
-      "__targetFileName__": "base/meta/Actor/S07_summon_weapon_witch_bramble_axe001.acr",
-      "groupName": "Actor",
-      "name": "S07_summon_weapon_witch_bramble_axe001"
+      "groupName": "Actor"
      },
      "dwID": 0,
      "tHardpointLinks": [
@@ -393,6 +390,7 @@
      "dwShaderMapOverride": 4294967295,
      "nPlayerIndex": 0,
      "flScale": 1,
+     "unk_ebd19c": false,
      "szSpawnLocatorName": 0,
      "vecScalar": {
       "x": 1,
@@ -746,6 +744,7 @@
      "dwShaderMapOverride": 4294967295,
      "nPlayerIndex": 0,
      "flScale": 1,
+     "unk_ebd19c": false,
      "szSpawnLocatorName": 0,
      "vecScalar": {
       "x": 1,
@@ -1109,13 +1108,15 @@
    "__type__": "ActorProjectileData",
    "__typeHash__": 467583236,
    "fDestroyOnImpact": false,
-   "unk_fc86022": 0,
+   "bDeleteOnOwnerDeath": false,
+   "unk_dca784d": false,
+   "flMinimumDestroyOnImpactVelocity": 0,
    "fProjectileMatchYawToVelocity": true,
    "fProjectileMatchPitchToVelocity": true,
-   "unk_1db2e79": false,
+   "fProjectileTurnsInstantly": false,
    "fProjectileCanBeReflected": true,
    "fProjectileCanBeSlowed": true,
-   "unk_bac5791": false,
+   "fProjectileUsesWeaponAppearance": false,
    "unk_7c4ac65": false,
    "tHardpointLink": {
     "__type__": "HardpointLink",

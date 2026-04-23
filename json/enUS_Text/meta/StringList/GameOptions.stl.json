@@ -1765,7 +1765,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "ResolutionTooltip",
-   "szText": "Higher resolution will result in increased clarity, but this greatly affects performance. Choose a resolution that matches the aspect ratio of your monitor.",
+   "szText": "Higher resolution will result in increased clarity, but this greatly affects performance. Choose a resolution that matches the aspect ratio of your monitor.\r\n\r\nResolution cannot be changed while using the Windowed (Fullscreen) display mode. The Resolution Scaling options in the Performance section below can also be used to balance clarity and performance based on resolution.",
    "hLabel": 607889951
   },
   {
@@ -3760,7 +3760,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "RaytracedShadowsQualityTooltip",
-   "szText": "Determines the realism of ray traced shadows. Lowering this setting will improve performance.\r\n\r\n{c_highlight}Disabled:{/c} No ray traced shadows.\r\n{c_highlight}Low:{/c} Ray traced sun shadows.\r\n{c_highlight}Medium:{/c} Ray traced sun and player light shadows.\r\n{c_highlight}High:{/c} Ray traced shadows for all lights.",
+   "szText": "Determines the realism of ray traced shadows. Lowering this setting will improve performance.\r\n\r\n{c_highlight}Disabled:{/c} No ray traced shadows.\r\n{c_highlight}Low:{/c} Ray traced sun shadows.\r\n{c_highlight}Medium:{/c} Ray traced sun and player light shadows.\r\n{c_highlight}High:{/c} Ray traced shadows for the most important lights.\r\n{c_highlight}Ultra:{/c} Ray traced shadows for all lights.",
    "hLabel": 1755549868
   },
   {
@@ -3949,14 +3949,14 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "ChatChannelJoinLocalTooltip",
-   "szText": "Local chat channel includes players near you within Sanctuary.",
+   "szText": "Local chat channel includes players near you within Sanctuary.\r\n\r\nRemember to act responsibly, protect your personal information, and report anything offensive. View our In-Game Code of Conduct on {c_highlight}https://support.blizzard.com/en/article/42673{/c} for more information.",
    "hLabel": 4267120351
   },
   {
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "ChatChannelJoinTradeTooltip",
-   "szText": "Trade chat channel is solely used for trading items.",
+   "szText": "Trade chat channel is solely used for trading items.\r\n\r\nRemember to act responsibly, protect your personal information, and report anything offensive. View our In-Game Code of Conduct on {c_highlight}https://support.blizzard.com/en/article/42673{/c} for more information.",
    "hLabel": 4120608836
   },
   {
@@ -5384,7 +5384,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "CinematicsVolumeTooltip",
-   "szText": "Adjusts the cinematic cutscene volume.",
+   "szText": "Adjusts the volume of dialogue during cinematic cutscenes.",
    "hLabel": 1299213571
   },
   {
@@ -6063,7 +6063,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "CharacterVisibility_Tooltip",
-   "szText": "Allows a choice between the default grimdark visuals, or sets an ambient light (Additional Highlight) above all players, NPCs, and enemies to make characters more visible.",
+   "szText": "Allows a choice between the default grimdark visuals or setting an ambient light (Additional Highlight) above all players, NPCs, and enemies to make characters more visible.",
    "hLabel": 3272920991
   },
   {
@@ -6091,7 +6091,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "CharacterVisibilityEdgeLightSlider_Tooltip",
-   "szText": "Sets the intensity of the highlights present on characters when additional highlights is enabled.",
+   "szText": "Sets the intensity of the highlights present on characters when Additional Highlights are enabled.",
    "hLabel": 2083897039
   },
   {
@@ -6212,13 +6212,6 @@
    "szLabel": "ViewDistanceTooltip",
    "szText": "Adjusts the default gameplay camera view distance.\r\n\r\n{c_highlight}Will not affect the camera in town or while mounted.{/c}",
    "hLabel": 650752593
-  },
-  {
-   "__type__": "StringTableEntry",
-   "__typeHash__": 3844612145,
-   "szLabel": "OwnHealthBarOption",
-   "szText": "Display Own Health",
-   "hLabel": 2922005304
   },
   {
    "__type__": "StringTableEntry",
@@ -6870,6 +6863,132 @@
    "szLabel": "BatteryIndicator_Tooltip",
    "szText": "Displays your device's battery level in Handheld Mode.",
    "hLabel": 185587682
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "HotKeySeasonalPanel",
+   "szText": "Seasonal Panel",
+   "hLabel": 2877326810
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "HotKeySeasonalPanelTooltip",
+   "szText": "Toggles the Seasonal panel.",
+   "hLabel": 193865253
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "HotkeyEventsPanel",
+   "szText": "Events Screen",
+   "hLabel": 283507129
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "OSAFTPopupDescription",
+   "szText": "In local and trade chat channels, you will see messages from other players. If you do not wish to join these chat channels, you can disable them now.\r\n\r\nWhen using chat, remember to act responsibly, protect your personal information, and report anything offensive.",
+   "hLabel": 2869478741
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "OSAFTPopupTitle",
+   "szText": "Enable/Disable Local and Trade Chat",
+   "hLabel": 1262370547
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "PersonalizedStoreTitle",
+   "szText": "Personalized Recommendations Opt Out",
+   "hLabel": 646767775
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "PersonalizedStoreTooltip",
+   "szText": "If you want to opt out of personalized recommendation, please go to BattleNet Account Settings > Privacy > Personalized Recommendation.",
+   "hLabel": 184373096
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "OwnNameOption",
+   "szText": "Display Own Character Name",
+   "hLabel": 1521938958
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "OwnNameTooltip",
+   "szText": "Show name above your own character.",
+   "hLabel": 801798816
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "OwnHealthBarOption",
+   "szText": "Display Own Health",
+   "hLabel": 2922005304
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "MapOptions",
+   "szText": "Map Options",
+   "hLabel": 2795794954
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "MapDisplay_Options",
+   "szText": "Map Display",
+   "hLabel": 1999761343
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "EstimatedVRAMUsageTitle",
+   "szText": "Estimated VRAM Requirement",
+   "hLabel": 947495053
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "EstimatedVRAMUsageTooltip",
+   "szText": "This is your estimated VRAM requirement based on the settings you've selected. The actual in-game usage may be higher. This is only an estimate and is provided to give you an idea of what is required given your current settings, allowing you to better tune them to your desired experience. \r\n\r\nIf your estimate goes into the warning zone we suggest adjusting your settings to avoid poor performance. {c_highlight}Resolution/Resolution Scaling{/c}, {c_highlight}Texture Quality{/c}, and {c_highlight}Raytracing{/c} have the most significant effects on your VRAM usage.",
+   "hLabel": 1258864342
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "MapDisplayOptionsMinimap",
+   "szText": "Minimap",
+   "hLabel": 3786352075
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "EstimatedVRAMUsageWarning",
+   "szText": "WARNING!",
+   "hLabel": 294023265
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "MegabytesLabel",
+   "szText": "MB",
+   "hLabel": 3764938017
+  },
+  {
+   "__type__": "StringTableEntry",
+   "__typeHash__": 3844612145,
+   "szLabel": "ContinueButton",
+   "szText": "Continue",
+   "hLabel": 3328072193
   }
  ],
  "ptMapStringTable": "0"

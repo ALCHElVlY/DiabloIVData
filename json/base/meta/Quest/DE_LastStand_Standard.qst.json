@@ -53,6 +53,8 @@
    "dwUID": 0,
    "dwFlags": 2,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -124,7 +126,7 @@
             "__typeHash__": 4047712805,
             "dwType": 4047712805,
             "eParamType": 20,
-            "dwGroupHash": 3876601623,
+            "dwGroupHash": 0,
             "idValue": 0,
             "szGroup": "Initial_Hero"
            }
@@ -132,7 +134,132 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 3532970791
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 3,
+       "snoWorld": null,
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 0,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      }
+     ],
+     "bGiveFirstTimeReward": false,
+     "tFirstTimeReward": {
+      "__type__": "QuestReward",
+      "__typeHash__": 3387295447,
+      "snoTrackedReward": null
+     },
+     "arQuestItemsToRemove": [],
+     "snoFirstTimeRewardDisplayItem": null
+    },
+    {
+     "__type__": "QuestObjectiveSet",
+     "__typeHash__": 297390777,
+     "dwUID": 178,
+     "ptLink": [],
+     "arCallbacks": [
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 179,
+       "dwFlags": 0,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 51,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 2197444774,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamPlayer",
+            "__typeHash__": 106673333,
+            "dwType": 106673333,
+            "eParamType": 7,
+            "bIsPlayer": true
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 4130614259,
+          "eVariableType": 3,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamFloatRangeInside",
+            "__typeHash__": 2823526119,
+            "dwType": 2823526119,
+            "eParamType": 21,
+            "flRange": 24
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 3941013568,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamLinkedMarkerInGroup",
+            "__typeHash__": 4047712805,
+            "dwType": 4047712805,
+            "eParamType": 20,
+            "dwGroupHash": 0,
+            "idValue": 0,
+            "szGroup": "Initial_Hero"
+           }
+          ]
+         }
+        ],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -227,6 +354,8 @@
    "dwUID": 5,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -268,7 +397,7 @@
             "__typeHash__": 4047712805,
             "dwType": 4047712805,
             "eParamType": 20,
-            "dwGroupHash": 4194080038,
+            "dwGroupHash": 0,
             "idValue": 0,
             "szGroup": "Heroes"
            }
@@ -313,7 +442,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -408,6 +537,8 @@
    "dwUID": 10,
    "dwFlags": 16,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -456,7 +587,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1056035637
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -533,7 +664,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -627,7 +758,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1056035637
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -740,7 +871,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -835,6 +966,8 @@
    "dwUID": 54,
    "dwFlags": 4,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -859,7 +992,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -954,6 +1087,8 @@
    "dwUID": 94,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -995,7 +1130,7 @@
             "__typeHash__": 4047712805,
             "dwType": 4047712805,
             "eParamType": 20,
-            "dwGroupHash": 3876601623,
+            "dwGroupHash": 0,
             "idValue": 0,
             "szGroup": "Initial_Hero"
            }
@@ -1041,7 +1176,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1136,6 +1271,8 @@
    "dwUID": 66,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -1167,7 +1304,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1251,7 +1388,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1335,7 +1472,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1419,7 +1556,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1514,6 +1651,8 @@
    "dwUID": 103,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -1555,7 +1694,7 @@
             "__typeHash__": 4047712805,
             "dwType": 4047712805,
             "eParamType": 20,
-            "dwGroupHash": 2929655332,
+            "dwGroupHash": 0,
             "idValue": 0,
             "szGroup": "WoundedHero_01"
            }
@@ -1601,7 +1740,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1696,6 +1835,8 @@
    "dwUID": 106,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -1737,7 +1878,7 @@
             "__typeHash__": 4047712805,
             "dwType": 4047712805,
             "eParamType": 20,
-            "dwGroupHash": 2929655333,
+            "dwGroupHash": 0,
             "idValue": 0,
             "szGroup": "WoundedHero_02"
            }
@@ -1783,7 +1924,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1878,6 +2019,8 @@
    "dwUID": 131,
    "dwFlags": 4,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -1902,7 +2045,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1997,6 +2140,8 @@
    "dwUID": 134,
    "dwFlags": 4,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -2021,7 +2166,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -2116,6 +2261,8 @@
    "dwUID": 140,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 4,
    "arCallbackSets": [
     {
@@ -2150,7 +2297,7 @@
             "__typeHash__": 234160671,
             "dwType": 234160671,
             "eParamType": 6,
-            "dwStringHash": 831156678,
+            "dwStringHash": 0,
             "szString": "HeroSurvived"
            }
           ]
@@ -2185,7 +2332,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1212553832
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -2286,7 +2433,7 @@
             "__typeHash__": 4047712805,
             "dwType": 4047712805,
             "eParamType": 20,
-            "dwGroupHash": 4194080038,
+            "dwGroupHash": 0,
             "idValue": 0,
             "szGroup": "Heroes"
            }
@@ -2294,7 +2441,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -2389,6 +2536,8 @@
    "dwUID": 150,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -2456,7 +2605,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 2414055017
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -2533,7 +2682,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -2628,6 +2777,8 @@
    "dwUID": 168,
    "dwFlags": 4,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -2652,7 +2803,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -2747,6 +2898,8 @@
    "dwUID": 171,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 3,
    "arCallbackSets": [],
    "unk_4b2de13": 4294967295,
@@ -2794,6 +2947,8 @@
   "arSeasons": []
  },
  "dwRestrictions": 0,
+ "unk_baaed01": false,
+ "unk_3b0b41a": null,
  "unk_9c72d73": [],
  "gbidZoneEventConfig": null,
  "unk_376dcd8": false,

@@ -60,13 +60,13 @@
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
      "snoTex": {
-      "__raw__": 477251,
+      "__raw__": 529868,
       "__group__": 44,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Texture/demonic_flameShapes_Mask.tex",
+      "__targetFileName__": "base/meta/Texture/sorc_fire_small_Mask.tex",
       "groupName": "Texture",
-      "name": "demonic_flameShapes_Mask"
+      "name": "sorc_fire_small_Mask"
      },
      "ptTexAnim": [
       {
@@ -109,25 +109,25 @@
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
      "snoTex": {
-      "__raw__": 172086,
+      "__raw__": 599593,
       "__group__": 44,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Texture/witch_mire_aoe_mist_noise_Color4.tex",
+      "__targetFileName__": "base/meta/Texture/fxKit_demonic_shapes_Noise.tex",
       "groupName": "Texture",
-      "name": "witch_mire_aoe_mist_noise_Color4"
+      "name": "fxKit_demonic_shapes_Noise"
      },
      "ptTexAnim": [
       {
        "__type__": "TexAnimTranslation",
        "__typeHash__": 3866881285,
        "dwType": 3866881285,
-       "flUScale": 0.6000000238418579,
-       "flVScale": 0.4000000059604645,
+       "flUScale": 0.5,
+       "flVScale": 0.20000000298023224,
        "flUTransInitial": 0,
        "unk_803e8a7": {
-        "rangeValue1": 0,
-        "rangeValue2": 0
+        "rangeValue1": -2,
+        "rangeValue2": 4
        },
        "tUTransVelScalar": {
         "__type__": "InterpolationScalar",
@@ -147,7 +147,7 @@
        },
        "flVTransInitial": 0,
        "unk_42b1708": {
-        "rangeValue1": 4,
+        "rangeValue1": 7,
         "rangeValue2": 0
        },
        "tVTransVelScalar": {
@@ -170,10 +170,10 @@
        "eOrderOperation": 0,
        "dwURandomSeed": 0,
        "dwVRandomSeed": 0,
-       "dwAnimFlags": 0,
+       "dwAnimFlags": 19,
        "unk_e5b0c7f": {
-        "rangeValue1": 0,
-        "rangeValue2": 0
+        "rangeValue1": -1.0471999645233154,
+        "rangeValue2": 2.0943899154663086
        },
        "fXOffset": 0.5,
        "fYOffset": 0.5,
@@ -225,13 +225,13 @@
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
      "snoTex": {
-      "__raw__": 379357,
+      "__raw__": 599593,
       "__group__": 44,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Texture/rogue_shadow_Noise.tex",
+      "__targetFileName__": "base/meta/Texture/fxKit_demonic_shapes_Noise.tex",
       "groupName": "Texture",
-      "name": "rogue_shadow_Noise"
+      "name": "fxKit_demonic_shapes_Noise"
      },
      "ptTexAnim": [
       {
@@ -336,22 +336,30 @@
    {
     "__type__": "MaterialTextureEntry",
     "__typeHash__": 552516018,
-    "eShaderTex": 98,
+    "eShaderTex": 105,
     "tMatTex": {
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
-     "snoTex": null,
+     "snoTex": {
+      "__raw__": 526679,
+      "__group__": 44,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Texture/uvDist_gaussianNoise_UVDistortion.tex",
+      "groupName": "Texture",
+      "name": "uvDist_gaussianNoise_UVDistortion"
+     },
      "ptTexAnim": [
       {
        "__type__": "TexAnimTranslation",
        "__typeHash__": 3866881285,
        "dwType": 3866881285,
        "flUScale": 1,
-       "flVScale": 0.5,
-       "flUTransInitial": 0,
+       "flVScale": 1,
+       "flUTransInitial": 5,
        "unk_803e8a7": {
-        "rangeValue1": -1,
-        "rangeValue2": 2
+        "rangeValue1": -2,
+        "rangeValue2": 4
        },
        "tUTransVelScalar": {
         "__type__": "InterpolationScalar",
@@ -371,7 +379,7 @@
        },
        "flVTransInitial": 0,
        "unk_42b1708": {
-        "rangeValue1": 6,
+        "rangeValue1": 5,
         "rangeValue2": 0
        },
        "tVTransVelScalar": {
@@ -444,117 +452,22 @@
    {
     "__type__": "MaterialTextureEntry",
     "__typeHash__": 552516018,
-    "eShaderTex": 105,
+    "eShaderTex": 91,
     "tMatTex": {
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
      "snoTex": {
-      "__raw__": 526679,
+      "__raw__": 282703,
       "__group__": 44,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Texture/uvDist_gaussianNoise_UVDistortion.tex",
+      "__targetFileName__": "base/meta/Texture/black_blackalpha.tex",
       "groupName": "Texture",
-      "name": "uvDist_gaussianNoise_UVDistortion"
+      "name": "black_blackalpha"
      },
-     "ptTexAnim": [
-      {
-       "__type__": "TexAnimTranslation",
-       "__typeHash__": 3866881285,
-       "dwType": 3866881285,
-       "flUScale": 1,
-       "flVScale": 1,
-       "flUTransInitial": 5,
-       "unk_803e8a7": {
-        "rangeValue1": -2,
-        "rangeValue2": 4
-       },
-       "tUTransVelScalar": {
-        "__type__": "InterpolationScalar",
-        "__typeHash__": 991799518,
-        "nScalarFunction": 0,
-        "dwFlags": 1,
-        "tInputRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "tRemapRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "eRemapEasing": 0,
-        "szFormulaName": 0
-       },
-       "flVTransInitial": 0,
-       "unk_42b1708": {
-        "rangeValue1": 20,
-        "rangeValue2": 0
-       },
-       "tVTransVelScalar": {
-        "__type__": "InterpolationScalar",
-        "__typeHash__": 991799518,
-        "nScalarFunction": 0,
-        "dwFlags": 1,
-        "tInputRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "tRemapRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "eRemapEasing": 0,
-        "szFormulaName": 0
-       },
-       "ePinTranslation": 2,
-       "eOrderOperation": 0,
-       "dwURandomSeed": 0,
-       "dwVRandomSeed": 0,
-       "dwAnimFlags": 3,
-       "unk_e5b0c7f": {
-        "rangeValue1": 0,
-        "rangeValue2": 0
-       },
-       "fXOffset": 0.5,
-       "fYOffset": 0.5,
-       "aRotationInitial": 0,
-       "dwRotationRandomSeed": 0,
-       "tUScaleScalar": {
-        "__type__": "InterpolationScalar",
-        "__typeHash__": 991799518,
-        "nScalarFunction": 0,
-        "dwFlags": 1,
-        "tInputRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "tRemapRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "eRemapEasing": 0,
-        "szFormulaName": 0
-       },
-       "tVScaleScalar": {
-        "__type__": "InterpolationScalar",
-        "__typeHash__": 991799518,
-        "nScalarFunction": 0,
-        "dwFlags": 1,
-        "tInputRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "tRemapRange": {
-         "rangeValue1": 0,
-         "rangeValue2": 1
-        },
-        "eRemapEasing": 0,
-        "szFormulaName": 0
-       }
-      }
-     ],
-     "nTexAnimStateIndex": 4,
-     "unk_e1a4010": false
+     "ptTexAnim": [],
+     "nTexAnimStateIndex": -1,
+     "unk_e1a4010": true
     }
    }
   ],
@@ -579,7 +492,7 @@
         "name": "Alpha Brightness Global"
        },
        "value": 1,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -598,8 +511,8 @@
         "groupName": "MaterialValue",
         "name": "Alpha Noise Multiplier"
        },
-       "value": 1,
-       "unk_2362b28": -1,
+       "value": 2,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -619,7 +532,7 @@
         "name": "UV Distortion 1 U Strength"
        },
        "value": 0.5,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -639,7 +552,7 @@
         "name": "UV Distortion 1 V Strength"
        },
        "value": 0.5,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -659,7 +572,7 @@
         "name": "Alpha Shape-Noise Multiplier"
        },
        "value": 2,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -679,7 +592,7 @@
         "name": "Alpha Soft Distance"
        },
        "value": 0.20000000298023224,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -699,7 +612,7 @@
         "name": "zSwitch Particle Distortion Method"
        },
        "value": 1,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -719,7 +632,7 @@
         "name": "zSwitch Particle Noise Method"
        },
        "value": 1,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -739,7 +652,7 @@
         "name": "zSwitch Particle Color Method"
        },
        "value": 2,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -759,7 +672,7 @@
         "name": "Noise 1 - Alpha lerp to white"
        },
        "value": 0.5,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -779,7 +692,7 @@
         "name": "Noise 2 - Alpha lerp to white"
        },
        "value": 0.800000011920929,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -799,7 +712,7 @@
         "name": "UV Distortion Dissolve Strength"
        },
        "value": 0.5,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      }
@@ -809,7 +722,7 @@
     "arMaterialVectorGraphs": []
    }
   ],
-  "nTexAnimStateCount": 5,
+  "nTexAnimStateCount": 4,
   "fHasGraph": false
  },
  "arDecalLookVariantMap": [],

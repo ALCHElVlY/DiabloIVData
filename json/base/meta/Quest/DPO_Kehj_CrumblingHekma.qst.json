@@ -53,6 +53,8 @@
    "dwUID": 14,
    "dwFlags": 66,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -128,7 +130,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 2808664245
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -249,7 +251,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 746297627
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -354,7 +356,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 746297627
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -475,7 +477,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 2808664245
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -569,7 +571,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 3510011121
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -664,6 +666,8 @@
    "dwUID": 20,
    "dwFlags": 4,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -726,7 +730,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -839,6 +843,8 @@
    "dwUID": 68,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -909,7 +915,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 143506636
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1014,6 +1020,8 @@
    "dwUID": 71,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -1045,7 +1053,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1160,7 +1168,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -1269,7 +1277,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -1378,7 +1386,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1776065304
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": null,
@@ -1504,7 +1512,84 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 579437852
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 3,
+       "snoWorld": null,
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 0,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      }
+     ],
+     "bGiveFirstTimeReward": false,
+     "tFirstTimeReward": {
+      "__type__": "QuestReward",
+      "__typeHash__": 3387295447,
+      "snoTrackedReward": null
+     },
+     "arQuestItemsToRemove": [],
+     "snoFirstTimeRewardDisplayItem": null
+    },
+    {
+     "__type__": "QuestObjectiveSet",
+     "__typeHash__": 297390777,
+     "dwUID": 98,
+     "ptLink": [],
+     "arCallbacks": [
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 99,
+       "dwFlags": 0,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 74,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1599,6 +1684,8 @@
    "dwUID": 78,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -1669,7 +1756,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 143506636
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": null,
@@ -1766,6 +1853,393 @@
    },
    "unk_ed8215b": null,
    "unk_2928f33": null
+  },
+  {
+   "__type__": "QuestPhase",
+   "__typeHash__": 1662164195,
+   "dwType": 1662164195,
+   "dwUID": 93,
+   "dwFlags": 0,
+   "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
+   "eType": 2,
+   "arCallbackSets": [
+    {
+     "__type__": "QuestObjectiveSet",
+     "__typeHash__": 297390777,
+     "dwUID": 94,
+     "ptLink": [],
+     "arCallbacks": [
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 95,
+       "dwFlags": 2,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 0,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140265,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamAllowAny",
+            "__typeHash__": 1295852463,
+            "dwType": 1295852463,
+            "eParamType": 0
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140251,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamActor",
+            "__typeHash__": 1286645889,
+            "dwType": 1286645889,
+            "eParamType": 4,
+            "snoActor": {
+             "__raw__": 538346,
+             "__group__": 1,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Actor/skeleton_melee_shield_unique_DGN_Kehj_crumblinghekma_01.acr",
+             "groupName": "Actor",
+             "name": "skeleton_melee_shield_unique_DGN_Kehj_crumblinghekma_01"
+            }
+           }
+          ]
+         }
+        ],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 2,
+       "snoWorld": null,
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [
+        {
+         "__raw__": 538346,
+         "__group__": 1,
+         "__type__": "DT_SNO_NAME",
+         "__typeHash__": 3339108615,
+         "__targetFileName__": "base/meta/Actor/skeleton_melee_shield_unique_DGN_Kehj_crumblinghekma_01.acr",
+         "groupName": "Actor",
+         "name": "skeleton_melee_shield_unique_DGN_Kehj_crumblinghekma_01"
+        }
+       ],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 70,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      },
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 96,
+       "dwFlags": 2,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 0,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140265,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamAllowAny",
+            "__typeHash__": 1295852463,
+            "dwType": 1295852463,
+            "eParamType": 0
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140251,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamActor",
+            "__typeHash__": 1286645889,
+            "dwType": 1286645889,
+            "eParamType": 4,
+            "snoActor": {
+             "__raw__": 1197388,
+             "__group__": 1,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Actor/skeleton_ranged_unique_DGN_Kehj_CrumblingHekma.acr",
+             "groupName": "Actor",
+             "name": "skeleton_ranged_unique_DGN_Kehj_CrumblingHekma"
+            }
+           }
+          ]
+         }
+        ],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 2,
+       "snoWorld": null,
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [
+        {
+         "__raw__": 1197388,
+         "__group__": 1,
+         "__type__": "DT_SNO_NAME",
+         "__typeHash__": 3339108615,
+         "__targetFileName__": "base/meta/Actor/skeleton_ranged_unique_DGN_Kehj_CrumblingHekma.acr",
+         "groupName": "Actor",
+         "name": "skeleton_ranged_unique_DGN_Kehj_CrumblingHekma"
+        }
+       ],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 70,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      },
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 97,
+       "dwFlags": 2,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 0,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140265,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamAllowAny",
+            "__typeHash__": 1295852463,
+            "dwType": 1295852463,
+            "eParamType": 0
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1189140251,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamActor",
+            "__typeHash__": 1286645889,
+            "dwType": 1286645889,
+            "eParamType": 4,
+            "snoActor": {
+             "__raw__": 1194335,
+             "__group__": 1,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Actor/skeleton_twohand_unique_DGN_Kehj_CrumblingHekma.acr",
+             "groupName": "Actor",
+             "name": "skeleton_twohand_unique_DGN_Kehj_CrumblingHekma"
+            }
+           }
+          ]
+         }
+        ],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 2,
+       "snoWorld": null,
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [
+        {
+         "__raw__": 1194335,
+         "__group__": 1,
+         "__type__": "DT_SNO_NAME",
+         "__typeHash__": 3339108615,
+         "__targetFileName__": "base/meta/Actor/skeleton_twohand_unique_DGN_Kehj_CrumblingHekma.acr",
+         "groupName": "Actor",
+         "name": "skeleton_twohand_unique_DGN_Kehj_CrumblingHekma"
+        }
+       ],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 70,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      }
+     ],
+     "bGiveFirstTimeReward": false,
+     "tFirstTimeReward": {
+      "__type__": "QuestReward",
+      "__typeHash__": 3387295447,
+      "snoTrackedReward": null
+     },
+     "arQuestItemsToRemove": [],
+     "snoFirstTimeRewardDisplayItem": null
+    }
+   ],
+   "unk_4b2de13": 4294967295,
+   "unk_f6ded77": {
+    "__type__": "UIImageHandleReference",
+    "__typeHash__": 1797021084,
+    "hImageHandle": 0
+   },
+   "unk_f84da79": {
+    "__type__": "UIImageHandleReference",
+    "__typeHash__": 1797021084,
+    "hImageHandle": 0
+   },
+   "snoAudioContext": null,
+   "unk_1907e03": false,
+   "hOverrideIconTracked": 0,
+   "hOverrideIconUntracked": 0,
+   "snoOverrideParticleOverheadQuestProgressTracked": null,
+   "snoOverrideParticleOverheadQuestProgressUntracked": null,
+   "unk_564e7d5": false,
+   "unk_eff642d": false,
+   "unk_fc27941": false,
+   "unk_e692de6": false,
+   "unk_d9a8a05": 4294967295,
+   "unk_5d4cfc0": 4294967295,
+   "flProgressBarFlashThreshold": 0,
+   "unk_47f8481": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "unk_ed8215b": null,
+   "unk_2928f33": null
   }
  ],
  "arRequiredReputations": [],
@@ -1786,6 +2260,8 @@
   "arSeasons": []
  },
  "dwRestrictions": 0,
+ "unk_baaed01": false,
+ "unk_3b0b41a": null,
  "unk_9c72d73": [],
  "gbidZoneEventConfig": null,
  "unk_376dcd8": false,

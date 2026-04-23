@@ -66,7 +66,14 @@
        "__type__": "UIControlConsoleInput",
        "__typeHash__": 3089331074,
        "hOptionalUIControlConsoleInputFields": {
-        "szOnR3": "UI_LoreNotification_Close"
+        "tOnR3": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1393
+        }
        }
       },
       "hOptionalUIWindowStyleFields": {
@@ -572,7 +579,14 @@
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
              "eFixedControllerButton": 15,
-             "unk_ccd9967": "UI_LoreNotification_Close"
+             "unk_f68242e": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 1393
+             }
             }
            }
           ],
@@ -618,8 +632,15 @@
          "hOptionalUIControlConsoleInputFields": {}
         },
         "hOptionalUIWindowStyleFields": {
-         "szOnClick": "UI_LoreNotification_Close",
          "eVerticalAnchoring": 1,
+         "tOnClick": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1393
+         },
          "nRight": 80,
          "eHorizontalAnchoring": 2
         },
@@ -744,14 +765,14 @@
            "hOptionalUIControlConsoleInputFields": {}
           },
           "hOptionalUIWindowStyleFields": {
-           "nTop": 8,
+           "nTop": 0,
            "nHeight": 96,
            "eClipBehavior": 2,
            "eVerticalAnchoring": 1,
            "nBottom": 0,
            "nRight": 0,
            "nWidth": 96,
-           "nLeft": 2,
+           "nLeft": 0,
            "eHorizontalAnchoring": 1,
            "hImageFrame": {
             "__type__": "UIImageHandleReference",

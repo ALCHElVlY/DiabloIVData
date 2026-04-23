@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": {
@@ -28,18 +27,21 @@
   1,
   1,
   1,
+  1,
   1
  ],
  "arAllowedItemLabels": [
   62
  ],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 63,
  "eAffixType": 2,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -51,7 +53,7 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 314,
+    "eAttribute": 329,
     "__eAttribute_name__": "Block_Chance",
     "dwID": 0,
     "nParam": -1,
@@ -66,7 +68,7 @@
      "group": 22,
      "name": "AffixQuarterstaffBlockChancePercentage"
     },
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -81,5 +83,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

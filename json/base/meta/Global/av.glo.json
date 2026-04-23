@@ -3,7 +3,6 @@
  "__snoID__": 56204,
  "__type__": "GlobalDefinition",
  "__typeHash__": 3967226522,
- "dwNextID": 0,
  "ptContent": [
   {
    "__type__": "GlobalAVData",
@@ -417,6 +416,7 @@
    "unk_4d37f57": 1,
    "flHighlightBrightness": 0.699999988079071,
    "unk_9773164": 0.4000000059604645,
+   "unk_13075a5": 1,
    "unk_8682ecb": 0.5,
    "rgbaPlayer0Color": {
     "r": 0,
@@ -513,12 +513,12 @@
    "unk_2665f25": 1000,
    "unk_c28b473": 1000,
    "unk_df5ec50": 0.004999999888241291,
-   "unk_620e28d": 0.0024999999441206455,
+   "flWetnessDecayRate": 0.0024999999441206455,
    "unk_f12663d": 0.20000000298023224,
-   "unk_6bec509": 1.25,
+   "flWetnessTargetMultiplier": 1.25,
    "unk_4ae734e": 0.30000001192092896,
    "flSnowDecayRate": 0.05000000074505806,
-   "unk_d3bbd69": 1,
+   "flSnowinessTargetMultiplier": 1,
    "unk_5822eea": {
     "x": 1,
     "y": 1,
@@ -1178,10 +1178,10 @@
     "__type__": "Type_9934af2e",
     "__typeHash__": 2570366766,
     "bShowLegend": true,
-    "unk_dba8ed": 0.019999999552965164,
+    "flAlbedoMinValid": 0.019999999552965164,
     "unk_9a547e8": 0.10000000149011612,
     "unk_729492a": 0.8999999761581421,
-    "unk_5d592f": 0.8999999761581421,
+    "flAlbedoMaxValid": 0.8999999761581421,
     "unk_fa1f9f": {
      "r": 255,
      "g": 187,
@@ -1200,9 +1200,9 @@
      "b": 255,
      "a": 255
     },
-    "unk_b634a56": 0.25,
-    "unk_504f06f": 0.75,
-    "unk_339f2a2": 0.5,
+    "flMetalnessMaxForDielectrics": 0.25,
+    "flMetalnessMinForMetals": 0.75,
+    "flSpecularMinForMetals": 0.5,
     "unk_b4b9b18": {
      "r": 255,
      "g": 187,
@@ -1496,6 +1496,34 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 343793120,
+     "snoDefaultSoundTable": {
+      "__raw__": 2376599,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Sets054_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Sets054_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 343793122,
+     "snoDefaultSoundTable": {
+      "__raw__": 2384697,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Sets056_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Sets056_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 368516398,
      "snoDefaultSoundTable": {
       "__raw__": 1588115,
@@ -1533,6 +1561,20 @@
       "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Barbarian_Armor_stor191_BPSilver_Torso.sdt",
       "groupName": "SoundTable",
       "name": "FOLY_HRO_Barbarian_Armor_stor191_BPSilver_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 432339843,
+     "snoDefaultSoundTable": {
+      "__raw__": 2478946,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Uniq95_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Uniq95_Torso"
      }
     },
     {
@@ -4708,6 +4750,20 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 1484241201,
+     "snoDefaultSoundTable": {
+      "__raw__": 2361404,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_MOUN_Chimera_Leather.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_MOUN_Chimera_Leather"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 1484750085,
      "snoDefaultSoundTable": {
       "__raw__": 1401056,
@@ -6500,6 +6556,20 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 1823273956,
+     "snoDefaultSoundTable": {
+      "__raw__": 2163938,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Sorcerer_Armor_Stor242_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Sorcerer_Armor_Stor242_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 1823273962,
      "snoDefaultSoundTable": {
       "__raw__": 2337313,
@@ -6509,6 +6579,20 @@
       "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Sorcerer_Armor_S9_Completion_Armor_Torso.sdt",
       "groupName": "SoundTable",
       "name": "FOLY_HRO_Sorcerer_Armor_S9_Completion_Armor_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 1823274025,
+     "snoDefaultSoundTable": {
+      "__raw__": 2486784,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Sorcerer_Armor_stor265_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Sorcerer_Armor_stor265_Torso"
      }
     },
     {
@@ -6565,6 +6649,20 @@
       "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Global_Trophy_Stor005.sdt",
       "groupName": "SoundTable",
       "name": "FOLY_HRO_Global_Trophy_Stor005"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 1841552726,
+     "snoDefaultSoundTable": {
+      "__raw__": 1486111,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Sorcerer_Trophy_Stor007.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Sorcerer_Trophy_Stor007"
      }
     },
     {
@@ -7620,6 +7718,20 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 1943148346,
+     "snoDefaultSoundTable": {
+      "__raw__": 2486781,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Druid_Armor_stor246_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Druid_Armor_stor246_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 1953474186,
      "snoDefaultSoundTable": {
       "__raw__": 1501942,
@@ -8278,6 +8390,34 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 2404656653,
+     "snoDefaultSoundTable": {
+      "__raw__": 2486779,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Spiritborn_Armor_stor208_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Spiritborn_Armor_stor208_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 2404656678,
+     "snoDefaultSoundTable": {
+      "__raw__": 1595320,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Druid_Armor_Stor157_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Druid_Armor_Stor157_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 2433983808,
      "snoDefaultSoundTable": {
       "__raw__": 2060866,
@@ -8315,6 +8455,20 @@
       "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Druid_Armor_Stor196_BPSilver_Torso.sdt",
       "groupName": "SoundTable",
       "name": "FOLY_HRO_Druid_Armor_Stor196_BPSilver_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 2595679309,
+     "snoDefaultSoundTable": {
+      "__raw__": 2359429,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_MOUN_Cat_Nail_Plate.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_MOUN_Cat_Nail_Plate"
      }
     },
     {
@@ -9104,6 +9258,244 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 3336299449,
+     "snoDefaultSoundTable": {
+      "__raw__": 2370391,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor153_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor153_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299451,
+     "snoDefaultSoundTable": {
+      "__raw__": 2366119,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor155_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor155_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299452,
+     "snoDefaultSoundTable": {
+      "__raw__": 2430006,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor156_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor156_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299453,
+     "snoDefaultSoundTable": {
+      "__raw__": 2370394,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor157_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor157_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299454,
+     "snoDefaultSoundTable": {
+      "__raw__": 2370397,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor158_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor158_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299455,
+     "snoDefaultSoundTable": {
+      "__raw__": 2370400,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor159_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor159_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299479,
+     "snoDefaultSoundTable": {
+      "__raw__": 2389029,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor160_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor160_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299480,
+     "snoDefaultSoundTable": {
+      "__raw__": 2429836,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor161_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor161_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299482,
+     "snoDefaultSoundTable": {
+      "__raw__": 2370404,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor163_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor163_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299483,
+     "snoDefaultSoundTable": {
+      "__raw__": 2370407,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor164_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor164_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299484,
+     "snoDefaultSoundTable": {
+      "__raw__": 2434195,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor165_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor165_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299485,
+     "snoDefaultSoundTable": {
+      "__raw__": 2434203,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor166_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor166_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299486,
+     "snoDefaultSoundTable": {
+      "__raw__": 2434212,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor167_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor167_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299514,
+     "snoDefaultSoundTable": {
+      "__raw__": 2442571,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor172_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor172_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299515,
+     "snoDefaultSoundTable": {
+      "__raw__": 2442573,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor173_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor173_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299517,
+     "snoDefaultSoundTable": {
+      "__raw__": 2442574,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor175_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor175_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3336299519,
+     "snoDefaultSoundTable": {
+      "__raw__": 2486765,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Stor177_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Stor177_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 3374057289,
      "snoDefaultSoundTable": {
       "__raw__": 2060857,
@@ -9558,6 +9950,20 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 3653014634,
+     "snoDefaultSoundTable": {
+      "__raw__": 2508122,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_MOUN_Cat_Stone_Chains.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_MOUN_Cat_Stone_Chains"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 3655448075,
      "snoDefaultSoundTable": {
       "__raw__": 1718952,
@@ -9928,6 +10334,48 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 3968663706,
+     "snoDefaultSoundTable": {
+      "__raw__": 2516170,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Base07_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Base07_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3968663732,
+     "snoDefaultSoundTable": {
+      "__raw__": 2516176,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Base10_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Base10_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 3968663734,
+     "snoDefaultSoundTable": {
+      "__raw__": 2516179,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Paladin_Armor_Base12_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Paladin_Armor_Base12_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 3978251818,
      "snoDefaultSoundTable": {
       "__raw__": 1344022,
@@ -10047,7 +10495,15 @@
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
      "szTag": 3984940010,
-     "snoDefaultSoundTable": null
+     "snoDefaultSoundTable": {
+      "__raw__": 1669515,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Necromancer_Armor_Stor186_BPGold_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Necromancer_Armor_Stor186_BPGold_Torso"
+     }
     },
     {
      "__type__": "FoleyMaterialTagInfo",
@@ -10864,6 +11320,20 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 4113628935,
+     "snoDefaultSoundTable": {
+      "__raw__": 2486782,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Rogue_Armor_stor264_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Rogue_Armor_stor264_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 4125601804,
      "snoDefaultSoundTable": {
       "__raw__": 1750797,
@@ -11382,6 +11852,20 @@
     {
      "__type__": "FoleyMaterialTagInfo",
      "__typeHash__": 2232906326,
+     "szTag": 4155531694,
+     "snoDefaultSoundTable": {
+      "__raw__": 2486780,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Necromancer_Armor_stor262_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Necromancer_Armor_stor262_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
      "szTag": 4196875811,
      "snoDefaultSoundTable": {
       "__raw__": 1194031,
@@ -11517,6 +12001,20 @@
       "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Barbarian_Armor_S9_Completion_Armor_Torso.sdt",
       "groupName": "SoundTable",
       "name": "FOLY_HRO_Barbarian_Armor_S9_Completion_Armor_Torso"
+     }
+    },
+    {
+     "__type__": "FoleyMaterialTagInfo",
+     "__typeHash__": 2232906326,
+     "szTag": 4288295623,
+     "snoDefaultSoundTable": {
+      "__raw__": 2486783,
+      "__group__": 79,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/SoundTable/FOLY_HRO_Barbarian_Armor_stor266_Torso.sdt",
+      "groupName": "SoundTable",
+      "name": "FOLY_HRO_Barbarian_Armor_stor266_Torso"
      }
     }
    ],

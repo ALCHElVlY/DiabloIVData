@@ -43,7 +43,7 @@
     "fAlphaMaskEnable": false,
     "eFillMode": 0,
     "fIndependentAlphaBlendEnable": true,
-    "tAlphaBlend": [
+    "arAlphaBlend": [
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
@@ -112,32 +112,32 @@
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
       "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
+      "eBlendOp": 0,
+      "eSrcBlendFactor": 0,
+      "eDestBlendFactor": 0,
       "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
+      "eBlendOpAlpha": 0,
+      "eSrcBlendFactorAlpha": 0,
+      "eDestBlendFactorAlpha": 0,
+      "fRWriteEnable": false,
+      "fGWriteEnable": false,
+      "fBWriteEnable": false,
       "fAWriteEnable": false
      },
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
       "fAlphaBlendEnable": false,
-      "eBlendOp": 1,
-      "eSrcBlendFactor": 5,
-      "eDestBlendFactor": 6,
+      "eBlendOp": 0,
+      "eSrcBlendFactor": 0,
+      "eDestBlendFactor": 0,
       "fSeparateAlphaBlendEnable": false,
-      "eBlendOpAlpha": 1,
-      "eSrcBlendFactorAlpha": 5,
-      "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
+      "eBlendOpAlpha": 0,
+      "eSrcBlendFactorAlpha": 0,
+      "eDestBlendFactorAlpha": 0,
+      "fRWriteEnable": false,
+      "fGWriteEnable": false,
+      "fBWriteEnable": false,
       "fAWriteEnable": false
      }
     ]
@@ -182,14 +182,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-6ad6a9cbdfc70efb",
+       "dwKey": "667db543292b327a",
        "unk_8e5f439": [
         2684354560,
         2197815296,
         16777218,
         0,
-        98304,
-        32768
+        196608,
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -200,13 +200,13 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "780b012b712a2b1b",
+       "dwKey": "-22dde953c81aff8f",
        "unk_8e5f439": [
         549404672,
         402718720,
         33554432,
         0,
-        4,
+        8,
         0
        ],
        "unk_d4d5dbb": [
@@ -288,14 +288,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-455c48a4ff895cc7",
+       "dwKey": "-492bfbbbed9086ba",
        "unk_8e5f439": [
         2684354560,
         2197815296,
         16777218,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -306,13 +306,13 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "780b012b712a2b1b",
+       "dwKey": "-22dde953c81aff8f",
        "unk_8e5f439": [
         549404672,
         402718720,
         33554432,
         0,
-        4,
+        8,
         0
        ],
        "unk_d4d5dbb": [
@@ -394,14 +394,14 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "109002f0a44aef4e",
+       "dwKey": "3c24f925e01f6388",
        "unk_8e5f439": [
         2684354560,
         2197815296,
         16777218,
         0,
         0,
-        32768
+        65536
        ],
        "unk_d4d5dbb": [],
        "ptResourceSlot": [],
@@ -412,13 +412,13 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "780b012b712a2b1b",
+       "dwKey": "-22dde953c81aff8f",
        "unk_8e5f439": [
         549404672,
         402718720,
         33554432,
         0,
-        4,
+        8,
         0
        ],
        "unk_d4d5dbb": [
@@ -932,7 +932,7 @@
    "__typeHash__": 1028015787,
    "__type__": "DT_BYTE",
    "dataOffset": 32,
-   "dataSize": 41984
+   "dataSize": 41992
   }
  }
 }

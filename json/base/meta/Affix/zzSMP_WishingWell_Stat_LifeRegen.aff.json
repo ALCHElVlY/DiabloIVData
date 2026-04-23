@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": null,
@@ -23,16 +22,19 @@
   1,
   1,
   1,
+  1,
   1
  ],
  "arAllowedItemLabels": [],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 2,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -44,7 +46,7 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 628,
+    "eAttribute": 641,
     "__eAttribute_name__": "No_Damage_Taken_Flat_Hitpoints_Regen_Per_Second",
     "dwID": 0,
     "nParam": -1,
@@ -53,7 +55,7 @@
      "compiled": "BgAAALgeBT4AAAAA"
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "1",
      "compiled": "BgAAAAAAgD8AAAAA"
     }
@@ -68,5 +70,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

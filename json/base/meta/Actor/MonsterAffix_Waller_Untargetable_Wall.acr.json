@@ -31,7 +31,6 @@
  "arStoreAnimSets": [],
  "snoAnimTree": null,
  "arActorAppearanceAddOnEntries": [],
- "snoDamageRemap": null,
  "snoVisualRemap": null,
  "gbidPartyFinderTag": null,
  "arUniqueSubObjectNameInfoPerAppearance": [],
@@ -492,58 +491,6 @@
   {
    "__type__": "MsgTriggeredEvent",
    "__typeHash__": 4134809062,
-   "dwMsgKey": 22,
-   "ptTriggerEvent": [
-    {
-     "__type__": "TriggerEventChangeLook",
-     "__typeHash__": 3507772913,
-     "dwType": 3507772913,
-     "tConditions": {
-      "__type__": "TriggerConditions",
-      "__typeHash__": 888408526,
-      "flChance": 1,
-      "bMute": false,
-      "bMuteExternal": false,
-      "tDelay": 0,
-      "tImpactVelocityRange": {
-       "rangeValue1": 0,
-       "rangeValue2": 0
-      },
-      "tImpactWeightRange": {
-       "rangeValue1": 0,
-       "rangeValue2": 0
-      },
-      "eMaterial": 0,
-      "dwConditionFlags": 1038,
-      "ePlayerCountCondition": 0,
-      "ePerformanceBehavior": 0,
-      "unk_b41b571": []
-     },
-     "fGenerated": false,
-     "fInCreation": false,
-     "dwParentActorID": 4294967295,
-     "dwActorID": 0,
-     "snoAppearance": {
-      "__raw__": 1233190,
-      "__group__": 9,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "groupName": "Appearance"
-     },
-     "tLookLink": {
-      "__type__": "LookLink",
-      "__typeHash__": 2394153027,
-      "dwLookHash": 128606857
-     },
-     "fAffectOwner": true
-    }
-   ],
-   "tCooldown": 0,
-   "dwID": 606269093
-  },
-  {
-   "__type__": "MsgTriggeredEvent",
-   "__typeHash__": 4134809062,
    "dwMsgKey": 17,
    "ptTriggerEvent": [
     {
@@ -692,6 +639,62 @@
    ],
    "tCooldown": 0,
    "dwID": 3333698878
+  },
+  {
+   "__type__": "MsgTriggeredEvent",
+   "__typeHash__": 4134809062,
+   "dwMsgKey": 22,
+   "ptTriggerEvent": [
+    {
+     "__type__": "TriggerEventFade",
+     "__typeHash__": 3281363526,
+     "dwType": 3281363526,
+     "tConditions": {
+      "__type__": "TriggerConditions",
+      "__typeHash__": 888408526,
+      "flChance": 1,
+      "bMute": false,
+      "bMuteExternal": false,
+      "tDelay": 0,
+      "tImpactVelocityRange": {
+       "rangeValue1": 0,
+       "rangeValue2": 0
+      },
+      "tImpactWeightRange": {
+       "rangeValue1": 0,
+       "rangeValue2": 0
+      },
+      "eMaterial": 0,
+      "dwConditionFlags": 1038,
+      "ePlayerCountCondition": 0,
+      "ePerformanceBehavior": 0,
+      "unk_b41b571": []
+     },
+     "fGenerated": false,
+     "fInCreation": false,
+     "dwParentActorID": 4294967295,
+     "tDuration": 0,
+     "dwTriggerFlags": 0,
+     "dwTriggerFlagsEx": 4,
+     "tCleanup": {
+      "__type__": "TriggerCleanup",
+      "__typeHash__": 2029186460,
+      "eOnOwnerDeath": 0,
+      "eOnAnimationEnd": 0,
+      "eOnSequenceEnd": 0,
+      "eOnOwnerResurrection": 0,
+      "eOnOwnerDeletion": 1,
+      "eOnOwnerPaused": 0
+     },
+     "nPreviousInTrack": -1,
+     "nNextInTrack": -1,
+     "fFadeOwner": true,
+     "bRollConnection": true,
+     "dwObjectID": 0
+    }
+   ],
+   "tCooldown": 0,
+   "dwID": 1268602790
   }
  ],
  "ptPhysData": [
@@ -727,7 +730,7 @@
      "__type__": "ActorCollisionFlags",
      "__typeHash__": 2766662738,
      "uDynamicFlagsNoOverlap": 8763,
-     "uDynamicMyFlags": 4177
+     "uDynamicMyFlags": 5201
     },
     "unk_a882afd": false,
     "unk_54403ff": false,
@@ -771,7 +774,7 @@
      "__typeHash__": 398282971,
      "unk_20b45d7": 4294967295,
      "eType": 1,
-     "flRadius": 0.75,
+     "flRadius": 0.800000011920929,
      "flLength": 4,
      "aPitch": 0,
      "aYaw": 1.5707963705062866,
@@ -849,7 +852,6 @@
     "hSpiritBondIcon": 0,
     "snoReputation": null
    },
-   "eHirelingClass": -1,
    "fConvertsDamageToDamageStates": false,
    "unk_6bce993": [],
    "unk_6b4a81d": 0,
@@ -964,10 +966,10 @@
    "eOverriddenMonsterRarity": -1,
    "unk_7859c5b": false,
    "bIsWorldBoss": false,
-   "unk_bc58cee": false,
-   "unk_7fdab9c": 10,
-   "unk_e7ee8f1": 3,
-   "unk_828c56a": false,
+   "unk_4b1672a": false,
+   "unk_1e3ad71": 10,
+   "unk_2fc83ba": 3,
+   "unk_68f046c": false,
    "unk_e4c90d3": false,
    "unk_12ecd6a": false,
    "unk_c0565bf": false,
@@ -1104,6 +1106,15 @@
      "__targetFileName__": "base/meta/EffectGroup/actor_death_shadow.efg",
      "groupName": "EffectGroup",
      "name": "actor_death_shadow"
+    },
+    {
+     "__raw__": 2264624,
+     "__group__": 14,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/EffectGroup/actor_death_holy.efg",
+     "groupName": "EffectGroup",
+     "name": "actor_death_holy"
     }
    ],
    "gbidActorResurrectDataOverride": null
@@ -1147,7 +1158,7 @@
    "__typeHash__": 3688169642,
    "snoScript": null,
    "fCannotBeTargetedByAI": false,
-   "unk_195410b": true,
+   "unk_195410b": false,
    "fNotConsideredInMarkersetBounds": false,
    "fInvulnerable": true,
    "fDisableDamage": false,
@@ -1194,6 +1205,7 @@
    },
    "unk_f190641": false,
    "unk_557e468": false,
+   "unk_e1eb9fc": false,
    "unk_d2a4d05": false,
    "unk_88f4495": false
   }

@@ -13,12 +13,12 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": null,
  "fAllowedForPlayerClass": [
   1,
+  0,
   0,
   0,
   0,
@@ -29,13 +29,15 @@
   19,
   26
  ],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 1,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -47,16 +49,16 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1126,
+    "eAttribute": 1157,
     "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
      "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(20, 30, 90)",
-     "compiled": "BgAAAAAAoEEGAAAAAADwQQYAAAAAALRCAQAAAGQAAAAAAAAA"
+     "compiled": "BgAAAAAAoEEGAAAAAADwQQYAAAAAALRCAQAAAGoAAAAAAAAA"
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "ExpectedLevelForIPower()",
      "compiled": "AQAAABEAAAAAAAAA"
     }
@@ -115,5 +117,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

@@ -170,7 +170,7 @@
            "name": "Alpha Brightness Global"
           },
           "value": 0.30000001192092896,
-          "unk_2362b28": -1,
+          "nPathValGraphIndex": -1,
           "eLightGroup": 0
          }
         }
@@ -439,7 +439,7 @@
            "name": "Alpha Brightness Global"
           },
           "value": 0.5,
-          "unk_2362b28": -1,
+          "nPathValGraphIndex": -1,
           "eLightGroup": 0
          }
         }
@@ -554,7 +554,7 @@
            "name": "Alpha Brightness Global"
           },
           "value": 0.4000000059604645,
-          "unk_2362b28": -1,
+          "nPathValGraphIndex": -1,
           "eLightGroup": 0
          }
         }
@@ -669,7 +669,7 @@
            "name": "Alpha Brightness Global"
           },
           "value": 0.4000000059604645,
-          "unk_2362b28": -1,
+          "nPathValGraphIndex": -1,
           "eLightGroup": 0
          }
         }
@@ -1455,10 +1455,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -2235,10 +2235,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -3015,10 +3015,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -3124,7 +3124,7 @@
            "name": "Alpha Brightness Global"
           },
           "value": 0.20000000298023224,
-          "unk_2362b28": -1,
+          "nPathValGraphIndex": -1,
           "eLightGroup": 0
          }
         }
@@ -3239,7 +3239,7 @@
            "name": "Alpha Brightness Global"
           },
           "value": 0.30000001192092896,
-          "unk_2362b28": -1,
+          "nPathValGraphIndex": -1,
           "eLightGroup": 0
          }
         }
@@ -3354,7 +3354,7 @@
            "name": "Alpha Brightness Global"
           },
           "value": 0.4000000059604645,
-          "unk_2362b28": -1,
+          "nPathValGraphIndex": -1,
           "eLightGroup": 0
          }
         }
@@ -4140,10 +4140,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -4920,10 +4920,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -4973,16 +4973,16 @@
  "unk_2bbd1d": {
   "__type__": "Type_c8d78ce7",
   "__typeHash__": 3369569511,
-  "nWidth": 12,
-  "nHeight": 12,
-  "nDepth": 8,
-  "dwPitch": 96,
-  "dwSlicePitch": 1152,
-  "flGridSize": 3,
+  "nWidth": 9,
+  "nHeight": 9,
+  "nDepth": 7,
+  "dwPitch": 72,
+  "dwSlicePitch": 648,
+  "flGridSize": 4,
   "wpOrigin": {
    "x": 0,
    "y": 0,
-   "z": -7
+   "z": -10
   },
   "unk_4b236f4": "0",
   "unk_aa0958e": {
@@ -4994,7 +4994,7 @@
     "__typeHash__": 1028759507,
     "__type__": "DT_WORD",
     "dataOffset": 32,
-    "dataSize": 9216
+    "dataSize": 4536
    }
   },
   "unk_aa09583": {
@@ -5005,8 +5005,8 @@
    "value": {
     "__typeHash__": 1028759507,
     "__type__": "DT_WORD",
-    "dataOffset": 9248,
-    "dataSize": 9216
+    "dataOffset": 4568,
+    "dataSize": 4536
    }
   },
   "unk_aa0957e": {
@@ -5017,8 +5017,8 @@
    "value": {
     "__typeHash__": 1028759507,
     "__type__": "DT_WORD",
-    "dataOffset": 18464,
-    "dataSize": 9216
+    "dataOffset": 9104,
+    "dataSize": 4536
    }
   },
   "unk_dd3cf4b": {
@@ -5029,8 +5029,8 @@
    "value": {
     "__typeHash__": 1028759507,
     "__type__": "DT_WORD",
-    "dataOffset": 27680,
-    "dataSize": 9216
+    "dataOffset": 13640,
+    "dataSize": 4536
    }
   },
   "unk_dd3cf40": {
@@ -5041,8 +5041,8 @@
    "value": {
     "__typeHash__": 1028759507,
     "__type__": "DT_WORD",
-    "dataOffset": 36896,
-    "dataSize": 9216
+    "dataOffset": 18176,
+    "dataSize": 4536
    }
   },
   "unk_dd3cf3b": {
@@ -5053,8 +5053,8 @@
    "value": {
     "__typeHash__": 1028759507,
     "__type__": "DT_WORD",
-    "dataOffset": 46112,
-    "dataSize": 9216
+    "dataOffset": 22712,
+    "dataSize": 4536
    }
   }
  }

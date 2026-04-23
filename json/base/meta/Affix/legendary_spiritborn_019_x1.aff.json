@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": {
@@ -28,21 +27,25 @@
   0,
   0,
   1,
-  1
+  1,
+  0
  ],
  "arAllowedItemLabels": [
   0,
   28,
   26,
-  19
+  19,
+  15
  ],
- "unk_5e84277": 2,
+ "dwContentLicenseRequirements": 16,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 0,
  "arMaxLegendaryRanks": [
   16,
   11,
-  21
+  21,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -54,16 +57,16 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1126,
+    "eAttribute": 1157,
     "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
      "value": "1+(CurrentLegendaryRank()-1)*0.05",
-     "compiled": "BgAAAAAAgD8BAAAAUAAAAAYAAAAAAIA/DAAAAAYAAADNzEw9DQAAAAsAAAAAAAAA"
+     "compiled": "BgAAAAAAgD8BAAAAVgAAAAYAAAAAAIA/DAAAAAYAAADNzEw9DQAAAAsAAAAAAAAA"
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "",
      "compiled": ""
     }
@@ -131,5 +134,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

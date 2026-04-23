@@ -60,13 +60,13 @@
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
      "snoTex": {
-      "__raw__": 156636,
+      "__raw__": 58307,
       "__group__": 44,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Texture/fire_wall_flameShapes_fb_Color.tex",
+      "__targetFileName__": "base/meta/Texture/fire_torch_flameShapes_fb_Color.tex",
       "groupName": "Texture",
-      "name": "fire_wall_flameShapes_fb_Color"
+      "name": "fire_torch_flameShapes_fb_Color"
      },
      "ptTexAnim": [
       {
@@ -109,21 +109,21 @@
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
      "snoTex": {
-      "__raw__": 519045,
+      "__raw__": 391441,
       "__group__": 44,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Texture/sorc_firePattern_Noise.tex",
+      "__targetFileName__": "base/meta/Texture/sorc_selection_screen_fireNoise_detailed_Alpha.tex",
       "groupName": "Texture",
-      "name": "sorc_firePattern_Noise"
+      "name": "sorc_selection_screen_fireNoise_detailed_Alpha"
      },
      "ptTexAnim": [
       {
        "__type__": "TexAnimTranslation",
        "__typeHash__": 3866881285,
        "dwType": 3866881285,
-       "flUScale": 1,
-       "flVScale": 1,
+       "flUScale": 1.5,
+       "flVScale": 0.800000011920929,
        "flUTransInitial": 0,
        "unk_803e8a7": {
         "rangeValue1": 0.5,
@@ -225,13 +225,13 @@
      "__type__": "MaterialTexture",
      "__typeHash__": 3890408608,
      "snoTex": {
-      "__raw__": 137456,
+      "__raw__": 1031106,
       "__group__": 44,
       "__type__": "DT_SNO",
       "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Texture/vfxSchool_fireShapes_noise_jjohnston_Alpha.tex",
+      "__targetFileName__": "base/meta/Texture/vfx_flameShapes_Noise2.tex",
       "groupName": "Texture",
-      "name": "vfxSchool_fireShapes_noise_jjohnston_Alpha"
+      "name": "vfx_flameShapes_Noise2"
      },
      "ptTexAnim": [
       {
@@ -471,7 +471,7 @@
        "__typeHash__": 3866881285,
        "dwType": 3866881285,
        "flUScale": 0.6000000238418579,
-       "flVScale": 0.4000000059604645,
+       "flVScale": 0.30000001192092896,
        "flUTransInitial": 0,
        "unk_803e8a7": {
         "rangeValue1": -10,
@@ -564,6 +564,27 @@
      "nTexAnimStateIndex": 4,
      "unk_e1a4010": false
     }
+   },
+   {
+    "__type__": "MaterialTextureEntry",
+    "__typeHash__": 552516018,
+    "eShaderTex": 91,
+    "tMatTex": {
+     "__type__": "MaterialTexture",
+     "__typeHash__": 3890408608,
+     "snoTex": {
+      "__raw__": 282703,
+      "__group__": 44,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Texture/black_blackalpha.tex",
+      "groupName": "Texture",
+      "name": "black_blackalpha"
+     },
+     "ptTexAnim": [],
+     "nTexAnimStateIndex": -1,
+     "unk_e1a4010": true
+    }
    }
   ],
   "ptRunTimeMaterialValues": [
@@ -587,7 +608,7 @@
         "name": "Color Intensity"
        },
        "value": 2,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -607,7 +628,7 @@
         "name": "Alpha Noise Multiplier"
        },
        "value": 2,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -627,7 +648,7 @@
         "name": "UV Distortion 1 U Strength"
        },
        "value": 0.4000000059604645,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -646,8 +667,28 @@
         "groupName": "MaterialValue",
         "name": "UV Distortion 1 V Strength"
        },
-       "value": 0.10000000149011612,
-       "unk_2362b28": -1,
+       "value": 0.3799999952316284,
+       "nPathValGraphIndex": 0,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
+        "__raw__": 151653,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/Alpha Shape-Noise Multiplier.mtv",
+        "groupName": "MaterialValue",
+        "name": "Alpha Shape-Noise Multiplier"
+       },
+       "value": 1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -667,7 +708,7 @@
         "name": "UV Distortion Shape Strength"
        },
        "value": 0.15000000596046448,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": 1,
        "eLightGroup": 0
       }
      },
@@ -687,7 +728,7 @@
         "name": "Alpha Soft Distance"
        },
        "value": 0.6000000238418579,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -707,7 +748,7 @@
         "name": "zSwitch Particle Distortion Method"
        },
        "value": 1,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -727,7 +768,7 @@
         "name": "zSwitch Particle Noise Method"
        },
        "value": 2,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -747,7 +788,7 @@
         "name": "zSwitch Particle Color Method"
        },
        "value": 2,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -767,7 +808,7 @@
         "name": "Noise 2 - Alpha lerp to white"
        },
        "value": 0.10000000149011612,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -787,7 +828,7 @@
         "name": "UV Distortion Dissolve Strength"
        },
        "value": 0.30000001192092896,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -807,7 +848,7 @@
         "name": "UV Distortion Noise1 Strength"
        },
        "value": 0.3499999940395355,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -826,8 +867,8 @@
         "groupName": "MaterialValue",
         "name": "UV Distortion Noise2 Strength"
        },
-       "value": 0.05000000074505806,
-       "unk_2362b28": -1,
+       "value": 0.25,
+       "nPathValGraphIndex": 2,
        "eLightGroup": 0
       }
      },
@@ -847,7 +888,7 @@
         "name": "Depth-Fade Power"
        },
        "value": 2,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -867,7 +908,7 @@
         "name": "Exposure Compensation Enabled"
        },
        "value": 1,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      },
@@ -887,18 +928,172 @@
         "name": "High EV Alpha"
        },
        "value": 0.699999988079071,
-       "unk_2362b28": -1,
+       "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
      }
     ],
-    "arMaterialScalarGraphs": [],
+    "arMaterialScalarGraphs": [
+     {
+      "__type__": "RunTimeMaterialScalarGraphEntry",
+      "__typeHash__": 1621969581,
+      "pathValGraph": {
+       "__type__": "InterpolationPath_float",
+       "__typeHash__": 3422409450,
+       "tHeader": {
+        "__type__": "InterpolationPathHeader",
+        "__typeHash__": 2520702334,
+        "tLoopPointStart": 0,
+        "tLoopPointEnd": 1,
+        "nDistributionFunction": 0,
+        "nMinMaxBehavior": 0,
+        "arInterpScalar": [
+         {
+          "__type__": "InterpolationScalar",
+          "__typeHash__": 991799518,
+          "nScalarFunction": 0,
+          "dwFlags": 1,
+          "tInputRange": {
+           "rangeValue1": 0,
+           "rangeValue2": 1
+          },
+          "tRemapRange": {
+           "rangeValue1": 0,
+           "rangeValue2": 0
+          },
+          "eRemapEasing": 0,
+          "szFormulaName": 0
+         }
+        ],
+        "dwFlags": 4
+       },
+       "ptArrayNodes": [
+        {
+         "__type__": "InterpolationNode_float",
+         "__typeHash__": 2007685731,
+         "tValueMin": 0,
+         "tValueMax": 0,
+         "tTime": 0
+        },
+        {
+         "__type__": "InterpolationNode_float",
+         "__typeHash__": 2007685731,
+         "tValueMin": 0.19881844520568848,
+         "tValueMax": 0.19881844520568848,
+         "tTime": 1
+        }
+       ]
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarGraphEntry",
+      "__typeHash__": 1621969581,
+      "pathValGraph": {
+       "__type__": "InterpolationPath_float",
+       "__typeHash__": 3422409450,
+       "tHeader": {
+        "__type__": "InterpolationPathHeader",
+        "__typeHash__": 2520702334,
+        "tLoopPointStart": 0,
+        "tLoopPointEnd": 1,
+        "nDistributionFunction": 0,
+        "nMinMaxBehavior": 0,
+        "arInterpScalar": [
+         {
+          "__type__": "InterpolationScalar",
+          "__typeHash__": 991799518,
+          "nScalarFunction": 0,
+          "dwFlags": 1,
+          "tInputRange": {
+           "rangeValue1": 0,
+           "rangeValue2": 1
+          },
+          "tRemapRange": {
+           "rangeValue1": 0,
+           "rangeValue2": 0
+          },
+          "eRemapEasing": 0,
+          "szFormulaName": 0
+         }
+        ],
+        "dwFlags": 4
+       },
+       "ptArrayNodes": [
+        {
+         "__type__": "InterpolationNode_float",
+         "__typeHash__": 2007685731,
+         "tValueMin": 0,
+         "tValueMax": 0,
+         "tTime": 0
+        },
+        {
+         "__type__": "InterpolationNode_float",
+         "__typeHash__": 2007685731,
+         "tValueMin": 0.8799999952316284,
+         "tValueMax": 0.8799999952316284,
+         "tTime": 1
+        }
+       ]
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarGraphEntry",
+      "__typeHash__": 1621969581,
+      "pathValGraph": {
+       "__type__": "InterpolationPath_float",
+       "__typeHash__": 3422409450,
+       "tHeader": {
+        "__type__": "InterpolationPathHeader",
+        "__typeHash__": 2520702334,
+        "tLoopPointStart": 0,
+        "tLoopPointEnd": 1,
+        "nDistributionFunction": 0,
+        "nMinMaxBehavior": 0,
+        "arInterpScalar": [
+         {
+          "__type__": "InterpolationScalar",
+          "__typeHash__": 991799518,
+          "nScalarFunction": 0,
+          "dwFlags": 1,
+          "tInputRange": {
+           "rangeValue1": 0,
+           "rangeValue2": 1
+          },
+          "tRemapRange": {
+           "rangeValue1": 0,
+           "rangeValue2": 0
+          },
+          "eRemapEasing": 0,
+          "szFormulaName": 0
+         }
+        ],
+        "dwFlags": 4
+       },
+       "ptArrayNodes": [
+        {
+         "__type__": "InterpolationNode_float",
+         "__typeHash__": 2007685731,
+         "tValueMin": 0,
+         "tValueMax": 0,
+         "tTime": 0
+        },
+        {
+         "__type__": "InterpolationNode_float",
+         "__typeHash__": 2007685731,
+         "tValueMin": 0.7371428608894348,
+         "tValueMax": 0.7371428608894348,
+         "tTime": 1
+        }
+       ]
+      }
+     }
+    ],
     "arMaterialVectorValues": [],
     "arMaterialVectorGraphs": []
    }
   ],
   "nTexAnimStateCount": 5,
-  "fHasGraph": false
+  "fHasGraph": true
  },
  "arDecalLookVariantMap": [],
  "snoSurface": {

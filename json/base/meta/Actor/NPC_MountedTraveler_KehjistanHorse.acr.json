@@ -49,7 +49,6 @@
   "name": "Mount_AnimTree"
  },
  "arActorAppearanceAddOnEntries": [],
- "snoDamageRemap": null,
  "snoVisualRemap": null,
  "gbidPartyFinderTag": null,
  "arUniqueSubObjectNameInfoPerAppearance": [
@@ -1047,7 +1046,6 @@
     "hSpiritBondIcon": 0,
     "snoReputation": null
    },
-   "eHirelingClass": -1,
    "fConvertsDamageToDamageStates": false,
    "unk_6bce993": [],
    "unk_6b4a81d": 0,
@@ -1158,10 +1156,10 @@
    "eOverriddenMonsterRarity": -1,
    "unk_7859c5b": false,
    "bIsWorldBoss": false,
-   "unk_bc58cee": false,
-   "unk_7fdab9c": 10,
-   "unk_e7ee8f1": 3,
-   "unk_828c56a": false,
+   "unk_4b1672a": false,
+   "unk_1e3ad71": 10,
+   "unk_2fc83ba": 3,
+   "unk_68f046c": false,
    "unk_e4c90d3": false,
    "unk_12ecd6a": false,
    "unk_c0565bf": false,
@@ -1304,6 +1302,15 @@
      "__targetFileName__": "base/meta/EffectGroup/actor_getHit_shadow.efg",
      "groupName": "EffectGroup",
      "name": "actor_getHit_shadow"
+    },
+    {
+     "__raw__": 196910,
+     "__group__": 14,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/EffectGroup/actor_getHit_holy.efg",
+     "groupName": "EffectGroup",
+     "name": "actor_getHit_holy"
     }
    ],
    "arDirectionalHitEffectGroups": [
@@ -1360,6 +1367,15 @@
      "__targetFileName__": "base/meta/EffectGroup/actor_getHit_shadow_directional.efg",
      "groupName": "EffectGroup",
      "name": "actor_getHit_shadow_directional"
+    },
+    {
+     "__raw__": 2244611,
+     "__group__": 14,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/EffectGroup/actor_getHit_holy_directional.efg",
+     "groupName": "EffectGroup",
+     "name": "actor_getHit_holy_directional"
     }
    ],
    "arDOTEffectGroups": [
@@ -1416,6 +1432,15 @@
      "__targetFileName__": "base/meta/EffectGroup/actor_dot_shadow.efg",
      "groupName": "EffectGroup",
      "name": "actor_dot_shadow"
+    },
+    {
+     "__raw__": 2242364,
+     "__group__": 14,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/EffectGroup/actor_dot_holy.efg",
+     "groupName": "EffectGroup",
+     "name": "actor_dot_holy"
     }
    ],
    "arDOTApplicationEffectGroups": [
@@ -1472,6 +1497,15 @@
      "__targetFileName__": "base/meta/EffectGroup/actor_dot_application_shadow.efg",
      "groupName": "EffectGroup",
      "name": "actor_dot_application_shadow"
+    },
+    {
+     "__raw__": 2247524,
+     "__group__": 14,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/EffectGroup/actor_dot_application_holy.efg",
+     "groupName": "EffectGroup",
+     "name": "actor_dot_application_holy"
     }
    ],
    "snoMonsterRarityEffectGroup": {
@@ -1570,6 +1604,7 @@
    },
    "unk_f190641": false,
    "unk_557e468": false,
+   "unk_e1eb9fc": false,
    "unk_d2a4d05": false,
    "unk_88f4495": false
   }
@@ -6403,6 +6438,21 @@
      "tFoleyMaterialTag": {
       "__type__": "FoleyMaterialTag",
       "__typeHash__": 2077459498,
+      "szTag": 2595679309
+     },
+     "unk_f77a839": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "__type__": "ActorFoleySoundOverride",
+     "__typeHash__": 88475393,
+     "tFoleyMaterialTag": {
+      "__type__": "FoleyMaterialTag",
+      "__typeHash__": 2077459498,
       "szTag": 3084027657
      },
      "unk_f77a839": [
@@ -6449,6 +6499,21 @@
       "__type__": "FoleyMaterialTag",
       "__typeHash__": 2077459498,
       "szTag": 3565543603
+     },
+     "unk_f77a839": [
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "__type__": "ActorFoleySoundOverride",
+     "__typeHash__": 88475393,
+     "tFoleyMaterialTag": {
+      "__type__": "FoleyMaterialTag",
+      "__typeHash__": 2077459498,
+      "szTag": 3653014634
      },
      "unk_f77a839": [
       null,
@@ -6526,7 +6591,184 @@
    "__typeHash__": 1015376646,
    "eMountRarity": 0,
    "eMountType": 0,
-   "snoMountPowerOverride": null
+   "snoMountPowerOverride": null,
+   "snoSkillOverrides": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "snoEvadeOverride": null,
+   "snoTownPortalOverride": null,
+   "snoDismountOverride": null,
+   "snoPotionOverride": null,
+   "snoObserverOverride": null,
+   "flDamageScalar": 1,
+   "flDamageReduction": 0,
+   "unk_7710d7e": 0,
+   "gbidDamageMitigation": null,
+   "gbidMountParams": null,
+   "arWarningConversationLines": [
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    },
+    {
+     "__type__": "ConversationNodeReference",
+     "__typeHash__": 1014796656,
+     "snoConversation": null,
+     "dwNodeID": 0
+    }
+   ],
+   "snoSpeaker": null
   }
  ],
  "ptPostprocessed": "0",

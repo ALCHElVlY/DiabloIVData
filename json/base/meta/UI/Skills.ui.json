@@ -933,25 +933,74 @@
         "__type__": "UIControlConsoleInput",
         "__typeHash__": 3089331074,
         "hOptionalUIControlConsoleInputFields": {
-         "szOnR3": "UI_SkillAccess_ViewOnSkillTree",
-         "szOnButton3": "UI_SkillAccess_OnSkillChoiceCycleArsenal"
+         "tOnR3": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1253
+         },
+         "tOnButton3": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1248
+         }
         }
        },
        "hOptionalUIWindowStyleFields": {
-        "szOnDrag": "UI_SkillAccess_OnSkillChoiceDrag",
-        "nTooltip": "UI_SkillAccess_SkillChoiceTooltip",
-        "szOnClick": "UI_SkillAccess_OnSkillChoiceClick",
+        "tOnDragTargetRelease": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1243
+        },
         "nHeight": 80,
         "eVerticalAnchoring": 1,
         "unk_3dc9f06": 8,
         "unk_3dc9f07": 8,
-        "szOnRightClick": "UI_SkillAccess_ViewOnSkillTree",
         "unk_438e5c1": 1,
-        "szOnDragTargetRelease": "UI_SkillAccess_OnSkillChoiceClick",
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1243
+        },
         "nBottom": 9,
-        "szOnMiddleClick": "UI_SkillAccess_OnSkillChoiceCycleArsenal",
         "nRight": 10,
         "nWidth": 80,
+        "tOnTooltip": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1250
+        },
+        "tOnMiddleClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1248
+        },
+        "tOnRightClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1253
+        },
+        "onDrag": 33,
         "bIsDragTarget": 1,
         "eTooltipAlignHorizontal": 5,
         "snoControllerHighlightTiledStyle": {
@@ -2375,22 +2424,71 @@
         "__type__": "UIControlConsoleInput",
         "__typeHash__": 3089331074,
         "hOptionalUIControlConsoleInputFields": {
-         "szOnButton3Held": "UI_SkillAccess_OnSkillLoadoutRightClick",
-         "szOnButton3": "UI_SkillAccess_OnSkillLoadoutCycleArsenal"
+         "tOnButton3Held": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1245
+         },
+         "tOnButton3": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1249
+         }
         }
        },
        "hOptionalUIWindowStyleFields": {
-        "szOnDrag": "UI_SkillAccess_OnSkillLoadoutDrag",
-        "nTooltip": "UI_SkillAccess_SkillLoadoutTooltip",
-        "szOnClick": "UI_SkillAccess_OnSkillLoadoutClick",
+        "tOnDragTargetRelease": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1244
+        },
         "nHeight": 76,
         "unk_3dc9f06": 3,
         "unk_3dc9f07": 3,
-        "szOnRightClick": "UI_SkillAccess_OnSkillLoadoutRightClick",
         "unk_438e5c1": 1,
-        "szOnDragTargetRelease": "UI_SkillAccess_OnSkillLoadoutClick",
-        "szOnMiddleClick": "UI_SkillAccess_OnSkillLoadoutCycleArsenal",
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1244
+        },
         "nWidth": 76,
+        "tOnTooltip": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1251
+        },
+        "tOnMiddleClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1249
+        },
+        "tOnRightClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1245
+        },
+        "onDrag": 34,
         "bIsDragTarget": 1,
         "eTooltipAlignHorizontal": 6,
         "snoControllerHighlightTiledStyle": {
@@ -3368,24 +3466,59 @@
         "__type__": "UIControlConsoleInput",
         "__typeHash__": 3089331074,
         "hOptionalUIControlConsoleInputFields": {
-         "szOnButton3": "UI_SkillAccess_OnSkillEnchantRightClick"
+         "tOnButton3": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1247
+         }
         }
        },
        "hOptionalUIWindowStyleFields": {
         "nTop": 12,
-        "szOnDrag": "UI_SkillAccess_OnSkillEnchantDrag",
-        "nTooltip": "UI_SkillAccess_SkillEnchantTooltip",
-        "szOnClick": "UI_SkillAccess_OnSkillEnchantClick",
+        "tOnDragTargetRelease": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1246
+        },
         "nHeight": 65,
         "unk_3dc9f06": 3,
         "unk_3dc9f07": 3,
-        "szOnRightClick": "UI_SkillAccess_OnSkillEnchantRightClick",
         "unk_438e5c1": 1,
-        "szOnDragTargetRelease": "UI_SkillAccess_OnSkillEnchantClick",
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1246
+        },
         "nBottom": 0,
         "nRight": 0,
         "nWidth": 65,
+        "tOnTooltip": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1252
+        },
         "eHorizontalAnchoring": 1,
+        "tOnRightClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1247
+        },
+        "onDrag": 35,
         "bIsDragTarget": 1,
         "eTooltipAlignHorizontal": 6,
         "snoControllerHighlightTiledStyle": {
@@ -5162,24 +5295,59 @@
         "__type__": "UIControlConsoleInput",
         "__typeHash__": 3089331074,
         "hOptionalUIControlConsoleInputFields": {
-         "szOnR3": "UI_SkillAccess_ViewOnSkillTree"
+         "tOnR3": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1253
+         }
         }
        },
        "hOptionalUIWindowStyleFields": {
         "nTop": 22,
-        "szOnDrag": "UI_SkillAccess_OnSkillChoiceDrag",
-        "nTooltip": "UI_SkillAccess_SpiritbornSkillChoiceTooltip",
-        "szOnClick": "UI_SkillAccess_OnSkillChoiceClick",
+        "tOnDragTargetRelease": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1243
+        },
         "nHeight": 65,
         "unk_3dc9f06": 3,
         "unk_3dc9f07": 3,
-        "szOnRightClick": "UI_SkillAccess_ViewOnSkillTree",
         "unk_438e5c1": 1,
-        "szOnDragTargetRelease": "UI_SkillAccess_OnSkillChoiceClick",
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1243
+        },
         "nBottom": 0,
         "nRight": 0,
         "nWidth": 65,
+        "tOnTooltip": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1592
+        },
         "eHorizontalAnchoring": 1,
+        "tOnRightClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1253
+        },
+        "onDrag": 33,
         "bIsDragTarget": 1,
         "eTooltipAlignHorizontal": 6,
         "snoControllerHighlightTiledStyle": {
@@ -6919,24 +7087,59 @@
         "__type__": "UIControlConsoleInput",
         "__typeHash__": 3089331074,
         "hOptionalUIControlConsoleInputFields": {
-         "szOnR3": "UI_SkillAccess_ViewOnSkillTree"
+         "tOnR3": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 1253
+         }
         }
        },
        "hOptionalUIWindowStyleFields": {
         "nTop": 12,
-        "szOnDrag": "UI_SkillAccess_OnSkillChoiceDrag",
-        "nTooltip": "UI_SkillAccess_SpiritbornSkillChoiceTooltip",
-        "szOnClick": "UI_SkillAccess_OnSkillChoiceClick",
+        "tOnDragTargetRelease": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1243
+        },
         "nHeight": 65,
         "unk_3dc9f06": 3,
         "unk_3dc9f07": 3,
-        "szOnRightClick": "UI_SkillAccess_ViewOnSkillTree",
         "unk_438e5c1": 1,
-        "szOnDragTargetRelease": "UI_SkillAccess_OnSkillChoiceClick",
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1243
+        },
         "nBottom": 0,
         "nRight": 0,
         "nWidth": 65,
+        "tOnTooltip": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1592
+        },
         "eHorizontalAnchoring": 1,
+        "tOnRightClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1253
+        },
+        "onDrag": 33,
         "bIsDragTarget": 1,
         "eTooltipAlignHorizontal": 6,
         "snoControllerHighlightTiledStyle": {

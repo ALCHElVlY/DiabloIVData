@@ -934,10 +934,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -1807,10 +1807,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -2680,10 +2680,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -3553,10 +3553,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -4426,10 +4426,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -5299,10 +5299,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -6387,10 +6387,10 @@
        "eRemapEasing": 0,
        "szFormulaName": 0
       },
-      "unk_8fe9b5c": 8,
+      "flSoftShadowRadius": 8,
       "unk_c8e249b": 4294967295
      },
-     "unk_ef69835": false
+     "fUseLightSNOData": false
     }
    ],
    "ptGroupData": [],
@@ -6417,88 +6417,6 @@
      "dwFlags": 0
     },
     "eNavBehavior": 0,
-    "eCullingLevel": 0,
-    "szLookOverride": 0,
-    "dwShaderMapOverride": 4294967295,
-    "ptRunTimeMaterialValues": []
-   }
-  },
-  {
-   "__type__": "Marker",
-   "__typeHash__": 3132676386,
-   "dwHash": 3970774065,
-   "nID": 46,
-   "eType": 0,
-   "transform": {
-    "__type__": "PRTransform",
-    "__typeHash__": 2588169118,
-    "q": {
-     "__type__": "bcQuat",
-     "__typeHash__": 3955716320,
-     "x": 0,
-     "y": 0,
-     "z": 0.8319512605667114,
-     "w": 0.5548487305641174
-    },
-    "wp": {
-     "x": 93.86710357666016,
-     "y": 78.40869903564453,
-     "z": 16.624300003051758
-    }
-   },
-   "snoname": {
-    "__raw__": 1310454,
-    "__group__": 24,
-    "__type__": "DT_SNO_NAME",
-    "__typeHash__": 3339108615,
-    "__targetFileName__": "base/meta/MarkerSet/Cultist_Candles_Cluster_01_Prefab.mrk",
-    "groupName": "MarkerSet",
-    "name": "Cultist_Candles_Cluster_01_Prefab"
-   },
-   "dwMarkerFlags": 2,
-   "dwMarkerFlagsEx": 0,
-   "vecScale": {
-    "x": 0.9501720070838928,
-    "y": 0.9501720070838928,
-    "z": 0.9501720070838928
-   },
-   "vecMirrored": {
-    "x": 1,
-    "y": 1,
-    "z": 1
-   },
-   "ptBase": [
-    {
-     "__type__": "MarkerPrefabData",
-     "__typeHash__": 3127494188,
-     "dwType": 3127494188,
-     "arPrefabCustomizations": []
-    }
-   ],
-   "ptGroupData": [],
-   "ptMarkerLinks": [],
-   "unk_c339f69": -1,
-   "tIGCHideSettings": {
-    "__type__": "MarkerIGCHideSettings",
-    "__typeHash__": 867785856,
-    "nHideGroup": 0,
-    "dwFlags": 0
-   },
-   "dwSeed": 0,
-   "tPrefabData": {
-    "__type__": "PrefabData",
-    "__typeHash__": 3988626058,
-    "dwFlags": 24,
-    "eOverrideFadeSettings": 3,
-    "eFadeMethod": 0,
-    "nFadeGroup": 0,
-    "tIGCHideSettings": {
-     "__type__": "MarkerIGCHideSettings",
-     "__typeHash__": 867785856,
-     "nHideGroup": 0,
-     "dwFlags": 0
-    },
-    "eNavBehavior": 4,
     "eCullingLevel": 0,
     "szLookOverride": 0,
     "dwShaderMapOverride": 4294967295,
@@ -7810,6 +7728,7 @@
        "dwShaderMapOverride": 4294967295,
        "nPlayerIndex": 0,
        "flScale": 0.9501720070838928,
+       "unk_ebd19c": false,
        "szSpawnLocatorName": 0,
        "vecScalar": {
         "x": 1,
@@ -8163,6 +8082,7 @@
        "dwShaderMapOverride": 4294967295,
        "nPlayerIndex": 0,
        "flScale": 0.9501720070838928,
+       "unk_ebd19c": false,
        "szSpawnLocatorName": 0,
        "vecScalar": {
         "x": 1,
@@ -8516,6 +8436,7 @@
        "dwShaderMapOverride": 4294967295,
        "nPlayerIndex": 0,
        "flScale": 0.6167430281639099,
+       "unk_ebd19c": false,
        "szSpawnLocatorName": 0,
        "vecScalar": {
         "x": 1,
@@ -9021,6 +8942,7 @@
        "dwShaderMapOverride": 4294967295,
        "nPlayerIndex": 0,
        "flScale": 0.8040710091590881,
+       "unk_ebd19c": false,
        "szSpawnLocatorName": 0,
        "vecScalar": {
         "x": 1,

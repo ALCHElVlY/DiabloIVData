@@ -54,7 +54,7 @@
      "__type__": "PlayerClassCoreStatBenefitEntry",
      "__typeHash__": 2507153527,
      "eContributingCoreStat": 0,
-     "flContributionScalar": 1,
+     "flContributionScalar": 1.100000023841858,
      "eBenefitCondition": 0,
      "unk_aae71b4": 0
     }
@@ -111,11 +111,11 @@
  },
  "unk_97b2546": [
   0,
-  3,
-  7,
-  7,
-  7,
-  7
+  0,
+  0,
+  0,
+  0,
+  0
  ],
  "snoCombatDismountPower": {
   "__raw__": 525058,
@@ -423,6 +423,7 @@
      "groupName": "ItemType",
      "name": "Axe"
     },
+    "snoAdditionalItemType": null,
     "snoPassivePower": {
      "__raw__": 687105,
      "__group__": 29,
@@ -467,6 +468,15 @@
      "__targetFileName__": "base/meta/ItemType/Mace.itt",
      "groupName": "ItemType",
      "name": "Mace"
+    },
+    "snoAdditionalItemType": {
+     "__raw__": 2312856,
+     "__group__": 98,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/ItemType/Flail.itt",
+     "groupName": "ItemType",
+     "name": "Flail"
     },
     "snoPassivePower": {
      "__raw__": 687645,
@@ -513,6 +523,7 @@
      "groupName": "ItemType",
      "name": "Sword"
     },
+    "snoAdditionalItemType": null,
     "snoPassivePower": {
      "__raw__": 687646,
      "__group__": 29,
@@ -558,6 +569,7 @@
      "groupName": "ItemType",
      "name": "Axe2H"
     },
+    "snoAdditionalItemType": null,
     "snoPassivePower": {
      "__raw__": 687648,
      "__group__": 29,
@@ -603,6 +615,7 @@
      "groupName": "ItemType",
      "name": "Mace2H"
     },
+    "snoAdditionalItemType": null,
     "snoPassivePower": {
      "__raw__": 687651,
      "__group__": 29,
@@ -648,6 +661,7 @@
      "groupName": "ItemType",
      "name": "Polearm"
     },
+    "snoAdditionalItemType": null,
     "snoPassivePower": {
      "__raw__": 687667,
      "__group__": 29,
@@ -693,6 +707,7 @@
      "groupName": "ItemType",
      "name": "Sword2H"
     },
+    "snoAdditionalItemType": null,
     "snoPassivePower": {
      "__raw__": 687668,
      "__group__": 29,
@@ -850,6 +865,52 @@
     ]
    }
   ]
+ },
+ "tPaladinData": {
+  "__type__": "PlayerClassPaladinData",
+  "__typeHash__": 1720787606,
+  "dwUnlockLevel": 15,
+  "snoUnlockQuest": null,
+  "snoClassQuestTrackedReward": null,
+  "arOathData": [
+   {
+    "__type__": "PaladinOathData",
+    "__typeHash__": 2033480319,
+    "snoOathPassivePower": null,
+    "hTitle": 0,
+    "hOathDescription": 0,
+    "hFlavor": 0,
+    "hOathIcon": 0
+   },
+   {
+    "__type__": "PaladinOathData",
+    "__typeHash__": 2033480319,
+    "snoOathPassivePower": null,
+    "hTitle": 0,
+    "hOathDescription": 0,
+    "hFlavor": 0,
+    "hOathIcon": 0
+   },
+   {
+    "__type__": "PaladinOathData",
+    "__typeHash__": 2033480319,
+    "snoOathPassivePower": null,
+    "hTitle": 0,
+    "hOathDescription": 0,
+    "hFlavor": 0,
+    "hOathIcon": 0
+   },
+   {
+    "__type__": "PaladinOathData",
+    "__typeHash__": 2033480319,
+    "snoOathPassivePower": null,
+    "hTitle": 0,
+    "hOathDescription": 0,
+    "hFlavor": 0,
+    "hOathIcon": 0
+   }
+  ],
+  "arAdditionalPassives": []
  },
  "arItemTiers": [
   {
@@ -4795,6 +4856,64 @@
    "__type__": "ItemTier",
    "__typeHash__": 866553347,
    "snoHead": {
+    "__raw__": 1711281,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_211_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_211_stor"
+   },
+   "snoTorso": {
+    "__raw__": 1711287,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_211_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_211_stor"
+   },
+   "snoFeet": {
+    "__raw__": 1711305,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_211_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_211_stor"
+   },
+   "snoHands": {
+    "__raw__": 1711293,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_211_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_211_stor"
+   },
+   "snoLegs": {
+    "__raw__": 1711299,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_211_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_211_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456828
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
     "__raw__": 1740152,
     "__group__": 73,
     "__type__": "DT_SNO",
@@ -6478,43 +6597,48 @@
    "__typeHash__": 866553347,
    "snoHead": {
     "__raw__": 2096984,
-    "__encrypted__": "8f18cb7059cf8b19",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_243_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_243_stor"
    },
    "snoTorso": {
     "__raw__": 2096990,
-    "__encrypted__": "8f18cb7059cf8b19",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_243_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_243_stor"
    },
    "snoFeet": {
     "__raw__": 2097012,
-    "__encrypted__": "8f18cb7059cf8b19",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_243_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_243_stor"
    },
    "snoHands": {
     "__raw__": 2096996,
-    "__encrypted__": "8f18cb7059cf8b19",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_243_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_243_stor"
    },
    "snoLegs": {
     "__raw__": 2097002,
-    "__encrypted__": "8f18cb7059cf8b19",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_243_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_243_stor"
    },
    "snoMainHand": null,
    "snoOffHand": null,
@@ -6531,43 +6655,48 @@
    "__typeHash__": 866553347,
    "snoHead": {
     "__raw__": 2098619,
-    "__encrypted__": "b2d2303938489d76",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_244_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_244_stor"
    },
    "snoTorso": {
     "__raw__": 2098625,
-    "__encrypted__": "b2d2303938489d76",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_244_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_244_stor"
    },
    "snoFeet": {
     "__raw__": 2098645,
-    "__encrypted__": "b2d2303938489d76",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_244_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_244_stor"
    },
    "snoHands": {
     "__raw__": 2098631,
-    "__encrypted__": "b2d2303938489d76",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_244_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_244_stor"
    },
    "snoLegs": {
     "__raw__": 2098637,
-    "__encrypted__": "b2d2303938489d76",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_244_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_244_stor"
    },
    "snoMainHand": null,
    "snoOffHand": null,
@@ -6584,43 +6713,48 @@
    "__typeHash__": 866553347,
    "snoHead": {
     "__raw__": 2151863,
-    "__encrypted__": "544484cd8ae6da03",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_249_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_249_stor"
    },
    "snoTorso": {
     "__raw__": 2151869,
-    "__encrypted__": "544484cd8ae6da03",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_249_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_249_stor"
    },
    "snoFeet": {
     "__raw__": 2151887,
-    "__encrypted__": "544484cd8ae6da03",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_249_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_249_stor"
    },
    "snoHands": {
     "__raw__": 2151875,
-    "__encrypted__": "544484cd8ae6da03",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_249_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_249_stor"
    },
    "snoLegs": {
     "__raw__": 2151881,
-    "__encrypted__": "544484cd8ae6da03",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_249_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_249_stor"
    },
    "snoMainHand": null,
    "snoOffHand": null,
@@ -6637,43 +6771,48 @@
    "__typeHash__": 866553347,
    "snoHead": {
     "__raw__": 2158096,
-    "__encrypted__": "b5111cee30289bd0",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_250_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_250_stor"
    },
    "snoTorso": {
     "__raw__": 2158108,
-    "__encrypted__": "b5111cee30289bd0",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_250_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_250_stor"
    },
    "snoFeet": {
     "__raw__": 2158139,
-    "__encrypted__": "b5111cee30289bd0",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_250_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_250_stor"
    },
    "snoHands": {
     "__raw__": 2158119,
-    "__encrypted__": "b5111cee30289bd0",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_250_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_250_stor"
    },
    "snoLegs": {
     "__raw__": 2158129,
-    "__encrypted__": "b5111cee30289bd0",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_250_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_250_stor"
    },
    "snoMainHand": null,
    "snoOffHand": null,
@@ -6742,6 +6881,776 @@
    "snoOneHandOff": null,
    "snoDye": null,
    "szName": 2870456933
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2358070,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/TechArtTest_Helm_Unique_Barbarian_97.itm",
+    "groupName": "Item",
+    "name": "TechArtTest_Helm_Unique_Barbarian_97"
+   },
+   "snoTorso": null,
+   "snoFeet": null,
+   "snoHands": null,
+   "snoLegs": null,
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 418223373
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2207670,
+    "__encrypted__": "040188f3dee4ce8c",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoTorso": {
+    "__raw__": 2207676,
+    "__encrypted__": "040188f3dee4ce8c",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoFeet": {
+    "__raw__": 2207696,
+    "__encrypted__": "040188f3dee4ce8c",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoHands": {
+    "__raw__": 2207682,
+    "__encrypted__": "040188f3dee4ce8c",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoLegs": {
+    "__raw__": 2207690,
+    "__encrypted__": "040188f3dee4ce8c",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456963
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2208580,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_256_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_256_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2208590,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_256_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_256_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2208608,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_256_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_256_stor"
+   },
+   "snoHands": {
+    "__raw__": 2208596,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_256_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_256_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2208602,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_256_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_256_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456965
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2198926,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_253_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_253_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2198932,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_253_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_253_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2198954,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_253_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_253_stor"
+   },
+   "snoHands": {
+    "__raw__": 2198938,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_253_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_253_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2198945,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_253_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_253_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456962
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2220793,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_257_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_257_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2220800,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_257_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_257_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2220818,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_257_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_257_stor"
+   },
+   "snoHands": {
+    "__raw__": 2220806,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_257_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_257_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2220812,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_257_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_257_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456966
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2404203,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/S10_Ring_Unique_Generic_100_Helm.itm",
+    "groupName": "Item",
+    "name": "S10_Ring_Unique_Generic_100_Helm"
+   },
+   "snoTorso": {
+    "__raw__": 2404191,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/S10_Ring_Unique_Generic_100_Chest.itm",
+    "groupName": "Item",
+    "name": "S10_Ring_Unique_Generic_100_Chest"
+   },
+   "snoFeet": {
+    "__raw__": 2404129,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/S10_Ring_Unique_Generic_100_Boots.itm",
+    "groupName": "Item",
+    "name": "S10_Ring_Unique_Generic_100_Boots"
+   },
+   "snoHands": {
+    "__raw__": 2404199,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/S10_Ring_Unique_Generic_100_Gloves.itm",
+    "groupName": "Item",
+    "name": "S10_Ring_Unique_Generic_100_Gloves"
+   },
+   "snoLegs": {
+    "__raw__": 2404208,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/S10_Ring_Unique_Generic_100_Legs.itm",
+    "groupName": "Item",
+    "name": "S10_Ring_Unique_Generic_100_Legs"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 329676653
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2287522,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_260_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_260_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2287532,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_260_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_260_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2287555,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_260_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_260_stor"
+   },
+   "snoHands": {
+    "__raw__": 2287540,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_260_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_260_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2287546,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_260_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_260_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456992
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2298475,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_263_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_263_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2298485,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_263_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_263_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2298522,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_263_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_263_stor"
+   },
+   "snoHands": {
+    "__raw__": 2298497,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_263_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_263_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2298509,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_263_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_263_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456995
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2054729,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_223_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_223_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2054736,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_223_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_223_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2054754,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_223_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_223_stor"
+   },
+   "snoHands": {
+    "__raw__": 2054742,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_223_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_223_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2054748,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_223_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_223_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456863
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2333767,
+    "__encrypted__": "f159f1f70eabaab1",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoTorso": {
+    "__raw__": 2333773,
+    "__encrypted__": "f159f1f70eabaab1",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoFeet": {
+    "__raw__": 2333791,
+    "__encrypted__": "f159f1f70eabaab1",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoHands": {
+    "__raw__": 2333779,
+    "__encrypted__": "f159f1f70eabaab1",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoLegs": {
+    "__raw__": 2333785,
+    "__encrypted__": "f159f1f70eabaab1",
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "groupName": "Item"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456960
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2298063,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_262_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_262_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2298069,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_262_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_262_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2298088,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_262_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_262_stor"
+   },
+   "snoHands": {
+    "__raw__": 2298076,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_262_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_262_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2298082,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_262_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_262_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456994
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2350579,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_267_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_267_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2350587,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_267_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_267_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2350605,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_267_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_267_stor"
+   },
+   "snoHands": {
+    "__raw__": 2350593,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_267_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_267_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2350599,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_267_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_267_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456999
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2349622,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_266_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_266_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2349628,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_266_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_266_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2349646,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_266_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_266_stor"
+   },
+   "snoHands": {
+    "__raw__": 2349634,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_266_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_266_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2349640,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_266_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_266_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456998
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 1777263,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Barbarian_189_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Barbarian_189_stor"
+   },
+   "snoTorso": {
+    "__raw__": 1777270,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Barbarian_189_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Barbarian_189_stor"
+   },
+   "snoFeet": {
+    "__raw__": 1777288,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Barbarian_189_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Barbarian_189_stor"
+   },
+   "snoHands": {
+    "__raw__": 1777276,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Barbarian_189_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Barbarian_189_stor"
+   },
+   "snoLegs": {
+    "__raw__": 1777282,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Barbarian_189_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Barbarian_189_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870455978
   }
  ],
  "arAvailableParagonBoards": [
@@ -6975,6 +7884,7 @@
   "groupName": "Movie",
   "name": "DX1_Campfire_Barb"
  },
+ "unk_9bd2b19": null,
  "szWardrobeCameraName": 66290303,
  "szWardrobeHeadCameraName": 2671864471,
  "szWardrobeTorsoCameraName": 2809697628,
@@ -8222,5 +9132,6 @@
     }
    }
   ]
- }
+ },
+ "unk_2fa05aa": false
 }

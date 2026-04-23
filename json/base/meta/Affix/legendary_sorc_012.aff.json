@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": {
@@ -28,6 +27,7 @@
   0,
   0,
   0,
+  0,
   0
  ],
  "arAllowedItemLabels": [
@@ -36,34 +36,36 @@
   26,
   19
  ],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 1,
  "arMaxLegendaryRanks": [
   16,
   13,
-  21
+  21,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
    "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": true,
+   "bLowerIsBetter": false,
    "bIgnoreAffixBonuses": false,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1126,
+    "eAttribute": 1157,
     "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "70-(CurrentLegendaryRank()-1)*2",
-     "compiled": "BgAAAAAAjEIBAAAAUAAAAAYAAAAAAIA/DAAAAAYAAAAAAABADQAAAAwAAAAAAAAA"
+     "value": "Round((30 + (CurrentLegendaryRank()-1)) / 10)",
+     "compiled": "BgAAAAAA8EEBAAAAVgAAAAYAAAAAAIA/DAAAAAsAAAAGAAAAAAAgQQ4AAAABAAAAKQAAAAAAAAA="
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -95,13 +97,6 @@
    "__typeHash__": 1028170061,
    "group": 56,
    "name": "FILTER_Build_Sorc_Lightning"
-  },
-  {
-   "__raw__": 1230482276,
-   "__type__": "DT_GBID",
-   "__typeHash__": 1028170061,
-   "group": 56,
-   "name": "FILTER_Build_All_RequiresMelee"
   },
   {
    "__raw__": 2579369720,
@@ -143,5 +138,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

@@ -20,14 +20,36 @@
     },
     "unk_441f783": "0",
     "hOptionalUIControlStyleFields": {
-     "szOnOpen": "",
-     "szOnClose": "UIReliquary_OnClose",
+     "tOnOpen": {
+      "__type__": "UIDefaultAction",
+      "__typeHash__": 2502206177,
+      "dwType": 2502206177,
+      "behaviorMessageName": 0,
+      "behaviorContainerSno": null,
+      "enumVal": -1
+     },
+     "tOnUpdate": {
+      "__type__": "UIUpdateAction",
+      "__typeHash__": 2860534367,
+      "dwType": 2860534367,
+      "behaviorMessageName": 0,
+      "behaviorContainerSno": null,
+      "enumVal": 23
+     },
      "tObjectBinding": {
       "__type__": "BindingPath",
       "__typeHash__": 4229676584,
       "sDataStore": "Reliquaries",
       "sDataPath": "",
       "dwFlags": 16
+     },
+     "tOnClose": {
+      "__type__": "UIDefaultAction",
+      "__typeHash__": 2502206177,
+      "dwType": 2502206177,
+      "behaviorMessageName": 0,
+      "behaviorContainerSno": null,
+      "enumVal": 731
      },
      "bActive": 0,
      "unk_6e5f347": 0,
@@ -39,8 +61,7 @@
       "__targetFileName__": "base/meta/Sound/Play_UI_Menu_MainMenu_Reliquary_Open.snd",
       "groupName": "Sound",
       "name": "Play_UI_Menu_MainMenu_Reliquary_Open"
-     },
-     "szOnUpdate": "UIReliquary_OnUpdate"
+     }
     },
     "tConsoleInput": {
      "__type__": "UIControlConsoleInput",
@@ -78,7 +99,14 @@
       },
       "unk_441f783": "0",
       "hOptionalUIControlStyleFields": {
-       "szOnOpen": "UIReliquary_OnOpen"
+       "tOnOpen": {
+        "__type__": "UIDefaultAction",
+        "__typeHash__": 2502206177,
+        "dwType": 2502206177,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 730
+       }
       },
       "tConsoleInput": {
        "__type__": "UIControlConsoleInput",
@@ -318,8 +346,8 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {
              "bActive": {
-              "datastore": "Reliquaries",
-              "property": "BP_ViewSettings:BattlePassTabIsVisible",
+              "DataStore": "Reliquaries",
+              "DataPath": "BP_ViewSettings:BattlePassTabIsVisible",
               "value": 1
              }
             },
@@ -924,7 +952,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "BP_ViewSettings:BP_BundleViewSettings:BP_BundleSectionIsVisible",
+                "DataPath": "BP_ViewSettings:BP_BundleViewSettings:BP_BundleSectionIsVisible",
                 "value": 1
                }
               },
@@ -1950,8 +1978,15 @@
                       },
                       "hOptionalUIWindowStyleFields": {
                        "nTop": 0,
-                       "szOnClick": "UIReliquary_PreviewDeluxe",
                        "eVerticalAnchoring": 0,
+                       "tOnClick": {
+                        "__type__": "UIDefaultAction",
+                        "__typeHash__": 2502206177,
+                        "dwType": 2502206177,
+                        "behaviorMessageName": 0,
+                        "behaviorContainerSno": null,
+                        "enumVal": 1823
+                       },
                        "nBottom": 0,
                        "nRight": 0,
                        "nLeft": 0,
@@ -2028,7 +2063,7 @@
                        "hImageFrame": {
                         "__type__": "UIImageHandleReference",
                         "__typeHash__": 1797021084,
-                        "hImageHandle": 4292069445
+                        "hImageHandle": 4098158533
                        }
                       }
                      }
@@ -2068,7 +2103,7 @@
                        "hImageFrame": {
                         "__type__": "UIImageHandleReference",
                         "__typeHash__": 1797021084,
-                        "hImageHandle": 416610687
+                        "hImageHandle": 4098158665
                        }
                       }
                      }
@@ -2267,7 +2302,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "BP_ViewSettings:BattlePassTabIsVisible",
+                "DataPath": "BP_ViewSettings:BattlePassTabIsVisible",
                 "value": 1
                },
                "unk_785d371": 0
@@ -2318,7 +2353,7 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
                  "bActive": {
-                  "property": "BP_ViewSettings:StandardBattlePassList",
+                  "DataPath": "BP_ViewSettings:StandardBattlePassList",
                   "value": 1
                  }
                 },
@@ -2506,7 +2541,7 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
                  "bActive": {
-                  "property": "BP_ViewSettings:LargeBattlePassList",
+                  "DataPath": "BP_ViewSettings:LargeBattlePassList",
                   "value": 1
                  }
                 },
@@ -3125,7 +3160,7 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {
              "bActive": {
-              "property": "EventViewSettings:EventTabIsVisible",
+              "DataPath": "EventViewSettings:EventTabIsVisible",
               "value": 0
              }
             },
@@ -3615,7 +3650,7 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": {
-                      "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+                      "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
                       "value": 1
                      }
                     },
@@ -3635,7 +3670,7 @@
                      "nLeft": 0,
                      "eHorizontalAnchoring": 2,
                      "hImageFrame": {
-                      "property": "EventViewSettings:SmallEventBanner",
+                      "DataPath": "EventViewSettings:SmallEventBanner",
                       "value": {
                        "__type__": "UIImageHandleReference",
                        "__typeHash__": 1797021084,
@@ -3754,7 +3789,7 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": {
-                      "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+                      "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
                       "value": 1
                      }
                     },
@@ -3775,7 +3810,7 @@
                      "nLeft": 0,
                      "eHorizontalAnchoring": 2,
                      "hImageFrame": {
-                      "property": "EventViewSettings:LargeEventBanner",
+                      "DataPath": "EventViewSettings:LargeEventBanner",
                       "value": {
                        "__type__": "UIImageHandleReference",
                        "__typeHash__": 1797021084,
@@ -4090,7 +4125,7 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": {
-                      "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+                      "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
                       "value": 1
                      }
                     },
@@ -4111,7 +4146,7 @@
                      "nLeft": 62,
                      "eHorizontalAnchoring": 0,
                      "hImageFrame": {
-                      "property": "EventViewSettings:LargeEventBanner",
+                      "DataPath": "EventViewSettings:LargeEventBanner",
                       "value": {
                        "__type__": "UIImageHandleReference",
                        "__typeHash__": 1797021084,
@@ -4230,7 +4265,7 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": {
-                      "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+                      "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
                       "value": 1
                      }
                     },
@@ -4251,7 +4286,7 @@
                      "nLeft": -87,
                      "eHorizontalAnchoring": 1,
                      "hImageFrame": {
-                      "property": "EventViewSettings:SmallEventBanner",
+                      "DataPath": "EventViewSettings:SmallEventBanner",
                       "value": {
                        "__type__": "UIImageHandleReference",
                        "__typeHash__": 1797021084,
@@ -4690,7 +4725,7 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {
              "bActive": {
-              "property": "EventViewSettings:Event2TabIsVisible",
+              "DataPath": "EventViewSettings:Event2TabIsVisible",
               "value": 0
              }
             },
@@ -5570,7 +5605,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+                "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
                 "value": 1
                }
               },
@@ -5858,7 +5893,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "EventViewSettings:EventBottomBannerIsActive",
+                "DataPath": "EventViewSettings:EventBottomBannerIsActive",
                 "value": 1
                }
               },
@@ -6068,7 +6103,14 @@
               },
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
-               "szOnSelChange": "UIReliquary_OnNavSelectionChange"
+               "tOnSelChange": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 734
+               }
               },
               "hOptionalUIRadioButtonGroupStyleFields": {}
              }
@@ -6129,6 +6171,10 @@
                 },
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
+                 "bActive": {
+                  "DataPath": "EventViewSettings:Event1IsActive",
+                  "value": 1
+                 },
                  "hTemplate": {
                   "__type__": "UIControlHandle",
                   "__typeHash__": 3063971755,
@@ -6357,7 +6403,7 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
                  "bActive": {
-                  "property": "EventViewSettings:Event1IsActive",
+                  "DataPath": "EventViewSettings:Event1IsActive",
                   "value": 1
                  },
                  "hTemplate": {
@@ -6442,8 +6488,8 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": {
-                      "datastore": "Reliquaries",
-                      "property": "EventViewSettings:Event1HasNewContent",
+                      "DataStore": "Reliquaries",
+                      "DataPath": "EventViewSettings:Event1HasNewContent",
                       "value": 0
                      },
                      "hTemplate": {
@@ -6541,7 +6587,7 @@
                      "flTextPaddingT": 10,
                      "bShowPreviewText": 1,
                      "hText": {
-                      "property": "EventViewSettings:Event1TabName",
+                      "DataPath": "EventViewSettings:Event1TabName",
                       "value": {
                        "__type__": "StringLabelHandleEx",
                        "__typeHash__": 721585600,
@@ -6555,6 +6601,55 @@
                      "eTextJustify": 2,
                      "bTextAllCaps": 0
                     }
+                   }
+                  ]
+                 },
+                 {
+                  "__type__": "UITemplateStyleOverride",
+                  "__typeHash__": 2887578027,
+                  "szPathToControl": "Indicator_Icon",
+                  "tStyle": [
+                   {
+                    "__type__": "UIIndicatorStyle",
+                    "__typeHash__": 2698947308,
+                    "dwType": 2698947308,
+                    "hParentStyle": {
+                     "__type__": "UIControlHandle",
+                     "__typeHash__": 3063971755,
+                     "snoUI": null,
+                     "szControlName": 0
+                    },
+                    "unk_441f783": "0",
+                    "hOptionalUIControlStyleFields": {},
+                    "tConsoleInput": {
+                     "__type__": "UIControlConsoleInput",
+                     "__typeHash__": 3089331074,
+                     "hOptionalUIControlConsoleInputFields": {}
+                    },
+                    "hOptionalUIWindowStyleFields": {
+                     "nTop": -2,
+                     "nHeight": 0,
+                     "eVerticalAnchoring": 0,
+                     "nBottom": 0,
+                     "nRight": 0,
+                     "nWidth": 0,
+                     "nLeft": 0,
+                     "eHorizontalAnchoring": 0,
+                     "unk_bffade6": -17,
+                     "bEncloseChildren": 1
+                    },
+                    "eIndicatorType": 1,
+                    "arIndicatorModes": [
+                     {
+                      "__raw__": 2559478,
+                      "__group__": 180,
+                      "__type__": "DT_SNO",
+                      "__typeHash__": 2764331143,
+                      "__targetFileName__": "base/meta/Indicator/Event_Indicator.ind",
+                      "groupName": "Indicator",
+                      "name": "Event_Indicator"
+                     }
+                    ]
                    }
                   ]
                  }
@@ -6580,7 +6675,7 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
                  "bActive": {
-                  "property": "EventViewSettings:Event2IsActive",
+                  "DataPath": "EventViewSettings:Event2IsActive",
                   "value": 0
                  },
                  "hTemplate": {
@@ -6665,8 +6760,8 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": {
-                      "datastore": "Reliquaries",
-                      "property": "EventViewSettings:Event2HasNewContent",
+                      "DataStore": "Reliquaries",
+                      "DataPath": "EventViewSettings:Event2HasNewContent",
                       "value": 0
                      },
                      "hTemplate": {
@@ -6764,7 +6859,7 @@
                      "flTextPaddingT": 10,
                      "bShowPreviewText": 1,
                      "hText": {
-                      "property": "EventViewSettings:Event2TabName",
+                      "DataPath": "EventViewSettings:Event2TabName",
                       "value": {
                        "__type__": "StringLabelHandleEx",
                        "__typeHash__": 721585600,
@@ -6802,6 +6897,10 @@
                 },
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
+                 "bActive": {
+                  "DataPath": "EventViewSettings:Event1IsActive",
+                  "value": 1
+                 },
                  "hTemplate": {
                   "__type__": "UIControlHandle",
                   "__typeHash__": 3063971755,
@@ -6850,8 +6949,15 @@
                  "szIDGeneric01": "ReliquariesNav"
                 },
                 "hOptionalUIHotkeyStyleFields": {
-                 "szOnController": "UIGeneric_SelectRadioButtonGroupPrevious",
-                 "eHotkey": 130
+                 "tOnController": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 1318
+                 },
+                 "eHotkey": 133
                 }
                }
               ],
@@ -6878,8 +6984,15 @@
                  "szIDGeneric01": "ReliquariesNav"
                 },
                 "hOptionalUIHotkeyStyleFields": {
-                 "szOnController": "UIGeneric_SelectRadioButtonGroupNext",
-                 "eHotkey": 131
+                 "tOnController": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 1319
+                 },
+                 "eHotkey": 134
                 }
                }
               ],
@@ -7024,9 +7137,16 @@
               },
               "hOptionalUIWindowStyleFields": {
                "nTop": 0,
-               "szOnClick": "UIReliquary_BuyVC",
                "nHeight": 0,
                "eVerticalAnchoring": 0,
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 737
+               },
                "nBottom": 0,
                "nRight": 0,
                "nWidth": 0,
@@ -7080,8 +7200,15 @@
         "hOptionalUIControlStyleFields": {},
         "hOptionalUIHotkeyStyleFields": {
          "eFixedControllerButton": 1,
-         "unk_ccd9967": "UIReliquary_RequestClose",
-         "eHotkey": 126
+         "eHotkey": 129,
+         "unk_f68242e": {
+          "__type__": "UIDefaultAction",
+          "__typeHash__": 2502206177,
+          "dwType": 2502206177,
+          "behaviorMessageName": 0,
+          "behaviorContainerSno": null,
+          "enumVal": 732
+         }
         }
        }
       ],
@@ -7106,7 +7233,7 @@
         "unk_441f783": "0",
         "hOptionalUIControlStyleFields": {
          "bActive": {
-          "property": "LoadingFailedIsActive",
+          "DataPath": "LoadingFailedIsActive",
           "value": 0
          },
          "hTemplate": {
@@ -7237,7 +7364,7 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {
              "bActive": {
-              "property": "BP_ViewSettings:BattlePassTabIsVisible",
+              "DataPath": "BP_ViewSettings:BattlePassTabIsVisible",
               "value": 1
              }
             },
@@ -7247,7 +7374,14 @@
              "hOptionalUIControlConsoleInputFields": {}
             },
             "hOptionalUIWindowStyleFields": {
-             "szOnClick": "UIReliquary_OpenReliquaryInfo",
+             "tOnClick": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 738
+             },
              "eVisibilityCondition": 0
             },
             "tFont": {
@@ -7361,7 +7495,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "Event1IsActive",
+                "DataPath": "Event1IsActive",
                 "value": 1
                }
               },
@@ -7371,7 +7505,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UIReliquary_OpenEvent1Info",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 740
+               },
                "eVisibilityCondition": 0
               },
               "tFont": {
@@ -7446,7 +7587,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "Event2IsActive",
+                "DataPath": "Event2IsActive",
                 "value": 1
                }
               },
@@ -7456,7 +7597,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UIReliquary_OpenEvent2Info",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 741
+               },
                "eVisibilityCondition": 0
               },
               "tFont": {
@@ -7602,7 +7750,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "BP_ViewSettings:BattlePassTabIsVisible",
+                "DataPath": "BP_ViewSettings:BattlePassTabIsVisible",
                 "value": 1
                }
               },
@@ -7678,7 +7826,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "BP_ViewSettings:BattlePassTabIsVisible",
+                "DataPath": "BP_ViewSettings:BattlePassTabIsVisible",
                 "value": 1
                }
               },
@@ -7827,7 +7975,7 @@
               "unk_441f783": "0",
               "hOptionalUIControlStyleFields": {
                "bActive": {
-                "property": "EventViewSettings:EventTabIsVisible",
+                "DataPath": "EventViewSettings:EventTabIsVisible",
                 "value": 1
                }
               },
@@ -7871,7 +8019,7 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
                  "bActive": {
-                  "property": "EventViewSettings:Event1IsActive",
+                  "DataPath": "EventViewSettings:Event1IsActive",
                   "value": 1
                  }
                 },
@@ -7933,7 +8081,7 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {
                  "bActive": {
-                  "property": "EventViewSettings:Event2IsActive",
+                  "DataPath": "EventViewSettings:Event2IsActive",
                   "value": 1
                  }
                 },
@@ -7999,7 +8147,14 @@
               "hOptionalUIControlStyleFields": {},
               "hOptionalUIHotkeyStyleFields": {
                "eFixedControllerButton": 15,
-               "unk_ccd9967": "UIReliquary_OpenReliquaryInfo",
+               "unk_f68242e": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 738
+               },
                "snoOnActionSound": {
                 "__raw__": 157383,
                 "__group__": 40,
@@ -8036,7 +8191,14 @@
               },
               "hOptionalUIHotkeyStyleFields": {
                "eFixedControllerButton": 15,
-               "unk_ccd9967": "UIReliquary_OpenEvent1Info",
+               "unk_f68242e": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 740
+               },
                "snoOnActionSound": {
                 "__raw__": 157383,
                 "__group__": 40,
@@ -8073,7 +8235,14 @@
               },
               "hOptionalUIHotkeyStyleFields": {
                "eFixedControllerButton": 15,
-               "unk_ccd9967": "UIReliquary_OpenEvent2Info",
+               "unk_f68242e": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 741
+               },
                "snoOnActionSound": {
                 "__raw__": 157383,
                 "__group__": 40,
@@ -8108,7 +8277,14 @@
               "hOptionalUIControlStyleFields": {},
               "hOptionalUIHotkeyStyleFields": {
                "eFixedControllerButton": 3,
-               "unk_ccd9967": "UIReliquary_BuyVC"
+               "unk_f68242e": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 737
+               }
               }
              }
             ],
@@ -8148,7 +8324,7 @@
         "unk_441f783": "0",
         "hOptionalUIControlStyleFields": {
          "bActive": {
-          "property": "BP_ViewSettings:CurtainIsActive",
+          "DataPath": "BP_ViewSettings:CurtainIsActive",
           "value": 0
          }
         },
@@ -8327,7 +8503,14 @@
           "eActivateBehavior": 2,
           "eFinishBehavior": 0,
           "hOptionalUIStoryboard2StyleFields": {
-           "szOnEnd": "UIReliquary_PurchaseCelebrationEnd"
+           "tOnEnd": {
+            "__type__": "UIDefaultAction",
+            "__typeHash__": 2502206177,
+            "dwType": 2502206177,
+            "behaviorMessageName": 0,
+            "behaviorContainerSno": null,
+            "enumVal": 736
+           }
           }
          }
         ]
@@ -8400,7 +8583,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "LargeSizeIsActive",
+         "DataPath": "LargeSizeIsActive",
          "value": 1
         }
        },
@@ -8416,7 +8599,7 @@
         "nBottom": 0,
         "nRight": 0,
         "nWidth": {
-         "property": "Width",
+         "DataPath": "Width",
          "value": 300
         },
         "nLeft": 0,
@@ -8451,7 +8634,7 @@
           "nHeight": 600,
           "eVerticalAnchoring": 0,
           "nWidth": {
-           "property": "Width",
+           "DataPath": "Width",
            "value": 300
           },
           "eHorizontalAnchoring": 0,
@@ -8490,7 +8673,7 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
           "bActive": {
-           "property": "IsComplete",
+           "DataPath": "IsComplete",
            "value": 0
           }
          },
@@ -8578,8 +8761,8 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "datastore": "Reliquaries",
-         "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+         "DataStore": "Reliquaries",
+         "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
          "value": 0
         }
        },
@@ -8622,7 +8805,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "HasRewardAvailable",
+         "DataPath": "HasRewardAvailable",
          "value": 0
         }
        },
@@ -9044,13 +9227,13 @@
             "__typeHash__": 1698657718,
             "hOptionalUIControlFontFields": {
              "snoFont": {
-              "__raw__": 174866,
+              "__raw__": 2432481,
               "__group__": 19,
               "__type__": "DT_SNO",
               "__typeHash__": 2764331143,
-              "__targetFileName__": "base/meta/Font/ExocetMedium.fnt",
+              "__targetFileName__": "base/meta/Font/ExocetMedium_Reliquary_ROG.fnt",
               "groupName": "Font",
-              "name": "ExocetMedium"
+              "name": "ExocetMedium_Reliquary_ROG"
              },
              "dwFontSize": 24
             }
@@ -9063,7 +9246,7 @@
             "nFontSizeFallback": 18,
             "bShowPreviewText": 1,
             "hText": {
-             "property": "Type",
+             "DataPath": "Type",
              "value": {
               "__type__": "StringLabelHandleEx",
               "__typeHash__": 721585600,
@@ -9337,7 +9520,7 @@
             "nFontSizeFallback": 18,
             "bShowPreviewText": 1,
             "hText": {
-             "property": "Type",
+             "DataPath": "Type",
              "value": {
               "__type__": "StringLabelHandleEx",
               "__typeHash__": 721585600,
@@ -9552,16 +9735,30 @@
            },
            "hOptionalUIWindowStyleFields": {
             "nTop": -8,
-            "szOnClick": "UIReliquary_OnClickPreview",
             "nHeight": 760,
             "eVerticalAnchoring": 0,
-            "szOnRightClick": "",
             "unk_438e5c1": 1,
+            "tOnClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 733
+            },
             "nBottom": 0,
             "nRight": 0,
             "nWidth": 326,
             "nLeft": 0,
             "eHorizontalAnchoring": 1,
+            "tOnRightClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": -1
+            },
             "snoControllerHighlightTiledStyle": {
              "__raw__": 2234312,
              "__group__": 103,
@@ -9701,7 +9898,7 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "property": "IsOwned",
+                 "DataPath": "IsOwned",
                  "value": 1
                 }
                },
@@ -9719,7 +9916,7 @@
                 "nLeft": 0,
                 "eHorizontalAnchoring": 3,
                 "hImageFrame": {
-                 "property": "GlassTextureNormal",
+                 "DataPath": "GlassTextureNormal",
                  "value": {
                   "__type__": "UIImageHandleReference",
                   "__typeHash__": 1797021084,
@@ -9750,7 +9947,7 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "property": "IsNotOwned",
+                 "DataPath": "IsNotOwned",
                  "value": 1
                 }
                },
@@ -9768,7 +9965,7 @@
                 "nLeft": 0,
                 "eHorizontalAnchoring": 3,
                 "hImageFrame": {
-                 "property": "GlassTextureLocked",
+                 "DataPath": "GlassTextureLocked",
                  "value": {
                   "__type__": "UIImageHandleReference",
                   "__typeHash__": 1797021084,
@@ -10083,7 +10280,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "HasRewardAvailable",
+               "DataPath": "HasRewardAvailable",
                "value": 0
               }
              },
@@ -10266,7 +10463,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "StandardReliquary",
+               "DataPath": "StandardReliquary",
                "value": 1
               }
              },
@@ -10319,7 +10516,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "PremiumReliquary",
+               "DataPath": "PremiumReliquary",
                "value": 0
               }
              },
@@ -10420,7 +10617,7 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "property": "StandardReliquary",
+                 "DataPath": "StandardReliquary",
                  "value": 1
                 }
                },
@@ -10461,7 +10658,7 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "property": "PremiumReliquary",
+                 "DataPath": "PremiumReliquary",
                  "value": 1
                 }
                },
@@ -10505,7 +10702,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsComplete",
+               "DataPath": "IsComplete",
                "value": 0
               }
              },
@@ -10556,7 +10753,7 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "property": "StandardReliquary",
+                 "DataPath": "StandardReliquary",
                  "value": 1
                 }
                },
@@ -10597,7 +10794,7 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "property": "PremiumReliquary",
+                 "DataPath": "PremiumReliquary",
                  "value": 1
                 }
                },
@@ -11023,7 +11220,7 @@
                     "bWordWrap": 1,
                     "bShowPreviewText": 1,
                     "hText": {
-                     "property": "Title",
+                     "DataPath": "Title",
                      "value": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -11233,7 +11430,7 @@
                        "unk_441f783": "0",
                        "hOptionalUIControlStyleFields": {
                         "bActive": {
-                         "property": "IsExpiringSoon",
+                         "DataPath": "IsExpiringSoon",
                          "value": 1
                         }
                        },
@@ -11282,7 +11479,7 @@
                          "unk_441f783": "0",
                          "hOptionalUIControlStyleFields": {
                           "bActive": {
-                           "property": "IsExpiringSoon",
+                           "DataPath": "IsExpiringSoon",
                            "value": 1
                           }
                          },
@@ -11294,10 +11491,10 @@
                          "hOptionalUIWindowStyleFields": {
                           "nHeight": 60,
                           "eClipBehavior": 2,
-                          "eVerticalAnchoring": 1,
+                          "eVerticalAnchoring": 3,
                           "unk_52796f5": 0,
                           "nWidth": 90,
-                          "eHorizontalAnchoring": 1,
+                          "eHorizontalAnchoring": 3,
                           "rgbaTint": {
                            "r": 0,
                            "g": 0,
@@ -11334,7 +11531,7 @@
                          "unk_441f783": "0",
                          "hOptionalUIControlStyleFields": {
                           "bActive": {
-                           "property": "IsExpiringSoon",
+                           "DataPath": "IsExpiringSoon",
                            "value": 1
                           }
                          },
@@ -11344,10 +11541,13 @@
                           "hOptionalUIControlConsoleInputFields": {}
                          },
                          "hOptionalUIWindowStyleFields": {
+                          "nTop": -5,
                           "nHeight": 160,
                           "eClipBehavior": 2,
-                          "eVerticalAnchoring": 1,
+                          "eVerticalAnchoring": 3,
                           "unk_52796f5": 0,
+                          "nBottom": -5,
+                          "nRight": -5,
                           "nWidth": 160,
                           "snoMaterial": {
                            "__raw__": 2246809,
@@ -11358,7 +11558,8 @@
                            "groupName": "Material",
                            "name": "vfx_ui_Reliquaries_ExpiringSoonGlow"
                           },
-                          "eHorizontalAnchoring": 1,
+                          "nLeft": -5,
+                          "eHorizontalAnchoring": 3,
                           "rgbaTint": {
                            "r": 255,
                            "g": 255,
@@ -11369,7 +11570,8 @@
                            "__type__": "UIImageHandleReference",
                            "__typeHash__": 1797021084,
                            "hImageHandle": 0
-                          }
+                          },
+                          "bEncloseChildren": 0
                          }
                         }
                        ],
@@ -11438,7 +11640,7 @@
                          },
                          "hOptionalUIWindowStyleFields": {
                           "rgbaForeground": {
-                           "property": "TimeLeftColor",
+                           "DataPath": "TimeLeftColor",
                            "value": {
                             "r": 179,
                             "g": 169,
@@ -11467,7 +11669,7 @@
                          "hOptionalUITextStyleFields": {
                           "bShowPreviewText": 1,
                           "hText": {
-                           "property": "TimeLeft",
+                           "DataPath": "TimeLeft",
                            "value": {
                             "__type__": "StringLabelHandleEx",
                             "__typeHash__": 721585600,
@@ -11507,7 +11709,7 @@
                          },
                          "hOptionalUIWindowStyleFields": {
                           "rgbaForeground": {
-                           "property": "TimeLeftColor",
+                           "DataPath": "TimeLeftColor",
                            "value": {
                             "r": 179,
                             "g": 169,
@@ -11523,13 +11725,13 @@
                           "__typeHash__": 1698657718,
                           "hOptionalUIControlFontFields": {
                            "snoFont": {
-                            "__raw__": 1300,
+                            "__raw__": 2430650,
                             "__group__": 19,
                             "__type__": "DT_SNO",
                             "__typeHash__": 2764331143,
-                            "__targetFileName__": "base/meta/Font/SansSerif.fnt",
+                            "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
                             "groupName": "Font",
-                            "name": "SansSerif"
+                            "name": "SansSerif_ROG"
                            },
                            "dwFontSize": 14
                           }
@@ -11538,7 +11740,7 @@
                           "bWordWrap": 1,
                           "bShowPreviewText": 1,
                           "hText": {
-                           "property": "TimeUnit",
+                           "DataPath": "TimeUnit",
                            "value": {
                             "__type__": "StringLabelHandleEx",
                             "__typeHash__": 721585600,
@@ -11546,7 +11748,8 @@
                             "szLabel": 0
                            }
                           },
-                          "szPreviewText": "days left",
+                          "szPreviewText": "Days Left",
+                          "unk_ad7d5ca": 1,
                           "eResizeToFit": 1,
                           "eTextJustify": 2
                          }
@@ -11687,7 +11890,7 @@
                        "hOptionalUITextStyleFields": {
                         "bShowPreviewText": 1,
                         "hText": {
-                         "property": "Progress",
+                         "DataPath": "Progress",
                          "value": {
                           "__type__": "StringLabelHandleEx",
                           "__typeHash__": 721585600,
@@ -11747,13 +11950,13 @@
                         "__typeHash__": 1698657718,
                         "hOptionalUIControlFontFields": {
                          "snoFont": {
-                          "__raw__": 1300,
+                          "__raw__": 2430650,
                           "__group__": 19,
                           "__type__": "DT_SNO",
                           "__typeHash__": 2764331143,
-                          "__targetFileName__": "base/meta/Font/SansSerif.fnt",
+                          "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
                           "groupName": "Font",
-                          "name": "SansSerif"
+                          "name": "SansSerif_ROG"
                          },
                          "dwFontSize": 14
                         }
@@ -11775,6 +11978,7 @@
                          },
                          "szLabel": 3351862351
                         },
+                        "unk_ad7d5ca": 1,
                         "eResizeToFit": 1,
                         "eTextJustify": 2
                        }
@@ -11897,7 +12101,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsNotOwned",
+                     "DataPath": "IsNotOwned",
                      "value": 1
                     }
                    },
@@ -12147,7 +12351,7 @@
                        "hOptionalUITextStyleFields": {
                         "bShowPreviewText": 1,
                         "hText": {
-                         "property": "Price",
+                         "DataPath": "Price",
                          "value": {
                           "__type__": "StringLabelHandleEx",
                           "__typeHash__": 721585600,
@@ -12188,7 +12392,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsOwned",
+                     "DataPath": "IsOwned",
                      "value": 1
                     }
                    },
@@ -12358,7 +12562,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsComplete",
+                     "DataPath": "IsComplete",
                      "value": 1
                     }
                    },
@@ -12411,7 +12615,7 @@
                      "unk_441f783": "0",
                      "hOptionalUIControlStyleFields": {
                       "bActive": {
-                       "property": "StandardReliquary",
+                       "DataPath": "StandardReliquary",
                        "value": 1
                       }
                      },
@@ -12456,7 +12660,7 @@
                      "unk_441f783": "0",
                      "hOptionalUIControlStyleFields": {
                       "bActive": {
-                       "property": "PremiumReliquary",
+                       "DataPath": "PremiumReliquary",
                        "value": 1
                       }
                      },
@@ -12579,7 +12783,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsFree",
+                     "DataPath": "IsFree",
                      "value": 1
                     }
                    },
@@ -12748,7 +12952,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsNew",
+                     "DataPath": "IsNew",
                      "value": 0
                     },
                     "hTemplate": {
@@ -12840,7 +13044,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "HasNoRewardAvailable",
+                     "DataPath": "HasNoRewardAvailable",
                      "value": 1
                     }
                    },
@@ -12883,7 +13087,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "HasNoRewardAvailable",
+                     "DataPath": "HasNoRewardAvailable",
                      "value": 1
                     }
                    },
@@ -13031,7 +13235,7 @@
                      "unk_441f783": "0",
                      "hOptionalUIControlStyleFields": {
                       "bActive": {
-                       "property": "HasRewardAvailable",
+                       "DataPath": "HasRewardAvailable",
                        "value": 1
                       }
                      },
@@ -13074,7 +13278,7 @@
                      "unk_441f783": "0",
                      "hOptionalUIControlStyleFields": {
                       "bActive": {
-                       "property": "HasRewardAvailable",
+                       "DataPath": "HasRewardAvailable",
                        "value": 1
                       }
                      },
@@ -13108,7 +13312,7 @@
                        "unk_441f783": "0",
                        "hOptionalUIControlStyleFields": {
                         "bActive": {
-                         "property": "HasRewardAvailable",
+                         "DataPath": "HasRewardAvailable",
                          "value": 1
                         }
                        },
@@ -13165,7 +13369,7 @@
                        "unk_441f783": "0",
                        "hOptionalUIControlStyleFields": {
                         "bActive": {
-                         "property": "HasRewardAvailable",
+                         "DataPath": "HasRewardAvailable",
                          "value": 1
                         }
                        },
@@ -13262,7 +13466,7 @@
            "unk_441f783": "0",
            "hOptionalUIControlStyleFields": {
             "bActive": {
-             "property": "StandardSizeIsActive",
+             "DataPath": "StandardSizeIsActive",
              "value": 1
             }
            },
@@ -13301,7 +13505,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsComplete",
+               "DataPath": "IsComplete",
                "value": 0
               }
              },
@@ -13482,7 +13686,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "ShowPremiumUnlockedVFX",
+         "DataPath": "ShowPremiumUnlockedVFX",
          "value": 0
         }
        },
@@ -13541,7 +13745,14 @@
          "eActivateBehavior": 1,
          "eFinishBehavior": 4,
          "hOptionalUIStoryboard2StyleFields": {
-          "szOnEnd": "UIReliquary_OnUnlockedReliquaryEnd"
+          "tOnEnd": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": 742
+          }
          }
         }
        ],
@@ -13569,7 +13780,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "ShowCompletedVFX",
+         "DataPath": "ShowCompletedVFX",
          "value": 0
         }
        },
@@ -13627,7 +13838,14 @@
          "eActivateBehavior": 1,
          "eFinishBehavior": 0,
          "hOptionalUIStoryboard2StyleFields": {
-          "szOnEnd": "UIReliquary_OnCompletedReliquaryEnd"
+          "tOnEnd": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": 743
+          }
          }
         }
        ],
@@ -13739,7 +13957,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "HasRewardAvailable",
+         "DataPath": "HasRewardAvailable",
          "value": 0
         }
        },
@@ -14173,7 +14391,7 @@
             "bWordWrap": 1,
             "bShowPreviewText": 1,
             "hText": {
-             "property": "Type",
+             "DataPath": "Type",
              "value": {
               "__type__": "StringLabelHandleEx",
               "__typeHash__": 721585600,
@@ -14384,17 +14602,31 @@
             "hOptionalUIControlConsoleInputFields": {}
            },
            "hOptionalUIWindowStyleFields": {
-            "szOnClick": "UIReliquary_OnClickPreview",
             "nHeight": 727,
             "eVerticalAnchoring": 0,
             "unk_3dc9f06": 2,
             "unk_3dc9f07": 2,
-            "szOnRightClick": "",
             "unk_438e5c1": 1,
+            "tOnClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 733
+            },
             "nBottom": 0,
             "nRight": 0,
             "nWidth": 712,
             "eHorizontalAnchoring": 1,
+            "tOnRightClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": -1
+            },
             "snoControllerHighlightTiledStyle": {
              "__raw__": 2245519,
              "__group__": 103,
@@ -14499,7 +14731,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsOwned",
+               "DataPath": "IsOwned",
                "value": 1
               }
              },
@@ -14517,7 +14749,7 @@
               "nLeft": 1,
               "eHorizontalAnchoring": 1,
               "hImageFrame": {
-               "property": "GlassTextureNormal",
+               "DataPath": "GlassTextureNormal",
                "value": {
                 "__type__": "UIImageHandleReference",
                 "__typeHash__": 1797021084,
@@ -14548,7 +14780,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsNotOwned",
+               "DataPath": "IsNotOwned",
                "value": 1
               }
              },
@@ -14566,7 +14798,7 @@
               "nLeft": 1,
               "eHorizontalAnchoring": 1,
               "hImageFrame": {
-               "property": "GlassTextureLocked",
+               "DataPath": "GlassTextureLocked",
                "value": {
                 "__type__": "UIImageHandleReference",
                 "__typeHash__": 1797021084,
@@ -14597,7 +14829,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsNotOwned",
+               "DataPath": "IsNotOwned",
                "value": 1
               }
              },
@@ -14804,7 +15036,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "HasRewardAvailable",
+               "DataPath": "HasRewardAvailable",
                "value": 0
               }
              },
@@ -15084,7 +15316,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsComplete",
+               "DataPath": "IsComplete",
                "value": 0
               }
              },
@@ -15521,7 +15753,7 @@
                     "bWordWrap": 1,
                     "bShowPreviewText": 1,
                     "hText": {
-                     "property": "Title",
+                     "DataPath": "Title",
                      "value": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -15738,7 +15970,7 @@
                        "unk_441f783": "0",
                        "hOptionalUIControlStyleFields": {
                         "bActive": {
-                         "property": "IsExpiringSoon",
+                         "DataPath": "IsExpiringSoon",
                          "value": 1
                         }
                        },
@@ -15784,7 +16016,7 @@
                          "unk_441f783": "0",
                          "hOptionalUIControlStyleFields": {
                           "bActive": {
-                           "property": "IsExpiringSoon",
+                           "DataPath": "IsExpiringSoon",
                            "value": 1
                           }
                          },
@@ -15836,7 +16068,7 @@
                          "unk_441f783": "0",
                          "hOptionalUIControlStyleFields": {
                           "bActive": {
-                           "property": "IsExpiringSoon",
+                           "DataPath": "IsExpiringSoon",
                            "value": 1
                           }
                          },
@@ -15940,7 +16172,7 @@
                          },
                          "hOptionalUIWindowStyleFields": {
                           "rgbaForeground": {
-                           "property": "TimeLeftColor",
+                           "DataPath": "TimeLeftColor",
                            "value": {
                             "r": 179,
                             "g": 169,
@@ -15969,7 +16201,7 @@
                          "hOptionalUITextStyleFields": {
                           "bShowPreviewText": 1,
                           "hText": {
-                           "property": "TimeLeft",
+                           "DataPath": "TimeLeft",
                            "value": {
                             "__type__": "StringLabelHandleEx",
                             "__typeHash__": 721585600,
@@ -16009,7 +16241,7 @@
                          },
                          "hOptionalUIWindowStyleFields": {
                           "rgbaForeground": {
-                           "property": "TimeLeftColor",
+                           "DataPath": "TimeLeftColor",
                            "value": {
                             "r": 179,
                             "g": 169,
@@ -16039,7 +16271,7 @@
                           "bWordWrap": 0,
                           "bShowPreviewText": 1,
                           "hText": {
-                           "property": "TimeUnit",
+                           "DataPath": "TimeUnit",
                            "value": {
                             "__type__": "StringLabelHandleEx",
                             "__typeHash__": 721585600,
@@ -16188,7 +16420,7 @@
                        "hOptionalUITextStyleFields": {
                         "bShowPreviewText": 1,
                         "hText": {
-                         "property": "Progress",
+                         "DataPath": "Progress",
                          "value": {
                           "__type__": "StringLabelHandleEx",
                           "__typeHash__": 721585600,
@@ -16395,7 +16627,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsNotOwned",
+                     "DataPath": "IsNotOwned",
                      "value": 1
                     }
                    },
@@ -16645,7 +16877,7 @@
                        "hOptionalUITextStyleFields": {
                         "bShowPreviewText": 1,
                         "hText": {
-                         "property": "Price",
+                         "DataPath": "Price",
                          "value": {
                           "__type__": "StringLabelHandleEx",
                           "__typeHash__": 721585600,
@@ -16684,7 +16916,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsOwned",
+                     "DataPath": "IsOwned",
                      "value": 1
                     }
                    },
@@ -16846,7 +17078,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsComplete",
+                     "DataPath": "IsComplete",
                      "value": 1
                     }
                    },
@@ -17008,7 +17240,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsFree",
+                     "DataPath": "IsFree",
                      "value": 1
                     }
                    },
@@ -17170,7 +17402,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "IsNew",
+                     "DataPath": "IsNew",
                      "value": 0
                     },
                     "hTemplate": {
@@ -17262,7 +17494,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "HasNoRewardAvailable",
+                     "DataPath": "HasNoRewardAvailable",
                      "value": 1
                     }
                    },
@@ -17305,7 +17537,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "HasNoRewardAvailable",
+                     "DataPath": "HasNoRewardAvailable",
                      "value": 1
                     }
                    },
@@ -17418,7 +17650,7 @@
                    "unk_441f783": "0",
                    "hOptionalUIControlStyleFields": {
                     "bActive": {
-                     "property": "HasRewardAvailable",
+                     "DataPath": "HasRewardAvailable",
                      "value": 1
                     }
                    },
@@ -17508,7 +17740,7 @@
                      "unk_441f783": "0",
                      "hOptionalUIControlStyleFields": {
                       "bActive": {
-                       "property": "HasRewardAvailable",
+                       "DataPath": "HasRewardAvailable",
                        "value": 1
                       }
                      },
@@ -17727,7 +17959,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "[None]",
+         "DataPath": "[None]",
          "value": 0
         }
        },
@@ -17786,7 +18018,14 @@
          "eActivateBehavior": 1,
          "eFinishBehavior": 4,
          "hOptionalUIStoryboard2StyleFields": {
-          "szOnEnd": "UIReliquary_OnUnlockedReliquaryEnd"
+          "tOnEnd": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": 742
+          }
          }
         }
        ],
@@ -17814,7 +18053,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "ShowCompletedVFX",
+         "DataPath": "ShowCompletedVFX",
          "value": 0
         }
        },
@@ -17872,7 +18111,14 @@
          "eActivateBehavior": 1,
          "eFinishBehavior": 0,
          "hOptionalUIStoryboard2StyleFields": {
-          "szOnEnd": "UIReliquary_OnCompletedReliquaryEnd"
+          "tOnEnd": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": 743
+          }
          }
         }
        ],
@@ -17985,7 +18231,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+         "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
          "value": 0
         }
        },
@@ -18404,7 +18650,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "BP_ViewSettings:AccBpBundleOwnedIsActive",
+               "DataPath": "BP_ViewSettings:AccBpBundleOwnedIsActive",
                "value": 1
               }
              },
@@ -18637,7 +18883,7 @@
             "hImageFrame": {
              "__type__": "UIImageHandleReference",
              "__typeHash__": 1797021084,
-             "hImageHandle": 4285737078
+             "hImageHandle": 743337462
             }
            }
           }
@@ -18715,7 +18961,7 @@
             "hImageFrame": {
              "__type__": "UIImageHandleReference",
              "__typeHash__": 1797021084,
-             "hImageHandle": 1487747344
+             "hImageHandle": 743337594
             }
            }
           }
@@ -19399,8 +19645,15 @@
             "hOptionalUIControlConsoleInputFields": {}
            },
            "hOptionalUIWindowStyleFields": {
-            "szOnClick": "UIReliquary_PreviewPass",
             "nHeight": 52,
+            "tOnClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 735
+            },
             "nMaxWidth": 180,
             "nMinWidth": 180,
             "eHorizontalAnchoring": 1
@@ -19589,7 +19842,7 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
           "bActive": {
-           "property": "IsAtMax",
+           "DataPath": "IsAtMax",
            "value": 1
           }
          },
@@ -19805,7 +20058,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsBelowMax",
+               "DataPath": "IsBelowMax",
                "value": 1
               }
              },
@@ -19881,7 +20134,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsAtMax",
+               "DataPath": "IsAtMax",
                "value": 1
               }
              },
@@ -20175,7 +20428,7 @@
         "eVerticalAnchoring": 3,
         "eHorizontalAnchoring": 3,
         "hImageFrame": {
-         "property": "ModalBackground",
+         "DataPath": "ModalBackground",
          "value": {
           "__type__": "UIImageHandleReference",
           "__typeHash__": 1797021084,
@@ -20419,7 +20672,7 @@
               "bWordWrap": 1,
               "bShowPreviewText": 1,
               "hText": {
-               "property": "Name",
+               "DataPath": "Name",
                "value": {
                 "__type__": "StringLabelHandleEx",
                 "__typeHash__": 721585600,
@@ -20493,7 +20746,7 @@
             "bWordWrap": 1,
             "bShowPreviewText": 1,
             "hText": {
-             "property": "Description",
+             "DataPath": "Description",
              "value": {
               "__type__": "StringLabelHandleEx",
               "__typeHash__": 721585600,
@@ -20531,7 +20784,7 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
           "bActive": {
-           "property": "HasVoucher",
+           "DataPath": "HasVoucher",
            "value": 0
           }
          },
@@ -20797,7 +21050,7 @@
            "unk_441f783": "0",
            "hOptionalUIControlStyleFields": {
             "bActive": {
-             "property": "PriceIsVisible",
+             "DataPath": "PriceIsVisible",
              "value": 1
             }
            },
@@ -21006,7 +21259,7 @@
                  "hOptionalUITextStyleFields": {
                   "bShowPreviewText": 0,
                   "hText": {
-                   "property": "CurrentPriceText",
+                   "DataPath": "CurrentPriceText",
                    "value": {
                     "__type__": "StringLabelHandleEx",
                     "__typeHash__": 721585600,
@@ -21083,7 +21336,7 @@
                "hOptionalUITextStyleFields": {
                 "bShowPreviewText": 1,
                 "hText": {
-                 "property": "SavePriceText",
+                 "DataPath": "SavePriceText",
                  "value": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -21127,7 +21380,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "ShowSavingsDisclaimer",
+               "DataPath": "ShowSavingsDisclaimer",
                "value": 1
               }
              },
@@ -21251,7 +21504,7 @@
            "unk_441f783": "0",
            "hOptionalUIControlStyleFields": {
             "bActive": {
-             "property": "PriceIsVisible",
+             "DataPath": "PriceIsVisible",
              "value": 1
             }
            },
@@ -21425,7 +21678,7 @@
                "hOptionalUITextStyleFields": {
                 "bShowPreviewText": 0,
                 "hText": {
-                 "property": "SavePriceText",
+                 "DataPath": "SavePriceText",
                  "value": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -21470,7 +21723,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "ShowSavingsDisclaimer",
+               "DataPath": "ShowSavingsDisclaimer",
                "value": 1
               }
              },
@@ -21604,7 +21857,14 @@
             "hOptionalUIControlConsoleInputFields": {}
            },
            "hOptionalUIWindowStyleFields": {
-            "szOnClick": "UIExploreBundlesModal_OnPurchaseBundle",
+            "tOnClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 1102
+            },
             "nMaxWidth": -1,
             "nMinWidth": 318,
             "eHorizontalAnchoring": 1,
@@ -21619,7 +21879,7 @@
            },
            "hOptionalUITextStyleFields": {
             "hText": {
-             "property": "PurchaseBundleText",
+             "DataPath": "PurchaseBundleText",
              "value": {
               "__type__": "StringLabelHandleEx",
               "__typeHash__": 721585600,
@@ -21723,7 +21983,7 @@
            "unk_441f783": "0",
            "hOptionalUIControlStyleFields": {
             "bActive": {
-             "property": "NotEnoughVC_LabelIsActive",
+             "DataPath": "NotEnoughVC_LabelIsActive",
              "value": 1
             }
            },
@@ -21822,7 +22082,14 @@
             "hOptionalUIControlConsoleInputFields": {}
            },
            "hOptionalUIWindowStyleFields": {
-            "szOnClick": "UIExploreBundlesModal_OnPreviewBundle",
+            "tOnClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 1103
+            },
             "nMinWidth": 202,
             "eHorizontalAnchoring": 1,
             "nMinHeight": 50
@@ -22049,7 +22316,7 @@
           "bWordWrap": 1,
           "bShowPreviewText": 1,
           "hText": {
-           "property": "Title",
+           "DataPath": "Title",
            "value": {
             "__type__": "StringLabelHandleEx",
             "__typeHash__": 721585600,
@@ -22318,7 +22585,7 @@
          "hOptionalUITextStyleFields": {
           "bShowPreviewText": 0,
           "hText": {
-           "property": "Price",
+           "DataPath": "Price",
            "value": {
             "__type__": "StringLabelHandleEx",
             "__typeHash__": 721585600,
@@ -22500,7 +22767,7 @@
           "nLeft": 0,
           "eHorizontalAnchoring": 3,
           "hImageFrame": {
-           "property": "ModalBackground",
+           "DataPath": "ModalBackground",
            "value": {
             "__type__": "UIImageHandleReference",
             "__typeHash__": 1797021084,
@@ -22818,6 +23085,217 @@
            "flRight": 0,
            "flBottom": 0
           }
+         }
+        }
+       ]
+      },
+      {
+       "__type__": "UITemplateStyleOverride",
+       "__typeHash__": 2887578027,
+       "szPathToControl": "PriceContainer_V2",
+       "tStyle": [
+        {
+         "__type__": "UIStackPanelStyle",
+         "__typeHash__": 287728085,
+         "dwType": 287728085,
+         "hParentStyle": {
+          "__type__": "UIControlHandle",
+          "__typeHash__": 3063971755,
+          "snoUI": null,
+          "szControlName": 0
+         },
+         "unk_441f783": "0",
+         "hOptionalUIControlStyleFields": {
+          "bActive": 1
+         },
+         "tConsoleInput": {
+          "__type__": "UIControlConsoleInput",
+          "__typeHash__": 3089331074,
+          "hOptionalUIControlConsoleInputFields": {}
+         },
+         "hOptionalUIWindowStyleFields": {
+          "nTop": 0,
+          "nHeight": 0,
+          "eVerticalAnchoring": 1,
+          "nBottom": 0,
+          "nRight": 0,
+          "nWidth": 0,
+          "nLeft": 0,
+          "eHorizontalAnchoring": 1,
+          "hImageFrame": {
+           "__type__": "UIImageHandleReference",
+           "__typeHash__": 1797021084,
+           "hImageHandle": 3682872969
+          }
+         },
+         "unk_4e673ad": {},
+         "hOptionalUIStackPanelStyleFields": {
+          "nStackSpacing": 10,
+          "bHorizontal": 0,
+          "tMargins": {
+           "__type__": "UIMargins",
+           "__typeHash__": 501814863,
+           "flLeft": 12,
+           "flTop": 3,
+           "flRight": 12,
+           "flBottom": 3
+          }
+         }
+        }
+       ]
+      },
+      {
+       "__type__": "UITemplateStyleOverride",
+       "__typeHash__": 2887578027,
+       "szPathToControl": "SavePriceText_V2",
+       "tStyle": [
+        {
+         "__type__": "UITextStyle",
+         "__typeHash__": 127673428,
+         "dwType": 127673428,
+         "hParentStyle": {
+          "__type__": "UIControlHandle",
+          "__typeHash__": 3063971755,
+          "snoUI": null,
+          "szControlName": 0
+         },
+         "unk_441f783": "0",
+         "hOptionalUIControlStyleFields": {},
+         "tConsoleInput": {
+          "__type__": "UIControlConsoleInput",
+          "__typeHash__": 3089331074,
+          "hOptionalUIControlConsoleInputFields": {}
+         },
+         "hOptionalUIWindowStyleFields": {
+          "nTop": 0,
+          "rgbaForeground": {
+           "r": 179,
+           "g": 169,
+           "b": 155,
+           "a": 255
+          },
+          "nHeight": 0,
+          "eVerticalAnchoring": 1,
+          "nBottom": 0,
+          "nRight": 0,
+          "nWidth": 0,
+          "nLeft": 0,
+          "eHorizontalAnchoring": 1
+         },
+         "tFont": {
+          "__type__": "UIControlFont",
+          "__typeHash__": 1698657718,
+          "hOptionalUIControlFontFields": {
+           "snoFont": {
+            "__raw__": 1300,
+            "__group__": 19,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/Font/SansSerif.fnt",
+            "groupName": "Font",
+            "name": "SansSerif"
+           },
+           "dwFontSize": 22
+          }
+         },
+         "hOptionalUITextStyleFields": {
+          "bShowPreviewText": 0,
+          "hText": {
+           "__type__": "StringLabelHandleEx",
+           "__typeHash__": 721585600,
+           "snoStringList": null,
+           "szLabel": 0
+          },
+          "szPreviewText": "BlahBlahBlah",
+          "tTextParamsBinding": {
+           "__type__": "BindingPath",
+           "__typeHash__": 4229676584,
+           "sDataStore": "",
+           "sDataPath": "",
+           "dwFlags": 18
+          },
+          "eTextJustifyVertical": 6,
+          "eResizeToFit": 1
+         }
+        }
+       ]
+      },
+      {
+       "__type__": "UITemplateStyleOverride",
+       "__typeHash__": 2887578027,
+       "szPathToControl": "SaveDisclaimer_V2",
+       "tStyle": [
+        {
+         "__type__": "UITextStyle",
+         "__typeHash__": 127673428,
+         "dwType": 127673428,
+         "hParentStyle": {
+          "__type__": "UIControlHandle",
+          "__typeHash__": 3063971755,
+          "snoUI": null,
+          "szControlName": 0
+         },
+         "unk_441f783": "0",
+         "hOptionalUIControlStyleFields": {
+          "bActive": 1
+         },
+         "tConsoleInput": {
+          "__type__": "UIControlConsoleInput",
+          "__typeHash__": 3089331074,
+          "hOptionalUIControlConsoleInputFields": {}
+         },
+         "hOptionalUIWindowStyleFields": {
+          "nTop": 0,
+          "rgbaForeground": {
+           "r": 179,
+           "g": 169,
+           "b": 155,
+           "a": 255
+          },
+          "nHeight": 0,
+          "eVerticalAnchoring": 1,
+          "nBottom": 0,
+          "nMaxWidth": 550,
+          "nRight": 0,
+          "nWidth": 0,
+          "nLeft": 0,
+          "eHorizontalAnchoring": 1
+         },
+         "tFont": {
+          "__type__": "UIControlFont",
+          "__typeHash__": 1698657718,
+          "hOptionalUIControlFontFields": {
+           "snoFont": {
+            "__raw__": 1300,
+            "__group__": 19,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "base/meta/Font/SansSerif.fnt",
+            "groupName": "Font",
+            "name": "SansSerif"
+           },
+           "dwFontSize": 18
+          }
+         },
+         "hOptionalUITextStyleFields": {
+          "bWordWrap": 1,
+          "bShowPreviewText": 1,
+          "hText": {
+           "__type__": "StringLabelHandleEx",
+           "__typeHash__": 721585600,
+           "snoStringList": {
+            "__raw__": 2132839,
+            "__group__": 42,
+            "__type__": "DT_SNO",
+            "__typeHash__": 2764331143,
+            "__targetFileName__": "enUS_Text/meta/StringList/Reliquaries.stl",
+            "groupName": "StringList",
+            "name": "Reliquaries"
+           },
+           "szLabel": 2002854051
+          },
+          "eResizeToFit": 1,
+          "eTextJustify": 2
          }
         }
        ]
@@ -23245,8 +23723,15 @@
                 "hOptionalUIControlConsoleInputFields": {}
                },
                "hOptionalUIWindowStyleFields": {
-                "szOnClick": "UIExploreBundlesModal_OnLearnAboutReliquaries",
                 "eVerticalAnchoring": 1,
+                "tOnClick": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 1104
+                },
                 "nMinWidth": 278
                },
                "tFont": {
@@ -24561,7 +25046,14 @@
                 "hOptionalUIControlConsoleInputFields": {}
                },
                "hOptionalUIWindowStyleFields": {
-                "szOnClick": "ModalNotification_OnClick_OkButton"
+                "tOnClick": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 1209
+                }
                },
                "tFont": {
                 "__type__": "UIControlFont",
@@ -24849,8 +25341,15 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {},
        "hOptionalUIHotkeyStyleFields": {
-        "unk_ccd9967": "ModalNotification_OnClick_CancelButton",
-        "eHotkey": 126,
+        "eHotkey": 129,
+        "unk_f68242e": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1210
+        },
         "snoOnActionSound": {
          "__raw__": 1377468,
          "__group__": 40,
@@ -24906,8 +25405,15 @@
        },
        "hOptionalUIWindowStyleFields": {
         "nTop": -5,
-        "szOnClick": "UIStoreAddOnDetailsScreen_PurchaseVC_OnClick",
         "eVerticalAnchoring": 0,
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 973
+        },
         "nRight": 0,
         "eHorizontalAnchoring": 2
        },
@@ -24952,8 +25458,22 @@
         }
        },
        "hOptionalUIButtonStyleFields": {
-        "szOnHitRegionExit": "UIPreviewDetailsMenu_Tracking_OnMouseAway_Button",
-        "szOnHitRegionEnter": "UIPreviewDetailsMenu_Tracking_OnMouseOver_Button"
+        "tOnHitRegionExit": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1816
+        },
+        "tOnHitRegionEnter": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1817
+        }
        }
       }
      ],
@@ -25061,9 +25581,16 @@
      },
      "hOptionalUIWindowStyleFields": {
       "nTop": 0,
-      "szOnClick": "UIStore_RadioButton_SubTab_OnClick",
       "eClipBehavior": 1,
       "eVerticalAnchoring": 0,
+      "tOnClick": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 1826
+      },
       "nBottom": 0,
       "nRight": 0,
       "nLeft": 0,
@@ -25126,7 +25653,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "BP_ViewSettings:HasNewContent",
+         "DataPath": "BP_ViewSettings:HasNewContent",
          "value": 0
         },
         "hTemplate": {
@@ -25239,6 +25766,7 @@
            "b": 207,
            "a": 255
           },
+          "unk_bffade6": -10,
           "bEncloseChildren": 1
          },
          "tFont": {
@@ -25283,6 +25811,40 @@
           "eTextJustify": 2,
           "bTextAllCaps": 0
          }
+        }
+       ],
+       "arChildren": [],
+       "ptTemplateInstanceConfig": []
+      },
+      {
+       "__type__": "UIControlTemplate",
+       "__typeHash__": 641859515,
+       "szName": "Indicator_Icon",
+       "ptInlineStyle": [
+        {
+         "__type__": "UIIndicatorStyle",
+         "__typeHash__": 2698947308,
+         "dwType": 2698947308,
+         "hParentStyle": {
+          "__type__": "UIControlHandle",
+          "__typeHash__": 3063971755,
+          "snoUI": null,
+          "szControlName": 0
+         },
+         "unk_441f783": "0",
+         "hOptionalUIControlStyleFields": {},
+         "tConsoleInput": {
+          "__type__": "UIControlConsoleInput",
+          "__typeHash__": 3089331074,
+          "hOptionalUIControlConsoleInputFields": {}
+         },
+         "hOptionalUIWindowStyleFields": {
+          "nTop": -2,
+          "unk_bffade6": -17,
+          "bEncloseChildren": 1
+         },
+         "eIndicatorType": 1,
+         "arIndicatorModes": []
         }
        ],
        "arChildren": [],
@@ -25959,7 +26521,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsBundle",
+               "DataPath": "IsBundle",
                "value": 1
               }
              },
@@ -26003,7 +26565,7 @@
               "flTextPaddingT": 8,
               "bShowPreviewText": 0,
               "hText": {
-               "property": "Name",
+               "DataPath": "Name",
                "value": {
                 "__type__": "StringLabelHandleEx",
                 "__typeHash__": 721585600,
@@ -26055,7 +26617,7 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
               "bActive": {
-               "property": "IsReliquary",
+               "DataPath": "IsReliquary",
                "value": 1
               }
              },
@@ -26096,7 +26658,7 @@
               "flTextPaddingT": 8,
               "bShowPreviewText": 0,
               "hText": {
-               "property": "Name",
+               "DataPath": "Name",
                "value": {
                 "__type__": "StringLabelHandleEx",
                 "__typeHash__": 721585600,
@@ -26460,7 +27022,7 @@
         "nWidth": 253,
         "eHorizontalAnchoring": 1,
         "hImageFrame": {
-         "property": "GlassTexture",
+         "DataPath": "GlassTexture",
          "value": {
           "__type__": "UIImageHandleReference",
           "__typeHash__": 1797021084,
@@ -26863,7 +27425,7 @@
        "unk_441f783": "0",
        "hOptionalUIControlStyleFields": {
         "bActive": {
-         "property": "PurchaseCelebration:IsAccelerated",
+         "DataPath": "PurchaseCelebration:IsAccelerated",
          "value": 1
         }
        },
@@ -26986,6 +27548,14 @@
      },
      "unk_441f783": "0",
      "hOptionalUIControlStyleFields": {
+      "tOnUpdate": {
+       "__type__": "UIUpdateAction",
+       "__typeHash__": 2860534367,
+       "dwType": 2860534367,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": 47
+      },
       "snoOnOpenSound": {
        "__raw__": 1439049,
        "__group__": 40,
@@ -26994,8 +27564,7 @@
        "__targetFileName__": "base/meta/Sound/Play_UI_Menu_Modal_Notification_Open.snd",
        "groupName": "Sound",
        "name": "Play_UI_Menu_Modal_Notification_Open"
-      },
-      "szOnUpdate": "ModalNotification_OnUpdate"
+      }
      },
      "tConsoleInput": {
       "__type__": "UIControlConsoleInput",
@@ -27167,8 +27736,8 @@
             "nOutlineStrength": 1,
             "flTextAdvanceScalar": 1.100000023841858,
             "hText": {
-             "datastore": "Reliquaries",
-             "property": "ExpiresModal:ExpiresTitle",
+             "DataStore": "Reliquaries",
+             "DataPath": "ExpiresModal:ExpiresTitle",
              "value": {
               "__type__": "StringLabelHandleEx",
               "__typeHash__": 721585600,
@@ -27457,8 +28026,8 @@
                  "unk_441f783": "0",
                  "hOptionalUIControlStyleFields": {
                   "bActive": {
-                   "datastore": "Reliquaries",
-                   "property": "ExpiresModal:IsExpiringSoon",
+                   "DataStore": "Reliquaries",
+                   "DataPath": "ExpiresModal:IsExpiringSoon",
                    "value": 1
                   }
                  },
@@ -27498,8 +28067,8 @@
                  "hOptionalUITextStyleFields": {
                   "bShowPreviewText": 0,
                   "hText": {
-                   "datastore": "Reliquaries",
-                   "property": "ExpiresModal:ReliquariesExpiresIn",
+                   "DataStore": "Reliquaries",
+                   "DataPath": "ExpiresModal:ReliquariesExpiresIn",
                    "value": {
                     "__type__": "StringLabelHandleEx",
                     "__typeHash__": 721585600,
@@ -27550,8 +28119,8 @@
                  "unk_441f783": "0",
                  "hOptionalUIControlStyleFields": {
                   "bActive": {
-                   "datastore": "Reliquaries",
-                   "property": "ExpiresModal:IsExpired",
+                   "DataStore": "Reliquaries",
+                   "DataPath": "ExpiresModal:IsExpired",
                    "value": 0
                   }
                  },
@@ -27678,8 +28247,8 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "datastore": "Reliquaries",
-                 "property": "ExpiresModal:IsExpiringSoon",
+                 "DataStore": "Reliquaries",
+                 "DataPath": "ExpiresModal:IsExpiringSoon",
                  "value": 1
                 }
                },
@@ -27718,8 +28287,8 @@
                "hOptionalUITextStyleFields": {
                 "bWordWrap": 1,
                 "hText": {
-                 "datastore": "Reliquaries",
-                 "property": "ExpiresModal:ExpiringSoonDescription",
+                 "DataStore": "Reliquaries",
+                 "DataPath": "ExpiresModal:ExpiringSoonDescription",
                  "value": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -27759,8 +28328,8 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
                 "bActive": {
-                 "datastore": "Reliquaries",
-                 "property": "ExpiresModal:IsExpired",
+                 "DataStore": "Reliquaries",
+                 "DataPath": "ExpiresModal:IsExpired",
                  "value": 1
                 }
                },
@@ -27799,8 +28368,8 @@
                "hOptionalUITextStyleFields": {
                 "bWordWrap": 1,
                 "hText": {
-                 "datastore": "Reliquaries",
-                 "property": "ExpiresModal:ExpiredDescription",
+                 "DataStore": "Reliquaries",
+                 "DataPath": "ExpiresModal:ExpiredDescription",
                  "value": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -27948,7 +28517,14 @@
                 "hOptionalUIControlConsoleInputFields": {}
                },
                "hOptionalUIWindowStyleFields": {
-                "szOnClick": "ModalNotification_OnClick_CancelButton",
+                "tOnClick": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 1210
+                },
                 "nBottom": 16,
                 "nRight": -200,
                 "nWidth": 200
@@ -27995,7 +28571,7 @@
                 }
                },
                "hOptionalUIButtonStyleFields": {
-                "eHotkey": 126
+                "eHotkey": 129
                }
               }
              ],
@@ -28128,9 +28704,23 @@
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {},
                "hOptionalUIHotkeyStyleFields": {
-                "szOnController": "",
-                "unk_ccd9967": "ModalNotification_OnClick_CancelButton",
-                "eHotkey": 126,
+                "tOnController": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": -1
+                },
+                "eHotkey": 129,
+                "unk_f68242e": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 1210
+                },
                 "snoOnActionSound": {
                  "__raw__": 157389,
                  "__group__": 40,
@@ -28498,8 +29088,8 @@
                "hOptionalUIWindowStyleFields": {
                 "nTop": 2,
                 "rgbaForeground": {
-                 "datastore": "Reliquaries",
-                 "property": "Currencies:Favor:ValueColor",
+                 "DataStore": "Reliquaries",
+                 "DataPath": "Currencies:Favor:ValueColor",
                  "value": {
                   "r": 179,
                   "g": 169,
@@ -28893,9 +29483,16 @@
         "hOptionalUIControlConsoleInputFields": {}
        },
        "hOptionalUIWindowStyleFields": {
-        "szOnClick": "UIReliquary_OpenFavorInfo",
         "nHeight": 40,
         "eVerticalAnchoring": 1,
+        "tOnClick": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 739
+        },
         "nWidth": 40,
         "hImageFrame": {
          "__type__": "UIImageHandleReference",
@@ -28984,7 +29581,7 @@
        },
        "unk_4e673ad": {},
        "hOptionalUIStackPanelStyleFields": {
-        "nStackSpacing": 60,
+        "nStackSpacing": 90,
         "bHorizontal": 1
        }
       }
@@ -29008,8 +29605,8 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
           "bActive": {
-           "datastore": "Reliquaries",
-           "property": "Currencies:Favor:IsVisible",
+           "DataStore": "Reliquaries",
+           "DataPath": "Currencies:Favor:IsVisible",
            "value": 1
           },
           "hTemplate": {
@@ -29222,8 +29819,8 @@
              "hOptionalUIWindowStyleFields": {
               "nTop": 0,
               "rgbaForeground": {
-               "datastore": "Reliquaries",
-               "property": "Currencies:Favor:ValueColor",
+               "DataStore": "Reliquaries",
+               "DataPath": "Currencies:Favor:ValueColor",
                "value": {
                 "r": 179,
                 "g": 169,
@@ -29306,8 +29903,8 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
           "bActive": {
-           "datastore": "Reliquaries",
-           "property": "Currencies:Event1Currency:IsVisible",
+           "DataStore": "Reliquaries",
+           "DataPath": "Currencies:Event1Currency:IsVisible",
            "value": 1
           },
           "hTemplate": {
@@ -29376,8 +29973,8 @@
               "nLeft": 0,
               "eHorizontalAnchoring": 0,
               "hImageFrame": {
-               "datastore": "Reliquaries",
-               "property": "Currencies:Event1Currency:CurrencyIcon",
+               "DataStore": "Reliquaries",
+               "DataPath": "Currencies:Event1Currency:CurrencyIcon",
                "value": {
                 "__type__": "UIImageHandleReference",
                 "__typeHash__": 1797021084,
@@ -29479,8 +30076,8 @@
              "hOptionalUIWindowStyleFields": {
               "nTop": 0,
               "rgbaForeground": {
-               "datastore": "Reliquaries",
-               "property": "Currencies:Event1Currency:ValueColor",
+               "DataStore": "Reliquaries",
+               "DataPath": "Currencies:Event1Currency:ValueColor",
                "value": {
                 "r": 179,
                 "g": 169,
@@ -29799,8 +30396,8 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
           "bActive": {
-           "datastore": "Reliquaries",
-           "property": "Currencies:Event2Currency:IsVisible",
+           "DataStore": "Reliquaries",
+           "DataPath": "Currencies:Event2Currency:IsVisible",
            "value": 1
           },
           "hTemplate": {
@@ -29869,8 +30466,8 @@
               "nLeft": 0,
               "eHorizontalAnchoring": 0,
               "hImageFrame": {
-               "datastore": "Reliquaries",
-               "property": "Currencies:Event2Currency:CurrencyIcon",
+               "DataStore": "Reliquaries",
+               "DataPath": "Currencies:Event2Currency:CurrencyIcon",
                "value": {
                 "__type__": "UIImageHandleReference",
                 "__typeHash__": 1797021084,
@@ -29972,8 +30569,8 @@
              "hOptionalUIWindowStyleFields": {
               "nTop": 0,
               "rgbaForeground": {
-               "datastore": "Reliquaries",
-               "property": "Currencies:Event2Currency:ValueColor",
+               "DataStore": "Reliquaries",
+               "DataPath": "Currencies:Event2Currency:ValueColor",
                "value": {
                 "r": 179,
                 "g": 169,
@@ -30294,8 +30891,8 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
           "bActive": {
-           "datastore": "Reliquaries",
-           "property": "Currencies:Platinum:IsVisible",
+           "DataStore": "Reliquaries",
+           "DataPath": "Currencies:Platinum:IsVisible",
            "value": 1
           }
          },
@@ -30618,7 +31215,14 @@
       "__type__": "UIControlConsoleInput",
       "__typeHash__": 3089331074,
       "hOptionalUIControlConsoleInputFields": {
-       "szOnButton4": ""
+       "tOnButton4": {
+        "__type__": "UIDefaultAction",
+        "__typeHash__": 2502206177,
+        "dwType": 2502206177,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": -1
+       }
       }
      },
      "hOptionalUIWindowStyleFields": {
@@ -30913,18 +31517,32 @@
             "__type__": "UIControlConsoleInput",
             "__typeHash__": 3089331074,
             "hOptionalUIControlConsoleInputFields": {
-             "szOnButton4": "UI_SeasonPass_PurchaseTier"
+             "tOnButton4": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 1236
+             }
             }
            },
            "hOptionalUIWindowStyleFields": {
             "unk_28714d": 0,
             "nTop": -1,
-            "szOnClick": "UI_SeasonPass_OnTryClaimTier",
             "nHeight": 92,
             "eVerticalAnchoring": 1,
             "unk_3dc9f06": 5,
             "unk_3dc9f07": 5,
             "unk_438e5c1": 1,
+            "tOnClick": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 1590
+            },
             "nWidth": 60,
             "nLeft": -1,
             "eHorizontalAnchoring": 1,
@@ -30975,15 +31593,43 @@
             }
            },
            "hOptionalUIButtonStyleFields": {
-            "szOnHitRegionExit": "UI_SeasonPass_Reward_Mouseout",
-            "szOnGainedFocus": "UI_SeasonPass_RewardGainFocus",
+            "tOnLostFocus": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 1239
+            },
+            "tOnHitRegionExit": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 1239
+            },
+            "tOnHitRegionEnter": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 1238
+            },
             "hImageFrameMouseOver": {
              "__type__": "UIImageHandleReference",
              "__typeHash__": 1797021084,
              "hImageHandle": 724534116
             },
-            "szOnLostFocus": "UI_SeasonPass_Reward_Mouseout",
-            "szOnHitRegionEnter": "UI_SeasonPass_Reward_Mouseover"
+            "tOnGainedFocus": {
+             "__type__": "UIDefaultAction",
+             "__typeHash__": 2502206177,
+             "dwType": 2502206177,
+             "behaviorMessageName": 0,
+             "behaviorContainerSno": null,
+             "enumVal": 1237
+            }
            },
            "hOptionalUIItemButtonStyleFields": {
             "bDrawBackground": 0,

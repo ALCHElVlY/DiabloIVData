@@ -92,7 +92,7 @@
  "unk_4bf03ff": true,
  "tAttackSpeed": {
   "value": "Attacks_Per_Second_Total",
-  "compiled": "BQAAAAAAAADUAAAA/v///wAAAAAAAAAA"
+  "compiled": "BQAAAAAAAADeAAAA/v///wAAAAAAAAAA"
  },
  "unk_6deb090": false,
  "unk_ed2bdad": false,
@@ -100,6 +100,7 @@
  "unk_7a86b64": true,
  "eDamageType": 0,
  "unk_752edeb": false,
+ "unk_c41a01d": false,
  "tCombatEffectChance": {
   "value": "0",
   "compiled": "BgAAAAAAAAAAAAAA"
@@ -576,7 +577,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "0.1 * (1/Attacks_Per_Second_Total)",
-    "compiled": "BgAAAM3MzD0GAAAAAACAPwUAAAAAAAAA1AAAAP7///8AAAAADgAAAA0AAAAAAAAA"
+    "compiled": "BgAAAM3MzD0GAAAAAACAPwUAAAAAAAAA3gAAAP7///8AAAAADgAAAA0AAAAAAAAA"
    }
   },
   {
@@ -600,7 +601,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "GetCollectibleAttributeValue(SNO.CollectiblePower.S03_Tuning_MoreSpread, 0)",
-    "compiled": "BQAAAFkAAABXMhoAAAAAAAAAAAAGAAAAAAAAAAEAAABpAAAAAAAAAA=="
+    "compiled": "BQAAAFkAAABXMhoAAAAAAAAAAAAGAAAAAAAAAAEAAABvAAAAAAAAAA=="
    }
   },
   {
@@ -616,7 +617,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "GetCollectibleAttributeValue(SNO.CollectiblePower.S03_Tuning_AoESize, 0)",
-    "compiled": "BQAAAFkAAAAhDRoAAAAAAAAAAAAGAAAAAAAAAAEAAABpAAAAAAAAAA=="
+    "compiled": "BQAAAFkAAAAhDRoAAAAAAAAAAAAGAAAAAAAAAAEAAABvAAAAAAAAAA=="
    }
   },
   {
@@ -624,7 +625,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "1+GetCollectibleAttributeValue(SNO.CollectiblePower.S03_Tuning_Genesis, 0)",
-    "compiled": "BgAAAAAAgD8FAAAAWQAAAElHGgAAAAAAAAAAAAYAAAAAAAAAAQAAAGkAAAALAAAAAAAAAA=="
+    "compiled": "BgAAAAAAgD8FAAAAWQAAAElHGgAAAAAAAAAAAAYAAAAAAAAAAQAAAG8AAAALAAAAAAAAAA=="
    }
   },
   {
@@ -632,7 +633,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "1+((1.0/10)*GetCollectiblePowerLevel(SNO.CollectiblePower.S03_Command_Bushwhack))",
-    "compiled": "BgAAAAAAgD8GAAAAAACAPwYAAAAAACBBDgAAAAUAAABZAAAA8foZAAAAAAAAAAAAAQAAAGYAAAANAAAACwAAAAAAAAA="
+    "compiled": "BgAAAAAAgD8GAAAAAACAPwYAAAAAACBBDgAAAAUAAABZAAAA8foZAAAAAAAAAAAAAQAAAGwAAAANAAAACwAAAAAAAAA="
    }
   },
   {
@@ -640,7 +641,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "1+((1.0/10)*(1+GetCollectiblePowerLevel(SNO.CollectiblePower.S03_Command_Bushwhack)))",
-    "compiled": "BgAAAAAAgD8GAAAAAACAPwYAAAAAACBBDgAAAAYAAAAAAIA/BQAAAFkAAADx+hkAAAAAAAAAAAABAAAAZgAAAAsAAAANAAAACwAAAAAAAAA="
+    "compiled": "BgAAAAAAgD8GAAAAAACAPwYAAAAAACBBDgAAAAYAAAAAAIA/BQAAAFkAAADx+hkAAAAAAAAAAAABAAAAbAAAAAsAAAANAAAACwAAAAAAAAA="
    }
   },
   {
@@ -664,7 +665,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "1.5 * (1/(1+(Attacks_Per_Second_Total-1)+SF_13))",
-    "compiled": "BgAAAAAAwD8GAAAAAACAPwYAAAAAAIA/BQAAAAAAAADUAAAA/v///wAAAAAGAAAAAACAPwwAAAALAAAABQAAABMAAAAAAAAAAAAAAAAAAAALAAAADgAAAA0AAAAAAAAA"
+    "compiled": "BgAAAAAAwD8GAAAAAACAPwYAAAAAAIA/BQAAAAAAAADeAAAA/v///wAAAAAGAAAAAACAPwwAAAALAAAABQAAABMAAAAAAAAAAAAAAAAAAAALAAAADgAAAA0AAAAAAAAA"
    }
   },
   {
@@ -672,7 +673,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "GetCollectibleAttributeValue(SNO.CollectiblePower.S03_Tuning_AttackSpeed, 0)",
-    "compiled": "BQAAAFkAAAAyRxoAAAAAAAAAAAAGAAAAAAAAAAEAAABpAAAAAAAAAA=="
+    "compiled": "BQAAAFkAAAAyRxoAAAAAAAAAAAAGAAAAAAAAAAEAAABvAAAAAAAAAA=="
    }
   }
  ],
@@ -706,6 +707,11 @@
    "arBuffsToApply": [],
    "bApplyVulnerableDebuff": false,
    "tVulnerableDurationSecondsOverride": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
@@ -749,7 +755,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": -1,
+   "eClassBaseDamageScalar": -1,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -797,6 +803,7 @@
  },
  "flCastingEffectGroupDuration": 0.5,
  "arCastingEffectOverrides": [],
+ "arCastingEffectOverridesByVisualRemap": [],
  "arDamageRemapConditions": [],
  "arPetSpawns": [],
  "unk_143fe9f": {
@@ -812,5 +819,7 @@
  "unk_376802e": false,
  "unk_bf25f64": 0,
  "arRecastPowerSequence": [],
- "arProjectileOverrides": []
+ "arModifierProfiles": [],
+ "arProjectileOverrides": [],
+ "arConditionalDependencies": []
 }

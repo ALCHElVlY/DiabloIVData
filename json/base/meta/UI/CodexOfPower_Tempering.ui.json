@@ -187,10 +187,17 @@
          "b": 205,
          "a": 255
         },
-        "nTooltip": "UI_TemperCodex_RecipeTooltip",
         "nHeight": 100,
         "eVerticalAnchoring": 0,
         "nWidth": 90,
+        "tOnTooltip": {
+         "__type__": "UIDefaultAction",
+         "__typeHash__": 2502206177,
+         "dwType": 2502206177,
+         "behaviorMessageName": 0,
+         "behaviorContainerSno": null,
+         "enumVal": 1019
+        },
         "eHorizontalAnchoring": 3,
         "eTooltipAlignHorizontal": 3,
         "hImageFrame": {
@@ -336,7 +343,7 @@
           "tMargins": {
            "__type__": "UIMargins",
            "__typeHash__": 501814863,
-           "flLeft": 0,
+           "flLeft": 5,
            "flTop": 0,
            "flRight": 0,
            "flBottom": 0
@@ -368,6 +375,7 @@
             "hOptionalUIControlConsoleInputFields": {}
            },
            "hOptionalUIWindowStyleFields": {
+            "nTop": 4,
             "nHeight": 70,
             "eVerticalAnchoring": 0,
             "nWidth": 70,
@@ -550,16 +558,18 @@
               }
              },
              "hOptionalUITextStyleFields": {
+              "flTextPaddingR": 20,
+              "flTextPaddingT": 3,
               "bWordWrap": 1,
               "bShowPreviewText": 1,
-              "szPreviewText": "Recipe: Simply Stunning ",
+              "szPreviewText": "Recipe: Simply Stunning Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
               "bShrinkToFit": 1,
               "nTextLinesBeforeTruncation": 3,
               "eTextJustifyVertical": 0,
               "eResizeToFit": 1,
               "unk_c5637af": 1,
               "eTextJustify": 1,
-              "bTextAllCaps": 1
+              "bTextAllCaps": 0
              }
             }
            ],
@@ -3564,6 +3574,14 @@
          },
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {
+          "tOnUpdate": {
+           "__type__": "UIUpdateAction",
+           "__typeHash__": 2860534367,
+           "dwType": 2860534367,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": 9
+          },
           "bActive": 1,
           "hTemplate": {
            "__type__": "UIControlHandle",
@@ -3578,8 +3596,7 @@
             "name": "CodexOfPower_Tempering"
            },
            "szControlName": 2162096819
-          },
-          "szOnUpdate": "UICodexOfPower_OnUpdate"
+          }
          },
          "tConsoleInput": {
           "__type__": "UIControlConsoleInput",
@@ -3731,7 +3748,14 @@
               "hOptionalUIControlConsoleInputFields": {}
              },
              "hOptionalUIWindowStyleFields": {
-              "szOnClick": "UI_RogueSpecialization_OnClose"
+              "tOnClick": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": 760
+              }
              },
              "tFont": {
               "__type__": "UIControlFont",
@@ -3865,7 +3889,14 @@
               "hOptionalUIControlConsoleInputFields": {}
              },
              "hOptionalUIWindowStyleFields": {
-              "szOnClick": "UI_Crafter_TemperCloseCodexOverlay",
+              "tOnClick": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": 105
+              },
               "eVisibilityCondition": 0
              },
              "tFont": {
@@ -3984,8 +4015,15 @@
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {},
              "hOptionalUIHotkeyStyleFields": {
-              "unk_ccd9967": "UI_Crafter_TemperCloseCodexOverlay",
-              "eHotkey": 126
+              "eHotkey": 129,
+              "unk_f68242e": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": 105
+              }
              }
             }
            ],
@@ -4016,7 +4054,14 @@
          "unk_441f783": "0",
          "hOptionalUIControlStyleFields": {},
          "hOptionalUIHotkeyStyleFields": {
-          "szOnController": "UICodexOfPower_CycleFilter",
+          "tOnController": {
+           "__type__": "UIDefaultAction",
+           "__typeHash__": 2502206177,
+           "dwType": 2502206177,
+           "behaviorMessageName": 0,
+           "behaviorContainerSno": null,
+           "enumVal": 1730
+          },
           "eFixedControllerButton": 15,
           "snoOnActionSound": null
          }
@@ -4245,7 +4290,14 @@
              },
              "unk_441f783": "0",
              "hOptionalUIControlStyleFields": {
-              "szOnSelChange": "UI_COP_Tab"
+              "tOnSelChange": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": 321
+              }
              },
              "hOptionalUIRadioButtonGroupStyleFields": {
               "szStoryboardTransitionOut": "",
@@ -4720,7 +4772,14 @@
                },
                "unk_441f783": "0",
                "hOptionalUIControlStyleFields": {
-                "szOnSelChange": "UI_TemperCodex_CategoryChange"
+                "tOnSelChange": {
+                 "__type__": "UIDefaultAction",
+                 "__typeHash__": 2502206177,
+                 "dwType": 2502206177,
+                 "behaviorMessageName": 0,
+                 "behaviorContainerSno": null,
+                 "enumVal": 1017
+                }
                },
                "hOptionalUIRadioButtonGroupStyleFields": {
                 "szStoryboardTransitionOut": "",
@@ -4967,13 +5026,27 @@
       "__type__": "UIControlConsoleInput",
       "__typeHash__": 3089331074,
       "hOptionalUIControlConsoleInputFields": {
-       "szOnButton1": "UI_TemperCodex_CategoryButton1"
+       "tOnButton1": {
+        "__type__": "UIDefaultAction",
+        "__typeHash__": 2502206177,
+        "dwType": 2502206177,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 1018
+       }
       }
      },
      "hOptionalUIWindowStyleFields": {
-      "nTooltip": "",
       "eClipBehavior": 0,
-      "nWidth": 515
+      "nWidth": 515,
+      "tOnTooltip": {
+       "__type__": "UIDefaultAction",
+       "__typeHash__": 2502206177,
+       "dwType": 2502206177,
+       "behaviorMessageName": 0,
+       "behaviorContainerSno": null,
+       "enumVal": -1
+      }
      },
      "tFont": {
       "__type__": "UIControlFont",

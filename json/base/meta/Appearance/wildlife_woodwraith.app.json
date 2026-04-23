@@ -5681,6 +5681,11 @@
   {
    "__type__": "AppearanceLook",
    "__typeHash__": 3138400357,
+   "szLookName": 3910729281
+  },
+  {
+   "__type__": "AppearanceLook",
+   "__typeHash__": 3138400357,
    "szLookName": 2893370155
   },
   {
@@ -5715,6 +5720,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -5791,6 +5798,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -5812,86 +5822,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": [
       null,
-      {
-       "__raw__": 414232,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite"
-      },
-      {
-       "__raw__": 978665,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_frac.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_frac"
-      },
-      null,
-      null,
-      {
-       "__raw__": 978666,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_hawz.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_hawz"
-      },
-      null,
-      null,
-      null,
-      {
-       "__raw__": 978667,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_charred.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_charred"
-      },
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ]
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 0,
-     "snoMaterial": {
-      "__raw__": 351735,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/wildlife_woodwraith.mat",
-      "groupName": "Material",
-      "name": "wildlife_woodwraith"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
       null,
       null
      ],
@@ -5953,6 +5884,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -5973,6 +5907,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6034,6 +5970,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6054,6 +5993,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6115,6 +6056,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6135,6 +6079,94 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": [
+      null,
+      {
+       "__raw__": 414232,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite"
+      },
+      {
+       "__raw__": 978665,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_frac.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_frac"
+      },
+      null,
+      null,
+      {
+       "__raw__": 978666,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_hawz.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_hawz"
+      },
+      null,
+      null,
+      null,
+      {
+       "__raw__": 978667,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_charred.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_charred"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 351735,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife_woodwraith.mat",
+      "groupName": "Material",
+      "name": "wildlife_woodwraith"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6160,29 +6192,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 0,
-     "snoMaterial": {
-      "__raw__": 351735,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/wildlife_woodwraith.mat",
-      "groupName": "Material",
-      "name": "wildlife_woodwraith"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -6207,6 +6217,34 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 351735,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife_woodwraith.mat",
+      "groupName": "Material",
+      "name": "wildlife_woodwraith"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6232,6 +6270,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -6255,6 +6295,34 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 409252,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife woodwraith_death_fire.mat",
+      "groupName": "Material",
+      "name": "wildlife woodwraith_death_fire"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6279,6 +6347,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6313,6 +6383,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -6373,6 +6445,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6393,6 +6468,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6418,102 +6495,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": [
       null,
-      {
-       "__raw__": 414232,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite"
-      },
-      {
-       "__raw__": 978665,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_frac.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_frac"
-      },
-      null,
-      null,
-      {
-       "__raw__": 978666,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_hawz.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_hawz"
-      },
-      null,
-      null,
-      null,
-      {
-       "__raw__": 978667,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_charred.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_charred"
-      },
-      null,
-      null,
-      null,
-      null,
-      {
-       "__raw__": 1966207,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Spectral.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_Spectral"
-      },
-      null,
-      {
-       "__raw__": 1966208,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Tainted.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_Tainted"
-      },
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ]
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 3,
-     "snoMaterial": {
-      "__raw__": 392929,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/wildlife_woodwraith_ds.mat",
-      "groupName": "Material",
-      "name": "wildlife_woodwraith_ds"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
       null,
       null
      ],
@@ -6591,6 +6573,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6611,6 +6596,110 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": [
+      null,
+      {
+       "__raw__": 414232,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite"
+      },
+      {
+       "__raw__": 978665,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_frac.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_frac"
+      },
+      null,
+      null,
+      {
+       "__raw__": 978666,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_hawz.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_hawz"
+      },
+      null,
+      null,
+      null,
+      {
+       "__raw__": 978667,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_charred.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_charred"
+      },
+      null,
+      null,
+      null,
+      null,
+      {
+       "__raw__": 1966207,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Spectral.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_Spectral"
+      },
+      null,
+      {
+       "__raw__": 1966208,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Tainted.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_Tainted"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 3,
+     "snoMaterial": {
+      "__raw__": 392929,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife_woodwraith_ds.mat",
+      "groupName": "Material",
+      "name": "wildlife_woodwraith_ds"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6672,6 +6761,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6692,6 +6784,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6769,6 +6863,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6789,6 +6886,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6866,6 +6965,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6886,6 +6988,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -6963,6 +7067,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -6983,6 +7090,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7060,6 +7169,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -7080,6 +7192,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7157,6 +7271,119 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 3,
+     "snoMaterial": {
+      "__raw__": 392929,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife_woodwraith_ds.mat",
+      "groupName": "Material",
+      "name": "wildlife_woodwraith_ds"
+     },
+     "snoOverrideMaterial": {
+      "__raw__": 2293619,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/override_noisier_longer_death_holy.mat",
+      "groupName": "Material",
+      "name": "override_noisier_longer_death_holy"
+     },
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": [
+      null,
+      {
+       "__raw__": 773797,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire"
+      },
+      {
+       "__raw__": 978670,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire_frac.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire_frac"
+      },
+      null,
+      null,
+      {
+       "__raw__": 978669,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire_hawz.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire_hawz"
+      },
+      null,
+      null,
+      null,
+      {
+       "__raw__": 978668,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire_charred.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire_charred"
+      },
+      null,
+      null,
+      null,
+      null,
+      {
+       "__raw__": 1966207,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Spectral.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_Spectral"
+      },
+      null,
+      {
+       "__raw__": 1966208,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Tainted.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_Tainted"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -7177,6 +7404,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7254,6 +7483,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -7266,6 +7498,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7300,6 +7534,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -7324,21 +7560,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7356,21 +7578,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7388,21 +7596,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7420,21 +7614,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7452,6 +7632,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -7467,6 +7649,98 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7491,6 +7765,8 @@
      },
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7525,6 +7801,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -7549,21 +7827,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7581,21 +7845,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7613,21 +7863,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7645,21 +7881,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7677,6 +7899,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -7692,6 +7916,98 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7716,6 +8032,8 @@
      },
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7750,6 +8068,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -7774,21 +8094,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7806,21 +8112,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7838,21 +8130,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7870,21 +8148,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2097152,
-     "snoMaterial": null,
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -7902,6 +8166,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -7917,6 +8183,98 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2097152,
+     "snoMaterial": null,
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7941,6 +8299,8 @@
      },
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -7975,29 +8335,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 0,
-     "snoMaterial": {
-      "__raw__": 338697,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
-      "groupName": "Material",
-      "name": "fxMeshMat"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -8023,29 +8361,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 0,
-     "snoMaterial": {
-      "__raw__": 338697,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
-      "groupName": "Material",
-      "name": "fxMeshMat"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -8071,29 +8387,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 0,
-     "snoMaterial": {
-      "__raw__": 338697,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
-      "groupName": "Material",
-      "name": "fxMeshMat"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -8119,29 +8413,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 0,
-     "snoMaterial": {
-      "__raw__": 338697,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
-      "groupName": "Material",
-      "name": "fxMeshMat"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -8166,6 +8438,112 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 338697,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
+      "groupName": "Material",
+      "name": "fxMeshMat"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 338697,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
+      "groupName": "Material",
+      "name": "fxMeshMat"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 338697,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
+      "groupName": "Material",
+      "name": "fxMeshMat"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 338697,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/fxMeshMat.mat",
+      "groupName": "Material",
+      "name": "fxMeshMat"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -8191,6 +8569,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -8214,6 +8594,34 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 0,
+     "snoMaterial": {
+      "__raw__": 201815,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/fxMesh_mat_default.mat",
+      "groupName": "Material",
+      "name": "fxMesh_mat_default"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -8230,6 +8638,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -8256,6 +8666,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -8272,6 +8684,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -8296,6 +8710,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -8366,6 +8782,9 @@
        "groupName": "Material",
        "name": "wildlife_woodwraith_Tainted"
       },
+      null,
+      null,
+      null,
       null,
       null,
       null,
@@ -8393,6 +8812,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -8463,6 +8884,9 @@
        "groupName": "Material",
        "name": "wildlife_woodwraith_Tainted"
       },
+      null,
+      null,
+      null,
       null,
       null,
       null,
@@ -8490,6 +8914,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -8560,6 +8986,9 @@
        "groupName": "Material",
        "name": "wildlife_woodwraith_Tainted"
       },
+      null,
+      null,
+      null,
       null,
       null,
       null,
@@ -8586,6 +9015,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -8663,6 +9094,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -8683,6 +9117,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -8760,6 +9196,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -8780,6 +9219,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -8857,6 +9298,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -8877,6 +9321,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -8954,6 +9400,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -8974,6 +9423,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9051,6 +9502,119 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 1,
+     "snoMaterial": {
+      "__raw__": 351735,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife_woodwraith.mat",
+      "groupName": "Material",
+      "name": "wildlife_woodwraith"
+     },
+     "snoOverrideMaterial": {
+      "__raw__": 2293619,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/override_noisier_longer_death_holy.mat",
+      "groupName": "Material",
+      "name": "override_noisier_longer_death_holy"
+     },
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": [
+      null,
+      {
+       "__raw__": 773797,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire"
+      },
+      {
+       "__raw__": 978670,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire_frac.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire_frac"
+      },
+      null,
+      null,
+      {
+       "__raw__": 978669,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire_hawz.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire_hawz"
+      },
+      null,
+      null,
+      null,
+      {
+       "__raw__": 978668,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_death_fire_charred.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_death_fire_charred"
+      },
+      null,
+      null,
+      null,
+      null,
+      {
+       "__raw__": 1966207,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Spectral.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_Spectral"
+      },
+      null,
+      {
+       "__raw__": 1966208,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_Tainted.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_Tainted"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -9071,6 +9635,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9148,6 +9714,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -9160,6 +9729,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9193,6 +9764,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9270,6 +9843,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -9291,86 +9867,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": [
       null,
-      {
-       "__raw__": 414232,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite"
-      },
-      {
-       "__raw__": 978665,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_frac.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_frac"
-      },
-      null,
-      null,
-      {
-       "__raw__": 978666,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_hawz.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_hawz"
-      },
-      null,
-      null,
-      null,
-      {
-       "__raw__": 978667,
-       "__group__": 57,
-       "__type__": "DT_SNO",
-       "__typeHash__": 2764331143,
-       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_charred.mat",
-       "groupName": "Material",
-       "name": "wildlife_woodwraith_elite_charred"
-      },
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-     ]
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2,
-     "snoMaterial": {
-      "__raw__": 392929,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/wildlife_woodwraith_ds.mat",
-      "groupName": "Material",
-      "name": "wildlife_woodwraith_ds"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
       null,
       null
      ],
@@ -9432,6 +9929,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -9452,6 +9952,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9513,6 +10015,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -9533,6 +10038,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9594,6 +10101,9 @@
       null,
       null,
       null,
+      null,
+      null,
+      null,
       null
      ]
     },
@@ -9614,6 +10124,94 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": [
+      null,
+      {
+       "__raw__": 414232,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite"
+      },
+      {
+       "__raw__": 978665,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_frac.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_frac"
+      },
+      null,
+      null,
+      {
+       "__raw__": 978666,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_hawz.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_hawz"
+      },
+      null,
+      null,
+      null,
+      {
+       "__raw__": 978667,
+       "__group__": 57,
+       "__type__": "DT_SNO",
+       "__typeHash__": 2764331143,
+       "__targetFileName__": "base/meta/Material/wildlife_woodwraith_elite_charred.mat",
+       "groupName": "Material",
+       "name": "wildlife_woodwraith_elite_charred"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+     ]
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2,
+     "snoMaterial": {
+      "__raw__": 392929,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife_woodwraith_ds.mat",
+      "groupName": "Material",
+      "name": "wildlife_woodwraith_ds"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9639,29 +10237,7 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
-      null
-     ],
-     "snoEffectGroup": null,
-     "arAnimClothOverrides": [],
-     "arVariantMaterials": []
-    },
-    {
-     "__type__": "SubObjectAppearance",
-     "__typeHash__": 2088474641,
-     "dwFlags": 2,
-     "snoMaterial": {
-      "__raw__": 392929,
-      "__group__": 57,
-      "__type__": "DT_SNO",
-      "__typeHash__": 2764331143,
-      "__targetFileName__": "base/meta/Material/wildlife_woodwraith_ds.mat",
-      "groupName": "Material",
-      "name": "wildlife_woodwraith_ds"
-     },
-     "snoOverrideMaterial": null,
-     "snoCloth": null,
-     "snoHighQualityClothOverride": null,
-     "arMountedClothOverrides": [
+      null,
       null,
       null
      ],
@@ -9686,6 +10262,34 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2,
+     "snoMaterial": {
+      "__raw__": 392929,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife_woodwraith_ds.mat",
+      "groupName": "Material",
+      "name": "wildlife_woodwraith_ds"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9711,6 +10315,8 @@
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
       null,
+      null,
+      null,
       null
      ],
      "snoEffectGroup": null,
@@ -9734,6 +10340,34 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 2,
+     "snoMaterial": {
+      "__raw__": 409252,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/wildlife woodwraith_death_fire.mat",
+      "groupName": "Material",
+      "name": "wildlife woodwraith_death_fire"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],
@@ -9758,6 +10392,8 @@
      "snoCloth": null,
      "snoHighQualityClothOverride": null,
      "arMountedClothOverrides": [
+      null,
+      null,
       null,
       null
      ],

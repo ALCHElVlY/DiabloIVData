@@ -12,8 +12,7 @@
   "value": "0",
   "compiled": "BgAAAAAAAAAAAAAA"
  },
- "nWeight": 25,
- "flGreaterAffixPowerBonus": -1,
+ "nWeight": 100,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": {
@@ -28,19 +27,22 @@
   1,
   1,
   1,
+  1,
   1
  ],
  "arAllowedItemLabels": [
   19,
   26
  ],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 1,
  "arMaxLegendaryRanks": [
   16,
   12,
-  16
+  21,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -52,16 +54,16 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1128,
+    "eAttribute": 1159,
     "__eAttribute_name__": "Affix_Flat_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
      "value": "0.2-(CurrentLegendaryRank()-1)*0.01",
-     "compiled": "BgAAAM3MTD4BAAAAUAAAAAYAAAAAAIA/DAAAAAYAAAAK1yM8DQAAAAwAAAAAAAAA"
+     "compiled": "BgAAAM3MTD4BAAAAVgAAAAYAAAAAAIA/DAAAAAYAAAAK1yM8DQAAAAwAAAAAAAAA"
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "ExpectedLevelForIPower()",
      "compiled": "AQAAABEAAAAAAAAA"
     }
@@ -76,7 +78,7 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1126,
+    "eAttribute": 1157,
     "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
@@ -85,7 +87,7 @@
      "compiled": "BgAAAAAAoEIAAAAA"
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -154,5 +156,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

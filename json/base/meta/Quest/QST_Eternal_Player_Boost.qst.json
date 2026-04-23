@@ -47,7 +47,7 @@
  "ePersistentEventType": -1,
  "eSubzoneModifierRequiredWorldTier": 0,
  "fPrioritySideQuest": true,
- "ePrioritySideQuestType": 0,
+ "ePrioritySideQuestType": 3,
  "snoBountySubzone": null,
  "eBountyTier": -1,
  "eBountyType": -1,
@@ -61,6 +61,8 @@
    "dwUID": 8,
    "dwFlags": 4,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -85,17 +87,17 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -112,7 +114,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -188,6 +200,8 @@
    "dwUID": 11,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 2,
    "arCallbackSets": [
     {
@@ -243,7 +257,7 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1387993901
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
@@ -270,7 +284,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -346,6 +370,8 @@
    "dwUID": 32,
    "dwFlags": 4,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -370,297 +396,7 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
-       },
-       "eIndicatorType": 3,
-       "snoWorld": {
-        "__raw__": 69068,
-        "__group__": 48,
-        "__type__": "DT_SNO",
-        "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
-        "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
-       },
-       "tRegionDefault": {
-        "__type__": "QuestCallbackRegion",
-        "__typeHash__": 2884204419,
-        "eType": 0,
-        "vPolygonPoints": [],
-        "vCenterPos": {
-         "x": 0,
-         "y": 0
-        },
-        "flRadius": 0,
-        "bValid": false,
-        "bManuallySpecified": false
-       },
-       "arRegionOverrides": [],
-       "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
-       "arSubzones": [],
-       "eProgressDisplayStyle": 0,
-       "eProgressBarSource": 0,
-       "unk_301d18": false,
-       "unk_896a0c5": {
-        "__type__": "UIImageHandleReference",
-        "__typeHash__": 1797021084,
-        "hImageHandle": 0
-       },
-       "unk_7dd76d1": 0,
-       "arSnonameTokens": [],
-       "szFontColorOverride": "",
-       "snoOptionalPreloadCondition": null,
-       "unk_9c1ea4f": 0,
-       "vecPositionOffset": {
-        "x": 0,
-        "y": 0
-       },
-       "unk_9d6e5b3": false,
-       "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
-       "unk_146ba45": 0,
-       "snoHeaderDisplayCondition": null
-      }
-     ],
-     "bGiveFirstTimeReward": false,
-     "tFirstTimeReward": {
-      "__type__": "QuestReward",
-      "__typeHash__": 3387295447,
-      "snoTrackedReward": null
-     },
-     "arQuestItemsToRemove": [],
-     "snoFirstTimeRewardDisplayItem": null
-    }
-   ],
-   "unk_4b2de13": 4294967295,
-   "unk_f6ded77": {
-    "__type__": "UIImageHandleReference",
-    "__typeHash__": 1797021084,
-    "hImageHandle": 0
-   },
-   "unk_f84da79": {
-    "__type__": "UIImageHandleReference",
-    "__typeHash__": 1797021084,
-    "hImageHandle": 0
-   },
-   "snoAudioContext": null,
-   "unk_1907e03": false,
-   "hOverrideIconTracked": 0,
-   "hOverrideIconUntracked": 0,
-   "snoOverrideParticleOverheadQuestProgressTracked": null,
-   "snoOverrideParticleOverheadQuestProgressUntracked": null,
-   "unk_564e7d5": false,
-   "unk_eff642d": false,
-   "unk_fc27941": false,
-   "unk_e692de6": false,
-   "unk_d9a8a05": 4294967295,
-   "unk_5d4cfc0": 4294967295,
-   "flProgressBarFlashThreshold": 0,
-   "unk_47f8481": {
-    "x": 0,
-    "y": 0,
-    "z": 0
-   },
-   "unk_ed8215b": null,
-   "unk_2928f33": null
-  },
-  {
-   "__type__": "QuestPhase",
-   "__typeHash__": 1662164195,
-   "dwType": 1662164195,
-   "dwUID": 70,
-   "dwFlags": 2,
-   "dwRestrictions": 0,
-   "eType": 0,
-   "arCallbackSets": [
-    {
-     "__type__": "QuestObjectiveSet",
-     "__typeHash__": 297390777,
-     "dwUID": 68,
-     "ptLink": [
-      {
-       "__type__": "QuestObjectiveSetLink",
-       "__typeHash__": 730988871,
-       "dwDestinationPhaseUID": 0,
-       "eLinkType": 1
-      }
-     ],
-     "arCallbacks": [
-      {
-       "__type__": "QuestCallback",
-       "__typeHash__": 3067360607,
-       "dwUID": 69,
-       "dwFlags": 0,
-       "nNeeded": 1,
-       "tScriptMessageMap": {
-        "__type__": "ScriptMessageMap",
-        "__typeHash__": 2935055576,
-        "eEventType": 10,
-        "dwListenerFlags": 0,
-        "snoCondition": null,
-        "unk_c3ba01d": false,
-        "flCooldownSeconds": 0,
-        "arEventFilters": [
-         {
-          "__type__": "ScriptMessageMapFilter",
-          "__typeHash__": 3179414430,
-          "tKey": 2304262567,
-          "eVariableType": 1,
-          "pMessageFilter": [
-           {
-            "__type__": "ScriptEventParamActor",
-            "__typeHash__": 1286645889,
-            "dwType": 1286645889,
-            "eParamType": 4,
-            "snoActor": {
-             "__raw__": 2170092,
-             "__group__": 1,
-             "__type__": "DT_SNO",
-             "__typeHash__": 2764331143,
-             "__targetFileName__": "base/meta/Actor/Eternal_Player_Boost_TurnIn.acr",
-             "groupName": "Actor",
-             "name": "Eternal_Player_Boost_TurnIn"
-            }
-           }
-          ]
-         },
-         {
-          "__type__": "ScriptMessageMapFilter",
-          "__typeHash__": 3179414430,
-          "tKey": 1739417742,
-          "eVariableType": 4,
-          "pMessageFilter": [
-           {
-            "__type__": "ScriptEventParamConversation",
-            "__typeHash__": 2087454851,
-            "dwType": 2087454851,
-            "eParamType": 10,
-            "snoConversation": {
-             "__raw__": 2235642,
-             "__group__": 12,
-             "__type__": "DT_SNO",
-             "__typeHash__": 2764331143,
-             "__targetFileName__": "base/meta/Conversation/Eternal_Boost_Warning.cnv",
-             "groupName": "Conversation",
-             "name": "Eternal_Boost_Warning"
-            }
-           }
-          ]
-         },
-         {
-          "__type__": "ScriptMessageMapFilter",
-          "__typeHash__": 3179414430,
-          "tKey": 1387993843,
-          "eVariableType": 1,
-          "pMessageFilter": [
-           {
-            "__type__": "ScriptEventParamSelf",
-            "__typeHash__": 1210992754,
-            "dwType": 1210992754,
-            "eParamType": 11,
-            "idValue": 0
-           }
-          ]
-         }
-        ],
-        "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
-       },
-       "eIndicatorType": 2,
-       "snoWorld": {
-        "__raw__": 69068,
-        "__group__": 48,
-        "__type__": "DT_SNO",
-        "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
-        "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
-       },
-       "tRegionDefault": {
-        "__type__": "QuestCallbackRegion",
-        "__typeHash__": 2884204419,
-        "eType": 1,
-        "vPolygonPoints": [
-         {
-          "x": -1401.93994140625,
-          "y": 138.99099731445312
-         }
-        ],
-        "vCenterPos": {
-         "x": -1401.93994140625,
-         "y": 138.99099731445312
-        },
-        "flRadius": 12,
-        "bValid": true,
-        "bManuallySpecified": false
-       },
-       "arRegionOverrides": [],
-       "nValidRegionOverrides": 0,
-       "arLevelAreas": [
-        {
-         "__raw__": 445553,
-         "__group__": 22,
-         "__type__": "DT_SNO",
-         "__typeHash__": 2764331143,
-         "__targetFileName__": "base/meta/LevelArea/Frac_Kyovashad.lvl",
-         "groupName": "LevelArea",
-         "name": "Frac_Kyovashad"
-        }
-       ],
-       "arSubzones": [],
-       "eProgressDisplayStyle": 0,
-       "eProgressBarSource": 0,
-       "unk_301d18": false,
-       "unk_896a0c5": {
-        "__type__": "UIImageHandleReference",
-        "__typeHash__": 1797021084,
-        "hImageHandle": 0
-       },
-       "unk_7dd76d1": 0,
-       "arSnonameTokens": [
-        {
-         "__raw__": 2170092,
-         "__group__": 1,
-         "__type__": "DT_SNO_NAME",
-         "__typeHash__": 3339108615,
-         "__targetFileName__": "base/meta/Actor/Eternal_Player_Boost_TurnIn.acr",
-         "groupName": "Actor",
-         "name": "Eternal_Player_Boost_TurnIn"
-        }
-       ],
-       "szFontColorOverride": "",
-       "snoOptionalPreloadCondition": null,
-       "unk_9c1ea4f": 0,
-       "vecPositionOffset": {
-        "x": 0,
-        "y": 0
-       },
-       "unk_9d6e5b3": false,
-       "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
-       "unk_146ba45": 0,
-       "snoHeaderDisplayCondition": null
-      },
-      {
-       "__type__": "QuestCallback",
-       "__typeHash__": 3067360607,
-       "dwUID": 72,
-       "dwFlags": 0,
-       "nNeeded": 1,
-       "tScriptMessageMap": {
-        "__type__": "ScriptMessageMap",
-        "__typeHash__": 2935055576,
-        "eEventType": 74,
-        "dwListenerFlags": 0,
-        "snoCondition": null,
-        "unk_c3ba01d": false,
-        "flCooldownSeconds": 0,
-        "arEventFilters": [],
-        "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
@@ -689,13 +425,13 @@
        "nValidRegionOverrides": 0,
        "arLevelAreas": [
         {
-         "__raw__": 445553,
+         "__raw__": 1680330,
          "__group__": 22,
          "__type__": "DT_SNO",
          "__typeHash__": 2764331143,
-         "__targetFileName__": "base/meta/LevelArea/Frac_Kyovashad.lvl",
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
          "groupName": "LevelArea",
-         "name": "Frac_Kyovashad"
+         "name": "World_TrainingGrounds"
         }
        ],
        "arSubzones": [],
@@ -773,6 +509,8 @@
    "dwUID": 0,
    "dwFlags": 0,
    "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
     {
@@ -867,17 +605,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -894,7 +632,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -1016,17 +764,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -1043,7 +791,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -1165,17 +923,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -1192,7 +950,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -1314,17 +1082,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -1341,7 +1109,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -1463,17 +1241,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -1490,7 +1268,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -1612,17 +1400,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -1639,7 +1427,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -1761,17 +1559,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -1788,7 +1586,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -1910,17 +1718,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -1937,7 +1745,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -2059,17 +1877,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -2086,7 +1904,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -2208,17 +2036,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -2235,7 +2063,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -2357,17 +2195,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -2384,7 +2222,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -2506,17 +2354,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -2533,7 +2381,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -2655,17 +2513,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -2682,7 +2540,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -2804,17 +2672,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -2831,7 +2699,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -2953,17 +2831,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -2980,7 +2858,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -3102,17 +2990,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -3129,7 +3017,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -3251,17 +3149,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -3278,7 +3176,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -3400,17 +3308,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -3427,7 +3335,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -3503,47 +3421,42 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 2197444832
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 2,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
         "__typeHash__": 2884204419,
-        "eType": 1,
-        "vPolygonPoints": [
-         {
-          "x": -1401.93994140625,
-          "y": 138.99099731445312
-         }
-        ],
+        "eType": 0,
+        "vPolygonPoints": [],
         "vCenterPos": {
-         "x": -1401.93994140625,
-         "y": 138.99099731445312
+         "x": 0,
+         "y": 0
         },
-        "flRadius": 12,
-        "bValid": true,
+        "flRadius": 0,
+        "bValid": false,
         "bManuallySpecified": false
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
        "arLevelAreas": [
         {
-         "__raw__": 445553,
+         "__raw__": 1680330,
          "__group__": 22,
          "__type__": "DT_SNO",
          "__typeHash__": 2764331143,
-         "__targetFileName__": "base/meta/LevelArea/Frac_Kyovashad.lvl",
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
          "groupName": "LevelArea",
-         "name": "Frac_Kyovashad"
+         "name": "World_TrainingGrounds"
         }
        ],
        "arSubzones": [],
@@ -3597,17 +3510,17 @@
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
-        "dwEventEntryHash": 58
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -3624,7 +3537,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -3728,17 +3651,17 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 4035304214
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
-        "__raw__": 69068,
+        "__raw__": 1680327,
         "__group__": 48,
         "__type__": "DT_SNO",
         "__typeHash__": 2764331143,
-        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
         "groupName": "World",
-        "name": "Sanctuary_Eastern_Continent"
+        "name": "World_TrainingGrounds"
        },
        "tRegionDefault": {
         "__type__": "QuestCallbackRegion",
@@ -3755,7 +3678,17 @@
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
-       "arLevelAreas": [],
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
@@ -3840,7 +3773,7 @@
             "__typeHash__": 234160671,
             "dwType": 234160671,
             "eParamType": 6,
-            "dwStringHash": 2251110578,
+            "dwStringHash": 0,
             "szString": "StartedConversation"
            }
           ]
@@ -3876,7 +3809,371 @@
          }
         ],
         "unk_492729e": [],
-        "dwEventEntryHash": 1212553832
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 3,
+       "snoWorld": {
+        "__raw__": 1680327,
+        "__group__": 48,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/World/World_TrainingGrounds.wrl",
+        "groupName": "World",
+        "name": "World_TrainingGrounds"
+       },
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 0,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      }
+     ],
+     "bGiveFirstTimeReward": false,
+     "tFirstTimeReward": {
+      "__type__": "QuestReward",
+      "__typeHash__": 3387295447,
+      "snoTrackedReward": null
+     },
+     "arQuestItemsToRemove": [],
+     "snoFirstTimeRewardDisplayItem": null
+    }
+   ],
+   "unk_4b2de13": 4294967295,
+   "unk_f6ded77": {
+    "__type__": "UIImageHandleReference",
+    "__typeHash__": 1797021084,
+    "hImageHandle": 0
+   },
+   "unk_f84da79": {
+    "__type__": "UIImageHandleReference",
+    "__typeHash__": 1797021084,
+    "hImageHandle": 0
+   },
+   "snoAudioContext": null,
+   "unk_1907e03": false,
+   "hOverrideIconTracked": 0,
+   "hOverrideIconUntracked": 0,
+   "snoOverrideParticleOverheadQuestProgressTracked": null,
+   "snoOverrideParticleOverheadQuestProgressUntracked": null,
+   "unk_564e7d5": false,
+   "unk_eff642d": false,
+   "unk_fc27941": false,
+   "unk_e692de6": false,
+   "unk_d9a8a05": 4294967295,
+   "unk_5d4cfc0": 4294967295,
+   "flProgressBarFlashThreshold": 0,
+   "unk_47f8481": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "unk_ed8215b": null,
+   "unk_2928f33": null
+  },
+  {
+   "__type__": "QuestPhase",
+   "__typeHash__": 1662164195,
+   "dwType": 1662164195,
+   "dwUID": 84,
+   "dwFlags": 0,
+   "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
+   "eType": 1,
+   "arCallbackSets": [
+    {
+     "__type__": "QuestObjectiveSet",
+     "__typeHash__": 297390777,
+     "dwUID": 102,
+     "ptLink": [
+      {
+       "__type__": "QuestObjectiveSetLink",
+       "__typeHash__": 730988871,
+       "dwDestinationPhaseUID": 106,
+       "eLinkType": 1
+      }
+     ],
+     "arCallbacks": [
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 103,
+       "dwFlags": 0,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 11,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 2304262567,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamActor",
+            "__typeHash__": 1286645889,
+            "dwType": 1286645889,
+            "eParamType": 4,
+            "snoActor": {
+             "__raw__": 2170092,
+             "__group__": 1,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Actor/Eternal_Player_Boost_TurnIn.acr",
+             "groupName": "Actor",
+             "name": "Eternal_Player_Boost_TurnIn"
+            }
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1739417742,
+          "eVariableType": 4,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamConversation",
+            "__typeHash__": 2087454851,
+            "dwType": 2087454851,
+            "eParamType": 10,
+            "snoConversation": {
+             "__raw__": 2235642,
+             "__group__": 12,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Conversation/Eternal_Boost_Warning.cnv",
+             "groupName": "Conversation",
+             "name": "Eternal_Boost_Warning"
+            }
+           }
+          ]
+         },
+         {
+          "__type__": "ScriptMessageMapFilter",
+          "__typeHash__": 3179414430,
+          "tKey": 1387993843,
+          "eVariableType": 1,
+          "pMessageFilter": [
+           {
+            "__type__": "ScriptEventParamPlayer",
+            "__typeHash__": 106673333,
+            "dwType": 106673333,
+            "eParamType": 7,
+            "bIsPlayer": true
+           }
+          ]
+         }
+        ],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
+       },
+       "eIndicatorType": 3,
+       "snoWorld": {
+        "__raw__": 69068,
+        "__group__": 48,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+        "groupName": "World",
+        "name": "Sanctuary_Eastern_Continent"
+       },
+       "tRegionDefault": {
+        "__type__": "QuestCallbackRegion",
+        "__typeHash__": 2884204419,
+        "eType": 0,
+        "vPolygonPoints": [],
+        "vCenterPos": {
+         "x": 0,
+         "y": 0
+        },
+        "flRadius": 0,
+        "bValid": false,
+        "bManuallySpecified": false
+       },
+       "arRegionOverrides": [],
+       "nValidRegionOverrides": 0,
+       "arLevelAreas": [
+        {
+         "__raw__": 1680330,
+         "__group__": 22,
+         "__type__": "DT_SNO",
+         "__typeHash__": 2764331143,
+         "__targetFileName__": "base/meta/LevelArea/World_TrainingGrounds.lvl",
+         "groupName": "LevelArea",
+         "name": "World_TrainingGrounds"
+        }
+       ],
+       "arSubzones": [],
+       "eProgressDisplayStyle": 0,
+       "eProgressBarSource": 0,
+       "unk_301d18": false,
+       "unk_896a0c5": {
+        "__type__": "UIImageHandleReference",
+        "__typeHash__": 1797021084,
+        "hImageHandle": 0
+       },
+       "unk_7dd76d1": 0,
+       "arSnonameTokens": [
+        {
+         "__raw__": 2170092,
+         "__group__": 1,
+         "__type__": "DT_SNO_NAME",
+         "__typeHash__": 3339108615,
+         "__targetFileName__": "base/meta/Actor/Eternal_Player_Boost_TurnIn.acr",
+         "groupName": "Actor",
+         "name": "Eternal_Player_Boost_TurnIn"
+        }
+       ],
+       "szFontColorOverride": "",
+       "snoOptionalPreloadCondition": null,
+       "unk_9c1ea4f": 0,
+       "vecPositionOffset": {
+        "x": 0,
+        "y": 0
+       },
+       "unk_9d6e5b3": false,
+       "unk_b3ec93": 0,
+       "unk_5698d08": false,
+       "unk_77b5dc7": false,
+       "unk_146ba45": 0,
+       "snoHeaderDisplayCondition": null
+      }
+     ],
+     "bGiveFirstTimeReward": false,
+     "tFirstTimeReward": {
+      "__type__": "QuestReward",
+      "__typeHash__": 3387295447,
+      "snoTrackedReward": null
+     },
+     "arQuestItemsToRemove": [],
+     "snoFirstTimeRewardDisplayItem": null
+    }
+   ],
+   "unk_4b2de13": 4294967295,
+   "unk_f6ded77": {
+    "__type__": "UIImageHandleReference",
+    "__typeHash__": 1797021084,
+    "hImageHandle": 0
+   },
+   "unk_f84da79": {
+    "__type__": "UIImageHandleReference",
+    "__typeHash__": 1797021084,
+    "hImageHandle": 0
+   },
+   "snoAudioContext": null,
+   "unk_1907e03": false,
+   "hOverrideIconTracked": 0,
+   "hOverrideIconUntracked": 0,
+   "snoOverrideParticleOverheadQuestProgressTracked": null,
+   "snoOverrideParticleOverheadQuestProgressUntracked": null,
+   "unk_564e7d5": false,
+   "unk_eff642d": false,
+   "unk_fc27941": false,
+   "unk_e692de6": false,
+   "unk_d9a8a05": 4294967295,
+   "unk_5d4cfc0": 4294967295,
+   "flProgressBarFlashThreshold": 0,
+   "unk_47f8481": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+   },
+   "unk_ed8215b": null,
+   "unk_2928f33": null
+  },
+  {
+   "__type__": "QuestPhase",
+   "__typeHash__": 1662164195,
+   "dwType": 1662164195,
+   "dwUID": 106,
+   "dwFlags": 2,
+   "dwRestrictions": 0,
+   "unk_baaed01": false,
+   "unk_3b0b41a": null,
+   "eType": 0,
+   "arCallbackSets": [
+    {
+     "__type__": "QuestObjectiveSet",
+     "__typeHash__": 297390777,
+     "dwUID": 104,
+     "ptLink": [
+      {
+       "__type__": "QuestObjectiveSetLink",
+       "__typeHash__": 730988871,
+       "dwDestinationPhaseUID": 0,
+       "eLinkType": 1
+      }
+     ],
+     "arCallbacks": [
+      {
+       "__type__": "QuestCallback",
+       "__typeHash__": 3067360607,
+       "dwUID": 105,
+       "dwFlags": 0,
+       "nNeeded": 1,
+       "tScriptMessageMap": {
+        "__type__": "ScriptMessageMap",
+        "__typeHash__": 2935055576,
+        "eEventType": 74,
+        "dwListenerFlags": 0,
+        "snoCondition": null,
+        "unk_c3ba01d": false,
+        "flCooldownSeconds": 0,
+        "arEventFilters": [],
+        "unk_492729e": [],
+        "dwEventEntryHash": 0
        },
        "eIndicatorType": 3,
        "snoWorld": {
@@ -3976,13 +4273,13 @@
  "arRequiredReputations": [],
  "arRequiredCompletedQuests": [],
  "snoStartCondition": {
-  "__raw__": 2167018,
+  "__raw__": 2504797,
   "__group__": 51,
   "__type__": "DT_SNO",
   "__typeHash__": 2764331143,
-  "__targetFileName__": "base/meta/Condition/QST_Eternal_Player_Boost_Validation.cnd",
+  "__targetFileName__": "base/meta/Condition/QST_Eternal_Player_Boost_QuestValidation.cnd",
   "groupName": "Condition",
-  "name": "QST_Eternal_Player_Boost_Validation"
+  "name": "QST_Eternal_Player_Boost_QuestValidation"
  },
  "arFollowers": [],
  "arQuestItems": [],
@@ -3993,6 +4290,8 @@
   "arSeasons": []
  },
  "dwRestrictions": 0,
+ "unk_baaed01": false,
+ "unk_3b0b41a": null,
  "unk_9c72d73": [],
  "gbidZoneEventConfig": null,
  "unk_376dcd8": false,

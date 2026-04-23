@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": {
@@ -28,6 +27,7 @@
   0,
   1,
   0,
+  0,
   0
  ],
  "arAllowedItemLabels": [
@@ -36,13 +36,15 @@
   30,
   26
  ],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 0,
  "arMaxLegendaryRanks": [
   16,
   13,
-  21
+  21,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -54,7 +56,7 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1128,
+    "eAttribute": 1159,
     "__eAttribute_name__": "Affix_Flat_Value_1",
     "dwID": 0,
     "nParam": -1,
@@ -69,7 +71,7 @@
      "group": 22,
      "name": "Legendary_Rogue_125_barrier_scaling"
     },
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "ExpectedLevelForIPower()",
      "compiled": "AQAAABEAAAAAAAAA"
     }
@@ -134,11 +136,11 @@
    "name": "Search_CrowdControl"
   },
   {
-   "__raw__": 2616760579,
+   "__raw__": 2789173029,
    "__type__": "DT_GBID",
    "__typeHash__": 1028170061,
    "group": 56,
-   "name": "Keyword_Chill_Frozen"
+   "name": "Keyword_Freeze"
   },
   {
    "__raw__": 622157019,
@@ -152,5 +154,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": true
 }

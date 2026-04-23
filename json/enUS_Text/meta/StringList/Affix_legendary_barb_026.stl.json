@@ -22,7 +22,7 @@
    "__type__": "StringTableEntry",
    "__typeHash__": 3844612145,
    "szLabel": "CodexDesc",
-   "szText": "{c_important}Leap{/c} creates an {c_important}Earthquake{/c} that deals {c_random}[(Owner.Weapon_Damage_Min_Total + Owner.Weapon_Damage_Delta_Total) * Affix_Value_2]{/c} Physical damage and provides {c_random}[Affix_Value_1|%|]{/c} Damage Reduction.",
+   "szText": "{c_important}Leap{/c} creates an {c_important}Earthquake{/c} that deals {c_random}[(Owner.Weapon_Damage_Min_Total + Owner.Weapon_Damage_Delta_Total) * Affix_Value_2]{/c} Physical damage over {c_number}[PowerTag.Barbarian_Earthquake.\"Script Formula 1\"]{/c} seconds. Gain {c_number}[Affix.\"Static Value 1\"*100|%|]{/c} Damage Reduction while standing in {c_important}Earthquakes{/c}.",
    "hLabel": 2193085202
   }
  ],

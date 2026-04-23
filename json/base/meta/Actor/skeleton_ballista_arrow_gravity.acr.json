@@ -21,7 +21,6 @@
  "arStoreAnimSets": [],
  "snoAnimTree": null,
  "arActorAppearanceAddOnEntries": [],
- "snoDamageRemap": null,
  "snoVisualRemap": null,
  "gbidPartyFinderTag": null,
  "arUniqueSubObjectNameInfoPerAppearance": [],
@@ -171,9 +170,7 @@
       "__group__": 23,
       "__type__": "DT_SNO_NAME",
       "__typeHash__": 3339108615,
-      "__targetFileName__": "base/meta/Light/skeleton_arrow.lit",
-      "groupName": "Light",
-      "name": "skeleton_arrow"
+      "groupName": "Light"
      },
      "dwID": 0,
      "tHardpointLinks": [
@@ -229,6 +226,7 @@
      "dwShaderMapOverride": 4294967295,
      "nPlayerIndex": 0,
      "flScale": 1,
+     "unk_ebd19c": false,
      "szSpawnLocatorName": 0,
      "vecScalar": {
       "x": 1,
@@ -356,9 +354,7 @@
       "__group__": 40,
       "__type__": "DT_SNO_NAME",
       "__typeHash__": 3339108615,
-      "__targetFileName__": "base/meta/Sound/Play_Monster_Affix_Frozen_Explosion.snd",
-      "groupName": "Sound",
-      "name": "Play_Monster_Affix_Frozen_Explosion"
+      "groupName": "Sound"
      },
      "tHardpointLinks": [
       {
@@ -760,13 +756,15 @@
    "__type__": "ActorProjectileData",
    "__typeHash__": 467583236,
    "fDestroyOnImpact": false,
-   "unk_fc86022": 0,
+   "bDeleteOnOwnerDeath": false,
+   "unk_dca784d": false,
+   "flMinimumDestroyOnImpactVelocity": 0,
    "fProjectileMatchYawToVelocity": true,
    "fProjectileMatchPitchToVelocity": true,
-   "unk_1db2e79": false,
+   "fProjectileTurnsInstantly": false,
    "fProjectileCanBeReflected": true,
    "fProjectileCanBeSlowed": true,
-   "unk_bac5791": false,
+   "fProjectileUsesWeaponAppearance": false,
    "unk_7c4ac65": true,
    "tHardpointLink": {
     "__type__": "HardpointLink",

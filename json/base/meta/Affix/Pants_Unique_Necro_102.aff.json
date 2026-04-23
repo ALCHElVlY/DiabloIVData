@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": null,
@@ -23,16 +22,19 @@
   0,
   0,
   1,
+  0,
   0
  ],
  "arAllowedItemLabels": [],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": -1,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -44,16 +46,16 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1126,
+    "eAttribute": 1157,
     "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(40, 20, 40)",
-     "compiled": "BgAAAAAAIEIGAAAAAACgQQYAAAAAACBCAQAAAGQAAAAAAAAA"
+     "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(20, 20, 40)",
+     "compiled": "BgAAAAAAoEEGAAAAAACgQQYAAAAAACBCAQAAAGoAAAAAAAAA"
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -63,7 +65,7 @@
  "arStaticValues": [
   8,
   5,
-  0.10000000149011612
+  0.05000000074505806
  ],
  "snoPassivePower": {
   "__raw__": 2123320,
@@ -121,15 +123,6 @@
    "__targetFileName__": "base/meta/Power/Necromancer_BoneSpear.pow",
    "groupName": "Power",
    "name": "Necromancer_BoneSpear"
-  },
-  {
-   "__raw__": 658216,
-   "__group__": 29,
-   "__type__": "DT_SNO",
-   "__typeHash__": 2764331143,
-   "__targetFileName__": "base/meta/Power/Necromancer_BloodWave.pow",
-   "groupName": "Power",
-   "name": "Necromancer_BloodWave"
   }
  ],
  "arSkillTagsToAdd": [
@@ -139,16 +132,10 @@
    "__typeHash__": 1028170061,
    "group": 56,
    "name": "Skill_Blood"
-  },
-  {
-   "__raw__": 3828367010,
-   "__type__": "DT_GBID",
-   "__typeHash__": 1028170061,
-   "group": 56,
-   "name": "Skill_Bone"
   }
  ],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

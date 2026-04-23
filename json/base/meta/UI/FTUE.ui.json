@@ -53,10 +53,31 @@
       },
       "unk_441f783": "0",
       "hOptionalUIControlStyleFields": {
-       "szOnOpen": "UI_FTUE_Accessibility_OnOpen",
-       "szOnClose": "UI_FTUE_Accessibility_OnClose",
-       "bActive": 0,
-       "szOnUpdate": "UI_FTUE_Accessibility_OnUpdate"
+       "tOnOpen": {
+        "__type__": "UIDefaultAction",
+        "__typeHash__": 2502206177,
+        "dwType": 2502206177,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 1517
+       },
+       "tOnUpdate": {
+        "__type__": "UIUpdateAction",
+        "__typeHash__": 2860534367,
+        "dwType": 2860534367,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 14
+       },
+       "tOnClose": {
+        "__type__": "UIDefaultAction",
+        "__typeHash__": 2502206177,
+        "dwType": 2502206177,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 1516
+       },
+       "bActive": 0
       },
       "tConsoleInput": {
        "__type__": "UIControlConsoleInput",
@@ -595,7 +616,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -767,7 +795,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -1082,7 +1117,7 @@
                     },
                     "hOptionalUIWindowStyleFields": {},
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -1350,7 +1385,14 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -1536,7 +1578,14 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -2100,7 +2149,14 @@
              "hOptionalUIControlConsoleInputFields": {}
             },
             "hOptionalUIWindowStyleFields": {
-             "szOnClick": "UI_FTUE_Accessibility_OnApply",
+             "tOnClick": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 411
+             },
              "nBottom": -40,
              "nRight": -200,
              "eTooltipAlignHorizontal": 2,
@@ -2191,7 +2247,14 @@
              "hOptionalUIControlConsoleInputFields": {}
             },
             "hOptionalUIWindowStyleFields": {
-             "szOnClick": "UI_FTUE_Accessibility_OnDefaults",
+             "tOnClick": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 410
+             },
              "nBottom": -40,
              "nRight": -200,
              "eTooltipAlignHorizontal": 2,
@@ -2272,7 +2335,14 @@
           "unk_441f783": "0",
           "hOptionalUIControlStyleFields": {},
           "hOptionalUIHotkeyStyleFields": {
-           "szOnController": "UI_FTUE_Accessibility_OnDefaults",
+           "tOnController": {
+            "__type__": "UIDefaultAction",
+            "__typeHash__": 2502206177,
+            "dwType": 2502206177,
+            "behaviorMessageName": 0,
+            "behaviorContainerSno": null,
+            "enumVal": 410
+           },
            "eFixedControllerButton": 2,
            "snoOnActionSound": {
             "__raw__": 1369477,
@@ -2307,7 +2377,14 @@
           "unk_441f783": "0",
           "hOptionalUIControlStyleFields": {},
           "hOptionalUIHotkeyStyleFields": {
-           "szOnController": "UI_FTUE_Accessibility_OnApply",
+           "tOnController": {
+            "__type__": "UIDefaultAction",
+            "__typeHash__": 2502206177,
+            "dwType": 2502206177,
+            "behaviorMessageName": 0,
+            "behaviorContainerSno": null,
+            "enumVal": 411
+           },
            "eFixedControllerButton": 3,
            "snoOnActionSound": {
             "__raw__": 584405,
@@ -2358,7 +2435,9 @@
             "tFont": {
              "__type__": "UIControlFont",
              "__typeHash__": 1698657718,
-             "hOptionalUIControlFontFields": {}
+             "hOptionalUIControlFontFields": {
+              "dwFontSize": 24
+             }
             },
             "hOptionalUITextStyleFields": {
              "hText": {
@@ -3719,8 +3798,15 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {},
                 "hOptionalUIHotkeyStyleFields": {
-                 "szOnController": "AccountLinkConnectwithController_OnClick",
-                 "eHotkey": 125
+                 "tOnController": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 1865
+                 },
+                 "eHotkey": 128
                 }
                }
               ],
@@ -3745,8 +3831,15 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {},
                 "hOptionalUIHotkeyStyleFields": {
-                 "szOnController": "UIModalConfirmation_OnClick_Decline",
-                 "eHotkey": 126
+                 "tOnController": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 1807
+                 },
+                 "eHotkey": 129
                 }
                }
               ],
@@ -4298,7 +4391,14 @@
                  "__type__": "UIControlConsoleInput",
                  "__typeHash__": 3089331074,
                  "hOptionalUIControlConsoleInputFields": {
-                  "szOnButton1": ""
+                  "tOnButton1": {
+                   "__type__": "UIDefaultAction",
+                   "__typeHash__": 2502206177,
+                   "dwType": 2502206177,
+                   "behaviorMessageName": 0,
+                   "behaviorContainerSno": null,
+                   "enumVal": -1
+                  }
                  }
                 },
                 "hOptionalUIWindowStyleFields": {
@@ -4365,9 +4465,23 @@
                 "unk_441f783": "0",
                 "hOptionalUIControlStyleFields": {},
                 "hOptionalUIHotkeyStyleFields": {
-                 "szOnController": "ModalTradeItem_OnClickOkButton",
+                 "tOnController": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 1476
+                 },
                  "eFixedControllerButton": 3,
-                 "unk_ccd9967": ""
+                 "unk_f68242e": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
+                 }
                 }
                }
               ],
@@ -4935,7 +5049,14 @@
              "__type__": "UIControlConsoleInput",
              "__typeHash__": 3089331074,
              "hOptionalUIControlConsoleInputFields": {
-              "szOnButton1": ""
+              "tOnButton1": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": -1
+              }
              }
             },
             "hOptionalUIWindowStyleFields": {
@@ -5006,7 +5127,14 @@
              "__type__": "UIControlConsoleInput",
              "__typeHash__": 3089331074,
              "hOptionalUIControlConsoleInputFields": {
-              "szOnButton1": ""
+              "tOnButton1": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": -1
+              }
              }
             },
             "hOptionalUIWindowStyleFields": {
@@ -5074,9 +5202,23 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "SafeZone_OnClickContinueButton",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 1481
+             },
              "eFixedControllerButton": 0,
-             "unk_ccd9967": ""
+             "unk_f68242e": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": -1
+             }
             }
            }
           ],
@@ -5101,9 +5243,23 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "SafeZone_OnClickDefaultButton",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 1482
+             },
              "eFixedControllerButton": 2,
-             "unk_ccd9967": "",
+             "unk_f68242e": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": -1
+             },
              "snoOnActionSound": {
               "__raw__": 1369477,
               "__group__": 40,
@@ -5861,7 +6017,14 @@
              "__type__": "UIControlConsoleInput",
              "__typeHash__": 3089331074,
              "hOptionalUIControlConsoleInputFields": {
-              "szOnButton1": ""
+              "tOnButton1": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": -1
+              }
              }
             },
             "hOptionalUIWindowStyleFields": {
@@ -5932,7 +6095,14 @@
              "__type__": "UIControlConsoleInput",
              "__typeHash__": 3089331074,
              "hOptionalUIControlConsoleInputFields": {
-              "szOnButton1": ""
+              "tOnButton1": {
+               "__type__": "UIDefaultAction",
+               "__typeHash__": 2502206177,
+               "dwType": 2502206177,
+               "behaviorMessageName": 0,
+               "behaviorContainerSno": null,
+               "enumVal": -1
+              }
              }
             },
             "hOptionalUIWindowStyleFields": {
@@ -6000,9 +6170,23 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "SafeZone_OnClickContinueButton",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 1481
+             },
              "eFixedControllerButton": 0,
-             "unk_ccd9967": ""
+             "unk_f68242e": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": -1
+             }
             }
            }
           ],
@@ -6027,9 +6211,23 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "SafeZone_OnClickDefaultButton",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 1482
+             },
              "eFixedControllerButton": 2,
-             "unk_ccd9967": "",
+             "unk_f68242e": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": -1
+             },
              "snoOnActionSound": {
               "__raw__": 1369477,
               "__group__": 40,
@@ -6582,7 +6780,14 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "szOnClick": "UI_FTUE_Visibility_OnCinematicSelected"
+                 "tOnClick": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 417
+                 }
                 },
                 "tFont": {
                  "__type__": "UIControlFont",
@@ -6601,7 +6806,14 @@
                  "hOptionalUIControlClickSoundsFields": {}
                 },
                 "hOptionalUIButtonStyleFields": {
-                 "szOnGainedFocus": "UI_FTUE_Visibility_OnCinematicSelected"
+                 "tOnGainedFocus": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 417
+                 }
                 },
                 "hOptionalUIRadioButtonStyleFields": {
                  "bRadioButtonDefault": 1
@@ -6776,7 +6988,14 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "szOnClick": "UI_FTUE_Visibility_OnContrastSelected"
+                 "tOnClick": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 418
+                 }
                 },
                 "tFont": {
                  "__type__": "UIControlFont",
@@ -6807,7 +7026,14 @@
                  }
                 },
                 "hOptionalUIButtonStyleFields": {
-                 "szOnGainedFocus": "UI_FTUE_Visibility_OnContrastSelected"
+                 "tOnGainedFocus": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": 418
+                 }
                 },
                 "hOptionalUIRadioButtonStyleFields": {
                  "nRadioButtonValue": 1,
@@ -6898,15 +7124,33 @@
            "hOptionalUIControlConsoleInputFields": {}
           },
           "hOptionalUIWindowStyleFields": {
-           "szOnClick": "UI_FTUE_Visibility_OnApply",
            "eVerticalAnchoring": 1,
+           "tOnClick": {
+            "__type__": "UIDefaultAction",
+            "__typeHash__": 2502206177,
+            "dwType": 2502206177,
+            "behaviorMessageName": 0,
+            "behaviorContainerSno": null,
+            "enumVal": 416
+           },
            "eHorizontalAnchoring": 1,
            "eVisibilityCondition": 0
           },
           "tFont": {
            "__type__": "UIControlFont",
            "__typeHash__": 1698657718,
-           "hOptionalUIControlFontFields": {}
+           "hOptionalUIControlFontFields": {
+            "snoFont": {
+             "__raw__": 2430650,
+             "__group__": 19,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+             "groupName": "Font",
+             "name": "SansSerif_ROG"
+            },
+            "dwFontSize": 24
+           }
           },
           "hOptionalUITextStyleFields": {
            "hText": {
@@ -6969,7 +7213,14 @@
           "hOptionalUIControlStyleFields": {},
           "hOptionalUIHotkeyStyleFields": {
            "eFixedControllerButton": 3,
-           "unk_ccd9967": "UI_FTUE_Visibility_OnApply",
+           "unk_f68242e": {
+            "__type__": "UIDefaultAction",
+            "__typeHash__": 2502206177,
+            "dwType": 2502206177,
+            "behaviorMessageName": 0,
+            "behaviorContainerSno": null,
+            "enumVal": 416
+           },
            "snoOnActionSound": {
             "__raw__": 157383,
             "__group__": 40,
@@ -7017,7 +7268,9 @@
             "tFont": {
              "__type__": "UIControlFont",
              "__typeHash__": 1698657718,
-             "hOptionalUIControlFontFields": {}
+             "hOptionalUIControlFontFields": {
+              "dwFontSize": 24
+             }
             },
             "hOptionalUITextStyleFields": {
              "hText": {
@@ -7062,8 +7315,15 @@
       },
       "unk_441f783": "0",
       "hOptionalUIControlStyleFields": {
-       "bActive": 0,
-       "szOnUpdate": "UI_FTUE_Accessibility_OnUpdate"
+       "tOnUpdate": {
+        "__type__": "UIUpdateAction",
+        "__typeHash__": 2860534367,
+        "dwType": 2860534367,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 14
+       },
+       "bActive": 0
       },
       "tConsoleInput": {
        "__type__": "UIControlConsoleInput",
@@ -7708,7 +7968,14 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     },
                      "eTooltipAlignHorizontal": -1,
                      "eTooltipTextJustify": 0,
                      "nTooltipWidth": 0,
@@ -7777,7 +8044,14 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": ""
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
+                 }
                 }
                }
               ],
@@ -7822,7 +8096,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -7836,6 +8109,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1993839838
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -7920,7 +8201,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -7935,7 +8215,22 @@
                       },
                       "szLabel": 1993839838
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -8001,7 +8296,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -8015,6 +8309,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2455662839
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -8140,7 +8442,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -8155,7 +8456,22 @@
                       },
                       "szLabel": 2455662839
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -8220,7 +8536,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -8234,6 +8549,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 4189801302
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -8372,7 +8695,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -8386,10 +8708,18 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 4189801302
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -8436,7 +8766,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -8450,6 +8779,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 596238095
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -8588,7 +8925,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -8602,10 +8938,18 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 596238095
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -8652,7 +8996,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -8666,6 +9009,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1148877140
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -8769,7 +9120,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -8777,7 +9135,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -8791,6 +9148,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 1148877140
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -8849,7 +9214,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -8863,6 +9227,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3741916846
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -8977,7 +9349,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -8992,7 +9363,22 @@
                       },
                       "szLabel": 3741916846
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -9193,7 +9579,14 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": ""
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
+                 }
                 }
                }
               ],
@@ -9239,7 +9632,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -9253,6 +9645,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 4272288173
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -9376,7 +9776,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -9391,8 +9790,23 @@
                       },
                       "szLabel": 4272288173
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange",
-                     "nRight": 0
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "nRight": 0,
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -9533,7 +9947,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -9547,6 +9960,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3474555930
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -9624,7 +10045,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -9632,7 +10060,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -9646,6 +10073,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 3474555930
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -9759,7 +10194,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -9773,6 +10207,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 939831695
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -9883,7 +10325,14 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     },
                      "eTooltipAlignHorizontal": -1,
                      "eTooltipTextJustify": 0,
                      "nTooltipWidth": 0,
@@ -9921,7 +10370,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -9935,10 +10383,18 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 939831695
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -10013,7 +10469,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -10027,6 +10482,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 974099099
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -10167,7 +10630,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -10181,10 +10643,18 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 974099099
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -10259,7 +10729,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -10273,6 +10742,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3622230601
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -10387,7 +10864,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -10402,7 +10878,22 @@
                       },
                       "szLabel": 3622230601
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -10495,7 +10986,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -10509,6 +10999,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2501087374
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -10623,7 +11121,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -10638,7 +11135,22 @@
                       },
                       "szLabel": 2501087374
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -10731,7 +11243,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -10745,6 +11256,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1576761998
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -10859,7 +11378,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -10874,7 +11392,22 @@
                       },
                       "szLabel": 1576761998
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -10967,7 +11500,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -10981,6 +11513,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1012792412
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -11095,7 +11635,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -11110,7 +11649,22 @@
                       },
                       "szLabel": 1012792412
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -11203,7 +11757,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -11217,6 +11770,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3414286592
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -11331,7 +11892,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -11346,7 +11906,22 @@
                       },
                       "szLabel": 3414286592
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -11439,7 +12014,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -11453,6 +12027,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3958794932
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -11567,7 +12149,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -11582,7 +12163,22 @@
                       },
                       "szLabel": 3958794932
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -11675,7 +12271,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -11689,6 +12284,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2791795537
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -11803,7 +12406,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -11818,7 +12420,22 @@
                       },
                       "szLabel": 2791795537
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -11911,7 +12528,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -11925,6 +12541,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2913532
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -12039,7 +12663,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -12054,7 +12677,22 @@
                       },
                       "szLabel": 2913532
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -12147,7 +12785,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -12161,6 +12798,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3227163987
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -12275,7 +12920,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -12290,7 +12934,22 @@
                       },
                       "szLabel": 3227163987
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -12483,7 +13142,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_Accessibility_OnDefaults",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 410
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -12492,7 +13158,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -12574,7 +13251,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage2Selected",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 414
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -12583,7 +13267,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -12655,7 +13350,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_Accessibility_OnDefaults",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 410
+             },
              "eFixedControllerButton": 15,
              "snoOnActionSound": {
               "__raw__": 1369477,
@@ -12690,7 +13392,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_OnPage2Selected",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 414
+             },
              "eFixedControllerButton": 5,
              "snoOnActionSound": {
               "__raw__": 157383,
@@ -12932,8 +13641,15 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage2Selected",
                "nHeight": 45,
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 414
+               },
                "nWidth": 45
               },
               "tFont": {
@@ -12996,8 +13712,15 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage3Selected",
                "nHeight": 45,
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 415
+               },
                "nWidth": 45
               },
               "tFont": {
@@ -13146,7 +13869,9 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {}
              }
@@ -13264,8 +13989,15 @@
       },
       "unk_441f783": "0",
       "hOptionalUIControlStyleFields": {
-       "bActive": 0,
-       "szOnUpdate": "UI_FTUE_Accessibility_OnUpdate"
+       "tOnUpdate": {
+        "__type__": "UIUpdateAction",
+        "__typeHash__": 2860534367,
+        "dwType": 2860534367,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 14
+       },
+       "bActive": 0
       },
       "tConsoleInput": {
        "__type__": "UIControlConsoleInput",
@@ -14007,7 +14739,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -14021,6 +14752,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1960536810
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -14147,7 +14886,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -14162,10 +14900,18 @@
                       },
                       "szLabel": 1960536810
                      },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     },
                      "eTooltipAlignHorizontal": 3
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -14213,7 +14959,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -14227,6 +14972,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3884342713
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -14304,7 +15057,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -14312,7 +15072,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -14326,6 +15085,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 3884342713
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -14444,7 +15211,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -14458,6 +15224,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2896904922
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -14596,7 +15370,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -14610,10 +15383,18 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 2896904922
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -14836,7 +15617,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -14850,6 +15630,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2100394928
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -14960,7 +15748,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -14975,7 +15762,22 @@
                       },
                       "szLabel": 2100394928
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -15040,7 +15842,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -15054,6 +15855,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1980519439
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -15192,7 +16001,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -15207,7 +16015,22 @@
                       },
                       "szLabel": 1980519439
                      },
-                     "szOnClick": "UIGameOptions_OnClick_ColorSwatch"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 352
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -15299,7 +16122,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -15313,6 +16135,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3271961091
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -15451,7 +16281,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -15466,7 +16295,22 @@
                       },
                       "szLabel": 3271961091
                      },
-                     "szOnClick": "UIGameOptions_OnClick_ColorSwatch"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 352
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -15558,7 +16402,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -15572,6 +16415,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1090552192
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -15710,7 +16561,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -15725,7 +16575,22 @@
                       },
                       "szLabel": 1090552192
                      },
-                     "szOnClick": "UIGameOptions_OnClick_ColorSwatch"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 352
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -15817,7 +16682,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -15831,6 +16695,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2684010361
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -15971,7 +16843,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -15986,7 +16857,22 @@
                       },
                       "szLabel": 2684010361
                      },
-                     "szOnClick": "UIGameOptions_OnClick_ColorSwatch"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 352
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -16176,7 +17062,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage1Selected",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 413
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -16185,7 +17078,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -16267,7 +17171,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_Accessibility_OnDefaults",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 410
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -16276,7 +17187,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -16358,7 +17280,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage3Selected",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 415
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -16367,7 +17296,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -16439,7 +17379,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_OnPage1Selected",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 413
+             },
              "eFixedControllerButton": 4,
              "snoOnActionSound": {
               "__raw__": 157383,
@@ -16474,7 +17421,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_Accessibility_OnDefaults",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 410
+             },
              "eFixedControllerButton": 15,
              "snoOnActionSound": {
               "__raw__": 1369477,
@@ -16509,7 +17463,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_OnPage3Selected",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 415
+             },
              "eFixedControllerButton": 5,
              "snoOnActionSound": {
               "__raw__": 157383,
@@ -16641,8 +17602,15 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage1Selected",
                "nHeight": 45,
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 413
+               },
                "nWidth": 45
               },
               "tFont": {
@@ -16774,8 +17742,15 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage3Selected",
                "nHeight": 45,
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 415
+               },
                "nWidth": 45
               },
               "tFont": {
@@ -16882,7 +17857,9 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {}
              }
@@ -17000,8 +17977,15 @@
       },
       "unk_441f783": "0",
       "hOptionalUIControlStyleFields": {
-       "bActive": 0,
-       "szOnUpdate": "UI_FTUE_Accessibility_OnUpdate"
+       "tOnUpdate": {
+        "__type__": "UIUpdateAction",
+        "__typeHash__": 2860534367,
+        "dwType": 2860534367,
+        "behaviorMessageName": 0,
+        "behaviorContainerSno": null,
+        "enumVal": 14
+       },
+       "bActive": 0
       },
       "tConsoleInput": {
        "__type__": "UIControlConsoleInput",
@@ -17742,7 +18726,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -17756,6 +18739,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2576972983
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -17848,7 +18839,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -17863,7 +18853,22 @@
                       },
                       "szLabel": 2576972983
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -17928,7 +18933,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -17942,6 +18946,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2611530868
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -18026,7 +19038,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -18041,7 +19052,22 @@
                       },
                       "szLabel": 2611530868
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -18106,7 +19132,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -18120,6 +19145,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2786785131
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -18204,7 +19237,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -18219,7 +19251,22 @@
                       },
                       "szLabel": 2786785131
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -18284,7 +19331,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -18298,6 +19344,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 503713018
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -18382,7 +19436,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -18397,7 +19450,22 @@
                       },
                       "szLabel": 503713018
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -18462,7 +19530,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -18476,6 +19543,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 4035435067
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -18560,7 +19635,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -18575,7 +19649,22 @@
                       },
                       "szLabel": 4035435067
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -18681,7 +19770,14 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
+                 },
                  "eHorizontalAnchoring": 3
                 }
                }
@@ -18774,7 +19870,14 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": ""
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
+                 }
                 }
                }
               ],
@@ -18819,7 +19922,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -18833,6 +19935,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 3583975808
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -18910,7 +20020,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -18918,7 +20035,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -18932,6 +20048,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 3583975808
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -18990,7 +20114,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -19004,6 +20127,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2865171635
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -19081,7 +20212,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -19089,7 +20227,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -19103,6 +20240,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 2865171635
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -19161,7 +20306,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -19175,6 +20319,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 475979447
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -19252,7 +20404,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -19260,7 +20419,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -19274,6 +20432,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 475979447
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -19377,7 +20543,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -19391,6 +20556,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 2440547015
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -19468,7 +20641,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -19476,7 +20656,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -19490,6 +20669,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 2440547015
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -19579,7 +20766,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -19593,6 +20779,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1281604154
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -19670,7 +20864,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -19678,7 +20879,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -19692,6 +20892,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 1281604154
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -19782,7 +20990,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -19796,6 +21003,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 792687297
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -19875,7 +21090,14 @@
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
                      "bActive": 1,
-                     "szOnSelChange": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnSelChange": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     }
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -19883,7 +21105,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -19897,6 +21118,14 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 792687297
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "tClickSounds": {
@@ -19956,7 +21185,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -19970,6 +21198,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 1446546363
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -20078,8 +21314,15 @@
                     },
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
-                     "bActive": 1,
-                     "szOnUpdate": ""
+                     "tOnUpdate": {
+                      "__type__": "UIUpdateAction",
+                      "__typeHash__": 2860534367,
+                      "dwType": 2860534367,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     },
+                     "bActive": 1
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -20087,7 +21330,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -20101,10 +21343,18 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 1446546363
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -20152,7 +21402,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -20166,6 +21415,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 560437828
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -20274,8 +21531,15 @@
                     },
                     "unk_441f783": "0",
                     "hOptionalUIControlStyleFields": {
-                     "bActive": 1,
-                     "szOnUpdate": ""
+                     "tOnUpdate": {
+                      "__type__": "UIUpdateAction",
+                      "__typeHash__": 2860534367,
+                      "dwType": 2860534367,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     },
+                     "bActive": 1
                     },
                     "tConsoleInput": {
                      "__type__": "UIControlConsoleInput",
@@ -20283,7 +21547,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -20297,10 +21560,18 @@
                        "name": "GameOptions"
                       },
                       "szLabel": 560437828
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
                      }
                     },
                     "hOptionalUIScrollbarStyleFields": {
-                     "szScrollbarOnChange": "UI_FTUE_Accessibility_OnSliderChange"
+                     "eScrollbarOnChange": 3
                     }
                    }
                   ]
@@ -20348,7 +21619,6 @@
                  "hOptionalUIControlConsoleInputFields": {}
                 },
                 "hOptionalUIWindowStyleFields": {
-                 "nTooltip": "",
                  "hTooltipText": {
                   "__type__": "StringLabelHandleEx",
                   "__typeHash__": 721585600,
@@ -20362,6 +21632,14 @@
                    "name": "GameOptions"
                   },
                   "szLabel": 183678473
+                 },
+                 "tOnTooltip": {
+                  "__type__": "UIDefaultAction",
+                  "__typeHash__": 2502206177,
+                  "dwType": 2502206177,
+                  "behaviorMessageName": 0,
+                  "behaviorContainerSno": null,
+                  "enumVal": -1
                  },
                  "eTooltipAlignHorizontal": 3,
                  "eTooltipAlignVertical": 1
@@ -20448,7 +21726,6 @@
                      "hOptionalUIControlConsoleInputFields": {}
                     },
                     "hOptionalUIWindowStyleFields": {
-                     "nTooltip": "",
                      "hTooltipText": {
                       "__type__": "StringLabelHandleEx",
                       "__typeHash__": 721585600,
@@ -20463,7 +21740,22 @@
                       },
                       "szLabel": 183678473
                      },
-                     "szOnClick": "UI_FTUE_Accessibility_OnOptionChange"
+                     "tOnClick": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": 412
+                     },
+                     "tOnTooltip": {
+                      "__type__": "UIDefaultAction",
+                      "__typeHash__": 2502206177,
+                      "dwType": 2502206177,
+                      "behaviorMessageName": 0,
+                      "behaviorContainerSno": null,
+                      "enumVal": -1
+                     }
                     },
                     "tFont": {
                      "__type__": "UIControlFont",
@@ -20626,7 +21918,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage2Selected",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 414
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -20635,7 +21934,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -20719,7 +22029,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_Accessibility_OnDefaults",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 410
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -20728,7 +22045,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -20810,7 +22138,14 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_Accessibility_OnApply",
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 411
+               },
                "nBottom": -40,
                "nRight": -200,
                "eTooltipAlignHorizontal": 2,
@@ -20819,7 +22154,18 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "snoFont": {
+                 "__raw__": 2430650,
+                 "__group__": 19,
+                 "__type__": "DT_SNO",
+                 "__typeHash__": 2764331143,
+                 "__targetFileName__": "base/meta/Font/SansSerif_ROG.fnt",
+                 "groupName": "Font",
+                 "name": "SansSerif_ROG"
+                },
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {
                "hText": {
@@ -20891,7 +22237,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_OnPage2Selected",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 414
+             },
              "eFixedControllerButton": 4,
              "snoOnActionSound": {
               "__raw__": 157383,
@@ -20926,7 +22279,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_Accessibility_OnDefaults",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 410
+             },
              "eFixedControllerButton": 15,
              "snoOnActionSound": {
               "__raw__": 1369477,
@@ -20961,7 +22321,14 @@
             "unk_441f783": "0",
             "hOptionalUIControlStyleFields": {},
             "hOptionalUIHotkeyStyleFields": {
-             "szOnController": "UI_FTUE_Accessibility_OnApply",
+             "tOnController": {
+              "__type__": "UIDefaultAction",
+              "__typeHash__": 2502206177,
+              "dwType": 2502206177,
+              "behaviorMessageName": 0,
+              "behaviorContainerSno": null,
+              "enumVal": 411
+             },
              "eFixedControllerButton": 3,
              "snoOnActionSound": {
               "__raw__": 584405,
@@ -21095,8 +22462,15 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage1Selected",
                "nHeight": 45,
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 413
+               },
                "nWidth": 45
               },
               "tFont": {
@@ -21161,8 +22535,15 @@
                "hOptionalUIControlConsoleInputFields": {}
               },
               "hOptionalUIWindowStyleFields": {
-               "szOnClick": "UI_FTUE_OnPage2Selected",
                "nHeight": 45,
+               "tOnClick": {
+                "__type__": "UIDefaultAction",
+                "__typeHash__": 2502206177,
+                "dwType": 2502206177,
+                "behaviorMessageName": 0,
+                "behaviorContainerSno": null,
+                "enumVal": 414
+               },
                "nWidth": 45
               },
               "tFont": {
@@ -21338,7 +22719,9 @@
               "tFont": {
                "__type__": "UIControlFont",
                "__typeHash__": 1698657718,
-               "hOptionalUIControlFontFields": {}
+               "hOptionalUIControlFontFields": {
+                "dwFontSize": 24
+               }
               },
               "hOptionalUITextStyleFields": {}
              }

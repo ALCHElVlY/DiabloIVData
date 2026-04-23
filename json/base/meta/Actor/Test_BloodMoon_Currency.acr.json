@@ -4,16 +4,16 @@
  "__type__": "ActorDefinition",
  "__typeHash__": 3085005858,
  "eType": 8,
- "dwFlags": 14680073,
+ "dwFlags": 14680072,
  "dwFlagsEx": 0,
  "snoAppearance": {
-  "__raw__": 925,
+  "__raw__": 899,
   "__group__": 9,
   "__type__": "DT_SNO",
   "__typeHash__": 2764331143,
-  "__targetFileName__": "base/meta/Appearance/MrHardpoint.app",
+  "__targetFileName__": "base/meta/Appearance/Emitter.app",
   "groupName": "Appearance",
-  "name": "MrHardpoint"
+  "name": "Emitter"
  },
  "arCustomizationAppearances": [],
  "arAppearanceSets": [],
@@ -21,7 +21,6 @@
  "arStoreAnimSets": [],
  "snoAnimTree": null,
  "arActorAppearanceAddOnEntries": [],
- "snoDamageRemap": null,
  "snoVisualRemap": null,
  "gbidPartyFinderTag": null,
  "arUniqueSubObjectNameInfoPerAppearance": [],
@@ -44,7 +43,7 @@
  "dwDefaultShaderMapOverride": 4294967295,
  "gbidDefaultAddOnType": null,
  "tScaleRange": {
-  "rangeValue1": 0.20000000298023224,
+  "rangeValue1": 1,
   "rangeValue2": 0
  },
  "tScaleLimit": {
@@ -59,45 +58,45 @@
    "y": 0,
    "z": 0
   },
-  "wdHeight": 2,
-  "wdRadius": 0.25
+  "wdHeight": 1,
+  "wdRadius": 0.20000000298023224
  },
  "aabbBounds": {
   "__type__": "AABB",
   "__typeHash__": 2408934,
   "wp": {
-   "x": 1,
-   "y": 1,
-   "z": 1
+   "x": 0.5,
+   "y": 0.5,
+   "z": 0.5
   },
   "wvExt": {
-   "x": 0.25,
-   "y": 0.25,
-   "z": 1
+   "x": 0.20000000298023224,
+   "y": 0.20000000298023224,
+   "z": 0.5
   }
  },
  "wsBounds": {
   "__type__": "Sphere",
   "__typeHash__": 3384912071,
   "wpCenter": {
-   "x": -7.450580596923828e-9,
+   "x": 0,
    "y": 0,
    "z": 0
   },
-  "wdRadius": 0.7681417465209961
+  "wdRadius": 0.6770710945129395
  },
  "aabbAppearanceBoundingBox": {
   "__type__": "AABB",
   "__typeHash__": 2408934,
   "wp": {
-   "x": -7.450580596923828e-9,
+   "x": 0,
    "y": 0,
    "z": 0
   },
   "wvExt": {
-   "x": 0.06939666718244553,
-   "y": 0.06939667463302612,
-   "z": 0
+   "x": 0.004999999888241291,
+   "y": 0.004999999888241291,
+   "z": 1.1102229998097382e-18
   }
  },
  "wpLocationPowerSrc": {
@@ -535,6 +534,7 @@
      "dwShaderMapOverride": 4294967295,
      "nPlayerIndex": 0,
      "flScale": 1,
+     "unk_ebd19c": false,
      "szSpawnLocatorName": 0,
      "vecScalar": {
       "x": 1,
@@ -652,7 +652,15 @@
    "tCollisionSettings": {
     "__type__": "CollisionSettings",
     "__typeHash__": 3066352125,
-    "snoCollision": null,
+    "snoCollision": {
+     "__raw__": 1335420,
+     "__group__": 127,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/CollisionSettings/Flippy_Standard.col",
+     "groupName": "CollisionSettings",
+     "name": "Flippy_Standard"
+    },
     "tCustomCollFlags": {
      "__type__": "ActorCollisionFlags",
      "__typeHash__": 2766662738,
@@ -672,8 +680,8 @@
      "y": 0,
      "z": 0
     },
-    "wdHeight": 2,
-    "wdRadius": 0.25
+    "wdHeight": 1,
+    "wdRadius": 0.20000000298023224
    },
    "aabbCollision": {
     "__type__": "AABB",
@@ -802,6 +810,11 @@
      "__type__": "FoleyMaterialTag",
      "__typeHash__": 2077459498,
      "szTag": 4077680
+    },
+    {
+     "__type__": "FoleyMaterialTag",
+     "__typeHash__": 2077459498,
+     "szTag": 4077680
     }
    ],
    "unk_472eb5b": null,
@@ -845,7 +858,64 @@
     "eJewelryState": 0,
     "ePersonaState": 0,
     "eEyeState": 1,
-    "eMouthState": 1
+    "eMouthState": 1,
+    "bUsesHairClippingVolume": false,
+    "eHairCullShape": 0,
+    "tHairClippingSphere": {
+     "__type__": "Sphere",
+     "__typeHash__": 3384912071,
+     "wpCenter": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "wdRadius": 0.10000000149011612
+    },
+    "tHairClippingCylinder": {
+     "__type__": "AxialCylinder",
+     "__typeHash__": 3017070665,
+     "wpBase": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+     },
+     "wdHeight": 0.20000000298023224,
+     "wdRadius": 0.20000000298023224
+    },
+    "tHairCylinderRotation": {
+     "__type__": "bcQuat",
+     "__typeHash__": 3955716320,
+     "x": 0,
+     "y": 0,
+     "z": 0,
+     "w": 1
+    },
+    "tHairClippingBox": {
+     "__type__": "OBB",
+     "__typeHash__": 88275,
+     "transform": {
+      "__type__": "PRTransform",
+      "__typeHash__": 2588169118,
+      "q": {
+       "__type__": "bcQuat",
+       "__typeHash__": 3955716320,
+       "x": 0,
+       "y": 0,
+       "z": 0,
+       "w": 1
+      },
+      "wp": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      }
+     },
+     "wvExt": {
+      "x": 0.10000000149011612,
+      "y": 0.10000000149011612,
+      "z": 0.10000000149011612
+     }
+    }
    },
    "fUseClassHairStateOverrides": false,
    "fUseClassHairStateGenderOverrides": false,
@@ -858,7 +928,64 @@
      "eJewelryState": 0,
      "ePersonaState": 0,
      "eEyeState": 1,
-     "eMouthState": 1
+     "eMouthState": 1,
+     "bUsesHairClippingVolume": false,
+     "eHairCullShape": 0,
+     "tHairClippingSphere": {
+      "__type__": "Sphere",
+      "__typeHash__": 3384912071,
+      "wpCenter": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdRadius": 0.10000000149011612
+     },
+     "tHairClippingCylinder": {
+      "__type__": "AxialCylinder",
+      "__typeHash__": 3017070665,
+      "wpBase": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdHeight": 0.20000000298023224,
+      "wdRadius": 0.20000000298023224
+     },
+     "tHairCylinderRotation": {
+      "__type__": "bcQuat",
+      "__typeHash__": 3955716320,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+     },
+     "tHairClippingBox": {
+      "__type__": "OBB",
+      "__typeHash__": 88275,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      },
+      "wvExt": {
+       "x": 0.10000000149011612,
+       "y": 0.10000000149011612,
+       "z": 0.10000000149011612
+      }
+     }
     },
     {
      "__type__": "HairAndBeardState",
@@ -868,7 +995,64 @@
      "eJewelryState": 0,
      "ePersonaState": 0,
      "eEyeState": 1,
-     "eMouthState": 1
+     "eMouthState": 1,
+     "bUsesHairClippingVolume": false,
+     "eHairCullShape": 0,
+     "tHairClippingSphere": {
+      "__type__": "Sphere",
+      "__typeHash__": 3384912071,
+      "wpCenter": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdRadius": 0.10000000149011612
+     },
+     "tHairClippingCylinder": {
+      "__type__": "AxialCylinder",
+      "__typeHash__": 3017070665,
+      "wpBase": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdHeight": 0.20000000298023224,
+      "wdRadius": 0.20000000298023224
+     },
+     "tHairCylinderRotation": {
+      "__type__": "bcQuat",
+      "__typeHash__": 3955716320,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+     },
+     "tHairClippingBox": {
+      "__type__": "OBB",
+      "__typeHash__": 88275,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      },
+      "wvExt": {
+       "x": 0.10000000149011612,
+       "y": 0.10000000149011612,
+       "z": 0.10000000149011612
+      }
+     }
     },
     {
      "__type__": "HairAndBeardState",
@@ -878,7 +1062,64 @@
      "eJewelryState": 0,
      "ePersonaState": 0,
      "eEyeState": 1,
-     "eMouthState": 1
+     "eMouthState": 1,
+     "bUsesHairClippingVolume": false,
+     "eHairCullShape": 0,
+     "tHairClippingSphere": {
+      "__type__": "Sphere",
+      "__typeHash__": 3384912071,
+      "wpCenter": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdRadius": 0.10000000149011612
+     },
+     "tHairClippingCylinder": {
+      "__type__": "AxialCylinder",
+      "__typeHash__": 3017070665,
+      "wpBase": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdHeight": 0.20000000298023224,
+      "wdRadius": 0.20000000298023224
+     },
+     "tHairCylinderRotation": {
+      "__type__": "bcQuat",
+      "__typeHash__": 3955716320,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+     },
+     "tHairClippingBox": {
+      "__type__": "OBB",
+      "__typeHash__": 88275,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      },
+      "wvExt": {
+       "x": 0.10000000149011612,
+       "y": 0.10000000149011612,
+       "z": 0.10000000149011612
+      }
+     }
     },
     {
      "__type__": "HairAndBeardState",
@@ -888,7 +1129,64 @@
      "eJewelryState": 0,
      "ePersonaState": 0,
      "eEyeState": 1,
-     "eMouthState": 1
+     "eMouthState": 1,
+     "bUsesHairClippingVolume": false,
+     "eHairCullShape": 0,
+     "tHairClippingSphere": {
+      "__type__": "Sphere",
+      "__typeHash__": 3384912071,
+      "wpCenter": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdRadius": 0.10000000149011612
+     },
+     "tHairClippingCylinder": {
+      "__type__": "AxialCylinder",
+      "__typeHash__": 3017070665,
+      "wpBase": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdHeight": 0.20000000298023224,
+      "wdRadius": 0.20000000298023224
+     },
+     "tHairCylinderRotation": {
+      "__type__": "bcQuat",
+      "__typeHash__": 3955716320,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+     },
+     "tHairClippingBox": {
+      "__type__": "OBB",
+      "__typeHash__": 88275,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      },
+      "wvExt": {
+       "x": 0.10000000149011612,
+       "y": 0.10000000149011612,
+       "z": 0.10000000149011612
+      }
+     }
     },
     {
      "__type__": "HairAndBeardState",
@@ -898,7 +1196,64 @@
      "eJewelryState": 0,
      "ePersonaState": 0,
      "eEyeState": 1,
-     "eMouthState": 1
+     "eMouthState": 1,
+     "bUsesHairClippingVolume": false,
+     "eHairCullShape": 0,
+     "tHairClippingSphere": {
+      "__type__": "Sphere",
+      "__typeHash__": 3384912071,
+      "wpCenter": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdRadius": 0.10000000149011612
+     },
+     "tHairClippingCylinder": {
+      "__type__": "AxialCylinder",
+      "__typeHash__": 3017070665,
+      "wpBase": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdHeight": 0.20000000298023224,
+      "wdRadius": 0.20000000298023224
+     },
+     "tHairCylinderRotation": {
+      "__type__": "bcQuat",
+      "__typeHash__": 3955716320,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+     },
+     "tHairClippingBox": {
+      "__type__": "OBB",
+      "__typeHash__": 88275,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      },
+      "wvExt": {
+       "x": 0.10000000149011612,
+       "y": 0.10000000149011612,
+       "z": 0.10000000149011612
+      }
+     }
     },
     {
      "__type__": "HairAndBeardState",
@@ -908,10 +1263,144 @@
      "eJewelryState": 0,
      "ePersonaState": 0,
      "eEyeState": 1,
-     "eMouthState": 1
+     "eMouthState": 1,
+     "bUsesHairClippingVolume": false,
+     "eHairCullShape": 0,
+     "tHairClippingSphere": {
+      "__type__": "Sphere",
+      "__typeHash__": 3384912071,
+      "wpCenter": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdRadius": 0.10000000149011612
+     },
+     "tHairClippingCylinder": {
+      "__type__": "AxialCylinder",
+      "__typeHash__": 3017070665,
+      "wpBase": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdHeight": 0.20000000298023224,
+      "wdRadius": 0.20000000298023224
+     },
+     "tHairCylinderRotation": {
+      "__type__": "bcQuat",
+      "__typeHash__": 3955716320,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+     },
+     "tHairClippingBox": {
+      "__type__": "OBB",
+      "__typeHash__": 88275,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      },
+      "wvExt": {
+       "x": 0.10000000149011612,
+       "y": 0.10000000149011612,
+       "z": 0.10000000149011612
+      }
+     }
+    },
+    {
+     "__type__": "HairAndBeardState",
+     "__typeHash__": 1271971574,
+     "eHairState": 0,
+     "eBeardState": 0,
+     "eJewelryState": 0,
+     "ePersonaState": 0,
+     "eEyeState": 1,
+     "eMouthState": 1,
+     "bUsesHairClippingVolume": false,
+     "eHairCullShape": 0,
+     "tHairClippingSphere": {
+      "__type__": "Sphere",
+      "__typeHash__": 3384912071,
+      "wpCenter": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdRadius": 0.10000000149011612
+     },
+     "tHairClippingCylinder": {
+      "__type__": "AxialCylinder",
+      "__typeHash__": 3017070665,
+      "wpBase": {
+       "x": 0,
+       "y": 0,
+       "z": 0
+      },
+      "wdHeight": 0.20000000298023224,
+      "wdRadius": 0.20000000298023224
+     },
+     "tHairCylinderRotation": {
+      "__type__": "bcQuat",
+      "__typeHash__": 3955716320,
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "w": 1
+     },
+     "tHairClippingBox": {
+      "__type__": "OBB",
+      "__typeHash__": 88275,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      },
+      "wvExt": {
+       "x": 0.10000000149011612,
+       "y": 0.10000000149011612,
+       "z": 0.10000000149011612
+      }
+     }
     }
    ],
    "tClassHairStateGenderOverrides": [
+    {
+     "__type__": "HairStateGenderOverrides",
+     "__typeHash__": 2872085037,
+     "eHairStateGenderOverride": 0,
+     "eBeardStateGenderOverride": 0,
+     "eJewleryStateGenderOverride": 0,
+     "ePersonaStateGenderOverride": 0,
+     "eEyeStateGenderOverride": 0,
+     "eMouthStateGenderOverride": 0
+    },
     {
      "__type__": "HairStateGenderOverrides",
      "__typeHash__": 2872085037,
@@ -1024,9 +1513,23 @@
      "fHardpointOffsetsHinting": true,
      "arMaleOffsets": [],
      "arFemaleOffsets": []
+    },
+    {
+     "__type__": "HardpointOffsets",
+     "__typeHash__": 1755847107,
+     "fHardpointOffsetsHinting": true,
+     "arMaleOffsets": [],
+     "arFemaleOffsets": []
     }
    ],
    "tHardpointMountedOffsets": [
+    {
+     "__type__": "HardpointOffsets",
+     "__typeHash__": 1755847107,
+     "fHardpointOffsetsHinting": true,
+     "arMaleOffsets": [],
+     "arFemaleOffsets": []
+    },
     {
      "__type__": "HardpointOffsets",
      "__typeHash__": 1755847107,
@@ -1082,9 +1585,26 @@
      "__typeHash__": 4204420342,
      "unk_b71ce07": true,
      "arMountOffsetsPerType": []
+    },
+    {
+     "__type__": "MountHardpointOffsets",
+     "__typeHash__": 4204420342,
+     "unk_b71ce07": true,
+     "arMountOffsetsPerType": []
+    },
+    {
+     "__type__": "MountHardpointOffsets",
+     "__typeHash__": 4204420342,
+     "unk_b71ce07": true,
+     "arMountOffsetsPerType": []
     }
    ],
    "tMirroredState": [
+    {
+     "__type__": "MirrorItemState",
+     "__typeHash__": 3604536395,
+     "dwMirrorStateFlags": 0
+    },
     {
      "__type__": "MirrorItemState",
      "__typeHash__": 3604536395,
@@ -1140,9 +1660,13 @@
      null,
      null,
      null,
+     null,
+     null,
      null
     ],
     "snoActor2": [
+     null,
+     null,
      null,
      null,
      null,
@@ -1206,6 +1730,7 @@
    },
    "unk_f190641": false,
    "unk_557e468": false,
+   "unk_e1eb9fc": false,
    "unk_d2a4d05": false,
    "unk_88f4495": false
   }

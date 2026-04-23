@@ -3,7 +3,7 @@
  "__snoID__": 1871736,
  "__type__": "AffixDefinition",
  "__typeHash__": 216509239,
- "dwFlags": 4,
+ "dwFlags": 1028,
  "eMagicType": 0,
  "eCategory": 0,
  "nItemPowerMin": 1,
@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAgD8AAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -0.009999999776482582,
  "snoRareNamePrefixStringList": {
   "__raw__": 464217,
   "__group__": 42,
@@ -39,16 +38,19 @@
   0,
   1,
   0,
+  0,
   0
  ],
  "arAllowedItemLabels": [],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 63,
  "eAffixType": 2,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -60,7 +62,7 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 946,
+    "eAttribute": 978,
     "__eAttribute_name__": "Power_Duration_Bonus_Pct",
     "dwID": 0,
     "nParam": 357628,
@@ -69,13 +71,13 @@
      "compiled": "BgAAAAAAAAAAAAAA"
     },
     "gbidFormula": {
-     "__raw__": 2266136222,
+     "__raw__": 175883919,
      "__type__": "DT_GBID",
      "__typeHash__": 1028170061,
      "group": 22,
-     "name": "TemperedAffix_25%_10Steps"
+     "name": "TemperedAffix_25%"
     },
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -90,5 +92,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": true
+ "bIsTemperedAffix": true,
+ "unk_a8e186": false
 }

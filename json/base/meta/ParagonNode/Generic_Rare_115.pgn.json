@@ -12,7 +12,7 @@
   {
    "__type__": "AttributeSpecifier",
    "__typeHash__": 3218190286,
-   "eAttribute": 135,
+   "eAttribute": 140,
    "__eAttribute_name__": "Hitpoints_Max_Percent_Bonus",
    "dwID": 0,
    "nParam": -1,
@@ -27,7 +27,7 @@
     "group": 22,
     "name": "ParagonNodeHPMaxBonus_RareMinor"
    },
-   "unk_dffdf28": {
+   "szFlatAttribLevelFormula": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    }
@@ -35,22 +35,22 @@
   {
    "__type__": "AttributeSpecifier",
    "__typeHash__": 3218190286,
-   "eAttribute": 902,
-   "__eAttribute_name__": "Damage_Percent_Reduction_From_Elites",
+   "eAttribute": 478,
+   "__eAttribute_name__": "Armor_Percent",
    "dwID": 0,
    "nParam": -1,
    "szAttributeFormula": {
-    "value": "0.09",
-    "compiled": "BgAAAOxRuD0AAAAA"
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
    },
    "gbidFormula": {
-    "__raw__": 2526219395,
+    "__raw__": 2680576132,
     "__type__": "DT_GBID",
     "__typeHash__": 1028170061,
     "group": 22,
-    "name": "ParagonNodeDamageReductionFromElite_RareMajor"
+    "name": "ParagonNodeArmorBonus_RareMinor"
    },
-   "unk_dffdf28": {
+   "szFlatAttribLevelFormula": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    }
@@ -90,18 +90,11 @@
    "name": "Search_Life"
   },
   {
-   "__raw__": 4011612737,
+   "__raw__": 2317714646,
    "__type__": "DT_GBID",
    "__typeHash__": 1028170061,
    "group": 56,
-   "name": "Search_DamageReduction"
-  },
-  {
-   "__raw__": 2322238504,
-   "__type__": "DT_GBID",
-   "__typeHash__": 1028170061,
-   "group": 56,
-   "name": "Search_Elite"
+   "name": "Search_Armor"
   }
  ]
 }

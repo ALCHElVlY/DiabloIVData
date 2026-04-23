@@ -3,7 +3,7 @@
  "__snoID__": 2065051,
  "__type__": "AffixDefinition",
  "__typeHash__": 216509239,
- "dwFlags": 4,
+ "dwFlags": 1028,
  "eMagicType": 0,
  "eCategory": 0,
  "nItemPowerMin": 180,
@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": 0.5,
  "snoRareNamePrefixStringList": {
   "__raw__": 464217,
   "__group__": 42,
@@ -39,16 +38,19 @@
   0,
   0,
   0,
+  0,
   0
  ],
  "arAllowedItemLabels": [],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 64,
  "eAffixType": 2,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -60,7 +62,7 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1110,
+    "eAttribute": 1141,
     "__eAttribute_name__": "Skill_Rank_Bonus",
     "dwID": 0,
     "nParam": 265663,
@@ -69,13 +71,13 @@
      "compiled": "BgAAAAAAAAAAAAAA"
     },
     "gbidFormula": {
-     "__raw__": 2606631567,
+     "__raw__": 595211237,
      "__type__": "DT_GBID",
      "__typeHash__": 1028170061,
      "group": 22,
-     "name": "NormalAffix_8_3Steps"
+     "name": "AffixIgnoreModifiers6to8"
     },
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -90,5 +92,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

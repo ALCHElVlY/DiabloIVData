@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": {
@@ -28,6 +27,7 @@
   1,
   0,
   0,
+  0,
   0
  ],
  "arAllowedItemLabels": [
@@ -36,13 +36,15 @@
   30,
   26
  ],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 0,
  "arMaxLegendaryRanks": [
   16,
   13,
-  21
+  21,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -54,46 +56,16 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1128,
-    "__eAttribute_name__": "Affix_Flat_Value_1",
+    "eAttribute": 1157,
+    "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "",
-     "compiled": ""
-    },
-    "gbidFormula": {
-     "__raw__": 595895852,
-     "__type__": "DT_GBID",
-     "__typeHash__": 1028170061,
-     "group": 22,
-     "name": "legendary_barb_055_fortify_scaling"
-    },
-    "unk_dffdf28": {
-     "value": "ExpectedLevelForIPower()",
-     "compiled": "AQAAABEAAAAAAAAA"
-    }
-   }
-  },
-  {
-   "__type__": "ItemAffixAttribute",
-   "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": true,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
-   "tAttribute": {
-    "__type__": "AttributeSpecifier",
-    "__typeHash__": 3218190286,
-    "eAttribute": 1127,
-    "__eAttribute_name__": "Affix_Value_2",
-    "dwID": 0,
-    "nParam": -1,
-    "szAttributeFormula": {
-     "value": "35",
-     "compiled": "BgAAAAAADEIAAAAA"
+     "value": "(10+((CurrentLegendaryRank()-1)))/100",
+     "compiled": "BgAAAAAAIEEBAAAAVgAAAAYAAAAAAIA/DAAAAAsAAAAGAAAAAADIQg4AAAAAAAAA"
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "0",
      "compiled": "BgAAAAAAAAAAAAAA"
     }
@@ -141,13 +113,6 @@
    "name": "FILTER_Build_Barb_RequiresBerserk"
   },
   {
-   "__raw__": 3540574146,
-   "__type__": "DT_GBID",
-   "__typeHash__": 1028170061,
-   "group": 56,
-   "name": "Search_LuckyHit"
-  },
-  {
    "__raw__": 2082123078,
    "__type__": "DT_GBID",
    "__typeHash__": 1028170061,
@@ -159,5 +124,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

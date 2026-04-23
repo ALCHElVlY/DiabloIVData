@@ -13,7 +13,6 @@
   "compiled": "BgAAAAAAAAAAAAAA"
  },
  "nWeight": 100,
- "flGreaterAffixPowerBonus": -1,
  "snoRareNamePrefixStringList": null,
  "snoRareNameSuffixStringList": null,
  "gbidAffixFamily": null,
@@ -23,16 +22,19 @@
   1,
   1,
   1,
+  0,
   0
  ],
  "arAllowedItemLabels": [],
- "unk_5e84277": 0,
+ "dwContentLicenseRequirements": 0,
  "dwAllowedQualityLevels": 0,
  "eAffixType": 1,
  "arMaxLegendaryRanks": [
   8,
   12,
-  16
+  16,
+  16,
+  0
  ],
  "ptItemAffixAttributes": [
   {
@@ -44,18 +46,42 @@
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
-    "eAttribute": 1126,
+    "eAttribute": 1157,
     "__eAttribute_name__": "Affix_Value_1",
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(20, 2, 3.3)",
-     "compiled": "BgAAAAAAoEEGAAAAAAAAQAYAAAAzM1NAAQAAAGQAAAAAAAAA"
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(),20, 2, 3.3)",
+     "compiled": "AQAAAFUAAAAGAAAAAACgQQYAAAAAAABABgAAADMzU0ABAAAAaQAAAAAAAAA="
     },
     "gbidFormula": null,
-    "unk_dffdf28": {
+    "szFlatAttribLevelFormula": {
      "value": "ExpectedLevelForIPower()",
      "compiled": "AQAAABEAAAAAAAAA"
+    }
+   }
+  },
+  {
+   "__type__": "ItemAffixAttribute",
+   "__typeHash__": 501899601,
+   "bIgnoreLegendaryScaling": false,
+   "bLowerIsBetter": false,
+   "bIgnoreAffixBonuses": false,
+   "tAttribute": {
+    "__type__": "AttributeSpecifier",
+    "__typeHash__": 3218190286,
+    "eAttribute": 1158,
+    "__eAttribute_name__": "Affix_Value_2",
+    "dwID": 0,
+    "nParam": -1,
+    "szAttributeFormula": {
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(),15, 0.75, 1.5)",
+     "compiled": "AQAAAFUAAAAGAAAAAABwQQYAAAAAAEA/BgAAAAAAwD8BAAAAaQAAAAAAAAA="
+    },
+    "gbidFormula": null,
+    "szFlatAttribLevelFormula": {
+     "value": "0",
+     "compiled": "BgAAAAAAAAAAAAAA"
     }
    }
   }
@@ -63,18 +89,18 @@
  "arStaticValues": [
   4,
   100,
-  0.25
+  0.10000000149011612
  ],
- "snoPassivePower": null,
- "snoClassRequirement": {
-  "__raw__": 169776,
-  "__group__": 74,
+ "snoPassivePower": {
+  "__raw__": 2416487,
+  "__group__": 29,
   "__type__": "DT_SNO",
   "__typeHash__": 2764331143,
-  "__targetFileName__": "base/meta/PlayerClass/Barbarian.pcl",
-  "groupName": "PlayerClass",
-  "name": "Barbarian"
+  "__targetFileName__": "base/meta/Power/2HMace_Unique_Barb_001.pow",
+  "groupName": "Power",
+  "name": "2HMace_Unique_Barb_001"
  },
+ "snoClassRequirement": null,
  "arAffixSkillTags": [
   {
    "__raw__": 2758053249,
@@ -88,5 +114,6 @@
  "arSkillTagsToAdd": [],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
- "bIsTemperedAffix": false
+ "bIsTemperedAffix": false,
+ "unk_a8e186": false
 }

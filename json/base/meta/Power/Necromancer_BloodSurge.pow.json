@@ -106,7 +106,17 @@
  "ePowerFallback": 0,
  "unk_49572b0": 0,
  "ePowerTargetingType": 6,
- "arLinkedPassivePowers": [],
+ "arLinkedPassivePowers": [
+  {
+   "__raw__": 2458921,
+   "__group__": 29,
+   "__type__": "DT_SNO",
+   "__typeHash__": 2764331143,
+   "__targetFileName__": "base/meta/Power/Necromancer_BloodSurge_Passive.pow",
+   "groupName": "Power",
+   "name": "Necromancer_BloodSurge_Passive"
+  }
+ ],
  "snoEnchantmentPower": null,
  "snoMountedRiderPower": null,
  "bUsesWeaponExpertise": false,
@@ -134,7 +144,7 @@
  "unk_4bf03ff": true,
  "tAttackSpeed": {
   "value": "Attacks_Per_Second_Total",
-  "compiled": "BQAAAAAAAADUAAAA/v///wAAAAAAAAAA"
+  "compiled": "BQAAAAAAAADeAAAA/v///wAAAAAAAAAA"
  },
  "unk_6deb090": false,
  "unk_ed2bdad": false,
@@ -142,6 +152,7 @@
  "unk_7a86b64": true,
  "eDamageType": 0,
  "unk_752edeb": false,
+ "unk_c41a01d": false,
  "tCombatEffectChance": {
   "value": "SF_22",
   "compiled": "BQAAABwAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -168,12 +179,12 @@
    "__typeHash__": 2616788302,
    "eType": 6,
    "tMinRequired": {
-    "value": "SF_4",
-    "compiled": "BQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAA"
+    "value": "SF_35 ? 0 : SF_4",
+    "compiled": "BQAAACkAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAUAAAAKAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA="
    },
    "tInitialCost": {
-    "value": "SF_4",
-    "compiled": "BQAAAAoAAAAAAAAAAAAAAAAAAAAAAAAA"
+    "value": "SF_35 ? 0 : SF_4",
+    "compiled": "BQAAACkAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAUAAAAKAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA="
    },
    "tChannellingCost": {
     "value": "0",
@@ -202,8 +213,8 @@
   "compiled": "BgAAAAAAgD8AAAAA"
  },
  "tCooldownTime": {
-  "value": "0",
-  "compiled": "BgAAAAAAAAAAAAAA"
+  "value": "SF_35 ? SF_36 : 0",
+  "compiled": "BQAAACkAAAAAAAAAAAAAAAAAAAAFAAAAKgAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAEAAAAAAAAAA="
  },
  "tResourceCostReductionCoefficient": {
   "value": "1",
@@ -648,23 +659,19 @@
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -707,7 +714,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -763,23 +771,19 @@
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_deea7e8": {
+   "tMaxExtendDuration": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
-   "unk_4393f38": false,
+   "bMoveOnSkillCategoryCooldown": false,
    "unk_dcb22bd": false,
    "tMaxStackCount": {
     "value": "1",
     "compiled": "BgAAAAAAgD8AAAAA"
    },
-   "unk_b7f0241": false,
-   "eStackingBehavior": 0,
-   "eStackingScope": 0,
-   "unk_9261403": false,
-   "unk_d291777": false,
-   "unk_db6680": false,
+   "gbidBuffPreset": null,
    "bVisibleInUI": false,
+   "nVisualPriority": 0,
    "bShowDuration": false,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -822,7 +826,8 @@
     "unk_f551941": -1,
     "bDamageIgnoresInvulnerable": false,
     "bDamageIgnoresBonuses": false,
-    "unk_b8f2b": -1,
+    "unk_b7113b1": false,
+    "eClassBaseDamageScalar": -1,
     "bHasCombatEffectOverride": false,
     "tCombatEffectOverride": {
      "value": "100",
@@ -962,16 +967,16 @@
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "4",
-    "compiled": "BgAAAAAAgEAAAAAA"
+    "value": "3",
+    "compiled": "BgAAAAAAQEAAAAAA"
    }
   },
   {
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": ".03",
-    "compiled": "BgAAAI/C9TwAAAAA"
+    "value": "",
+    "compiled": ""
    }
   },
   {
@@ -994,8 +999,8 @@
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "Affix_Value_1#Amulet_Unique_Necro_100 * (Owner.Weapon_Damage_Min_Total + Owner.Weapon_Damage_Delta_Total) * (1 + Main_Hand_Damage_Percent_Bonus)",
-    "compiled": "BQAAAAAAAABmBAAAS0YJAAAAAAAFAAAAAAAAAMYBAAD+////AwAAAAUAAAAAAAAAxwEAAP7///8DAAAACwAAAA0AAAAGAAAAAACAPwUAAAAAAAAA9QAAAP7///8AAAAACwAAAA0AAAAAAAAA"
+    "value": "(Affix_Value_1#Amulet_Unique_Necro_100 + Affix_Value_1#S10_Amulet_Unique_Necro_100) * (Owner.Weapon_Damage_Min_Total + Owner.Weapon_Damage_Delta_Total) * (1 + Main_Hand_Damage_Percent_Bonus)",
+    "compiled": "BQAAAAAAAACFBAAAS0YJAAAAAAAFAAAAAAAAAIUEAAAv5CQAAAAAAAsAAAAFAAAAAAAAANgBAAD+////AwAAAAUAAAAAAAAA2QEAAP7///8DAAAACwAAAA0AAAAGAAAAAACAPwUAAAAAAAAAAgEAAP7///8AAAAACwAAAA0AAAAAAAAA"
    }
   },
   {
@@ -1018,8 +1023,8 @@
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "0.7",
-    "compiled": "BgAAADMzMz8AAAAA"
+    "value": "SF_35 ? SF_38 : 0.8",
+    "compiled": "BQAAACkAAAAAAAAAAAAAAAAAAAAFAAAALAAAAAAAAAAAAAAAAAAAAAYAAADNzEw/EAAAAAAAAAA="
    }
   },
   {
@@ -1059,23 +1064,23 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#legendary_necro_108 / 100",
-    "compiled": "BQAAAAAAAABmBAAAG6QSAAAAAAAGAAAAAADIQg4AAAAAAAAA"
+    "compiled": "BQAAAAAAAACFBAAAG6QSAAAAAAAGAAAAAADIQg4AAAAAAAAA"
    }
   },
   {
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "0.5",
-    "compiled": "BgAAAAAAAD8AAAAA"
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
    }
   },
   {
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "0.3",
-    "compiled": "BgAAAJqZmT4AAAAA"
+    "value": "0.65",
+    "compiled": "BgAAAGdmJj8AAAAA"
    }
   },
   {
@@ -1083,7 +1088,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Min(1.5, 1 + (AoE_Size_Bonus_Per_Power#Necromancer_BloodSurge / 2))",
-    "compiled": "BgAAAAAAwD8GAAAAAACAPwUAAAAAAAAA4AMAACMJCQAAAAAABgAAAAAAAEAOAAAACwAAAAEAAAAAAAAAAAAAAA=="
+    "compiled": "BgAAAAAAwD8GAAAAAACAPwUAAAAAAAAAAAQAACMJCQAAAAAABgAAAAAAAEAOAAAACwAAAAEAAAAAAAAAAAAAAA=="
    }
   },
   {
@@ -1091,7 +1096,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#Gloves_Unique_Necro_101 * (Owner.Weapon_Damage_Min_Total + Owner.Weapon_Damage_Delta_Total)",
-    "compiled": "BQAAAAAAAABmBAAAUAYdAAAAAAAFAAAAAAAAAMYBAAD+////AwAAAAUAAAAAAAAAxwEAAP7///8DAAAACwAAAA0AAAAAAAAA"
+    "compiled": "BQAAAAAAAACFBAAAUAYdAAAAAAAFAAAAAAAAANgBAAD+////AwAAAAUAAAAAAAAA2QEAAP7///8DAAAACwAAAA0AAAAAAAAA"
    }
   },
   {
@@ -1131,7 +1136,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Necro_BloodSurge_ExtraDrainsvsBoss",
-    "compiled": "BQAAAAAAAAB2AACA/v///wAAAAAAAAAA"
+    "compiled": "BQAAAAAAAAB6AACA/v///wAAAAAAAAAA"
    }
   },
   {
@@ -1147,7 +1152,47 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Chance_For_Double_Damage_Per_Power#Necromancer_BloodSurge",
-    "compiled": "BQAAAAAAAACXAACAIwkJAAAAAAAAAAAA"
+    "compiled": "BQAAAAAAAACcAACAIwkJAAAAAAAAAAAA"
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "((GetCollectiblePowerEquippedSlotIndex(SNO.CollectiblePower.S10_ChaosPerk_Necro_Unique_001)) > -1) ? 1 : 0",
+    "compiled": "BQAAAFkAAAD/6iMAAAAAAAAAAAABAAAAbgAAAAYAAAAAAIA/EQAAAAgAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAAAAAA="
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "PowerTag.S10_ChaosPerk_Necro_Unique_001.\"Script Formula 1\"",
+    "compiled": "BQAAAAUAAACk6iMAAQAAAAAAAAAAAAAA"
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "4",
+    "compiled": "BgAAAAAAgEAAAAAA"
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "1.4",
+    "compiled": "BgAAADMzsz8AAAAA"
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "Necro_BloodSurge_EssencePerDrain",
+    "compiled": "BQAAAAAAAAB5AACA/v///wAAAAAAAAAA"
    }
   }
  ],
@@ -1181,6 +1226,11 @@
    "arBuffsToApply": [],
    "bApplyVulnerableDebuff": false,
    "tVulnerableDurationSecondsOverride": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
@@ -1224,7 +1274,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": 4,
+   "eClassBaseDamageScalar": 4,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -1280,6 +1330,11 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
    "tFortifiedHealth": {
     "__type__": "HitpointSpecifier",
     "__typeHash__": 1185241065,
@@ -1320,7 +1375,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": 4,
+   "eClassBaseDamageScalar": 4,
    "bHasCombatEffectOverride": false,
    "tCombatEffectOverride": {
     "value": "100",
@@ -1337,102 +1392,6 @@
     "groupName": "EffectGroup",
     "name": "necro_bloodSurge_cast_Impact"
    },
-   "unk_f381067": false,
-   "flHitFlashDurationScalar": 1,
-   "iPowerNeedTarget": false,
-   "bPlayNormalHitSoundPayload": false,
-   "unk_969096b": false,
-   "unk_5885b8": 0,
-   "unk_f38eac9": false,
-   "tOnHitSoundsPayload": {
-    "__type__": "OnHitSounds",
-    "__typeHash__": 960545022,
-    "sno1P": null,
-    "sno3PEnemy": null,
-    "sno3PFriendly": null
-   }
-  },
-  {
-   "__type__": "PowerPayloadDefinition",
-   "__typeHash__": 812993760,
-   "snoItemTypeMainHandEffectsOverride": null,
-   "snoItemTypeOffHandEffectsOverride": null,
-   "dwID": 2282076792,
-   "dwPayloadId": 2,
-   "eForcedDamageType": -1,
-   "tDamage": {
-    "__type__": "HitpointSpecifier",
-    "__typeHash__": 1185241065,
-    "eType": 0,
-    "tHitpointScalar": {
-     "value": "0",
-     "compiled": "BgAAAAAAAAAAAAAA"
-    },
-    "tFlatLevel": {
-     "value": "0",
-     "compiled": "BgAAAAAAAAAAAAAA"
-    }
-   },
-   "bHasCustomDamageVariance": false,
-   "tDamageVariance": {
-    "value": "0",
-    "compiled": "BgAAAAAAAAAAAAAA"
-   },
-   "arBuffsToApply": [],
-   "bApplyVulnerableDebuff": false,
-   "tVulnerableDurationSecondsOverride": {
-    "value": "0",
-    "compiled": "BgAAAAAAAAAAAAAA"
-   },
-   "tFortifiedHealth": {
-    "__type__": "HitpointSpecifier",
-    "__typeHash__": 1185241065,
-    "eType": 5,
-    "tHitpointScalar": {
-     "value": "SF_14",
-     "compiled": "BQAAABQAAAAAAAAAAAAAAAAAAAAAAAAA"
-    },
-    "tFlatLevel": {
-     "value": "0",
-     "compiled": "BgAAAAAAAAAAAAAA"
-    }
-   },
-   "tApplyFreeze": {
-    "value": "0",
-    "compiled": "BgAAAAAAAAAAAAAA"
-   },
-   "tApplyChillAmount": {
-    "value": "0",
-    "compiled": "BgAAAAAAAAAAAAAA"
-   },
-   "unk_e659b0f": -1,
-   "tHeal": {
-    "__type__": "HitpointSpecifier",
-    "__typeHash__": 1185241065,
-    "eType": 0,
-    "tHitpointScalar": {
-     "value": "0",
-     "compiled": "BgAAAAAAAAAAAAAA"
-    },
-    "tFlatLevel": {
-     "value": "0",
-     "compiled": "BgAAAAAAAAAAAAAA"
-    }
-   },
-   "eHealType": 0,
-   "bPlayHealEffect": true,
-   "unk_8bc45f2": false,
-   "unk_15c6c03": false,
-   "unk_e842c84": false,
-   "unk_b8f2b": -1,
-   "bHasCombatEffectOverride": false,
-   "tCombatEffectOverride": {
-    "value": "100",
-    "compiled": "BgAAAAAAyEIAAAAA"
-   },
-   "ePayloadDefaultHitEffectType": 2,
-   "snoNormalHitEffectGroup": null,
-   "snoTargetImpactEffectGroup": null,
    "unk_f381067": false,
    "flHitFlashDurationScalar": 1,
    "iPowerNeedTarget": false,
@@ -1480,6 +1439,11 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
    "tFortifiedHealth": {
     "__type__": "HitpointSpecifier",
     "__typeHash__": 1185241065,
@@ -1520,7 +1484,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": -1,
+   "eClassBaseDamageScalar": -1,
    "bHasCombatEffectOverride": true,
    "tCombatEffectOverride": {
     "value": "0",
@@ -1576,6 +1540,11 @@
     "value": "0",
     "compiled": "BgAAAAAAAAAAAAAA"
    },
+   "unk_b4395d8": false,
+   "unk_7c2668d": {
+    "value": "0",
+    "compiled": "BgAAAAAAAAAAAAAA"
+   },
    "tFortifiedHealth": {
     "__type__": "HitpointSpecifier",
     "__typeHash__": 1185241065,
@@ -1616,7 +1585,7 @@
    "unk_8bc45f2": false,
    "unk_15c6c03": false,
    "unk_e842c84": false,
-   "unk_b8f2b": -1,
+   "eClassBaseDamageScalar": -1,
    "bHasCombatEffectOverride": true,
    "tCombatEffectOverride": {
     "value": "0",
@@ -1654,20 +1623,21 @@
    "bBulletPointDescription": true,
    "bAffectsEnchantmentDescription": false,
    "unk_b1d89c5": false,
-   "arSkillTags": [
+   "arSkillTagsToAdd": [
     {
      "__type__": "SkillTagStruct",
      "__typeHash__": 4000554560,
      "gbidSkillTag": {
-      "__raw__": 2772682893,
+      "__raw__": 2440772653,
       "__type__": "DT_GBID",
       "__typeHash__": 1028170061,
       "group": 56,
-      "name": "Search_Healing"
+      "name": "Keyword_Overpower"
      },
      "bSearchOnly": false
     }
    ],
+   "arSkillTagsToRemove": [],
    "eModType": 0,
    "hIconNormalOverride": 0,
    "hIconMouseoverOverride": 0,
@@ -1686,7 +1656,7 @@
    "bBulletPointDescription": true,
    "bAffectsEnchantmentDescription": false,
    "unk_b1d89c5": false,
-   "arSkillTags": [
+   "arSkillTagsToAdd": [
     {
      "__type__": "SkillTagStruct",
      "__typeHash__": 4000554560,
@@ -1712,6 +1682,7 @@
      "bSearchOnly": false
     }
    ],
+   "arSkillTagsToRemove": [],
    "eModType": 0,
    "hIconNormalOverride": 0,
    "hIconMouseoverOverride": 0,
@@ -1730,32 +1701,21 @@
    "bBulletPointDescription": true,
    "bAffectsEnchantmentDescription": false,
    "unk_b1d89c5": false,
-   "arSkillTags": [
+   "arSkillTagsToAdd": [
     {
      "__type__": "SkillTagStruct",
      "__typeHash__": 4000554560,
      "gbidSkillTag": {
-      "__raw__": 3918074131,
+      "__raw__": 1719404406,
       "__type__": "DT_GBID",
       "__typeHash__": 1028170061,
       "group": 56,
-      "name": "Keyword_Healthy"
-     },
-     "bSearchOnly": false
-    },
-    {
-     "__type__": "SkillTagStruct",
-     "__typeHash__": 4000554560,
-     "gbidSkillTag": {
-      "__raw__": 2440772653,
-      "__type__": "DT_GBID",
-      "__typeHash__": 1028170061,
-      "group": 56,
-      "name": "Keyword_Overpower"
+      "name": "Keyword_Blood_Orb"
      },
      "bSearchOnly": false
     }
    ],
+   "arSkillTagsToRemove": [],
    "eModType": 0,
    "hIconNormalOverride": 0,
    "hIconMouseoverOverride": 0,
@@ -1785,6 +1745,7 @@
  },
  "flCastingEffectGroupDuration": 0.5,
  "arCastingEffectOverrides": [],
+ "arCastingEffectOverridesByVisualRemap": [],
  "arDamageRemapConditions": [],
  "arPetSpawns": [],
  "unk_143fe9f": {
@@ -1800,5 +1761,7 @@
  "unk_376802e": false,
  "unk_bf25f64": 0,
  "arRecastPowerSequence": [],
- "arProjectileOverrides": []
+ "arModifierProfiles": [],
+ "arProjectileOverrides": [],
+ "arConditionalDependencies": []
 }

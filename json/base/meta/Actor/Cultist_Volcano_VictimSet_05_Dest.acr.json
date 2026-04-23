@@ -31,7 +31,6 @@
  "arStoreAnimSets": [],
  "snoAnimTree": null,
  "arActorAppearanceAddOnEntries": [],
- "snoDamageRemap": null,
  "snoVisualRemap": null,
  "gbidPartyFinderTag": null,
  "arUniqueSubObjectNameInfoPerAppearance": [],
@@ -90,24 +89,24 @@
   "__type__": "Sphere",
   "__typeHash__": 3384912071,
   "wpCenter": {
-   "x": 0.3144453167915344,
-   "y": -0.007310241460800171,
-   "z": 0.9859299659729004
+   "x": 0.14645391702651978,
+   "y": 0.045754991471767426,
+   "z": 0.6913424730300903
   },
-  "wdRadius": 1.8190481662750244
+  "wdRadius": 1.6789584159851074
  },
  "aabbAppearanceBoundingBox": {
   "__type__": "AABB",
   "__typeHash__": 2408934,
   "wp": {
-   "x": 0.3144453167915344,
-   "y": -0.007310271263122559,
-   "z": 0.9859299659729004
+   "x": 0.14645391702651978,
+   "y": 0.04575499892234802,
+   "z": 0.6913424730300903
   },
   "wvExt": {
-   "x": 0.5044456124305725,
-   "y": 0.9500201940536499,
-   "z": 0.9962112903594971
+   "x": 0.6724370121955872,
+   "y": 0.2876394987106323,
+   "z": 0.8222523927688599
   }
  },
  "wpLocationPowerSrc": {
@@ -730,6 +729,15 @@
      "__targetFileName__": "base/meta/EffectGroup/actor_death_shadow.efg",
      "groupName": "EffectGroup",
      "name": "actor_death_shadow"
+    },
+    {
+     "__raw__": 2264624,
+     "__group__": 14,
+     "__type__": "DT_SNO",
+     "__typeHash__": 2764331143,
+     "__targetFileName__": "base/meta/EffectGroup/actor_death_holy.efg",
+     "groupName": "EffectGroup",
+     "name": "actor_death_holy"
     }
    ],
    "gbidActorResurrectDataOverride": null
@@ -803,6 +811,7 @@
    },
    "unk_f190641": false,
    "unk_557e468": false,
+   "unk_e1eb9fc": false,
    "unk_d2a4d05": false,
    "unk_88f4495": false
   }
