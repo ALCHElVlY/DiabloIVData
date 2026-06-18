@@ -40,6 +40,12 @@ AIStateDebugTestPowerMessage
 AIStateDebugTestSwitchMessage
 AITargetDebugSetState
 ANNDataMessage
+APSGridLayouts
+APSGridLayouts_Table
+APSQuests
+APSQuests_Table
+APSRewards
+APSRewards_Table
 AVParams
 AbortPowerMessage
 AccessibilityReadStringMessage
@@ -56,6 +62,10 @@ ActiveSubzoneModifierSubcondition
 ActivityDefinition
 ActivityLinks
 ActivityMetadata
+ActivityPointerSystemConfirmMessage
+ActivityPointerSystemHeroSaveData
+ActivityPointerSystemQuestNode
+ActivityPointerSystemSelectedQuestNode
 ActivityReward
 ActorAIData
 ActorAIDisperseData
@@ -115,6 +125,8 @@ ActorVendorData
 ActorVisualInventoryData
 ActorWeaponData
 AddBehaviorNode
+AddICDBehavior
+AddPrimaryResourceBehavior
 AddSocketResultMessage
 AdditionalContextGizmoMessage
 AdditionalStatistic
@@ -122,9 +134,15 @@ AdvancedBloomSettings
 AdvancedBloomSettingsOptionalFieldMapDefaults
 AdvancedNodeContent
 AffixDefinition
+AffixFamilyTableEntry
+AffixFamilyTableEntry_Table
 AffixMessage
+AffixSelector
+AffixSelector_Deprecated
 AffixSortGroup
 AffixSubstitutePair
+AffixTagEntry
+AffixTagEntry_Table
 AfterCreditsScenes
 AimTargetMessage
 AllLogicSubcondition
@@ -182,6 +200,10 @@ AppearanceLook
 AppearanceMaterial
 AppearanceSetDefinition
 AppearanceUniqueSubObjectNameInfo
+ApplyBuffBehavior
+ApplyDamageMultiplierBehavior
+ApplyPayloadBehavior
+ApplyWeakenedBehavior
 ArmorPactCost
 ArmorPactType
 ArmorPactTypeWeight
@@ -203,6 +225,7 @@ AttribKeyUserData
 AttributeFormulaEntry
 AttributeFormulaEntry_Table
 AttributeFormulaRange
+AttributePriorityEntry
 AttributeSelection
 AttributeSelectionWrapper
 AttributeSetValueMessage
@@ -363,6 +386,7 @@ ChangedHeroIdMessage
 ChangedPlayerMessage
 CharacterPreset
 ChargeableGizmoData
+CharmSlotControllerNavigation
 ChatMessage
 CheatCampaignStateMessage
 CheckBoxTree
@@ -441,11 +465,15 @@ CommunityModifierUpdateMessage
 CompInfluence
 CompVertInfluences
 CompanionHeroSaveData
+CompanionRenameRequestMessage
+CompanionRenameRequestResponse
 CompanionsHeroSaveData
 ComplexEffectAddMessage
 ConcatenateStringsBehaviorNode
 ConditionData
 ConditionDefinition
+ConditionEvaluationDisplayData
+ConditionEvaluationDisplayData_Table
 ConditionProperty
 ConditionWrapper
 ConditionalAudioState
@@ -508,7 +536,13 @@ CriteriaDefinition
 CriteriaEvent
 CriteriaModifier
 CriteriaStartEvent
+CrowdActorInstance
 CrowdControlEffects
+CrowdDefinition
+CrowdPlacementAndOffset
+CrowdPlacementsDefinition
+CrowdTemplateActor
+CrowdTemplatesDefinition
 Currencies
 Currencies_Table
 Currency
@@ -522,6 +556,7 @@ CustomBehaviorMessage
 CustomBuffCallback
 CustomClientArgs
 CustomClientEvent
+CustomDisclaimer
 CustomGlobalEvent
 CustomGlobalEventHandlerBehaviorNode
 CustomMessageHandlerBehaviorNode
@@ -567,6 +602,7 @@ DRLGSpawningPool
 DRLGTileDebugInfo
 DRLGWorldDebugInfo
 DRLGWorldDebugInfoMessage
+DRLGWorldDebugInfoRequestMessage
 DT_ACCEL
 DT_ACD_NETWORK_NAME
 DT_ACTORGROUP
@@ -788,6 +824,7 @@ EffectGroupKey
 EffectGroupKeyData
 EffectGroupMaterialTrack
 EffectGroupMaterialValueKeyData
+EffectGroupOverrideByVisualRemap
 EffectGroupPositionXKeyData
 EffectGroupPositionYKeyData
 EffectGroupPositionZKeyData
@@ -983,6 +1020,7 @@ GenericEventHandlerBehaviorNode
 GenericGraphAnnotation
 GenericGraphContainer
 GenericGraphItem
+GenericGraphLinkControlPoint
 GenericGraphNode
 GenericGraphNodeContent
 GenericGraphNodeContentBase
@@ -1039,7 +1077,9 @@ GizmoMessage
 GizmoTemplate
 GlobalAVData
 GlobalAchievementHierarchy
+GlobalActivityPointerSystemData
 GlobalAffixData
+GlobalAttributeData
 GlobalBase
 GlobalBehaviorsEventsData
 GlobalBountyData
@@ -1066,6 +1106,7 @@ GlobalHealerEvents
 GlobalHealthPotionData
 GlobalIntensityLevels
 GlobalItemMigrationData
+GlobalLootFocusData
 GlobalMarkerActor
 GlobalMarkerActorData
 GlobalMarkerActorHiddenCacheData
@@ -1088,6 +1129,7 @@ GlobalScriptVariable
 GlobalServiceNPCData
 GlobalSnoTemplatesData
 GlobalStore
+GlobalTalismanData
 GlobalTownPortalCosmetics
 GlobalUIData
 GlobalUserDefinedData
@@ -1113,6 +1155,8 @@ HairColors
 HairStateGenderOverrides
 HairStyleChoice
 HairStyleDefinition
+HaloDefinition
+HaloDefinition_Table
 HardcoreSubcondition
 Hardpoint
 HardpointInfo
@@ -1124,6 +1168,7 @@ HasParentControlBehaviorNode
 HdrSettings
 HeadComponentCompatibility
 HeadstoneGizmoData
+HealBehavior
 HealthPotionData
 HearthPortalInfoMessage
 HeightFieldWaveSettings
@@ -1154,6 +1199,7 @@ HirelingSwapMessage
 HitReactionOverride
 HitpointSpecifier
 HorizontalTiledWindowPieces
+HostAffixSelector
 HotbarButtonData
 HoudiniParticlesSimDefinition
 IGCConversationCompletedMessage
@@ -1187,6 +1233,8 @@ IndicatorGroup
 IndicatorIdString
 IndicatorInfo
 Influence
+InfoPanelInfo
+InfoPanelPanel
 InitiateGroupTransferMessage
 InstanceGroupInstance
 Int64DataMessage
@@ -1196,7 +1244,9 @@ IntDataResponse
 IntSwitchFixedBehaviorNode
 IntensityParam
 IntensitySubParam
+InteractivesPreloadHelper
 InterpolationNode_RGBAColor
+InterpolationNode_bcVec2
 InterpolationNode_bcVec3
 InterpolationNode_bcVec4
 InterpolationNode_float
@@ -1204,6 +1254,7 @@ InterpolationNode_int32
 InterpolationNode_uint32
 InterpolationPathHeader
 InterpolationPath_RGBAColor
+InterpolationPath_bcVec2
 InterpolationPath_bcVec3
 InterpolationPath_bcVec4
 InterpolationPath_float
@@ -1237,18 +1288,23 @@ ItemLabelGroups_Table
 ItemLabelSubcondition
 ItemMagicTypeSubcondition
 ItemMasterworkResultMessage
+ItemModificationDescription
 ItemPVPEarDataMessage
 ItemPowerSubcondition
 ItemPreloadHelper
 ItemQualityLevelPowerRanges
 ItemQualityModifierSubcondition
 ItemQualitySubcondition
+ItemRecycleDescription
 ItemRequirementDefinition
 ItemSalvageLevel
 ItemSalvageLevel_Table
 ItemSourceDifficultyTierSubcondition
 ItemSourceWorldTierSubcondition
 ItemSpecifierData
+ItemSubstitutePair
+ItemTags
+ItemTags_Table
 ItemTier
 ItemTypeDefinition
 ItemTypeHardpointOffsets
@@ -1288,6 +1344,7 @@ LabelRuleSet
 LabeledMarkerSetPreloadHelper
 LargeBiomeObject
 LastClientError
+LatePlayerEffect
 LayerData
 LayerInstanceChunk
 LayerVertexAO
@@ -1346,9 +1403,16 @@ LookVariantMaterialMap
 LookVariantMaterialOverride
 LookVariantOverride
 LootBeamEffects
+LootFilterItemTypeGroup
+LootFilterItemTypeGrouping
+LootFocusDesignerVariableData
+LootFocusDesignerVariableGrouping
+LootFocusDungeonWorldTierData
 LooteeLevelRangeSubcondition
 LoreDefinition
 LoreMessage
+LostStashQualityRequirement
+LostStashRule
 LoudnessParams
 LoudnessParamsOptionalFieldMapDefaults
 LuxSettings
@@ -1390,6 +1454,7 @@ MarkerBaseGizmoData
 MarkerBoneTransform
 MarkerCameraData
 MarkerChestGizmoData
+MarkerCrowdData
 MarkerDataBase
 MarkerDecalData
 MarkerDestroyableObjectGizmoData
@@ -1466,9 +1531,14 @@ MaterialTextureEntry
 MaterialValueDefinition
 MaterialValueSetDefinition
 MaterialValue_RGBAColor
+MaterialValue_bcVec2
+MaterialValue_bcVec3
 MaterialValue_bcVec4
 MaterialValue_float
 MaterialValue_int32
+MaterialVector2ValueDefinition
+MaterialVector3ValueDefinition
+MaterialVector4ValueDefinition
 MaterialVectorValuesUsed
 Matrix3x3
 Matrix4x4
@@ -1496,6 +1566,7 @@ ModifiedLootEntry
 Modifiers
 ModifiersOptionalFieldMapDefaults
 ModifyCurrencyMessage
+ModifyItemMessage
 ModuloBehaviorNode
 MonsterACDInfo
 MonsterAffixCategory
@@ -1617,6 +1688,7 @@ OnAttackBuffCallback
 OnBerserkAppliedCallback
 OnBerserkRemovedCallback
 OnBlockBuffCallback
+OnCCRemovedCallback
 OnChangeLevelAreaBuffCallback
 OnContactFramePowerCallback
 OnCooldownStartCallback
@@ -1751,6 +1823,7 @@ ParticleSimKeyFrameSpin
 PartyFinderTagsEntry
 PartyFinderTagsEntry_Table
 PartyHasTrackedSubzoneSubcondition
+PartyInDungeonSubcondition
 PartyInstanceCompletedMessage
 PartySizeSubcondition
 PartyVoteReplyMessage
@@ -1782,6 +1855,11 @@ PhaseJumpServerTriggeredEnd
 PhaseJumpStoppedChannelling
 PhysicsDefinition
 PickUpIconConfiguration
+PipDefinition
+PipEvaluateCampaign
+PipEvaluateNewProduct
+PipEvaluateWardrobe
+PipEvaluationCriteriaParameters
 Plane
 PlasmaAttachMessage
 PlatformAccount
@@ -1791,6 +1869,7 @@ PlayAnimationMessageSpec
 PlayConvLineMessage
 PlayConversationSoundMessage
 PlayCutsceneMessage
+PlayEffectGroupBehavior
 PlayEffectMessage
 PlayErrorSoundMessage
 PlayFXBehaviorNode
@@ -1805,10 +1884,18 @@ PlayPlayerMountSoundMessage
 PlaySoundBehaviorNode
 PlayStoryboardMessage
 PlayerACDInfo
+PlayerAPSActivityTypeCompletion
+PlayerAPSNodeRarityCompletion
+PlayerAPSNodeWorldTierCompletion
 PlayerActorSetInitialMessage
 PlayerAltLevelMessage
 PlayerAnimSetOverride
 PlayerBuffSubcondition
+PlayerChoice
+PlayerChoiceData
+PlayerChoiceSelectedMessage
+PlayerChoiceShowMessage
+PlayerChoice_Table
 PlayerClassBarbData
 PlayerClassCoreStatBenefitData
 PlayerClassCoreStatBenefitEntry
@@ -1822,6 +1909,7 @@ PlayerClassRogueData
 PlayerClassSorcererData
 PlayerClassSpiritbornData
 PlayerClassSubcondition
+PlayerClassWarlockData
 PlayerCodexUnlockCountSubcondition
 PlayerCollectiblePowerIsEquippedSubcondition
 PlayerCollectiblePowerLevelSubcondition
@@ -1849,6 +1937,7 @@ PlayerHasLearnedParagonGlyphSubcondition
 PlayerHasSeenTutorialSubcondition
 PlayerHasUnlockedMountsSubcondition
 PlayerHasUnlockedSpiritBondSubcondition
+PlayerHasWarPlansEntitlementSubcondition
 PlayerHealthSubcondition
 PlayerIndexMessage
 PlayerIndexRequestMessage
@@ -1890,6 +1979,7 @@ PlayerSkillModPointsSubcondition
 PlayerSkillRankSubcondition
 PlayerStoreEmoteAnimPreloadHelper
 PlayerTalentRankSubcondition
+PlayerTeleportToPartyMemberMessage
 PlayerTitleDefinition
 PlayerTitleResponseMessage
 PlayerTotalRenownSubcondition
@@ -1918,6 +2008,7 @@ PortedToWaypointMessage
 PostApplyBuffCallback
 PostCampaignCompleteSubcondition
 PostFXParams
+PowerBehaviorBase
 PowerBehaviorNode
 PowerBlendOverrideList
 PowerBuffAttributeModifier
@@ -1936,6 +2027,7 @@ PowerConditionAILocalVariableLessThan
 PowerConditionBase
 PowerConditionBuffDurationRemainingCompare
 PowerConditionBuffStackCountCompare
+PowerConditionBuffStoredValueCompare
 PowerConditionCanOverpower
 PowerConditionDamageDeliveryMechanism
 PowerConditionDamageHasFortified
@@ -2085,6 +2177,8 @@ PreloadSpawnWorldDataMessage
 PresetBannerData
 PresetDyedItem
 PresetNPCComponent
+PrestigeTitleDefinition
+PrestigeTitleDefinition_Table
 PreviewCameraPositioning
 PreviewCameraPositioningOverride
 PreviewCameraTransition
@@ -2173,12 +2267,18 @@ RecastPowerMessage
 RecipeDefinition
 RecipeEventGizmoData
 RecipeIngredient
+RecipeIngredientItemDescription
+RecipeIngredientItemDescriptionRequirements
+RecipeIngredientSelectedTreasureClass
 RecipeModifiedLoot
 RecipeModifiedLoot_Table
 RecipeTier
 Rect2D
+ReduceCooldownBehavior
+RefreshBuffBehavior
 ReliquaryArt
 ReliquaryBanners
+RemoveBuffBehavior
 RemovedBuffCallback
 RenderParams
 RenderPass
@@ -2324,6 +2424,7 @@ ScriptEventParamOwnerParty
 ScriptEventParamPassivePowerContainer
 ScriptEventParamPlayer
 ScriptEventParamPlayerAlly
+ScriptEventParamPlayerChoice
 ScriptEventParamPower
 ScriptEventParamPrefabScopedActorGroup
 ScriptEventParamPrimaryGroup
@@ -2359,6 +2460,8 @@ SeasonJourneyBlessingData
 SeasonLeaderboardActivity
 SeasonLeaderboardActivityTrackedData
 SeasonLeaderboardActivity_Table
+SeasonLeaderboardReward
+SeasonLeaderboardRewardBracket
 SeasonSubcondition
 SeasonWorldTierData
 SeasonalDungeonState
@@ -2432,6 +2535,8 @@ SimpleMessage
 SimpleNodeContent
 SimpleRequest
 SimpleResponse
+SimpleScalarFormulaEntry
+SimpleScalarFormulaEntry_Table
 SkillDeclaration
 SkillEnchantSavedData
 SkillExtraAndArsenalEntry
@@ -2454,6 +2559,7 @@ SkillTreeNodePersonalConnection
 SkillTreeReward
 SkillTreeReward_Table
 SkillTreeSkillRankMod
+SkillTreeSwapNodesMessage
 SkuInfo
 SkuInfoOptionalFieldMapDefaults
 SkuUIVariations
@@ -2463,8 +2569,11 @@ SkyProfile
 SkyProfileOptionalFieldMapDefaults
 SlopeBone
 SlowAmountSettings
+SnoDataHandle
+SnoPropertyPath
 SocialWheelSlotBinding
 SocketedEffects
+SoloSelfFoundSubcondition
 SonyConsoleAwardDefinition
 SorcererEnchantSlotUnlockData
 SoundDefinition
@@ -2576,6 +2685,8 @@ StoryboardValueNode_bcVec2
 StoryboardValueNode_float
 StringCaseData
 StringDataMessage
+StringFormulaEntry
+StringFormulaEntry_Table
 StringLabelHandleEx
 StringListDefinition
 StringListFetchBehaviorNode
@@ -2618,7 +2729,9 @@ SyncPowerModifiersMessage
 SyncedRunewordData
 TGCoeffs
 TalentRankAssignedMessage
+TargetAffixSelector
 TelemetryBugEnteredMessage
+TeleportToDungeonMessage
 TempCollisionMesh
 TemperData
 TemperItemMessage
@@ -2647,6 +2760,8 @@ TiledStyleDefinitionOptionalFieldMapDefaults
 TiledWindowPieces
 TimeSinceEventSubcondition
 TimedSpawningData
+TooltipTags
+TooltipTags_Table
 TorsoComponentCompatibility
 TownPortalBindLocationMessage
 TownPortalCosmetic
@@ -2663,6 +2778,8 @@ TrackedRewardData
 TrackedRewardDefinition
 TrackerBundles
 TrailDefinition
+TransfigureActionChoice
+TransfigureData
 TranslationCurve
 TranslationKey
 Transmog
@@ -2904,6 +3021,7 @@ UIMinimapStyle
 UIModalDefinition
 UIParagonBoardStyle
 UIPieChartStyle
+UIPipStyle
 UIProgressBarBase
 UIProgressBarBaseOptionalFieldMapDefaults
 UIProgressBarStyle
@@ -3013,6 +3131,9 @@ WallInstanceData
 WallPiece
 WallScatterData
 WardrobeGizmoData
+WarlockFragmentData
+WarlockMechanicChangeMessage
+WarlockShardData
 WaypointEffectInfo
 WaypointGizmoData
 WeaponExpertiseRank
@@ -3027,6 +3148,7 @@ WhileBehaviorNode
 WindowPieces
 WindowPiecesBase
 WorldConditionalData
+WorldConnection
 WorldDefinition
 WorldDeletedMessage
 WorldEvent
@@ -3216,6 +3338,8 @@ accept
 acceptInitialInputFocus
 actionType
 activate
+actor
+actorInstances
 actorPreloadPowerCooldown
 addFresnel
 afBend
@@ -3243,6 +3367,10 @@ alignmentOffset
 allowChildrenFocus
 amount
 animBlendFractions
+animationPermutation
+animationSet
+animationSpeedScale
+animationStartTime
 ann
 annACD
 annACDSource
@@ -3254,6 +3382,7 @@ annAttacker
 annClone
 annClonedFrom
 annContainer
+annCraftedItem
 annCrafter
 annDefender
 annDest
@@ -3299,10 +3428,14 @@ annVendor
 annWaypointSrc
 arAIBehaviors
 arAIPropPowerPairings
+arAPSBoard
+arAPSPlayerSelection
 arAchievementSnos
 arActiveCompanions
 arActiveMercenary
 arActiveSkillEntries
+arActivityPointerSystemConversationSNOs
+arActivityPointerSystemRarity
 arActivityQuests
 arActorAnimSetPreloadHelpers
 arActorAppearanceAddOnEntries
@@ -3322,14 +3455,18 @@ arAdditionalActorTypes
 arAdditionalAffixes
 arAdditionalAttachPoints
 arAdditionalCheats
+arAdditionalCommandSkillTags
 arAdditionalDungeonAffix
 arAdditionalDungeonState
 arAdditionalPassives
 arAdditionalTargets
 arAffectedItemLabels
+arAffixBonusPerMagicType
+arAffixChanceIncrease
 arAffixCountPerQuality
 arAffixSkillTags
 arAffixSubstitution
+arAffixTags
 arAffixes
 arAllReferencedItems
 arAllowedCategories
@@ -3339,6 +3476,7 @@ arAllowedRarities
 arAllowedTileTypes
 arAlphaBlend
 arAmbushData
+arAncestralChanceIncrease
 arAnimClothOverrides
 arAnimSetAnimPreloadHelpers
 arAnimSetOrder
@@ -3375,6 +3513,7 @@ arBakedLayers
 arBakedMaskTexturesInfo
 arBakedSplineNodes
 arBannerShapes
+arBarbBrackets
 arBarteringUpgradeConditions
 arBaseAppearanceTextureOverrides
 arBattlePassTiers
@@ -3399,6 +3538,7 @@ arBuffNames
 arBuffs
 arBuffsToApply
 arBundledProducts
+arBundledRecipes
 arCCInfo
 arCallbackSets
 arCallbacks
@@ -3421,6 +3561,7 @@ arCategoryIcons
 arChallengerRiftData
 arChallengerRiftDivisionData
 arChargeableTemplates
+arCharmSlotsNavigation
 arChestTemplates
 arChildControls
 arChildNodeWeights
@@ -3480,6 +3621,7 @@ arCrowdControlEffects
 arCurrencyCaps
 arCurrencyData
 arCurveLengths
+arCustomDisclaimers
 arCustomPathPositions
 arCustomStaticImages
 arCustomizationAppearances
@@ -3516,6 +3658,7 @@ arDisallowedAffixes
 arDisclaimer
 arDivisionMedalIcons
 arDoorTemplates
+arDruidBrackets
 arDungeonAffixPreloadHelpers
 arDungeonAffixes
 arDungeonButtonConditions
@@ -3531,6 +3674,7 @@ arDyeColors
 arDyeList
 arEffectGizmoStates
 arEffectGroupActorVariants
+arEffectGroupOverridesByVisualRemap
 arEffectGroupPreloadHelper
 arEffectGroupPreloadHelpers
 arElevations
@@ -3538,6 +3682,7 @@ arEmblemTemplates
 arEmbroideries
 arEmoteSnos
 arEmoteTemplates
+arEnableCondition
 arEnabledBloodSeals
 arEnablingTags
 arEnchantCostScalarDeltas
@@ -3581,6 +3726,7 @@ arFlippyHangTime
 arFloatAnims
 arFloorDungeonStates
 arFoWUnlocked
+arFocusTypeRarities
 arFogMask
 arFogOfWar
 arFoleyMaterialTags
@@ -3598,6 +3744,7 @@ arForcedPrefetchData
 arFunctionHandles
 arFunctions
 arFutureProducts
+arGainedSkillTags
 arGameGuideCategories
 arGameTag
 arGenericSkillKits
@@ -3657,6 +3804,7 @@ arIndicatorModes
 arIndices
 arInfoPageData
 arInfoPageDataCollections
+arIngredientSelectedTreasureClasses
 arIngredients
 arInherentAffixes
 arInherentGbidAffixFamily
@@ -3668,6 +3816,7 @@ arInnateStatList
 arInputPlugs
 arInputs
 arInt32Anims
+arInteractivesPreloadHelpers
 arInterpScalar
 arInterruptFrames
 arInvalidSeasonalDungeonStates
@@ -3676,6 +3825,8 @@ arItemFamilies
 arItemIconPreloadHelpers
 arItemLabels
 arItemPreloadHelpers
+arItemSubstitution
+arItemTags
 arItemTiers
 arItemTypes
 arItemUpgradeArmorLevels
@@ -3684,6 +3835,7 @@ arItemUpgradeJewelryLevels
 arItemUpgradeJewelryPowerLevels
 arItemUpgradeWeaponLevels
 arItemUpgradeWeaponPowerLevels
+arItemWithParentPreloadHelpers
 arItems
 arJewelries
 arJewelryChoices
@@ -3729,7 +3881,13 @@ arLookVariantMaterialMap
 arLookVariantMaterialOverrides
 arLookVariantOverrides
 arLookVariants
+arLootFilterItemTypeGroupings
+arLootFilterItemTypes
+arLootFocusDesignerVariableEntries
+arLootFocusDesignerVariableGroupings
+arLootFocusDungeonWorldTierData
 arLootOptions
+arLostStashRules
 arMakeupChoices
 arMaleAnimSets
 arMaleOffsets
@@ -3779,6 +3937,7 @@ arNPCComponentSlotComponentPreloadHelpers
 arNPCComponentStylesPerType
 arNPCs
 arNecroArmyUnitTypes
+arNecroBrackets
 arNestedModifier
 arNewItems
 arNextSegmentIndices
@@ -3802,6 +3961,7 @@ arOverrides
 arOwnedPowers
 arPOIsUnlocked
 arPaintColorSamples
+arPaladBrackets
 arParagonBoards
 arParagonPowerBudgetMultiplier
 arParamTypes
@@ -3809,6 +3969,10 @@ arParametricClutterIndexLayers
 arParametricLayers
 arParams
 arParentTags
+arParticipationRewards
+arPartyFourBrackets
+arPartyThreeBrackets
+arPartyTwoBrackets
 arPayloads
 arPerClassPlayerLoadingScreens
 arPerTypeMountLoadingScreens
@@ -3822,9 +3986,11 @@ arPetTypes
 arPhaseJumps
 arPhases
 arPieces
+arPipEvaluationCriteria
 arPlatforms
 arPlayStyle
 arPlayedFlags
+arPlayerChoices
 arPlayerFoleyOverridePreloadHelpers
 arPlayerStoreEmoteAnimPreloadHelpers
 arPointGroups
@@ -3861,6 +4027,7 @@ arPublicLevelScaling
 arPublicLevelScalingDataOverride
 arPurchasedNodeIconFill
 arPurchasedSkillTreeNodes
+arQualityRequirements
 arQuestACDObjectives
 arQuestACDObjectivesPrimaryPlayer
 arQuestACDObjectivesSecondaryPlayer
@@ -3918,6 +4085,7 @@ arRewardData
 arRewardList
 arRewardStringLabels
 arRewards
+arRogueBrackets
 arRogueSpecData
 arRootNodes
 arRootSlots
@@ -3940,6 +4108,7 @@ arSeasonDifficultyDescription
 arSeasonalBountyTierIcons
 arSeasonalDungeonAffixes
 arSeasonalDungeonStates
+arSeasonalDyes
 arSeasonalItemTooltips
 arSeasonalLaurels
 arSeasonalPassives
@@ -3950,8 +4119,10 @@ arSecretTextures
 arSections
 arSegmentIndices
 arSegments
+arSelectedQuestNodes
 arShaderMapOverrides
 arShaderOverrides
+arShardFragments
 arShrineTemplates
 arSideQuests
 arSignGizmoConditionalData
@@ -3978,16 +4149,19 @@ arSnoLinkedTask
 arSnoSecondaryWorlds
 arSnonameTokens
 arSnos
+arSorcBrackets
 arSortedAffixGroups
 arSortedAffixes
 arSortedEffectIndices
 arSortedEventIndices
 arSortedNodeIndices
+arSoulShards
 arSoundOverrides
 arSpawnCountOffsets
 arSpawnLocOverrides
 arSpecialProductInfo
 arSpecializations
+arSpiritBrackets
 arSpiritInfo
 arSpiritSkillTags
 arSpiritTypeInfo
@@ -4037,6 +4211,7 @@ arTileSets
 arTiles
 arTitle
 arToReturn
+arTooltipTags
 arTopology
 arTorsoComponentCompatibilityList
 arTorsoComponents
@@ -4045,6 +4220,7 @@ arTrackedRewardStringLabels
 arTracks
 arTradeAgreementConditions
 arTrailingStoreProducts
+arTransfigureActions
 arTransmogSlots
 arTransmogs
 arTraversalSurfaceOptions
@@ -4080,6 +4256,7 @@ arVendorLogos
 arVendors
 arVertexAO
 arVertexAOOffsets
+arWarlBrackets
 arWarningConversationLines
 arWaypointEffects
 arWaypoints
@@ -4093,6 +4270,7 @@ arWeatherOverrides
 arWeatherSNOs
 arWeekScoreMultiplier
 arWeeklyRewards
+arWorldConnections
 arWorldMarkerPings
 arWorldMarkerSets
 arWorldPoints
@@ -4161,6 +4339,7 @@ bAutoTargetingEnabled
 bBackpack
 bBlinkForever
 bBlizzconDropEnabled
+bBoardIsCompleted
 bBookendConversation
 bBouncesOffCollision
 bBouncesOffNavMesh
@@ -4182,6 +4361,7 @@ bCheckBackpack
 bCheckEquipped
 bCheckSeasonActive
 bCheckStash
+bCheckUnlocked
 bCheckWorld
 bClear
 bClearZBuffer
@@ -4211,6 +4391,7 @@ bDisableDefaultDungeonStates
 bDisableDefaultLabels
 bDisableDynamicAvoidance
 bDisableFontScale
+bDisableRename
 bDisabled
 bDisplayChatMessage
 bDisplayWhileEmpty
@@ -4246,6 +4427,7 @@ bFadeAtStart
 bFemale
 bFirstLine
 bFirstProjectileOnly
+bForLimitedTimeEvent
 bForce
 bForceCast
 bForceControllerIcons
@@ -4367,6 +4549,7 @@ bIsPassive
 bIsPassivePower
 bIsPlayer
 bIsPlayerAlly
+bIsPrestigeTitle
 bIsPrimary
 bIsPublic
 bIsQuickTeleport
@@ -4375,6 +4558,7 @@ bIsReinforcementMenu
 bIsRepeatableReward
 bIsScript
 bIsSeasonal
+bIsSpecific
 bIsTemperedAffix
 bIsTransmog
 bIsUnique
@@ -4463,6 +4647,7 @@ bReSeek
 bReadDisabledButton
 bReadParentControl
 bReadTextOnHover
+bRecipeIsHidden
 bRecurseForAttachments
 bRemove
 bRemoveOnPassiveReapplication
@@ -4548,8 +4733,11 @@ bTargetGroundOnly
 bTeleportToEntrance
 bTextAllCaps
 bToggleSelection
+bTriggerOnAnyCC
 bTriggerOnEnterTown
 bTriggerOnMount
+bTriggerOnSource
+bTriggerOnTarget
 bTriggersForPets
 bTriggersImmediately
 bTriggersOnAnyCC
@@ -4761,6 +4949,7 @@ dwCount
 dwCriteriaTypes
 dwCrowdControlTypes
 dwCurrencyAmount
+dwCurrentIndex
 dwData
 dwDataID
 dwDataSize
@@ -4793,6 +4982,7 @@ dwExperienceToNextLevel
 dwExplosionChannel
 dwFaceCount
 dwFeatureFlags
+dwFirstAttachedActorID
 dwFirstHeartbeat
 dwFlags
 dwFlagsEx
@@ -4833,6 +5023,7 @@ dwLastHeartbeat
 dwLastKickAttempt
 dwLastPurchasedSkillTreeNodeId
 dwLastSuccessfulKick
+dwLastUpdateTime
 dwLegacySalvageBonus
 dwLevel
 dwLevelsPerUpgrade
@@ -4896,6 +5087,8 @@ dwNextUID
 dwNodeID
 dwNodeId
 dwNodeIndex
+dwNodeRequiredPlayerLevel
+dwNumChoices
 dwObjectID
 dwOffset
 dwOverrideDifficultyTier
@@ -4945,17 +5138,21 @@ dwPriority
 dwProceduralEntranceName
 dwProgressQuestCallbackID
 dwProximityObjectID
+dwQuantity
 dwQuestHash
+dwRandomSeed
 dwRank
 dwRegionSourceCallbackUID
 dwReliquaryCategoryIndex
 dwRemovalReasons
 dwRenderLayers
+dwReputationGain
 dwReputationLevel
 dwReputationRequired
 dwRequiredEntitlements
 dwRequiredLevel
 dwRequiredSkillRank
+dwRerollCostBaseAmount
 dwReserved
 dwResponseType
 dwRestrictions
@@ -4971,6 +5168,8 @@ dwRows
 dwRunicPowerAmount
 dwScale
 dwSceneFlags
+dwSecondAttachedActorID
+dwSecondaryEntranceNameToFind
 dwSeed
 dwSeedInitial
 dwSegmentsStep
@@ -5066,6 +5265,7 @@ dwXMLHash
 eAITargetAwareness
 eAITargetStyleElite
 eAITargetStyleNormal
+eAPSNodeRarity
 eAction
 eActivateBehavior
 eActivationInventorySlot
@@ -5081,6 +5281,8 @@ eAddType
 eAffectedNodeRarity
 eAffectsGeometry
 eAffixCategory
+eAffixModificationScope
+eAffixSelectorType
 eAffixType
 eAlignHorizontal
 eAlignVertical
@@ -5114,6 +5316,7 @@ eAttributeBonusResourcesEarned
 eAttributeResourcesEarned
 eAttributeResourcesEarnedTotal
 eAttributeResourcesSpent
+eAttributeType
 eAudioVolumeShape
 eBackStencilBufferCompareFunc
 eBackStencilOpFail
@@ -5148,6 +5351,7 @@ eCCType
 eCampaignReleaseGroup
 eCategory
 eCavityMode
+eCharmRarity
 eCheckMethod
 eCheckboxStyle
 eChestGizmoType
@@ -5162,6 +5366,7 @@ eCollectiblePowerType
 eCollisionShape
 eColorPickerOnChange
 eColorSpace
+eCombatTextType
 eComboBoxTextJustify
 eComboBoxTextJustifyVertical
 eComp
@@ -5322,6 +5527,7 @@ eId
 eImageFitType
 eIndicatorType
 eIndices
+eIngredientType
 eInputButton
 eInstanceQuestType
 eInstanceType
@@ -5330,8 +5536,10 @@ eInterruptReason
 eInventorySlot
 eItemLabel
 eItemMagicType
+eItemModificationAction
 eItemQualityLevel
 eItemQualityModifier
+eItemQualityModifierRequirement
 eItemSlot
 eItemUseType
 eJewelryState
@@ -5367,17 +5575,25 @@ eManualRestockCurrency
 eMarkerSourceType
 eMaterial
 eMaterialImportance
+eMaxItemQualityLevel
+eMaxRuneRarity
+eMaxWorldTier
 eMercenaryClass
 eMessageType
 eMetaDataType
 eMicrophoneMode
 eMiddleClickPredicate
+eMinIQL
 eMinIQM
+eMinItemQualityLevel
+eMinRuneRarity
+eMinWorldTier
 eMinimumMonsterRarity
 eMipFilter
 eMobility
 eModType
 eMode
+eModifier
 eModifyType
 eMonsterRarity
 eMountRarity
@@ -5395,10 +5611,12 @@ eNPCCrafterType
 eNavBehavior
 eNecessaryCondition
 eNewClass
+eNewShardType
 eNewSpec
 eNewSpirit
 eNoMountVolumeShape
 eNoSpawnVolumeShape
+eNodeRarity
 eNodeType
 eNormalAxis
 eNotificationLevel
@@ -5494,7 +5712,9 @@ eRecipeType
 eRedirectFocusOnChange
 eReferencePreloadMode
 eReflectionProbeShape
+eRefundCostCurrencyType
 eRegionEligibility
+eRegionLimitation
 eReinforcementGender
 eReinforcementMerc
 eReinforcementMercenary
@@ -5507,7 +5727,10 @@ eRenderLayer
 eRenderLayerOverride
 eRepeatType
 eRequiredContentRelease
+eRequiredIQM
+eRequiredQualityLevel
 eRequiredRarity
+eRerollCostCurrencyType
 eResizeToFit
 eResolveMethod
 eResourceType
@@ -5546,6 +5769,7 @@ eShaderTex
 eShaderTexOverride
 eShadingImportance
 eShape
+eShapeShiftForm
 eShapeshiftForm
 eSheathPreference
 eSignMaterial
@@ -5656,6 +5880,7 @@ eVerticalAnchoring
 eVignetteType
 eVisibility
 eVisibilityCondition
+eWarPlanNodeRarity
 eWarningSound
 eWarpReason
 eWeaponClass
@@ -5663,6 +5888,7 @@ eWeaponHitsound
 eWeaponVisibilityTargetType
 eWindowEatsClicks
 eWorldTier
+eWorldTierCompletion
 eWorldTierEligibility
 eWorldToChoose
 eWreckableStrength
@@ -5676,6 +5902,7 @@ encloseChildren
 endIndex
 entry
 enumVal
+equipSlotUnavailableSound
 eventId
 eventName
 fAIDamageDisabled
@@ -5860,6 +6087,7 @@ fMinimapRespectsFoW
 fMinimapRespectsRevealRadius
 fMinimapTooltipUsesShortenedName
 fMonsterCanBeResurrected
+fMonsterCanOpenDoor
 fMouseAssignable
 fMustAttach
 fMustKeepInInventory
@@ -5871,6 +6099,7 @@ fOcclusionScalar
 fOptional
 fOrthographic
 fOverrideActorTrackingFactor
+fOverrideActorTreasureClass
 fOverrideActorVariant
 fOverrideAnimBlendFraction
 fOverrideBoneTrackingFactor
@@ -6090,6 +6319,7 @@ flBlendHertzAdd
 flBlendInTime
 flBlendOutOverrideTime
 flBlendOutTime
+flBlendPercentage
 flBlendTime
 flBlendTimeOverride
 flBlendWeight
@@ -6116,6 +6346,7 @@ flBossCameraBiasDistanceMin
 flBossCameraBiasFromPlayer
 flBossCameraBiasFromPlayerMax
 flBossCameraBiasFromPlayerMin
+flBossCameraDectivationRadius
 flBossCameraMaxMoveRatePerSecond
 flBossCameraSmoothing
 flBossCameraZoomIntroTime
@@ -6154,6 +6385,7 @@ flChance
 flChanceForSplash
 flChanceIncrease
 flChanceOverride
+flCharmRarityBonusChance
 flChatFadeDuration
 flChatFadeInDuration
 flChatMessageFadeDuration
@@ -6269,6 +6501,7 @@ flDistanceToWaterMin
 flDistanceToWaterMinSmoothness
 flDistortion
 flDivisionScoreMultiplier
+flDodgeChanceBonus
 flDopplerFactor
 flDragCoeff
 flDragFactor
@@ -6753,8 +6986,13 @@ flPlayerIdealResistanceModifier
 flPlayerInteractAngle
 flPlayerLightEnvColorFactor
 flPlayerLightEnvIntensityFactor
+flPlayerLightFalloffBias
+flPlayerLightShadowFadeStartRatio
+flPlayerLightShadowIntensity
 flPlayerLightSoftShadowRadius
 flPlayerLightSourceRadius
+flPlayerLightSpecularIntensity
+flPlayerLightSpecularSoftRadius
 flPlayerPowerCacheTimeoutCrowdControlled
 flPlayerPowerCacheTimeoutInterrupt
 flPlayerPowerCacheTimeoutNormal
@@ -6780,6 +7018,7 @@ flPriority
 flProcHealAbsorbOnHitChance
 flProcHitpointsOnHitChance
 flProcResourceOnHitChance
+flProcResourcePetOnHitChance
 flProgressBarFlashThreshold
 flProgressCurrent
 flProgressMax
@@ -6852,6 +7091,7 @@ flScrollbarWidth
 flScrollerEndDelay
 flScrollerInitialDelay
 flScrollerRate
+flSealRarityBonusChance
 flSeasonalPetDamageCoefficient
 flSeconds
 flSecs
@@ -7072,6 +7312,7 @@ flZNear
 flZSlopeScaleBias
 flZoneArtScale
 flZoneBaseScale
+flZoneTownScale
 flZoneZoomScaleMax
 flZoom
 flZoomScaleMax
@@ -7102,6 +7343,8 @@ gbidActorResurrectDataOverride
 gbidAddOnType
 gbidAdditionalDungeonAffix
 gbidAffixFamily
+gbidAffixSkillTag
+gbidAffixTag
 gbidAmbushType
 gbidArmorPact
 gbidArmorPactType
@@ -7126,11 +7369,14 @@ gbidDungeonArchetype
 gbidDungeonState
 gbidDynamicMovementDataOverride
 gbidFeatureFlag
+gbidFocusRarity
+gbidFocusType
 gbidForcedPreloadList
 gbidForcedSocketColor
 gbidFormula
 gbidGameTag
 gbidGlobalSpawningMalignantMonsterTag
+gbidHaloDefinition
 gbidHelpCode
 gbidHiddenCache
 gbidHiddenCaches
@@ -7138,6 +7384,7 @@ gbidHotbarCountPetType
 gbidInCombatDynamicMovementData
 gbidIngredientScalingFormula
 gbidItemLabelGroup
+gbidItemTag
 gbidKeyedDungeon
 gbidKeyedDungeonType
 gbidLabel
@@ -7160,21 +7407,29 @@ gbidParentCategory
 gbidParentSubMenu
 gbidPartyFinderTag
 gbidPetType
+gbidPlayerChoice
 gbidPowerBudgetFormula
 gbidPrefabScopedActorGroup
+gbidPrestigeTitleDefinition
 gbidPrimaryTag
+gbidQuest
 gbidRankReward
 gbidRanks
 gbidRecipeFamily
+gbidRefundCostFormula
 gbidRequiredDungeonState
 gbidRequiredLevelAreaTag
+gbidRerollCostFormula
 gbidReward
 gbidRewardBonus
+gbidRewards
+gbidSealAffixNameTag
 gbidSeasonLeaderboardActivity
 gbidSeasonalLaurel
 gbidSeasonalLeaderboardActivity
 gbidSeasonalPetType
 gbidSeasonalRank
+gbidSeasonalSkillTag
 gbidSelectedTuningEffect
 gbidSkillRequirement
 gbidSkillTag
@@ -7187,6 +7442,7 @@ gbidSubzoneModifierTags
 gbidSubzoneQuestUIOverrides
 gbidSurveyType
 gbidType
+gbidUnlockVariable
 gbidWorldMarker
 gbidWorldMarkerPing
 gbidZoneEventConfig
@@ -7199,7 +7455,9 @@ hAdditionalInfo
 hBackground
 hBackgroundArt
 hBackgroundImage
+hBackgroundOverride
 hBackgroundTileImage
+hBackingImage
 hBackupDisplayName
 hBkgrnd
 hBorder
@@ -7211,6 +7469,7 @@ hCampaignCodexIcon
 hCardHoverImage
 hCardImage
 hCategoryIcon
+hChannelingString
 hChildCategoryLabel
 hClassTitle
 hClosedCaption
@@ -7228,15 +7487,19 @@ hCornerFrames
 hCrafterIcon
 hCrafterTitleOverride
 hCurrency
+hCustomDisclaimerString
+hCustomDisclaimerStrings
 hDefaultClaimedHiddenCacheIcon
 hDefaultHiddenCacheIcon
 hDefaultIconFill
 hDefaultIconTooltipHandle
 hDefaultImage
 hDefaultPowerSlotTemplate
+hDefaultPreviewDetailsNavString
 hDefaultPreviewDetailsTemplate
 hDefaultVendorLogo
 hDescription
+hDescriptionText
 hDestStringLabel
 hDetailsDisplayImage
 hDisableText
@@ -7253,6 +7516,8 @@ hEquipAreaImage
 hEquipAreaTemplate
 hEquipSlotTemplate
 hEventName
+hExclusiveSkillNodeTemplate
+hExclusiveTalentNodeTemplate
 hFemaleImage
 hFlavor
 hFlavorText
@@ -7272,6 +7537,7 @@ hGlassImageLocked
 hGlassImageNormal
 hGlassImagePressed
 hGridSelectItemTemplate
+hGroupLabel
 hGuidanceText
 hHeaderIcon
 hHeldButtonProgressTemplate
@@ -7280,6 +7546,7 @@ hHiddenCacheFloatingTextNameOverride
 hHiddenCacheImageHandleOverride
 hHiddenCacheTypeNameOverride
 hHitMaskImage
+hHoradricCubeRecipeIcon
 hIcon
 hIconAvailable
 hIconBackground
@@ -7314,6 +7581,7 @@ hIconOverride
 hIconPushed
 hIconPushedOverride
 hIconRepresentation
+hIconReward
 hIconRight
 hIconRound
 hIconSelected
@@ -7349,6 +7617,7 @@ hImageNotice
 hImageRenderSourceOverlay
 hInfo
 hInfoPageCollectionTitle
+hItemDescriptionText
 hItemTemplate
 hJunctionNodeTemplate
 hKBMButtonText
@@ -7460,7 +7729,9 @@ hOverrideIconUntracked
 hOverview
 hOwnedTileImage
 hPactDescription
+hPanelDescription
 hPanelTemplate
+hPanelTitle
 hParentStyle
 hPieceBottom
 hPieceFrame
@@ -7473,10 +7744,12 @@ hPortrait
 hPortraitImage
 hPowerInventoryItemTemplate
 hPowerInventoryTemplate
+hPreviewDetailsNavString
 hPreviewDetailsTemplate
 hPrimaryPromptText
 hProductTitle
 hProgressBackgroundImage
+hProgressBarIcon
 hProgressFillLineImage
 hProgressForegroundImage
 hPurchaseCompleteDisclaimer
@@ -7490,6 +7763,7 @@ hResourceBarFillLineImage
 hRewardImageOverride
 hRewardNotAvailableMsgLabel
 hRightBorder
+hRootIcon
 hRootNodeTemplate
 hRuneIcon
 hScreenReaderText
@@ -7497,6 +7771,9 @@ hSeasonInfoImage
 hSeasonSigilIcon
 hSeasonalInventoryTabIcon
 hSecondaryPromptText
+hSecondaryResourceBarFillLineImage
+hSetCharmIcon
+hSetCharmIconEquipped
 hSkillExclusiveChoiceString
 hSkillNodeTemplate
 hSkillRequirementLabel
@@ -7558,10 +7835,18 @@ hSocialWheelTextureTeleportToLeaderDisabled
 hSocialWheelTextureTeleportToLeaderDisabledHover
 hSocialWheelTextureTeleportToLeaderEnabled
 hSocialWheelTextureTeleportToLeaderEnabledHover
+hSocialWheelTextureToggleLootFilterDisabled
+hSocialWheelTextureToggleLootFilterDisabledHover
+hSocialWheelTextureToggleLootFilterEnabled
+hSocialWheelTextureToggleLootFilterEnabledHover
 hSocialWheelTextureTradeDisabled
 hSocialWheelTextureTradeDisabledHover
 hSocialWheelTextureTradeEnabled
 hSocialWheelTextureTradeEnabledHover
+hSocialWheelTextureWarplansTeleportDisabled
+hSocialWheelTextureWarplansTeleportDisabledHover
+hSocialWheelTextureWarplansTeleportEnabled
+hSocialWheelTextureWarplansTeleportEnabledHover
 hSocialWheelTextureZoom
 hSocialWheelTextureZoomHover
 hSocketedActiveImage
@@ -7599,6 +7884,7 @@ hTopBorder
 hTrackerBG
 hTrackerIcon
 hTuningEffectImage
+hUITemplate
 hUnlockCriteria
 hUnlockDescription
 hUpCornerImage
@@ -7624,6 +7910,7 @@ i4
 iPowerNeedTarget
 ibid
 ibidIndices
+ibidTessellatedIndices
 id
 idBnetAccount
 idClientUser
@@ -7674,6 +7961,8 @@ localFrame1
 localFrame2
 localTransform
 looping
+lowSpecPlacements
+lowSpecTemplates
 lowerBound
 mInertiaTensor
 m_FaceCount
@@ -7742,6 +8031,7 @@ m_type
 m_vertexCount
 m_volume
 mapConversationToPower
+mapShaderMapOverrides
 mat
 material
 maxHeight
@@ -7895,10 +8185,13 @@ nFloatingDamageNumberFontSize
 nFloatingDamageTextFontSize
 nFloatingTextFontSize
 nFloor
+nFocusRarity
+nFocusType
 nFontSizeFallback
 nForcedDungeonEventIndex
 nForcedMaxAffixCount
 nFormulaCount
+nFragmentUnlockLevel
 nFrame
 nFrameEnd
 nFrameIndex
@@ -7912,6 +8205,8 @@ nGoldGranted
 nGoldReward
 nGoldRewardAmount
 nGoldTier
+nGridSystemZoneMapFieldHeight
+nGridSystemZoneMapFieldWidth
 nGroupIndex
 nHairColor
 nHairColorChoice
@@ -7930,6 +8225,7 @@ nHitFlashMulDuration
 nHorizontalSpacing
 nID
 nIPower
+nIPowerBonus
 nIQMIPowerMax
 nIQMIPowerMin
 nImportanceScoreOverride
@@ -8029,6 +8325,7 @@ nMaxExits
 nMaxExperience
 nMaxHeight
 nMaxHitFlash
+nMaxItemPower
 nMaxIterations
 nMaxLeaves
 nMaxLevel
@@ -8045,6 +8342,7 @@ nMercenaryClass
 nMetaDataCount
 nMin
 nMinHeight
+nMinItemPower
 nMinLevel
 nMinLevelReq
 nMinMaxBehavior
@@ -8069,6 +8367,7 @@ nMonstersKilled
 nMonstersSpawned
 nNeeded
 nNewAltLevel
+nNewFragmentIndex
 nNewLevel
 nNewParagonPoints
 nNewPoints
@@ -8077,6 +8376,7 @@ nNextFolderID
 nNextInTrack
 nNextMarkerID
 nNodeCount
+nNodeId
 nNodeUID
 nNoiseFrequency
 nNumAffixes
@@ -8143,6 +8443,7 @@ nRandomWeatherSeed
 nRealItemPower
 nRefinementCap
 nRefreshRate
+nRefundCostBaseAmount
 nRefundCostMultiplier
 nRemainingReviveCount
 nRequired
@@ -8428,6 +8729,7 @@ pathInitialWorldRelativeVelocity
 pathIntensity
 pathIntensityLevelParamDistribution
 pathIntensityScaler
+pathLightFalloffExponent
 pathLightGridIntensity
 pathLightningThreshold
 pathLocalVelocityOverLength
@@ -8523,7 +8825,9 @@ pathSystemSpeedDurationFactor
 pathSystemSpeedFraction
 pathSystemSpeedSpawnRate
 pathTangentDestinationOverTime
+pathTangentDestinationOverTimeWorld
 pathTangentSourceOverTime
+pathTangentSourceOverTimeWorld
 pathTurbulenceStrength
 pathU
 pathV
@@ -8552,6 +8856,8 @@ pflFacingYaw
 pflRootScale
 pgbidRareNames
 placeholder
+placement
+placements
 planeCount
 planeDefs
 platformHeaderSize
@@ -8561,7 +8867,9 @@ plugFlags
 pnAnimToStructure
 pnVertexElemPerSemantic
 polytopeDataMirror
+position
 positionOffset
+power
 powerStartPosition
 pressedImage
 pressedTiledStyle
@@ -8631,6 +8939,8 @@ ptData
 ptDeathData
 ptDefaultHitEffectData
 ptDeltaFrames
+ptDeprecatedAffixMap
+ptDeprecatedItemMap
 ptDepthOfField
 ptDestroyableObjectGizmoData
 ptDistanceConstraints
@@ -8831,6 +9141,7 @@ quickActionType
 r
 radius1
 radius2
+randomSeed
 rawString
 rawWeights
 reason
@@ -8883,6 +9194,7 @@ rgbaForegroundPushed
 rgbaForegroundPushedHighlight
 rgbaForegroundSelectedPushed
 rgbaGradientLightHue
+rgbaGradientLightHues
 rgbaHighlightFriendlyColor
 rgbaHighlightHostile0Color
 rgbaHighlightHostile1Color
@@ -9057,6 +9369,7 @@ snoAssociatedExpansion
 snoAssociatedSeason
 snoAttachedActor
 snoAttachedRenderActor
+snoAttachmentActor
 snoAudioContext
 snoAudioContextAlternate
 snoAudioTrack
@@ -9082,6 +9395,7 @@ snoBoost
 snoBossEncounterLevelArea
 snoBossObserver
 snoBounty
+snoBountyDungeonSubzone
 snoBountySubzone
 snoBtnTiledStyleDisabled
 snoBtnTiledStyleMouseOver
@@ -9142,6 +9456,7 @@ snoCoastlineAmbient
 snoCollectiblePower
 snoCollision
 snoCombatDismountPower
+snoCommandPower
 snoCommunityModifier
 snoCompanion
 snoCompanionItem
@@ -9205,6 +9520,7 @@ snoDeluxeToUltimate
 snoDemonScroll
 snoDependencies
 snoDeprecatedAffix
+snoDeprecatedItem
 snoDepth
 snoDepthComplexity
 snoDeselectedCheckBoxSound
@@ -9221,6 +9537,7 @@ snoDismissHireConversation
 snoDismissReinforcementConversation
 snoDismountOverride
 snoDisplayCondition
+snoDisplayItemType
 snoDisplayOnCompleteTutorialCondition
 snoDropOnGroundEffect
 snoDungeon
@@ -9229,6 +9546,7 @@ snoDungeonCompleteActor
 snoDungeonDefaultObserver
 snoDungeonWorld
 snoDye
+snoDyeArmor
 snoDynamicPrefetchList
 snoDynamicPreloadList
 snoEffect
@@ -9263,6 +9581,7 @@ snoEventEndSound
 snoExclusiveMarkerSet
 snoExistingKeyedDungeon
 snoExpansion1
+snoExpansion2
 snoExplosionSno
 snoEyeColor
 snoFace
@@ -9285,7 +9604,11 @@ snoFemaleAppearance
 snoFemaleComponentSet
 snoFemaleOverrideAnim
 snoFillerTileSet
+snoFinalAPSQuest
 snoFirstTimeRewardDisplayItem
+snoFishingEmote
+snoFishingUnlockAchievement
+snoFishingUnlockQuest
 snoFlippyLandingSound
 snoFlippyMouseoverSound
 snoFlippyParticle
@@ -9324,6 +9647,7 @@ snoGizmoCondition
 snoGizmoLockItemRequiredToOperate
 snoGizmoStartingQuest
 snoGlobalChatterSound
+snoGlobalWarPlansReputation
 snoGlyph
 snoGradientTexture
 snoGreaterAffixLandSoundEffect
@@ -9331,6 +9655,8 @@ snoGroundFogMaterial
 snoGroup
 snoHairColor
 snoHairStyle
+snoHaloEffectGroup
+snoHaloItem
 snoHands
 snoHead
 snoHeaderDisplayCondition
@@ -9347,6 +9673,7 @@ snoHireConversation
 snoHitBySoundTable
 snoHoudini
 snoHoverAnim
+snoInitialClassQuest
 snoInjectedQuest
 snoInputPower
 snoInputSno
@@ -9359,6 +9686,7 @@ snoItalicStyle
 snoItem
 snoItemButtonMaterial
 snoItemButtonOverlay
+snoItemDescriptionIcon
 snoItemInventorySound
 snoItemRequirement
 snoItemReward
@@ -9382,6 +9710,7 @@ snoKeyedDungeonTiers
 snoKillerActor
 snoLandSoundEffects
 snoLandSoundTable
+snoLastCompletedQuest
 snoLayer
 snoLayerMarkerset
 snoLegs
@@ -9521,6 +9850,7 @@ snoOnExpandSound
 snoOnHeldActionSound
 snoOnOpenSound
 snoOnSelectedSound
+snoOnTransmuteReadySound
 snoOneHandMain
 snoOneHandOff
 snoOperatePowerAnimKey
@@ -9566,6 +9896,8 @@ snoPassivePowerContainer
 snoPassivePowerReward
 snoPattern
 snoPersonalChatterSound
+snoPetActor
+snoPetItem
 snoPetSpawnPower
 snoPhasingVisibilityCondition
 snoPhysics
@@ -9574,6 +9906,7 @@ snoPickupEffectGroup
 snoPickupEffects
 snoPickupOverrideSound
 snoPingTargetEffectGroup
+snoPip
 snoPlaybackSound
 snoPlayerActor
 snoPlayerAnimSetOverrides
@@ -9637,6 +9970,8 @@ snoPrefabAttachment
 snoPrefix
 snoPremiumPass
 snoPresetWorld
+snoPrestigeTitle
+snoPrestigeTitleItem
 snoPrevLevelArea
 snoPrevWorld
 snoPrimaryDungeonQuest
@@ -9644,6 +9979,7 @@ snoPrimaryWorld
 snoPriorityQuest
 snoProduct
 snoProductBnet
+snoProductNintendo
 snoProductPS
 snoProductSteam
 snoProductXbox
@@ -9659,6 +9995,7 @@ snoQuest
 snoQuestChain
 snoQuestIGCSound
 snoQuestPower
+snoQuestSNO
 snoRaid
 snoRandomItemTreasureClass
 snoRankRecipe
@@ -9738,6 +10075,9 @@ snoSeasonalNightmareSigilDropCondition
 snoSeasonalPetCondition
 snoSeasonalPlayerScript
 snoSeasonalTabCondition
+snoSecondaryDestLevelArea
+snoSecondaryResourceBarForegroundTiledStyle
+snoSecondarySpecifiedWorld
 snoSecretTexture
 snoSelectedCheckBoxSound
 snoSelectedMount
@@ -9813,6 +10153,7 @@ snoStartingQuest
 snoStartingQuests
 snoStartingSubzone
 snoStartingSubzoneCampaignSkip
+snoStartingSubzones
 snoStaticImage
 snoSteam
 snoSteamTracker
@@ -9825,6 +10166,7 @@ snoStreamAmbient
 snoStringList
 snoStringlist
 snoSubstituteAffix
+snoSubstituteItem
 snoSubtitles
 snoSubzone
 snoSubzoneDefault
@@ -9852,6 +10194,7 @@ snoTargetShaderFX
 snoTechniqueUnlockQuest
 snoTeleportInEffect
 snoTeleportOutEffect
+snoTeleportPower
 snoTemplateActor
 snoTerrain1Layer
 snoTerrain1LayerReflection
@@ -9995,8 +10338,10 @@ snoWeatherOverrideCondition
 snoWireframeOverlay
 snoWorld
 snoWorldDevStartLocation
+snoWorldFrom
 snoWorldStartLocation
 snoWorldState
+snoWorldTo
 snoWorlds
 snoWrongDirectionSound
 snoXbox
@@ -10144,6 +10489,7 @@ szName
 szNavHeaderName
 szNewHeroId
 szNewHeroName
+szNewName
 szNodeAssetProperty
 szNotificationUIName
 szOldHeroName
@@ -10246,6 +10592,7 @@ szPayloadName
 szPowerMod
 szPowerName
 szPrefabLookOverride
+szPreviewDetailsLearnMoreLabel
 szPreviewText
 szProductId
 szProductReleaseBranch
@@ -10290,6 +10637,7 @@ szSplineFirstNode
 szSplineLastNode
 szSplineName
 szStorePreviewHardpoint
+szStoredValueKey
 szStoryboardTransitionIn
 szStoryboardTransitionOut
 szStoryboardUIPath
@@ -10351,6 +10699,7 @@ szWardrobeTorsoCameraName
 szWeaponPrefix
 tAABB
 tAIDisperseData
+tAPSHeroSaveData
 tAchievementTier
 tActiveSkills
 tActorFormula
@@ -10453,6 +10802,7 @@ tCleanup
 tClickSounds
 tClothTuning
 tCloudShadowIntensity
+tClutterFalloff
 tCollFlags
 tCollectiblePowerCollections
 tCollectiblePowerSlot
@@ -10503,6 +10853,7 @@ tDamageShield
 tDamageVariance
 tDanceDelay
 tData
+tDataSource
 tDateTime
 tDebugName
 tDefault
@@ -10568,6 +10919,9 @@ tEquipSound
 tEquipment
 tEquipmentDyes
 tEquipmentSlots
+tEvaluateCampaign
+tEvaluateNewProduct
+tEvaluateWardrobe
 tEventSettings
 tExeIn
 tExeOut
@@ -10658,6 +11012,9 @@ tHitTargetEffect
 tHitpointScalar
 tHorizontalAngleRange
 tHorizontalOffset
+tHostAffixSelector
+tHostItemAffixSelector
+tHostItemDescription
 tHotbarBtnAssignments
 tHover
 tHoverTracked
@@ -10689,6 +11046,7 @@ tIndex
 tIndicatorType
 tIndicesInfo
 tInfo
+tInfoPanelData
 tInitialCost
 tInitialLoadingInfo
 tInputRange
@@ -10699,8 +11057,12 @@ tIntervalDelta
 tInvImages
 tInvLocationData
 tItemConfiguration
+tItemDescription
 tItemFormula
 tItemId
+tItemModificationDescription
+tItemRecycleDescription
+tItemRequirements
 tItemRewardInfo
 tItemTier
 tItems
@@ -10713,8 +11075,10 @@ tKeyedDungeonReward
 tKillerNameContext
 tLabel
 tLastIndex
+tLatePlayerEffect
 tLearnedLore
 tLeftHandSide
+tLeftPanel
 tLevelAreaGrid
 tLevelScaling
 tLevelScalingData
@@ -10775,6 +11139,7 @@ tMaxStackCount
 tMercenariesHeroSaveData
 tMercenary
 tMetadata
+tMiddlePanel
 tMinBlend
 tMinRequired
 tMinimapIcon
@@ -10830,6 +11195,7 @@ tOnClose
 tOnContextMenu
 tOnController
 tOnControllerButtonHeld
+tOnControllerButtonHoldAborted
 tOnControllerButtonUp
 tOnDPadDown
 tOnDPadDownHeld
@@ -10840,6 +11206,7 @@ tOnDPadRightHeld
 tOnDPadUp
 tOnDPadUpHeld
 tOnDataChanged
+tOnDeferredOpen
 tOnDispose
 tOnDoubleClick
 tOnDragStart
@@ -10910,6 +11277,7 @@ tPartyMemberPathProps
 tPassiveData
 tPassiveSaveData
 tPassiveTypes
+tPath
 tPathData
 tPathHandle
 tPathProps
@@ -10959,6 +11327,7 @@ tProgressBarMin
 tProjectileActorCollisionShape
 tProjectileAssistanceData
 tProjectileSceneCollisionShape
+tProperties
 tPropsAvailable
 tPropsDefault
 tPropsExclusiveAvailable
@@ -10987,9 +11356,11 @@ tRandomSounds
 tRange
 tRangeFacingWindowMirror
 tRareItemName
+tRecastBuffName
 tRecastTimeoutSeconds
 tRechargeAmount
 tRechargeTime
+tRecipeIngredient
 tRefinementRange
 tRegionDefault
 tRegions
@@ -11001,12 +11372,14 @@ tRenderParams
 tRepeatableReward
 tReputationObjective
 tRequiredDungeonState
+tRequirements
 tRequirementsToBeActive
 tResolvedDest
 tResourceCostReductionCoefficient
 tReward
 tRewardDropLevelOverride
 tRightHandSide
+tRightPanel
 tRoadProps
 tRogueData
 tRoll
@@ -11135,6 +11508,7 @@ tSteamBundles
 tSteamTrackers
 tStencilParams
 tString
+tStringFormula
 tStringLabel
 tStructure
 tStyle
@@ -11153,7 +11527,9 @@ tSystemDurationRange
 tSystemDurationScalar
 tTableType
 tTangents
+tTargetAffixSelector
 tTargetId
+tTargetItemAffixSelector
 tTargetLocatorName
 tTargetMarkerSnapshot
 tTemperData
@@ -11182,6 +11558,7 @@ tTrailDurationRange
 tTrailDurationScalar
 tTrailLengthRange
 tTrailLengthScalar
+tTransfigureData
 tTransform
 tTranslucentIndicesInfo
 tTransmog
@@ -11231,6 +11608,7 @@ tVulnerableDurationSecondsOverride
 tVulnerableHealth
 tWanderDelayRange
 tWanderRadiusRange
+tWarlockData
 tWaveSettings
 tWeaponClassFemale
 tWeaponClassMale
@@ -11252,6 +11630,9 @@ tangentIndex
 tangentIndices
 targetTime
 temperingData
+templateActorIndex
+templateActors
+templates
 textColor
 textControlType
 textJustifyHorizontal
@@ -11362,6 +11743,7 @@ uTimeLastLevel
 uTimerDuration
 uToken
 uTradeId
+uTransfigureLimit
 uUserData
 uVal
 uWaitTime

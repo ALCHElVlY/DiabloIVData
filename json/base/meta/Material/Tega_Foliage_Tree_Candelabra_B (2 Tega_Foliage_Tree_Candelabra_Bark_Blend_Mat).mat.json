@@ -232,6 +232,66 @@
        "__type__": "RunTimeMaterialValue_float",
        "__typeHash__": 2833801029,
        "snoMaterialValue": {
+        "__raw__": 199398,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_directional_bias.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_directional_bias"
+       },
+       "value": 0,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
+        "__raw__": 199399,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_directional_power.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_directional_power"
+       },
+       "value": 1,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
+        "__raw__": 199400,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_directional_opacity.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_directional_opacity"
+       },
+       "value": 1,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
         "__raw__": 337880,
         "__group__": 81,
         "__type__": "DT_SNO",
@@ -241,6 +301,26 @@
         "name": "Env Normal Lerp To World Up"
        },
        "value": 0.5,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
+        "__raw__": 346281,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/Env Wetness Bias.mtv",
+        "groupName": "MaterialValue",
+        "name": "Env Wetness Bias"
+       },
+       "value": 0,
        "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
@@ -324,6 +404,26 @@
        "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
+        "__raw__": 1621631,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/Hit Flash NormalMap Influence.mtv",
+        "groupName": "MaterialValue",
+        "name": "Hit Flash NormalMap Influence"
+       },
+       "value": 1,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
      }
     ],
     "arMaterialScalarGraphs": [],
@@ -352,6 +452,31 @@
        "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
+     },
+     {
+      "__type__": "RunTimeMaterialVectorValueEntry",
+      "__typeHash__": 2343980501,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_bcVec4",
+       "__typeHash__": 3153011302,
+       "snoMaterialValue": {
+        "__raw__": 2509452,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_directional_vector_2.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_directional_vector_2"
+       },
+       "value": {
+        "x": -1,
+        "y": 1,
+        "z": 0,
+        "w": 0
+       },
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
      }
     ],
     "arMaterialVectorGraphs": []
@@ -376,7 +501,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {
@@ -429,7 +554,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {
@@ -482,7 +607,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {
@@ -535,7 +660,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {

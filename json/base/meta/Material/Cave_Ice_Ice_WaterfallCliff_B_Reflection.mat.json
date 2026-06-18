@@ -628,6 +628,46 @@
        "__type__": "RunTimeMaterialValue_float",
        "__typeHash__": 2833801029,
        "snoMaterialValue": {
+        "__raw__": 214821,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_cavity_color_max.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_cavity_color_max"
+       },
+       "value": 1,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
+        "__raw__": 214822,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_cavity_color_min.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_cavity_color_min"
+       },
+       "value": 0.5,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
         "__raw__": 214823,
         "__group__": 81,
         "__type__": "DT_SNO",
@@ -857,6 +897,26 @@
         "name": "layered_edge_color_opacity"
        },
        "value": 0.800000011920929,
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
+     },
+     {
+      "__type__": "RunTimeMaterialScalarValueEntry",
+      "__typeHash__": 2176853528,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_float",
+       "__typeHash__": 2833801029,
+       "snoMaterialValue": {
+        "__raw__": 226095,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_cavity_color_opacity.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_cavity_color_opacity"
+       },
+       "value": 1,
        "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
@@ -1718,6 +1778,31 @@
        "nPathValGraphIndex": -1,
        "eLightGroup": 0
       }
+     },
+     {
+      "__type__": "RunTimeMaterialVectorValueEntry",
+      "__typeHash__": 2343980501,
+      "tValue": {
+       "__type__": "RunTimeMaterialValue_bcVec4",
+       "__typeHash__": 3153011302,
+       "snoMaterialValue": {
+        "__raw__": 2509452,
+        "__group__": 81,
+        "__type__": "DT_SNO",
+        "__typeHash__": 2764331143,
+        "__targetFileName__": "base/meta/MaterialValue/layered_directional_vector_2.mtv",
+        "groupName": "MaterialValue",
+        "name": "layered_directional_vector_2"
+       },
+       "value": {
+        "x": -0.13908900320529938,
+        "y": -0.0048571000806987286,
+        "z": 0.9902679920196533,
+        "w": 0
+       },
+       "nPathValGraphIndex": -1,
+       "eLightGroup": 0
+      }
      }
     ],
     "arMaterialVectorGraphs": []
@@ -1742,7 +1827,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {
@@ -1795,7 +1880,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {
@@ -1848,7 +1933,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {
@@ -1901,7 +1986,7 @@
    "__typeHash__": 3397234666,
    "snoBiome": null,
    "unk_936122c": false,
-   "unk_d443d31": {
+   "tClutterFalloff": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
     "tHeader": {
