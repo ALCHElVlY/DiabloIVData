@@ -549,6 +549,9 @@
  "hIconInactive": 0,
  "hIconInactiveMouseover": 0,
  "hIconRound": 0,
+ "unk_2c3956": false,
+ "unk_b53e8e5": 0,
+ "gbidSeasonalSkillTag": null,
  "gbidHotbarCountPetType": null,
  "unk_159fc50": 0,
  "bForceLearned": false,
@@ -585,7 +588,7 @@
    "unk_22c356e": false,
    "gbidBuffPreset": null,
    "bVisibleInUI": true,
-   "nVisualPriority": 0,
+   "nVisualPriority": 9,
    "bShowDuration": true,
    "bCancellable": false,
    "unk_99b5752": false,
@@ -675,8 +678,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -793,8 +796,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -911,8 +914,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   }
  ],
  "nFormulaCount": 0,
@@ -922,7 +925,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "0 + Bonus_Percent_Per_Power#Warlock_Volatility + Multiplicative_Damage_Percent_Bonus_While_Volatile",
-    "compiled": "BgAAAAAAAAAFAAAAAAAAAOIDAADoDCYAAAAAAAsAAAAFAAAAAAAAAP4AAID+////AAAAAAsAAAAAAAAA"
+    "compiled": "BgAAAAAAAAAFAAAAAAAAAOUDAADoDCYAAAAAAAsAAAAFAAAAAAAAAP4AAID+////AAAAAAsAAAAAAAAA"
    }
   },
   {
@@ -986,7 +989,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Warlock_Shard_Type == 3",
-    "compiled": "BQAAAAAAAAAyAwAA/v///wAAAAAGAAAAAABAQAkAAAAAAAAA"
+    "compiled": "BQAAAAAAAAAzAwAA/v///wAAAAAGAAAAAABAQAkAAAAAAAAA"
    }
   },
   {
@@ -994,7 +997,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Warlock_Fragment_Index == 2",
-    "compiled": "BQAAAAAAAAAzAwAA/v///wAAAAAGAAAAAAAAQAkAAAAAAAAA"
+    "compiled": "BQAAAAAAAAA0AwAA/v///wAAAAAGAAAAAAAAQAkAAAAAAAAA"
    }
   },
   {
@@ -1018,7 +1021,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#legendary_warlock_014_x2 / 100",
-    "compiled": "BQAAAAAAAACSBAAA3OAmAAAAAAAGAAAAAADIQg4AAAAAAAAA"
+    "compiled": "BQAAAAAAAACVBAAA3OAmAAAAAAAGAAAAAADIQg4AAAAAAAAA"
    }
   },
   {
@@ -1050,7 +1053,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "(((Warlock_Shard_Type == 3) + (Warlock_Fragment_Index == 1)) == 2) ? 1 : 0",
-    "compiled": "BQAAAAAAAAAyAwAA/v///wAAAAAGAAAAAABAQAkAAAAFAAAAAAAAADMDAAD+////AAAAAAYAAAAAAIA/CQAAAAsAAAAGAAAAAAAAQAkAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAAAAAA="
+    "compiled": "BQAAAAAAAAAzAwAA/v///wAAAAAGAAAAAABAQAkAAAAFAAAAAAAAADQDAAD+////AAAAAAYAAAAAAIA/CQAAAAsAAAAGAAAAAAAAQAkAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAAAAAA="
    }
   },
   {
@@ -1090,7 +1093,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "(((Warlock_Shard_Type == 3) + (Warlock_Fragment_Index == 2)) == 2) ? 1 : 0",
-    "compiled": "BQAAAAAAAAAyAwAA/v///wAAAAAGAAAAAABAQAkAAAAFAAAAAAAAADMDAAD+////AAAAAAYAAAAAAABACQAAAAsAAAAGAAAAAAAAQAkAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAAAAAA="
+    "compiled": "BQAAAAAAAAAzAwAA/v///wAAAAAGAAAAAABAQAkAAAAFAAAAAAAAADQDAAD+////AAAAAAYAAAAAAABACQAAAAsAAAAGAAAAAAAAQAkAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAAAAAA="
    }
   }
  ],

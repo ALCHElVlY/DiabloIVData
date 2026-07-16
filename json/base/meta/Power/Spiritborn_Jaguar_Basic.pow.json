@@ -837,6 +837,9 @@
  "hIconInactive": 2342861973,
  "hIconInactiveMouseover": 0,
  "hIconRound": 0,
+ "unk_2c3956": false,
+ "unk_b53e8e5": 0,
+ "gbidSeasonalSkillTag": null,
  "gbidHotbarCountPetType": null,
  "unk_159fc50": 0,
  "bForceLearned": false,
@@ -963,8 +966,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1081,8 +1084,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1199,8 +1202,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1317,8 +1320,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1435,8 +1438,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1553,8 +1556,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1671,8 +1674,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1789,8 +1792,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1907,8 +1910,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -2025,8 +2028,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -2143,8 +2146,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -2261,8 +2264,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   }
  ],
  "nFormulaCount": 0,
@@ -2392,7 +2395,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Min(1 + (AoE_Size_Bonus_Per_Power#Spiritborn_Jaguar_Basic / 2), PowerTag.SystemsTuningGlobals.\"Script Formula 3\")",
-    "compiled": "BgAAAAAAgD8FAAAAAAAAAA0EAADp/RsAAAAAAAYAAAAAAABADgAAAAsAAAAFAAAABQAAAM1tEAADAAAAAAAAAAEAAAAAAAAAAAAAAA=="
+    "compiled": "BgAAAAAAgD8FAAAAAAAAABAEAADp/RsAAAAAAAYAAAAAAABADgAAAAsAAAAFAAAABQAAAM1tEAADAAAAAAAAAAEAAAAAAAAAAAAAAA=="
    }
   },
   {
@@ -2400,7 +2403,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Bonus_Percent_Per_Power#Spiritborn_Jaguar_Basic + SF_18",
-    "compiled": "BQAAAAAAAADiAwAA6f0bAAAAAAAFAAAAGAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAA"
+    "compiled": "BQAAAAAAAADlAwAA6f0bAAAAAAAFAAAAGAAAAAAAAAAAAAAAAAAAAAsAAAAAAAAA"
    }
   },
   {
@@ -2487,8 +2490,8 @@
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "1",
-    "compiled": "BgAAAAAAgD8AAAAA"
+    "value": "0.4",
+    "compiled": "BgAAAM3MzD4AAAAA"
    }
   },
   {
@@ -2553,6 +2556,14 @@
    "tFormula": {
     "value": "PowerTag.Spiritborn_Lightning_Storm.\"Script Formula 0\"",
     "compiled": "BQAAAAUAAAB/JiQAAAAAAAAAAAAAAAAA"
+   }
+  },
+  {
+   "__type__": "ScriptFormulaInfo",
+   "__typeHash__": 551777591,
+   "tFormula": {
+    "value": "1",
+    "compiled": "BgAAAAAAgD8AAAAA"
    }
   }
  ],

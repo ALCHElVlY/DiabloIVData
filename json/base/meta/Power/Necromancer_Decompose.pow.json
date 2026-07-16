@@ -677,6 +677,9 @@
  "hIconInactive": 37870230,
  "hIconInactiveMouseover": 0,
  "hIconRound": 0,
+ "unk_2c3956": false,
+ "unk_b53e8e5": 0,
+ "gbidSeasonalSkillTag": null,
  "gbidHotbarCountPetType": null,
  "unk_159fc50": 0,
  "bForceLearned": false,
@@ -803,8 +806,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -856,7 +859,7 @@
     "__type__": "PowerBuffDOTDamage",
     "__typeHash__": 3824324374,
     "unk_c3d4c36": false,
-    "eDamageType": 5,
+    "eDamageType": -1,
     "tDamage": {
      "__type__": "HitpointSpecifier",
      "__typeHash__": 1185241065,
@@ -921,8 +924,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1039,8 +1042,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1157,8 +1160,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1275,8 +1278,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1393,8 +1396,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1511,8 +1514,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1629,8 +1632,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1747,8 +1750,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   }
  ],
  "nFormulaCount": 0,
@@ -1878,7 +1881,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#legendary_necro_020 / 100",
-    "compiled": "BQAAAAAAAACSBAAAwU8JAAAAAAAGAAAAAADIQg4AAAAAAAAA"
+    "compiled": "BQAAAAAAAACVBAAAwU8JAAAAAAAGAAAAAADIQg4AAAAAAAAA"
    }
   },
   {
@@ -1910,7 +1913,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#legendary_necro_003",
-    "compiled": "BQAAAAAAAACSBAAAjEYJAAAAAAAAAAAA"
+    "compiled": "BQAAAAAAAACVBAAAjEYJAAAAAAAAAAAA"
    }
   },
   {
@@ -1950,7 +1953,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Min(1.5, 1 + (AoE_Size_Bonus_Per_Power#Necromancer_Decompose / 2))",
-    "compiled": "BgAAAAAAwD8GAAAAAACAPwUAAAAAAAAADQQAAEcRBwAAAAAABgAAAAAAAEAOAAAACwAAAAEAAAAAAAAAAAAAAA=="
+    "compiled": "BgAAAAAAwD8GAAAAAACAPwUAAAAAAAAAEAQAAEcRBwAAAAAABgAAAAAAAEAOAAAACwAAAAEAAAAAAAAAAAAAAA=="
    }
   },
   {
@@ -1958,7 +1961,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#legendary_necro_020 / 100",
-    "compiled": "BQAAAAAAAACSBAAAwU8JAAAAAAAGAAAAAADIQg4AAAAAAAAA"
+    "compiled": "BQAAAAAAAACVBAAAwU8JAAAAAAAGAAAAAADIQg4AAAAAAAAA"
    }
   },
   {

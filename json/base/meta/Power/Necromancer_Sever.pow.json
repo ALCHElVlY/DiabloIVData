@@ -653,6 +653,9 @@
  "hIconInactive": 577249948,
  "hIconInactiveMouseover": 0,
  "hIconRound": 0,
+ "unk_2c3956": false,
+ "unk_b53e8e5": 0,
+ "gbidSeasonalSkillTag": null,
  "gbidHotbarCountPetType": null,
  "unk_159fc50": 0,
  "bForceLearned": false,
@@ -779,8 +782,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -897,8 +900,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1015,8 +1018,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1133,8 +1136,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1251,8 +1254,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1369,8 +1372,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1487,8 +1490,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1605,8 +1608,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1723,8 +1726,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1841,8 +1844,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1959,8 +1962,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   }
  ],
  "nFormulaCount": 0,
@@ -2130,7 +2133,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#Boots_Unique_Necro_100",
-    "compiled": "BQAAAAAAAACSBAAAe2cJAAAAAAAAAAAA"
+    "compiled": "BQAAAAAAAACVBAAAe2cJAAAAAAAAAAAA"
    }
   },
   {
@@ -2186,7 +2189,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Min(1.5, 1 + (AoE_Size_Bonus_Per_Power#Necromancer_Sever / 2))",
-    "compiled": "BgAAAAAAwD8GAAAAAACAPwUAAAAAAAAADQQAAPlZBwAAAAAABgAAAAAAAEAOAAAACwAAAAEAAAAAAAAAAAAAAA=="
+    "compiled": "BgAAAAAAwD8GAAAAAACAPwUAAAAAAAAAEAQAAPlZBwAAAAAABgAAAAAAAEAOAAAACwAAAAEAAAAAAAAAAAAAAA=="
    }
   },
   {
@@ -2202,7 +2205,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Affix_Value_1#legendary_necro_131",
-    "compiled": "BQAAAAAAAACSBAAAHSAeAAAAAAAAAAAA"
+    "compiled": "BQAAAAAAAACVBAAAHSAeAAAAAAAAAAAA"
    }
   },
   {

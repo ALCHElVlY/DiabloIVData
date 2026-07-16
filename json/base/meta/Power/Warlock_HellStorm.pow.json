@@ -785,6 +785,9 @@
  "hIconInactive": 852279143,
  "hIconInactiveMouseover": 0,
  "hIconRound": 0,
+ "unk_2c3956": false,
+ "unk_b53e8e5": 0,
+ "gbidSeasonalSkillTag": null,
  "gbidHotbarCountPetType": null,
  "unk_159fc50": 0,
  "bForceLearned": false,
@@ -911,8 +914,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1029,8 +1032,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1147,8 +1150,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1265,8 +1268,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1383,8 +1386,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1501,8 +1504,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1619,8 +1622,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1737,8 +1740,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1855,8 +1858,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   }
  ],
  "nFormulaCount": 0,
@@ -1977,8 +1980,8 @@
    "__type__": "ScriptFormulaInfo",
    "__typeHash__": 551777591,
    "tFormula": {
-    "value": "SF_1 * 0.75",
-    "compiled": "BQAAAAcAAAAAAAAAAAAAAAAAAAAGAAAAAABAPw0AAAAAAAAA"
+    "value": "SF_1 * 2",
+    "compiled": "BQAAAAcAAAAAAAAAAAAAAAAAAAAGAAAAAAAAQA0AAAAAAAAA"
    }
   },
   {
@@ -3024,17 +3027,17 @@
    "__typeHash__": 3820959960,
    "tName": 2847718654,
    "unk_78129e0": false,
-   "unk_ae65480": true,
-   "unk_2a73eae": {
-    "__type__": "Type_551aa539",
+   "bManuallyStartPower": true,
+   "tManualRecastStartInfo": {
+    "__type__": "PowerManualRecastInfo",
     "__typeHash__": 1427809593,
     "hIconNormal": 1266951540,
     "hIconMouseover": 1025519403,
     "hIconPushed": 1025117063,
     "hIconInactive": 852279143
    },
-   "unk_cc871d7": {
-    "__type__": "Type_ab0f8022",
+   "tAutomaticRecastStartInfo": {
+    "__type__": "PowerAutomaticRecastInfo",
     "__typeHash__": 2869919778,
     "snoRecastPower": null,
     "unk_8082ec1": false

@@ -1308,6 +1308,7 @@ ItemTags_Table
 ItemTier
 ItemTypeDefinition
 ItemTypeHardpointOffsets
+ItemTypeSoundInfo
 ItemUpgradeCountSubcondition
 ItemUpgradeIQLGetAffixesMessage
 ItemUpgradeIQLGetAffixesResultMessage
@@ -2008,6 +2009,7 @@ PortedToWaypointMessage
 PostApplyBuffCallback
 PostCampaignCompleteSubcondition
 PostFXParams
+PowerAutomaticRecastInfo
 PowerBehaviorBase
 PowerBehaviorNode
 PowerBlendOverrideList
@@ -2124,6 +2126,7 @@ PowerFormulaTableEntry_Table
 PowerICDDefinition
 PowerLimitedActorType
 PowerLimitedActorType_Table
+PowerManualRecastInfo
 PowerMod
 PowerModifierDefinition
 PowerModifierDefinitionOptionalFieldMapDefaults
@@ -3828,6 +3831,7 @@ arItemPreloadHelpers
 arItemSubstitution
 arItemTags
 arItemTiers
+arItemTypeSoundInfo
 arItemTypes
 arItemUpgradeArmorLevels
 arItemUpgradeArmorPowerLevels
@@ -4246,6 +4250,7 @@ arUsedStrings
 arVOLines
 arValidAnimSetOrderTags
 arValidDungeonAffixes
+arValidRandomDungeonAffixes
 arValidTierRanges
 arValues
 arVariables
@@ -4584,7 +4589,9 @@ bLootExplodes
 bLowerIsBetter
 bMainEntrance
 bManuallySpecified
+bManuallyStartPower
 bManuallyTracked
+bMaxRoll
 bMirrorX
 bMirrorY
 bModulate
@@ -4930,6 +4937,7 @@ dwCallbackUID
 dwCannedNodeID
 dwCarry
 dwChildIndex
+dwChillShaderMapOverride
 dwClutterMasks
 dwCodexUnlockCount
 dwCollidableFlags
@@ -4992,6 +5000,7 @@ dwFontSize
 dwFormatHash
 dwFormulaHash
 dwFrameRandomSeed
+dwFrozenShaderMapOverride
 dwGameAccountId
 dwGameFlags
 dwGameSyncedFlags
@@ -5106,6 +5115,7 @@ dwParentNodeID
 dwParentPathID
 dwParticipantTime
 dwParticleIndex
+dwPartyRerollCostBaseAmount
 dwPayloadDataID
 dwPayloadId
 dwPersona
@@ -7406,6 +7416,7 @@ gbidParent
 gbidParentCategory
 gbidParentSubMenu
 gbidPartyFinderTag
+gbidPartyRerollCostFormula
 gbidPetType
 gbidPlayerChoice
 gbidPowerBudgetFormula
@@ -7648,6 +7659,7 @@ hMessageText
 hMinimapIcon
 hMinimapIconGizmoUsed
 hMinimapIconImage
+hMinimapIconOverride
 hMinimapIconPromptInteract
 hMinimapStringLabel
 hModalTemplate
@@ -8479,6 +8491,7 @@ nScore
 nScrollbarPageIncrement
 nSeasonActive
 nSecondaryAffixCount
+nSecondaryFacing
 nSeed
 nSegmentCount
 nSelectedIndex
@@ -10116,6 +10129,7 @@ snoSound
 snoSoundBankMedia
 snoSoundBankMetaData
 snoSoundDisturbed
+snoSoundForItemType
 snoSoundFriendly
 snoSoundImpact
 snoSoundNotFriendly
@@ -10743,6 +10757,7 @@ tAudioState
 tAudioVisual
 tAudioVisualDungeonAlternate
 tAutoChannelledDuration
+tAutomaticRecastStartInfo
 tAuxBus
 tAwareness
 tBakedFlowMapTextureInfo
@@ -11112,6 +11127,7 @@ tLuxSettings
 tMakeup
 tMaleAnim
 tMalignantGeneralData
+tManualRecastStartInfo
 tMapEventIcon
 tMapTooltipIcon
 tMapTooltipWarmupIcon

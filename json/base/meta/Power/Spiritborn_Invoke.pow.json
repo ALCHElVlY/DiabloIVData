@@ -578,6 +578,9 @@
  "hIconInactive": 3440581598,
  "hIconInactiveMouseover": 0,
  "hIconRound": 0,
+ "unk_2c3956": false,
+ "unk_b53e8e5": 0,
+ "gbidSeasonalSkillTag": null,
  "gbidHotbarCountPetType": null,
  "unk_159fc50": 0,
  "bForceLearned": false,
@@ -704,8 +707,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -822,8 +825,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -940,8 +943,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1058,8 +1061,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1176,8 +1179,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1294,8 +1297,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1412,8 +1415,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1530,8 +1533,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1648,8 +1651,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1766,8 +1769,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -1884,8 +1887,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   },
   {
    "__type__": "PowerBuffDefinition",
@@ -2002,8 +2005,8 @@
     }
    },
    "dwShaderMapOverride": 4294967295,
-   "unk_32f141c": 4294967295,
-   "unk_f8a0a44": 4294967295
+   "dwChillShaderMapOverride": 4294967295,
+   "dwFrozenShaderMapOverride": 4294967295
   }
  ],
  "nFormulaCount": 0,
@@ -2349,7 +2352,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "Armor_Total",
-    "compiled": "BQAAAAAAAADfAQAA/v///wAAAAAAAAAA"
+    "compiled": "BQAAAAAAAADgAQAA/v///wAAAAAAAAAA"
    }
   },
   {
@@ -2509,7 +2512,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "(Mod.ForestRuler_B ? 1 : 0) * Is_Berserk",
-    "compiled": "BQAAAFoAAAD/////nsLIlgAAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAUAAAAAAAAA3AIAAP7///8AAAAADQAAAAAAAAA="
+    "compiled": "BQAAAFoAAAD/////nsLIlgAAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAUAAAAAAAAA3QIAAP7///8AAAAADQAAAAAAAAA="
    }
   },
   {
@@ -2517,7 +2520,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "(Mod.Transcendence_B ? 1 : 0) * Is_Berserk",
-    "compiled": "BQAAAFoAAAD/////3gYBcgAAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAUAAAAAAAAA3AIAAP7///8AAAAADQAAAAAAAAA="
+    "compiled": "BQAAAFoAAAD/////3gYBcgAAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAUAAAAAAAAA3QIAAP7///8AAAAADQAAAAAAAAA="
    }
   },
   {
@@ -2541,7 +2544,7 @@
    "__typeHash__": 551777591,
    "tFormula": {
     "value": "((Mod.Transcendence_B ? 1 : 0) * Is_Berserk) ? 0 : 1",
-    "compiled": "BQAAAFoAAAD/////3gYBcgAAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAUAAAAAAAAA3AIAAP7///8AAAAADQAAAAYAAAAAAAAABgAAAAAAgD8QAAAAAAAAAA=="
+    "compiled": "BQAAAFoAAAD/////3gYBcgAAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAUAAAAAAAAA3QIAAP7///8AAAAADQAAAAYAAAAAAAAABgAAAAAAgD8QAAAAAAAAAA=="
    }
   },
   {

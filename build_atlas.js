@@ -71,6 +71,11 @@ const GizmoTypeEnum = Object.freeze({
   "Unique Operator Chest": 106,
   "Chair": 107,
   "Party Member Portal": 108,
+  "Participant Timer": 109,
+  "Recipe Event": 110,
+  "Event Select Portal": 112,
+  "Raid Banner": 113,
+  "Armory": 114
 });
 
 const GizmoTypeEnumLabels = Object.freeze(Object.keys(GizmoTypeEnum).reduce((ret, key) => {
@@ -107,21 +112,7 @@ function loadStrings(snoEntry, language = 'enUS') {
 }
 
 function loadData(snoEntry) {
-  let {groupName, name} = snoEntry;
-
-  groupName = snoGroupMap[groupName] || groupName;
-
-  let files = fs.readdirSync(`./json/base/meta/${groupName}/`).filter(file => {
-    let parts = file.split('.');
-
-    return parts.length === 3 && parts[0] === name && parts[2] === 'json';
-  });
-
-  if (files.length === 1) {
-    return loadJSON(`./json/base/meta/${groupName}/${files[0]}`);
-  }
-
-  return {};
+  return loadJSON(`./json/${snoEntry.__targetFileName__}.json`);
 }
 
 function forEachFileInGroup(groupName, cb = function () {}) {
@@ -146,11 +137,15 @@ function forEachFileInGroup(groupName, cb = function () {}) {
 const Sanctuary_Eastern_Continent = loadData({
   groupName: 'World',
   name: 'Sanctuary_Eastern_Continent',
+  __raw__: 69068,
+  __targetFileName__: "base/meta/World/Sanctuary_Eastern_Continent.wrl",
 });
 
 const global_markers = loadData({
   groupName: 'Global',
   name: 'global_markers',
+  __raw__: 69068,
+  __targetFileName__: "base/meta/Global/global_markers.glo",
 });
 
 function rotate({x, y}, angle) {
@@ -171,7 +166,7 @@ function scale({x, y}, xScale, yScale) {
     return {
       x: x,
       y: y,
-    };  
+    };
   }
 
   return {
@@ -192,14 +187,14 @@ function rgbaToHex(color) {
   return ret !== '#00000054' ? ret : '#ffffff54';
 }
 
-let borders = Sanctuary_Eastern_Continent.unk_675bda3.map(StaticCamp => {
-  const strings = loadStrings(StaticCamp.snoTerritory);
+let borders = Sanctuary_Eastern_Continent.arRegionBoundaries.map(tRegionBoundary => {
+  const strings = loadStrings(tRegionBoundary.snoTerritory);
 
-  if (StaticCamp.__type__ !== 'ScreenStaticCamps') {
+  if (tRegionBoundary.__type__ !== 'TerritoryRegionBoundary') {
     return null;
   }
 
-  return '<path class="subzone-border" d="M ' + StaticCamp.arPoints.map(point => {
+  return '<path class="subzone-border" d="M ' + tRegionBoundary.arPoints.map(point => {
     return point.x + ' ' + point.y;
   }).join(' L ') + ` z"><title>${strings.Name}</title></path>`;
 }).filter(Boolean);
@@ -218,6 +213,10 @@ function processMarkerSet(marker_set, offset = { x: 0, y: 0, z: 0 }) {
   if (Array.isArray(marker_set.tMarkerSet)) {
     marker_set.tMarkerSet.forEach((marker) => {
       if (marker.__type__ !== 'Marker') {
+        return;
+      }
+
+      if (marker.snoname == null) {
         return;
       }
 
@@ -328,6 +327,11 @@ function processMarkerSet(marker_set, offset = { x: 0, y: 0, z: 0 }) {
           GizmoTypeEnum["Unique Operator Chest"],
           GizmoTypeEnum["Chair"],
           GizmoTypeEnum["Party Member Portal"],
+          GizmoTypeEnum["Participant Timer"],
+          GizmoTypeEnum["Recipe Event"],
+          GizmoTypeEnum["Event Select Portal"],
+          GizmoTypeEnum["Raid Banner"],
+          GizmoTypeEnum["Armory"],
         ].indexOf(eGizmoType) < 0) {
            return;
         }
@@ -370,7 +374,7 @@ function processMarkerSet(marker_set, offset = { x: 0, y: 0, z: 0 }) {
           gbidSpawnLocType !== undefined ? `gbidSpawnLocType: ${gbidSpawnLocType}` : null,
           `Coordinates: ${adjusted.x}, ${adjusted.y}`,
         ].filter(Boolean).join('\n');
-  
+
 
         markers[['spawn', gbidSpawnLocType, adjusted.x, adjusted.y].join('|')] = (`<path data-search-text="${[
           gbidSpawnLocType ? gbidSpawnLocType.replace(/"/g, '&quot;') : null,
@@ -380,10 +384,15 @@ function processMarkerSet(marker_set, offset = { x: 0, y: 0, z: 0 }) {
   }
 }
 
+let processedMarkerSetSNOs = {};
 global_markers.ptContent.forEach(content_entry => {
   if (Array.isArray(content_entry.arGlobalMarkerActors)) {
     content_entry.arGlobalMarkerActors.forEach(global_marker_actor => {
-      if (global_marker_actor.snoWorld.name === 'Sanctuary_Eastern_Continent' && global_marker_actor.snoMarkerSet.name) {
+      if (processedMarkerSetSNOs[global_marker_actor.snoMarkerSet.__raw__]) {
+        return;
+      }
+      if (global_marker_actor.snoWorld.__raw__ === Sanctuary_Eastern_Continent.__raw__ && global_marker_actor.snoMarkerSet.name) {
+        processedMarkerSetSNOs[global_marker_actor.snoMarkerSet.__raw__] = true;
         let marker_set = loadData(global_marker_actor.snoMarkerSet);
         console.log('[' + COLOR_YELLOW + 'World' + COLOR_NONE + '] Sanctuary_Eastern_Continent => [' + COLOR_YELLOW + 'MarkerSet' + COLOR_NONE + ']', global_marker_actor.snoMarkerSet.name, '=> snoMarkerSet[' + COLOR_GREEN + (Array.isArray(marker_set.tMarkerSet) && marker_set.tMarkerSet.length) + COLOR_NONE +']');
         processMarkerSet(marker_set);
@@ -392,12 +401,31 @@ global_markers.ptContent.forEach(content_entry => {
   }
 });
 
-Sanctuary_Eastern_Continent.ptServerData.forEach(server_data => {
-  server_data.arSubzones.forEach(subzone_entry => {
+Sanctuary_Eastern_Continent.ptServerData.forEach(tServerData => {
+  let arSubzones = [];
+  let processedSubzones = {};
+
+  tServerData.ptSceneChunks.forEach(tSceneChunk => {
+    tSceneChunk.tSceneSpec.arSubzones.forEach(tSubzoneRelation => {
+      if (processedSubzones[tSubzoneRelation.snoSubzone.__raw__]) {
+        return;
+      }
+
+      processedSubzones[tSubzoneRelation.snoSubzone.__raw__] = true;
+      arSubzones.push(tSubzoneRelation.snoSubzone);
+    });
+  });
+
+  arSubzones.forEach(subzone_entry => {
     let subzone = loadData(subzone_entry);
 
-    subzone.unk_9a1125c.forEach(entry => {
+    subzone.arWorldMarkerSets.forEach(entry => {
       if (entry.snoMarkerSet && entry.snoMarkerSet.groupName === 'MarkerSet') {
+        if (processedMarkerSetSNOs[entry.snoMarkerSet.__raw__]) {
+          return;
+        }
+
+        processedMarkerSetSNOs[entry.snoMarkerSet.__raw__] = true;
         let marker_set = loadData(entry.snoMarkerSet);
         console.log('[' + COLOR_YELLOW + 'World' + COLOR_NONE + '] Sanctuary_Eastern_Continent => [' + COLOR_YELLOW + 'Subzone' + COLOR_NONE + ']', subzone_entry.name, '=> [' + COLOR_YELLOW + 'MarkerSet' + COLOR_NONE + ']', entry.snoMarkerSet.name, '=> snoMarkerSet[' + COLOR_GREEN + (Array.isArray(marker_set.tMarkerSet) && marker_set.tMarkerSet.length) + COLOR_NONE +']');
         processMarkerSet(marker_set);
@@ -408,7 +436,14 @@ Sanctuary_Eastern_Continent.ptServerData.forEach(server_data => {
 
 markers = Object.values(markers).sort().reverse();
 
-let imageUrl = "https://files.blizzhackers.dev/d4tex/Sanctuary_Eastern_Continent_map.jpg";
+const imageUrl = "Sanctuary_Eastern_Continent_map.jpg";
+const tZoneMapParams = Sanctuary_Eastern_Continent.tZoneMapParams;
+const zone_art = Object.freeze({
+  x: Math.round(-tZoneMapParams.vecZoneArtCenter.x / tZoneMapParams.flZoneArtScale),
+  y: Math.round(-tZoneMapParams.vecZoneArtCenter.y / tZoneMapParams.flZoneArtScale),
+  w: tZoneMapParams.nGridSystemZoneMapFieldWidth * Sanctuary_Eastern_Continent.flGridSize,
+  h: tZoneMapParams.nGridSystemZoneMapFieldHeight * Sanctuary_Eastern_Continent.flGridSize,
+});
 fs.writeFileSync('docs/atlas.html', `<html>
   <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -422,7 +457,7 @@ fs.writeFileSync('docs/atlas.html', `<html>
     </div>
     <svg viewBox="-1284 -2618 3564 3564" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;">
       <g id="atlas-group" transform="matrix(3.6466190067585558 0 0 3.6466190067585558 -3030 3625)">
-        <image href="${imageUrl}" x="-1356" y="-2724" width="3836" height="3836">
+        <image href="${imageUrl}" preserveAspectRatio="none" x="${zone_art.x}" y="${zone_art.y}" width="${zone_art.w}" height="${zone_art.h}">
           <title>Sanctuary Eastern Continent</title>
         </image>
         <g transform="scale(-1, 1) rotate(45)">

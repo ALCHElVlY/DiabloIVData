@@ -473,7 +473,7 @@
            "dwType": 2502206177,
            "behaviorMessageName": 0,
            "behaviorContainerSno": null,
-           "enumVal": 1945
+           "enumVal": 1929
           },
           "nWidth": 160,
           "tOnTooltip": {
@@ -482,7 +482,7 @@
            "dwType": 2502206177,
            "behaviorMessageName": 0,
            "behaviorContainerSno": null,
-           "enumVal": 1947
+           "enumVal": 1931
           },
           "eHorizontalAnchoring": 3,
           "eTooltipAlignHorizontal": 2,
@@ -545,7 +545,7 @@
            "dwType": 2502206177,
            "behaviorMessageName": 0,
            "behaviorContainerSno": null,
-           "enumVal": 1942
+           "enumVal": 1926
           },
           "hImageFrameMouseOver": {
            "__type__": "UIImageHandleReference",
@@ -558,7 +558,7 @@
            "dwType": 2502206177,
            "behaviorMessageName": 0,
            "behaviorContainerSno": null,
-           "enumVal": 1942
+           "enumVal": 1926
           },
           "hImageFramePressed": {
            "__type__": "UIImageHandleReference",
@@ -622,15 +622,7 @@
           "eClipBehavior": 2,
           "eVerticalAnchoring": 1,
           "nWidth": 166,
-          "snoMaterial": {
-           "__raw__": 2477230,
-           "__group__": 57,
-           "__type__": "DT_SNO",
-           "__typeHash__": 2764331143,
-           "__targetFileName__": "base/meta/Material/vfx_ui_material_WarlockMechanic_SelectedGlow.mat",
-           "groupName": "Material",
-           "name": "vfx_ui_material_WarlockMechanic_SelectedGlow"
-          },
+          "snoMaterial": null,
           "eHorizontalAnchoring": 1,
           "rgbaTint": {
            "r": 255,
@@ -647,6 +639,49 @@
         }
        ],
        "arChildren": [
+        {
+         "__type__": "UIControlTemplate",
+         "__typeHash__": 641859515,
+         "szName": "WarlockShard_SelectedFX_Persistent",
+         "ptInlineStyle": [
+          {
+           "__type__": "UIWindowStyle",
+           "__typeHash__": 506492871,
+           "dwType": 506492871,
+           "hParentStyle": {
+            "__type__": "UIControlHandle",
+            "__typeHash__": 3063971755,
+            "snoUI": null,
+            "szControlName": 0
+           },
+           "unk_441f783": "0",
+           "hOptionalUIControlStyleFields": {},
+           "tConsoleInput": {
+            "__type__": "UIControlConsoleInput",
+            "__typeHash__": 3089331074,
+            "hOptionalUIControlConsoleInputFields": {}
+           },
+           "hOptionalUIWindowStyleFields": {
+            "nHeight": 100,
+            "eClipBehavior": 2,
+            "eVerticalAnchoring": 1,
+            "nWidth": 100,
+            "snoMaterial": {
+             "__raw__": 2649022,
+             "__group__": 57,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Material/vfx_ui_material_Soul_Shards_Gem_Glow_Red.mat",
+             "groupName": "Material",
+             "name": "vfx_ui_material_Soul_Shards_Gem_Glow_Red"
+            },
+            "eHorizontalAnchoring": 1
+           }
+          }
+         ],
+         "arChildren": [],
+         "ptTemplateInstanceConfig": []
+        },
         {
          "__type__": "UIControlTemplate",
          "__typeHash__": 641859515,
@@ -677,6 +712,89 @@
            "eActivateBehavior": 0,
            "eFinishBehavior": 0,
            "hOptionalUIStoryboard2StyleFields": {}
+          }
+         ],
+         "arChildren": [],
+         "ptTemplateInstanceConfig": []
+        },
+        {
+         "__type__": "UIControlTemplate",
+         "__typeHash__": 641859515,
+         "szName": "WarlockShard_SelectedPentagramFX",
+         "ptInlineStyle": [
+          {
+           "__type__": "UIWindowStyle",
+           "__typeHash__": 506492871,
+           "dwType": 506492871,
+           "hParentStyle": {
+            "__type__": "UIControlHandle",
+            "__typeHash__": 3063971755,
+            "snoUI": null,
+            "szControlName": 0
+           },
+           "unk_441f783": "0",
+           "hOptionalUIControlStyleFields": {},
+           "tConsoleInput": {
+            "__type__": "UIControlConsoleInput",
+            "__typeHash__": 3089331074,
+            "hOptionalUIControlConsoleInputFields": {}
+           },
+           "hOptionalUIWindowStyleFields": {
+            "eVerticalAnchoring": 3,
+            "snoMaterial": {
+             "__raw__": 2477230,
+             "__group__": 57,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Material/vfx_ui_material_WarlockMechanic_SelectedGlow.mat",
+             "groupName": "Material",
+             "name": "vfx_ui_material_WarlockMechanic_SelectedGlow"
+            },
+            "eHorizontalAnchoring": 3
+           }
+          }
+         ],
+         "arChildren": [],
+         "ptTemplateInstanceConfig": []
+        },
+        {
+         "__type__": "UIControlTemplate",
+         "__typeHash__": 641859515,
+         "szName": "WarlockShard_SelectedFx_particles",
+         "ptInlineStyle": [
+          {
+           "__type__": "UIWindowStyle",
+           "__typeHash__": 506492871,
+           "dwType": 506492871,
+           "hParentStyle": {
+            "__type__": "UIControlHandle",
+            "__typeHash__": 3063971755,
+            "snoUI": null,
+            "szControlName": 0
+           },
+           "unk_441f783": "0",
+           "hOptionalUIControlStyleFields": {},
+           "tConsoleInput": {
+            "__type__": "UIControlConsoleInput",
+            "__typeHash__": 3089331074,
+            "hOptionalUIControlConsoleInputFields": {}
+           },
+           "hOptionalUIWindowStyleFields": {
+            "nTop": 0,
+            "nHeight": 100,
+            "eVerticalAnchoring": 1,
+            "nWidth": 100,
+            "snoMaterial": {
+             "__raw__": 2642224,
+             "__group__": 57,
+             "__type__": "DT_SNO",
+             "__typeHash__": 2764331143,
+             "__targetFileName__": "base/meta/Material/vfx_ui_particles_continuous_Rank_Flairs.mat",
+             "groupName": "Material",
+             "name": "vfx_ui_particles_continuous_Rank_Flairs"
+            },
+            "eHorizontalAnchoring": 1
+           }
           }
          ],
          "arChildren": [],
@@ -1645,7 +1763,7 @@
          "dwType": 2502206177,
          "behaviorMessageName": 0,
          "behaviorContainerSno": null,
-         "enumVal": 1944
+         "enumVal": 1928
         },
         "nWidth": 100,
         "tOnTooltip": {
@@ -1654,7 +1772,7 @@
          "dwType": 2502206177,
          "behaviorMessageName": 0,
          "behaviorContainerSno": null,
-         "enumVal": 1946
+         "enumVal": 1930
         },
         "eHorizontalAnchoring": 3,
         "rgbaTint": {
@@ -1723,7 +1841,7 @@
          "dwType": 2502206177,
          "behaviorMessageName": 0,
          "behaviorContainerSno": null,
-         "enumVal": 1941
+         "enumVal": 1925
         },
         "hImageFrameMouseOver": {
          "__type__": "UIImageHandleReference",
@@ -1736,7 +1854,7 @@
          "dwType": 2502206177,
          "behaviorMessageName": 0,
          "behaviorContainerSno": null,
-         "enumVal": 1941
+         "enumVal": 1925
         },
         "hImageFramePressed": {
          "__type__": "UIImageHandleReference",
@@ -2118,7 +2236,7 @@
        "dwType": 2502206177,
        "behaviorMessageName": 0,
        "behaviorContainerSno": null,
-       "enumVal": 1943
+       "enumVal": 1927
       },
       "tOnClose": {
        "__type__": "UIDefaultAction",
@@ -2126,7 +2244,7 @@
        "dwType": 2502206177,
        "behaviorMessageName": 0,
        "behaviorContainerSno": null,
-       "enumVal": 1940
+       "enumVal": 1924
       },
       "bActive": 1,
       "snoOnCloseSound": null
@@ -2204,7 +2322,7 @@
          "dwType": 2502206177,
          "behaviorMessageName": 0,
          "behaviorContainerSno": null,
-         "enumVal": 1940
+         "enumVal": 1924
         }
        }
       }
@@ -2238,7 +2356,7 @@
          "dwType": 2502206177,
          "behaviorMessageName": 0,
          "behaviorContainerSno": null,
-         "enumVal": 1948
+         "enumVal": 1932
         }
        }
       }
@@ -7076,7 +7194,7 @@
              "dwType": 2502206177,
              "behaviorMessageName": 0,
              "behaviorContainerSno": null,
-             "enumVal": 1940
+             "enumVal": 1924
             }
            },
            "tFont": {
