@@ -60,6 +60,7 @@ aFacingAngleThreshold
 aGroups
 aHorizontalAngle
 aInfluences
+aLocalSyncOriginalYaw
 aLookOverrides
 aMaxSpeed
 aMetaData
@@ -186,6 +187,7 @@ annTarget
 annTargetItem
 annTargetName
 annTo
+annTributeItem
 annVendor
 annWaypointSrc
 arAIBehaviors
@@ -223,6 +225,7 @@ arAdditionalDungeonState
 arAdditionalPassives
 arAdditionalTargets
 arAffectedItemLabels
+arAffectedNodeAttributeList
 arAffixBonusPerMagicType
 arAffixChanceIncrease
 arAffixCountPerQuality
@@ -294,6 +297,7 @@ arBonusObjectives
 arBounties
 arBountyGroups
 arBountyIcons
+arBountyMetaProgressValues
 arBountyTierIcons
 arBountyZones
 arBuffNames
@@ -359,6 +363,7 @@ arConditionalSkillTags
 arConditionalWorlds
 arConditionedScalars
 arConditions
+arConnectedNodeIds
 arConnections
 arContactFrames
 arContentTags
@@ -583,6 +588,7 @@ arInterpScalar
 arInterruptFrames
 arInvalidSeasonalDungeonStates
 arInventories
+arItemEquipmentCollision
 arItemFamilies
 arItemIconPreloadHelpers
 arItemLabels
@@ -1095,6 +1101,8 @@ bApplyOnPowerEquip
 bApplyOnPowerStart
 bApplyPowerToPlayer
 bApplyPowerToSeasonalPet
+bApplyToChildren
+bApplyToTargetArea
 bApplyVulnerableDebuff
 bAutoCast
 bAutoChannelled
@@ -1118,13 +1126,17 @@ bCannotDieDuring
 bCaptionsInside
 bCastTargetAllies
 bCastTargetEnemies
+bCastTargetNecroCorpsesOnly
 bCastTargetPlayersOnly
 bChannelled
 bChannelledMovement
 bCheckBackpack
+bCheckCanPurchase
 bCheckEquipped
+bCheckForStoreProductType
 bCheckSeasonActive
 bCheckStash
+bCheckStoreBought
 bCheckUnlocked
 bCheckWorld
 bClear
@@ -1145,17 +1157,23 @@ bData
 bDealsDOT
 bDebugDraw
 bDefensive
+bDefineItemDisplayedQualityLevelRequirement
+bDefineItemQualityLevelRequirement
+bDefineItemQualityModifierRequirement
+bDefineRuneRarityRequirement
 bDeleteOnOwnerDeath
 bDeleteOnPowerInterrupt
 bDescendingSort
 bDetailsErode
 bDidCrit
 bDieOverride
+bDisableCastConfirmationOnController
 bDisableDefaultDungeonStates
 bDisableDefaultLabels
 bDisableDynamicAvoidance
 bDisableFontScale
 bDisableRename
+bDisableShaderEffects
 bDisabled
 bDisplayChatMessage
 bDisplayWhileEmpty
@@ -1178,6 +1196,8 @@ bEarnsSeal
 bEffectGroupUntracked
 bEmote
 bEnable
+bEnableLoadingScreenWithCompanion
+bEnableLoadingScreenWithMount
 bEnablePartyLoadingScreens
 bEnableSoloTooltipOverrides
 bEnabled
@@ -1240,6 +1260,7 @@ bHideOffhand
 bHideRewardNotification
 bHideSheathed
 bHideWhenZero
+bHideWorldTierUI
 bHighlight
 bHitSomething
 bHorizontal
@@ -1323,6 +1344,7 @@ bIsRepeatableReward
 bIsScript
 bIsSeasonal
 bIsSpecific
+bIsTankPet
 bIsTemperedAffix
 bIsTransmog
 bIsUnique
@@ -1416,6 +1438,7 @@ bReadTextOnHover
 bRecipeIsHidden
 bRecurseForAttachments
 bRemove
+bRemoveExistingBuffs
 bRemoveOnPassiveReapplication
 bRemoveOnPowerDelete
 bRemoveOnPowerUnequip
@@ -1480,6 +1503,7 @@ bShrinkToFit
 bSingleAffixElitePrefix
 bSingleTest
 bSkillTreeOnPlayer
+bSkipInputOnController
 bSnap
 bSnapFacing
 bSnapToTarget
@@ -1650,9 +1674,11 @@ dwAddOnCategoryIndex
 dwAdditionalFields
 dwAdditionalGizmoContext
 dwAffectsFlags
+dwAffixSelectorExcludedAffixType
 dwAllowedQualityLevels
 dwAllowedRarities
 dwAlpha
+dwAlternateTextPhaseUID
 dwAmount
 dwAmountToGain
 dwAnimFlags
@@ -1671,6 +1697,7 @@ dwAxis
 dwBAOffset
 dwBASegment
 dwBASize
+dwBackgroundProgressBarSourceCallbackUID
 dwBaseAmount
 dwBasePortalType
 dwBattlePassCategoryIndex
@@ -1693,8 +1720,10 @@ dwCCFlagsApplied
 dwCCImmunityFlags
 dwCCTypes
 dwCallbackUID
+dwCandidateIndex
 dwCannedNodeID
 dwCarry
+dwCharmSlotCount
 dwChildIndex
 dwChillShaderMapOverride
 dwClutterMasks
@@ -1744,6 +1773,7 @@ dwEntranceName
 dwEntranceNameToFind
 dwEquipResult
 dwEventEntryHash
+dwExcludedAffixTypes
 dwExperience
 dwExperienceToNextLevel
 dwExplosionChannel
@@ -1756,6 +1786,8 @@ dwFlagsEx
 dwFlagsEx2
 dwFogFlags
 dwFontSize
+dwForcedIQMs
+dwForegroundProgressBarSourceCallbackUID
 dwFormatHash
 dwFormulaHash
 dwFrameRandomSeed
@@ -1820,6 +1852,7 @@ dwMaterialHash
 dwMaterialId
 dwMaxActorCount
 dwMaxArmorPacts
+dwMaxBountyMetaProgressPoints
 dwMaxConcurrentCount
 dwMaxFavorLevel
 dwMaxInstances
@@ -1911,6 +1944,7 @@ dwQuantity
 dwQuestHash
 dwRandomSeed
 dwRank
+dwReferencedQuestCount
 dwRegionSourceCallbackUID
 dwReliquaryCategoryIndex
 dwRemovalReasons
@@ -1941,6 +1975,7 @@ dwSecondAttachedActorID
 dwSecondaryEntranceNameToFind
 dwSeed
 dwSeedInitial
+dwSeekingUpdateRate
 dwSegmentsStep
 dwServerTimeAnimStarted
 dwSettingFlags
@@ -2011,6 +2046,7 @@ dwURandomSeed
 dwUniqueID
 dwUniqueId
 dwUnlockLevel
+dwUpgradePointsToUnlock
 dwUpgradeType
 dwUpsellCategoryIndex
 dwVRandomSeed
@@ -2216,6 +2252,7 @@ eEffectGroupKeyDataType
 eEffectItemQuality
 eEffectType
 eEntitlement
+eEquippedPowerCooldownStatus
 eEquippedPowerCooldownType
 eError
 eEvent
@@ -2261,6 +2298,7 @@ eGizmoType
 eGlobalSlowAmountType
 eGrantedClass
 eGraphType
+eGraphicsTestType
 eGroup
 eGroupImportance
 eGroupType
@@ -2344,6 +2382,7 @@ eManualRestockCurrency
 eMarkerSourceType
 eMaterial
 eMaterialImportance
+eMaxItemDisplayedQualityLevel
 eMaxItemQualityLevel
 eMaxRuneRarity
 eMaxWorldTier
@@ -2354,6 +2393,7 @@ eMicrophoneMode
 eMiddleClickPredicate
 eMinIQL
 eMinIQM
+eMinItemDisplayedQualityLevel
 eMinItemQualityLevel
 eMinRuneRarity
 eMinWorldTier
@@ -2408,6 +2448,7 @@ eOnSequenceEnd
 eOpenWorldNoSpawnVolumeShape
 eOperandType
 eOpportunity
+eOption
 eOptionalRarity
 eOrderOperation
 eOrientationMode
@@ -2815,6 +2856,7 @@ fIntroMovie
 fInvert
 fInvulnerable
 fIrisSize
+fIsAltMetaQuestTurnInNPC
 fIsClothBone
 fIsCombatHitFlash
 fIsCorpse
@@ -2823,6 +2865,8 @@ fIsFogged
 fIsGrass
 fIsLogoMovie
 fIsLoop
+fIsMailbox
+fIsMetaQuestTurnInNPC
 fIsNPC
 fIsOnEdge
 fIsQuestRestricted
@@ -2905,7 +2949,9 @@ fProjectileMatchYawToVelocity
 fProjectileOverridesCollidableFlags
 fProjectileTurnsInstantly
 fProjectileUsesWeaponAppearance
+fProximityDetectorDetectProjectiles
 fProximityDetectorEffect
+fProximityDetectorIncludeCarryables
 fProximityDetectorOneShot
 fProximityDetectorPlayerOnly
 fProximityDetectorPulse
@@ -3729,6 +3775,7 @@ flPartialRagdollResponsiveness
 flParticipationRadius
 flPartySummonDuration
 flPathFadeInTime
+flPathingMapWidth
 flPatternRepeats
 flPatternScrollSpeed
 flPatternThickness
@@ -4138,6 +4185,7 @@ gbidDungeonArchetype
 gbidDungeonState
 gbidDynamicMovementDataOverride
 gbidFeatureFlag
+gbidFocusAssociatedData
 gbidFocusRarity
 gbidFocusType
 gbidForcedPreloadList
@@ -4328,6 +4376,7 @@ hIconDisabledSelected
 hIconDot
 hIconDotDisabled
 hIconEquipped
+hIconFrameOverride
 hIconImage
 hIconImageActive
 hIconImageChecked
@@ -4659,6 +4708,7 @@ hUITemplate
 hUnlockCriteria
 hUnlockDescription
 hUpCornerImage
+hVcCardImage
 hVendorIcon
 hWaypointIcon
 hWorldEventWarmupWarning
@@ -4673,6 +4723,7 @@ height
 heightDataMirror
 hide
 hitFlashParams
+hitSnoAppearance
 horizontalAnchoring
 i1
 i2
@@ -4714,6 +4765,7 @@ invMass0
 invMasses
 inviterGameAccountId
 isDungeon
+isHidden
 isOpen
 isPlaying
 islandIndex
@@ -4728,6 +4780,7 @@ legendaryNodeIcon
 levels
 lightGroup
 linesBeforeTruncation
+listboxID
 localFrame1
 localFrame2
 localTransform
@@ -4956,6 +5009,7 @@ nFloatingDamageNumberFontSize
 nFloatingDamageTextFontSize
 nFloatingTextFontSize
 nFloor
+nFocusAssociatedData
 nFocusRarity
 nFocusType
 nFontSizeFallback
@@ -5111,6 +5165,7 @@ nMaxStackSize
 nMaxWidth
 nMercenaryClass
 nMetaDataCount
+nMetaProgressValue
 nMin
 nMinHeight
 nMinItemPower
@@ -5309,6 +5364,7 @@ nTextLinesBeforeTruncation
 nTextureIndex
 nThresholdValue
 nTier
+nTimeAmountMinutes
 nTimeChange
 nTimeUntilFade
 nTimerDuration
@@ -5443,6 +5499,7 @@ pathColorOverLength
 pathColorOverTime
 pathCone
 pathCoverageBias
+pathDampeningCurve
 pathDestPointAlongRopeMotion
 pathDestPointPerpendicularMotion
 pathDestPointWorldUpMotion
@@ -5582,6 +5639,7 @@ pathSourcePointAlongRopeMotion
 pathSourcePointPerpendicularMotion
 pathSourcePointWorldUpMotion
 pathSourceRadius
+pathSpecularSoftRadius
 pathSunColor
 pathSunFogIntensityScale
 pathSunGIColorOverride
@@ -5624,6 +5682,7 @@ pathXAmpOverLength
 pathYAmpOverLength
 pdwChildren
 pdwChunkIndices
+pdwUsedConstants
 pflFacingYaw
 pflRootScale
 pgbidRareNames
@@ -5759,6 +5818,7 @@ ptItemAffixAttributes
 ptItemData
 ptKeysComp
 ptKinematicRoots
+ptLODDistancePerSubObject
 ptLODs
 ptLeaf
 ptLeaves
@@ -5995,6 +6055,7 @@ rgbaMinimapHighlightedTint
 rgbaMinimapShadowColor
 rgbaOuter
 rgbaOuterFalloff
+rgbaPathingMapColor
 rgbaPlayer0Color
 rgbaPlayer1Color
 rgbaPlayer2Color
@@ -6110,6 +6171,7 @@ snoActorService
 snoActorSpawnCondition
 snoActorWorldMarkerPing
 snoAddOnAppearance
+snoAddedLootBeamEffect
 snoAdditionalItemType
 snoAffix
 snoAffixEffect
@@ -6148,6 +6210,7 @@ snoAudioTrack
 snoAutoCastingEffectGroup
 snoBGAnim
 snoBackground
+snoBannerTiledStyleOverride
 snoBaseItem
 snoBaseLayer
 snoBaseMaterial
@@ -7157,6 +7220,7 @@ szBoostMenuPath
 szBoostName
 szBuffDataID
 szBuildVer
+szCachedShaderName
 szCameraMarker
 szCameraMarkerName
 szCategoryTemplate
@@ -7424,6 +7488,7 @@ szTabInstanceName
 szTabRadioButtonGroupName
 szTag
 szTarget
+szTargetArea
 szTargetLocatorName
 szTargetParentContextMenu
 szTestName
@@ -7481,6 +7546,9 @@ tAdditionalRandomAffixesRange
 tAdvanceEvent
 tAdvancedBloomSettings
 tAfterCreditsScenes
+tAfterLoginLoadingInfo
+tAfterLoginLoadingInfoForExpansion1
+tAfterLoginLoadingInfoForExpansion2
 tAllowedScaleRange
 tAllowedScaleRangeX
 tAllowedScaleRangeY
@@ -7807,6 +7875,8 @@ tIQMPowerRanges
 tIcon
 tIconScale
 tIconTextures
+tIconicLook
+tIconicLooks
 tIcons
 tImmuneToCCDuring
 tImpactVelocityRange
@@ -7823,6 +7893,9 @@ tInfo
 tInfoPanelData
 tInitialCost
 tInitialLoadingInfo
+tInitialLoadingInfoForCurrentSeason
+tInitialLoadingInfoForExpansion
+tInitialLoadingInfoNewHero
 tInputRange
 tInstanceData
 tIntRange
@@ -8078,6 +8151,7 @@ tPlayerSeal
 tPlayerTitle
 tPlug
 tPopulationGroup
+tPostCampaignStinger
 tPostFXParams
 tPotionBtn
 tPowerBonus
@@ -8111,6 +8185,7 @@ tPropsExclusivePurchased
 tPropsExclusiveUnavailable
 tPropsPurchased
 tPropsUnavailable
+tProximityDetectorPulseIntervalRange
 tQuestHistory
 tQuestReward
 tQuestRewardHistory
@@ -8192,6 +8267,7 @@ tSelfWindAmplitudeRange
 tSelfWindFrequencyRange
 tServices
 tSessionKey
+tSetBonus
 tSetLootBeam
 tSettings
 tShaderComplexitySettings
@@ -8416,6 +8492,7 @@ three
 tiledStyle
 timeOfDay
 timeServer
+timedBoostInfo
 toMatch
 toSelect
 tooltipText
@@ -8443,6 +8520,7 @@ uAmount
 uAuthToken
 uBlobSize
 uCameraSmoothingTime
+uClientInterpTime
 uCollectiblePowerTypes
 uCommandFrame
 uCount
