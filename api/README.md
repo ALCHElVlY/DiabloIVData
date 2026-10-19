@@ -115,9 +115,7 @@ relative to the base URL. `sha256` is the hash of the exact bytes served.
 `apiVersion` only changes when the API's shape breaks, and a new version is served under a new
 path (`/api/v2/`). Data updates change `dataVersion` and `sourceCommit`, never `apiVersion`.
 
-GitHub Pages serves the files gzip-compressed, so the bundles are small to download. For example,
-each 50 MB `Power` part is under 2 MB over the wire. Most HTTP clients, including Go's `net/http`,
-decompress them automatically.
+GitHub Pages serves the files gzip-compressed.
 
 ## Files from indexed groups
 
