@@ -18,7 +18,7 @@
 
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -125,21 +125,22 @@ async function main() {
 }
 
 /**
- * Lists json/ from git objects rather than the working tree, so the build
+ * Lists json/ from git trees rather than the working tree, so the build
  * works from a sparse checkout that only contains the files it publishes.
+ *
+ * Only names are read: asking git for sizes (ls-tree -l) makes a blobless
+ * clone download every one of the ~850k files, one request at a time.
  */
 function readTree() {
-  const output = git('ls-tree', '-r', '-l', '-z', 'HEAD', 'json/');
+  const output = git('ls-tree', '-r', '--name-only', '-z', 'HEAD', 'json/');
   const tables = [];
   const groups = new Map();
 
-  for (const line of output.split('\0')) {
-    if (!line) {
+  for (const file of output.split('\0')) {
+    if (!file) {
       continue;
     }
 
-    const [meta, file] = line.split('\t');
-    const size = Number(meta.trim().split(/\s+/)[3]);
     const parts = file.split('/');
 
     // json/<source>/meta/<group>/<name>.<ext>.json
@@ -154,7 +155,7 @@ function readTree() {
 
       groups.get(key).files.push({ path: file, name: match ? match[1] : fileName.replace(/\.json$/, '') });
     } else if (file.endsWith('.json') && !file.includes('/meta/')) {
-      tables.push({ path: file, size });
+      tables.push({ path: file });
     }
   }
 
@@ -164,10 +165,10 @@ function readTree() {
 function printSparsePatterns(tree) {
   const patterns = ['/api/', '/buildVersion.txt'];
 
+  // Every top-level table is checked out (a few hundred MB, far less over the
+  // wire) so buildTables can read its size from disk.
   for (const table of tree.tables) {
-    if (table.size <= TABLE_LIMIT_BYTES) {
-      patterns.push(`/${table.path}`);
-    }
+    patterns.push(`/${table.path}`);
   }
 
   for (const key of BUNDLED_GROUPS) {
@@ -212,9 +213,10 @@ async function buildTables(tables, rawRoot) {
 
   for (const table of tables.sort((a, b) => a.path.localeCompare(b.path))) {
     const key = table.path.slice('json/'.length, -'.json'.length);
+    const { size } = await stat(path.join(repoRoot, table.path));
 
-    if (table.size > TABLE_LIMIT_BYTES) {
-      result[key] = { rawUrl: rawRoot + encodePath(table.path), bytes: table.size };
+    if (size > TABLE_LIMIT_BYTES) {
+      result[key] = { rawUrl: rawRoot + encodePath(table.path), bytes: size };
       continue;
     }
 
