@@ -1,21 +1,3 @@
-/**
- * Builds the static JSON data API from the parsed json/ tree.
- *
- * The full tree is ~850k files / ~18 GB, far over the GitHub Pages limit, so:
- * - gameplay groups (BUNDLED_GROUPS) are merged into one bundle per group,
- *   split into parts when a bundle grows past PART_LIMIT_BYTES;
- * - every other group gets a name index, and clients fetch its files from
- *   commit-pinned raw.githubusercontent.com URLs;
- * - small top-level files are copied; large ones are linked the same way.
- *
- * Output goes to api/dist/ and is deployed to GitHub Pages by
- * .github/workflows/publish-api.yml.
- *
- * Usage:
- *   node api/build.mjs                 build the site
- *   node api/build.mjs --print-sparse  print the paths the build reads, for sparse checkout
- */
-
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
@@ -127,9 +109,6 @@ async function main() {
 /**
  * Lists json/ from git trees rather than the working tree, so the build
  * works from a sparse checkout that only contains the files it publishes.
- *
- * Only names are read: asking git for sizes (ls-tree -l) makes a blobless
- * clone download every one of the ~850k files, one request at a time.
  */
 function readTree() {
   const output = git('ls-tree', '-r', '--name-only', '-z', 'HEAD', 'json/');
@@ -165,8 +144,6 @@ function readTree() {
 function printSparsePatterns(tree) {
   const patterns = ['/api/', '/buildVersion.txt'];
 
-  // Every top-level table is checked out (a few hundred MB, far less over the
-  // wire) so buildTables can read its size from disk.
   for (const table of tree.tables) {
     patterns.push(`/${table.path}`);
   }
