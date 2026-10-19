@@ -20,7 +20,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          branch='${{ github.event.repository.default_branch }}'
+          # Scheduled runs carry no repository payload, so ask the API.
+          branch="$(gh api "repos/$GITHUB_REPOSITORY" --jq .default_branch)"
           merge_type="$(gh api -X POST "repos/$GITHUB_REPOSITORY/merge-upstream" -f branch="$branch" --jq .merge_type)"
           echo "Merge type: $merge_type"
 
