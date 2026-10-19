@@ -65,13 +65,13 @@
   "__typeHash__": 2408934,
   "wp": {
    "x": 0.05331146717071533,
-   "y": 0.15675485134124756,
-   "z": 0.7049148082733154
+   "y": 0.1515878438949585,
+   "z": 0.8216762542724609
   },
   "wvExt": {
    "x": 1.071662425994873,
-   "y": 1.1782506704330444,
-   "z": 1.0958833694458008
+   "y": 1.1730836629867554,
+   "z": 0.9791220426559448
   }
  },
  "wsBounds": {
@@ -89,13 +89,13 @@
   "__typeHash__": 2408934,
   "wp": {
    "x": 0.05331146717071533,
-   "y": 0.15675485134124756,
-   "z": 0.7049148082733154
+   "y": 0.1515878438949585,
+   "z": 0.8216762542724609
   },
   "wvExt": {
    "x": 1.071662425994873,
-   "y": 1.1782506704330444,
-   "z": 1.0958833694458008
+   "y": 1.1730836629867554,
+   "z": 0.9791220426559448
   }
  },
  "wpLocationPowerSrc": {
@@ -107,7 +107,7 @@
  "flAttachmentScaleFactor": 1,
  "eDefaultTeam": 1,
  "eCullingLevel": 0,
- "unk_b7a6ddf": false,
+ "unk_b7a6ddf": 0,
  "flFadeCorpseTimeUntilFade": 10,
  "flFadeCorpseTime": 2,
  "aAbsoluteOrientation": 0,
@@ -129,8 +129,8 @@
       "__type__": "TriggerConditions",
       "__typeHash__": 888408526,
       "flChance": 1,
-      "bMute": false,
-      "bMuteExternal": false,
+      "bMute": 0,
+      "bMuteExternal": 0,
       "tDelay": 0,
       "tImpactVelocityRange": {
        "rangeValue1": 0,
@@ -144,26 +144,26 @@
       "dwConditionFlags": 1038,
       "ePlayerCountCondition": 0,
       "ePerformanceBehavior": 0,
-      "unk_b41b571": []
+      "trackConditionToggles": []
      },
-     "fGenerated": false,
-     "fInCreation": false,
+     "fGenerated": 0,
+     "fInCreation": 0,
      "dwParentActorID": 4294967295,
-     "fPlayOnOwner": true,
-     "fOverrideScalarValues": false,
-     "fOverridePowerEffectSize": false,
-     "fOverridePowerEffectIntensity": false,
-     "fOverridePowerEffectDuration": false,
-     "fOverridePowerEffectLength": false,
-     "fOverridePowerEffectWidth": false,
-     "fOverridePowerEffectHeight": false,
-     "fOverrideHardpoint": false,
-     "fOverrideHardpointsTargetType": false,
-     "fOverrideEffectGroupID": false,
+     "fPlayOnOwner": 1,
+     "fOverrideScalarValues": 0,
+     "fOverridePowerEffectSize": 0,
+     "fOverridePowerEffectIntensity": 0,
+     "fOverridePowerEffectDuration": 0,
+     "fOverridePowerEffectLength": 0,
+     "fOverridePowerEffectWidth": 0,
+     "fOverridePowerEffectHeight": 0,
+     "fOverrideHardpoint": 0,
+     "fOverrideHardpointsTargetType": 0,
+     "fOverrideEffectGroupID": 0,
      "unk_e312e34": 0,
      "dwActorID": 0,
      "dwID": 0,
-     "unk_9758f2e": false,
+     "unk_9758f2e": 0,
      "unk_574dd8b": 0,
      "snoEffectGroup": {
       "__raw__": 573652,
@@ -281,8 +281,8 @@
       "__type__": "TriggerConditions",
       "__typeHash__": 888408526,
       "flChance": 1,
-      "bMute": false,
-      "bMuteExternal": false,
+      "bMute": 0,
+      "bMuteExternal": 0,
       "tDelay": 0,
       "tImpactVelocityRange": {
        "rangeValue1": 0.5,
@@ -296,10 +296,10 @@
       "dwConditionFlags": 30,
       "ePlayerCountCondition": 0,
       "ePerformanceBehavior": 0,
-      "unk_b41b571": []
+      "trackConditionToggles": []
      },
-     "fGenerated": false,
-     "fInCreation": false,
+     "fGenerated": 0,
+     "fInCreation": 0,
      "dwParentActorID": 4294967295,
      "dwID": 0,
      "snoname": {
@@ -335,13 +335,13 @@
      ],
      "dwTriggerFlags": 0,
      "dwTriggerFlagsEx": 0,
-     "fRandomLook": false,
+     "fRandomLook": 0,
      "tLookLink": {
       "__type__": "LookLink",
       "__typeHash__": 2394153027,
       "dwLookHash": 0
      },
-     "fOverrideActorVariant": false,
+     "fOverrideActorVariant": 0,
      "eVariantTypeOverride": 0,
      "dwSegmentsStep": 0,
      "dwShaderMapOverride": 4294967295,
@@ -465,7 +465,7 @@
   {
    "__type__": "ActorVOData",
    "__typeHash__": 3142967512,
-   "fVOPlaysOnPlayer": false,
+   "fVOPlaysOnPlayer": 0,
    "snoSpeaker": null,
    "snoConversationList": null,
    "unk_94efee3": null
@@ -475,11 +475,11 @@
   {
    "__type__": "ActorNPCData",
    "__typeHash__": 3228758260,
-   "unk_370e8c2": false,
+   "unk_370e8c2": 0,
    "tGeneratedLooks": [],
    "snoNPCComponentSet": null,
    "ptLoadOuts": [],
-   "bOverrideObjectNpcLook": true,
+   "bOverrideObjectNpcLook": 1,
    "eSheathPreference": 0
   }
  ],
@@ -488,7 +488,7 @@
    "__type__": "ActorSoundTableData",
    "__typeHash__": 2677649540,
    "szMonsterCategory": 3321043346,
-   "bOverrideImportanceScore": false,
+   "bOverrideImportanceScore": 0,
    "nImportanceScoreOverride": 50,
    "snoRunSoundTable": null,
    "snoWalkSoundTable": null,

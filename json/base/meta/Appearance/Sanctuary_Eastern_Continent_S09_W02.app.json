@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -232,7 +232,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -358,7 +358,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -507,14 +507,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 17015568,
+        "dataOffset": 17027712,
         "dataSize": 28800
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -594,14 +594,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 16650432,
+        "dataOffset": 16662576,
         "dataSize": 31212
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -616,12 +616,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17044368,
+        "dataOffset": 17056512,
         "dataSize": 8892
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -634,12 +634,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 16681648,
+        "dataOffset": 16693792,
         "dataSize": 9324
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -719,7 +719,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -845,7 +845,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -971,7 +971,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -1120,14 +1120,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 17053264,
+        "dataOffset": 17065408,
         "dataSize": 28800
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -1207,14 +1207,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 16690976,
+        "dataOffset": 16703120,
         "dataSize": 31680
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -1229,12 +1229,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17082064,
+        "dataOffset": 17094208,
         "dataSize": 8892
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -1247,12 +1247,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 16722656,
+        "dataOffset": 16734800,
         "dataSize": 9318
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -1332,7 +1332,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -1458,7 +1458,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -1584,7 +1584,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -1733,14 +1733,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 17090960,
+        "dataOffset": 17103104,
         "dataSize": 28800
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -1820,14 +1820,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 16731984,
+        "dataOffset": 16744128,
         "dataSize": 31572
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -1842,12 +1842,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17119760,
+        "dataOffset": 17131904,
         "dataSize": 8892
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -1860,12 +1860,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 16763568,
+        "dataOffset": 16775712,
         "dataSize": 9324
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -1945,7 +1945,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -2063,7 +2063,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -2189,7 +2189,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -2307,7 +2307,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 1,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -2456,14 +2456,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 17128656,
+        "dataOffset": 17140800,
         "dataSize": 86400
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -2543,14 +2543,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 16772896,
+        "dataOffset": 16785040,
         "dataSize": 61488
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -2565,12 +2565,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17215056,
+        "dataOffset": 17227200,
         "dataSize": 26676
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -2583,12 +2583,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 16834384,
+        "dataOffset": 16846528,
         "dataSize": 18672
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -2668,7 +2668,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -2794,7 +2794,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -2920,7 +2920,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -3069,14 +3069,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 17241744,
+        "dataOffset": 17253888,
         "dataSize": 28800
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -3156,14 +3156,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 16853056,
+        "dataOffset": 16865200,
         "dataSize": 31464
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -3178,12 +3178,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17270544,
+        "dataOffset": 17282688,
         "dataSize": 8892
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -3196,12 +3196,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 16884528,
+        "dataOffset": 16896672,
         "dataSize": 9318
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -3281,7 +3281,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -3407,7 +3407,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -3533,7 +3533,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -3682,14 +3682,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 17279440,
+        "dataOffset": 17291584,
         "dataSize": 57600
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -3769,14 +3769,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 16893856,
+        "dataOffset": 16906000,
         "dataSize": 62388
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -3791,12 +3791,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17337040,
+        "dataOffset": 17349184,
         "dataSize": 17784
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -3809,12 +3809,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 16956256,
+        "dataOffset": 16968400,
         "dataSize": 18666
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -3894,7 +3894,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 6,
         "snoCampaignVisibilityCondition": null,
@@ -4020,7 +4020,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -4146,7 +4146,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -4295,14 +4295,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 17354832,
+        "dataOffset": 17366976,
         "dataSize": 28800
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -4382,14 +4382,14 @@
        "value": {
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
-        "dataOffset": 16974928,
+        "dataOffset": 16987072,
         "dataSize": 31284
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -4404,12 +4404,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17383632,
+        "dataOffset": 17395776,
         "dataSize": 8892
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -4422,12 +4422,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 17006224,
+        "dataOffset": 17018368,
         "dataSize": 9330
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -4470,7 +4470,7 @@
      "value": {
       "__typeHash__": 815039567,
       "__type__": "SurfaceGrid",
-      "dataOffset": 16522912,
+      "dataOffset": 16535056,
       "dataSize": 64
      }
     },
@@ -4482,7 +4482,7 @@
      "value": {
       "__typeHash__": 1708090461,
       "__type__": "FoliageGrid",
-      "dataOffset": 16566856,
+      "dataOffset": 16579000,
       "dataSize": 48
      }
     }
@@ -4624,7 +4624,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [],
@@ -4739,7 +4739,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3690977368,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -5080,7 +5080,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3679935176,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -5421,7 +5421,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3679935177,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

@@ -4,7 +4,7 @@
  "__type__": "GameBalanceDefinition",
  "__typeHash__": 1317228073,
  "eGameBalanceType": 124,
- "bIgnoreOnLoad": false,
+ "bIgnoreOnLoad": 0,
  "ptData": [
   {
    "__type__": "StringFormulaEntry_Table",
@@ -22,8 +22,8 @@
       "szNameGBIDHash": 2189091018
      },
      "tStringFormula": {
-      "value": "ItemHasQualityModifier(5)",
-      "compiled": "BgAAAAAAoEABAAAAhwAAAAAAAAA="
+      "value": "(ItemHasQualityModifier(5)+ItemHasQualityModifier(6))>0?1:0",
+      "compiled": "BgAAAAAAoEABAAAAhwAAAAYAAAAAAMBAAQAAAIcAAAALAAAABgAAAAAAAAAGAAAAAACAPwYAAAAAAAAAEAAAAAgAAAAAAAAA"
      }
     }
    ]

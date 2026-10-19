@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -154,9 +154,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 11052,
+          "nVertCount": 11028,
           "nVertOffset": 0,
-          "nIndexCount": 28914,
+          "nIndexCount": 28926,
           "nIndexOffset": 0
          }
         ],
@@ -224,7 +224,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -232,12 +232,12 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 48.008567810058594,
+          "x": 48.04843521118164,
           "y": 48.004676818847656,
           "z": 9.425024032592773
          },
          "wvExt": {
-          "x": 48.53752899169922,
+          "x": 48.49766159057617,
           "y": 48.520118713378906,
           "z": 9.895736694335938
          }
@@ -272,10 +272,10 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 1971,
-          "nVertOffset": 397872,
-          "nIndexCount": 5754,
-          "nIndexOffset": 28914
+          "nVertCount": 1931,
+          "nVertOffset": 397008,
+          "nIndexCount": 5772,
+          "nIndexOffset": 28926
          }
         ],
         "wpFixedPointPosOffset": {
@@ -374,13 +374,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 468828
+        "dataSize": 466524
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -395,12 +395,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 468864,
-        "dataSize": 69336
+        "dataOffset": 466560,
+        "dataSize": 69396
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -543,7 +543,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -557,7 +557,7 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -592,11 +592,11 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 48.407867431640625,
-    "y": 47.10112762451172,
-    "z": 19.030689239501953
+    "x": 48.11386489868164,
+    "y": 47.6082763671875,
+    "z": 20.02794647216797
    },
-   "wdRadius": 70.60350036621094
+   "wdRadius": 70.2057113647461
   },
   "aabbBounds": {
    "__type__": "AABB",
@@ -628,7 +628,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3522471132,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -663,7 +663,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 1873160574,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

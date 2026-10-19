@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -154,9 +154,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 11050,
+          "nVertCount": 11034,
           "nVertOffset": 0,
-          "nIndexCount": 26982,
+          "nIndexCount": 26928,
           "nIndexOffset": 0
          }
         ],
@@ -224,7 +224,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -273,9 +273,9 @@
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
           "nVertCount": 20,
-          "nVertOffset": 397800,
+          "nVertOffset": 397224,
           "nIndexCount": 42,
-          "nIndexOffset": 26982
+          "nIndexOffset": 26928
          }
         ],
         "wpFixedPointPosOffset": {
@@ -374,13 +374,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 398520
+        "dataSize": 397944
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -395,12 +395,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 398560,
-        "dataSize": 54048
+        "dataOffset": 397984,
+        "dataSize": 53940
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -543,7 +543,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -557,7 +557,7 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -592,11 +592,11 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 52.39581298828125,
-    "y": 50.2500114440918,
-    "z": 1.092627763748169
+    "x": 52.888214111328125,
+    "y": 51.306915283203125,
+    "z": 1.457754135131836
    },
-   "wdRadius": 73.22307586669922
+   "wdRadius": 74.3197021484375
   },
   "aabbBounds": {
    "__type__": "AABB",
@@ -628,7 +628,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 2280357966,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -663,7 +663,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 2676249200,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

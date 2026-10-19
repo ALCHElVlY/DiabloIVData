@@ -16,7 +16,7 @@
   "name": "SJ_S13_Chap_Chapter06"
  },
  "uFlags": 4,
- "uPlatformFlags": 15,
+ "uPlatformFlags": 31,
  "arLinkedAchievements": [],
  "arCriteriaList": [
   {
@@ -43,7 +43,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false,
+    "bUsesOperand": 0,
     "uTimerDuration": "0"
    },
    "tAdvanceEvent": {
@@ -111,7 +111,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "1255d1",
-    "bUsesOperand": true
+    "bUsesOperand": 1
    },
    "tFailEvent": {
     "__type__": "CriteriaEvent",
@@ -132,7 +132,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "uFlags": 0
   },
@@ -160,7 +160,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false,
+    "bUsesOperand": 0,
     "uTimerDuration": "0"
    },
    "tAdvanceEvent": {
@@ -190,7 +190,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "27033a",
-    "bUsesOperand": true
+    "bUsesOperand": 1
    },
    "tFailEvent": {
     "__type__": "CriteriaEvent",
@@ -211,7 +211,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "uFlags": 8
   }
@@ -440,6 +440,11 @@
   "__type__": "SteamAchievementDefinition",
   "__typeHash__": 1583864588,
   "sIdentifier": ""
+ },
+ "tUbiConnectAchievement": {
+  "__type__": "UbiConnectAchievementDefinition",
+  "__typeHash__": 1031186332,
+  "uIdentifier": 0
  },
  "uLevel": 0,
  "uMinLevel": 0,

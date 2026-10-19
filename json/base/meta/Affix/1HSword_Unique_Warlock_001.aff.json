@@ -42,9 +42,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -53,8 +53,8 @@
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.2, 0.3)",
-     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAADNzEw+BgAAAJqZmT4BAAAAZwAAAAAAAAA="
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.3, 0.5)",
+     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAACamZk+BgAAAAAAAD8BAAAAZwAAAAAAAAA="
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -66,9 +66,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": true,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 1,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -90,9 +90,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -101,8 +101,8 @@
     "dwID": 0,
     "nParam": 148317266,
     "szAttributeFormula": {
-     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.2, 0.3)",
-     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAADNzEw+BgAAAJqZmT4BAAAAZwAAAAAAAAA="
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.3, 0.5)",
+     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAACamZk+BgAAAAAAAD8BAAAAZwAAAAAAAAA="
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -126,14 +126,32 @@
   "name": "Warlock"
  },
  "arAffixSkillTags": [],
- "arPowerToModify": [],
- "arSkillTagsToAdd": [],
+ "arPowerToModify": [
+  {
+   "__raw__": 2213860,
+   "__group__": 29,
+   "__type__": "DT_SNO",
+   "__typeHash__": 2764331143,
+   "__targetFileName__": "base/meta/Power/Warlock_BurningSkull.pow",
+   "groupName": "Power",
+   "name": "Warlock_BurningSkull"
+  }
+ ],
+ "arSkillTagsToAdd": [
+  {
+   "__raw__": 2488685285,
+   "__type__": "DT_GBID",
+   "__typeHash__": 1028170061,
+   "group": 56,
+   "name": "Skill_Primary_Archfiend"
+  }
+ ],
  "arSkillTagsToRemove": [],
  "arConditionalSkillTags": [],
  "arEnableCondition": [],
  "arItemTags": [],
  "arAffixTags": [],
- "bIsTemperedAffix": false,
+ "bIsTemperedAffix": 0,
  "unk_31946e4": -1,
  "gbidSealAffixNameTag": null
 }

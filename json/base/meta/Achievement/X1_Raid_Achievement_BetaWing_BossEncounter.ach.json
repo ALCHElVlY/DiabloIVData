@@ -8,7 +8,7 @@
  "uMinRequiredCriteria": 0,
  "snoSupersedes": null,
  "uFlags": 0,
- "uPlatformFlags": 15,
+ "uPlatformFlags": 31,
  "arLinkedAchievements": [],
  "arCriteriaList": [
   {
@@ -43,7 +43,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "19971c",
-    "bUsesOperand": true,
+    "bUsesOperand": 1,
     "uTimerDuration": "0"
    },
    "tAdvanceEvent": {
@@ -73,7 +73,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "181f0b",
-    "bUsesOperand": true
+    "bUsesOperand": 1
    },
    "tFailEvent": {
     "__type__": "CriteriaEvent",
@@ -100,7 +100,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "f09cb9c0",
-    "bUsesOperand": true
+    "bUsesOperand": 1
    },
    "uFlags": 0
   }
@@ -182,6 +182,11 @@
   "__type__": "SteamAchievementDefinition",
   "__typeHash__": 1583864588,
   "sIdentifier": ""
+ },
+ "tUbiConnectAchievement": {
+  "__type__": "UbiConnectAchievementDefinition",
+  "__typeHash__": 1031186332,
+  "uIdentifier": 0
  },
  "uLevel": 0,
  "uMinLevel": 0,

@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -154,9 +154,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 14031,
+          "nVertCount": 13934,
           "nVertOffset": 0,
-          "nIndexCount": 37092,
+          "nIndexCount": 37098,
           "nIndexOffset": 0
          }
         ],
@@ -256,13 +256,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 505116
+        "dataSize": 501624
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -277,12 +277,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 505152,
-        "dataSize": 74184
+        "dataOffset": 501664,
+        "dataSize": 74196
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -425,7 +425,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -439,7 +439,7 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -474,11 +474,11 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 51.71693420410156,
-    "y": 56.909027099609375,
-    "z": 54.223487854003906
+    "x": 46.4486083984375,
+    "y": 60.2175407409668,
+    "z": 54.22606658935547
    },
-   "wdRadius": 78.08868408203125
+   "wdRadius": 78.51387023925781
   },
   "aabbBounds": {
    "__type__": "AABB",
@@ -510,7 +510,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 1153539246,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

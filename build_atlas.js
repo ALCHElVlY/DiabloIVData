@@ -75,7 +75,8 @@ const GizmoTypeEnum = Object.freeze({
   "Recipe Event": 110,
   "Event Select Portal": 112,
   "Raid Banner": 113,
-  "Armory": 114
+  "Armory": 114,
+  "Mailbox": 115
 });
 
 const GizmoTypeEnumLabels = Object.freeze(Object.keys(GizmoTypeEnum).reduce((ret, key) => {
@@ -332,6 +333,7 @@ function processMarkerSet(marker_set, offset = { x: 0, y: 0, z: 0 }) {
           GizmoTypeEnum["Event Select Portal"],
           GizmoTypeEnum["Raid Banner"],
           GizmoTypeEnum["Armory"],
+          GizmoTypeEnum["Mailbox"],
         ].indexOf(eGizmoType) < 0) {
            return;
         }

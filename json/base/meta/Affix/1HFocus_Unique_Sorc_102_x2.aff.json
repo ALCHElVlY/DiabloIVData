@@ -42,9 +42,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -62,6 +62,30 @@
      "compiled": "AQAAABEAAAAAAAAA"
     }
    }
+  },
+  {
+   "__type__": "ItemAffixAttribute",
+   "__typeHash__": 501899601,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
+   "tAttribute": {
+    "__type__": "AttributeSpecifier",
+    "__typeHash__": 3218190286,
+    "eAttribute": 516,
+    "__eAttribute_name__": "Item_Granted_Skill_Tree_Reward",
+    "dwID": 0,
+    "nParam": 833522206,
+    "szAttributeFormula": {
+     "value": "1",
+     "compiled": "BgAAAAAAgD8AAAAA"
+    },
+    "gbidFormula": null,
+    "szFlatAttribLevelFormula": {
+     "value": "0",
+     "compiled": "BgAAAAAAAAAAAAAA"
+    }
+   }
   }
  ],
  "arStaticValues": [],
@@ -75,7 +99,7 @@
  "arEnableCondition": [],
  "arItemTags": [],
  "arAffixTags": [],
- "bIsTemperedAffix": false,
+ "bIsTemperedAffix": 0,
  "unk_31946e4": -1,
  "gbidSealAffixNameTag": null
 }

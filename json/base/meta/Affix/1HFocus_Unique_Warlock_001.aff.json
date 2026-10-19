@@ -42,9 +42,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -53,8 +53,8 @@
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.5, 0.7)",
-     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAAAAAAA/BgAAADMzMz8BAAAAZwAAAAAAAAA="
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.8, 1.1)",
+     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAADNzEw/BgAAAM3MjD8BAAAAZwAAAAAAAAA="
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -66,9 +66,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -77,8 +77,8 @@
     "dwID": 0,
     "nParam": -1806282011,
     "szAttributeFormula": {
-     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.5, 0.7)",
-     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAAAAAAA/BgAAADMzMz8BAAAAZwAAAAAAAAA="
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.8, 1.1)",
+     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAADNzEw/BgAAAM3MjD8BAAAAZwAAAAAAAAA="
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -90,9 +90,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": true,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 1,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -114,9 +114,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": true,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 1,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -138,9 +138,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": true,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 1,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -162,9 +162,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": true,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 1,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -187,16 +187,16 @@
  "arStaticValues": [
   2
  ],
- "snoPassivePower": null,
- "snoClassRequirement": {
-  "__raw__": 2207749,
-  "__group__": 74,
+ "snoPassivePower": {
+  "__raw__": 2559993,
+  "__group__": 29,
   "__type__": "DT_SNO",
   "__typeHash__": 2764331143,
-  "__targetFileName__": "base/meta/PlayerClass/Warlock.pcl",
-  "groupName": "PlayerClass",
-  "name": "Warlock"
+  "__targetFileName__": "base/meta/Power/1HFocus_Unique_Warlock_001.pow",
+  "groupName": "Power",
+  "name": "1HFocus_Unique_Warlock_001"
  },
+ "snoClassRequirement": null,
  "arAffixSkillTags": [],
  "arPowerToModify": [],
  "arSkillTagsToAdd": [],
@@ -205,7 +205,7 @@
  "arEnableCondition": [],
  "arItemTags": [],
  "arAffixTags": [],
- "bIsTemperedAffix": false,
+ "bIsTemperedAffix": 0,
  "unk_31946e4": -1,
  "gbidSealAffixNameTag": null
 }

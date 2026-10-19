@@ -40,12 +40,12 @@
      "wp": {
       "x": 47.20790481567383,
       "y": 49.65684509277344,
-      "z": 22.043581008911133
+      "z": 22.04359245300293
      },
      "wvExt": {
       "x": 51.618587493896484,
       "y": 52.147789001464844,
-      "z": 25.36536979675293
+      "z": 25.365358352661133
      }
     },
     "ptLODs": [
@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -116,12 +116,12 @@
          "wp": {
           "x": 47.20790481567383,
           "y": 49.65684509277344,
-          "z": 22.043581008911133
+          "z": 22.04359245300293
          },
          "wvExt": {
           "x": 51.618587493896484,
           "y": 52.147789001464844,
-          "z": 25.36536979675293
+          "z": 25.365358352661133
          }
         },
         "ptShapes": {
@@ -154,9 +154,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 14370,
+          "nVertCount": 14397,
           "nVertOffset": 0,
-          "nIndexCount": 36426,
+          "nIndexCount": 36414,
           "nIndexOffset": 0
          }
         ],
@@ -224,7 +224,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -273,9 +273,9 @@
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
           "nVertCount": 1207,
-          "nVertOffset": 517320,
+          "nVertOffset": 518292,
           "nIndexCount": 2934,
-          "nIndexOffset": 36426
+          "nIndexOffset": 36414
          }
         ],
         "wpFixedPointPosOffset": {
@@ -374,13 +374,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 560772
+        "dataSize": 561744
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -395,12 +395,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 560816,
-        "dataSize": 78720
+        "dataOffset": 561776,
+        "dataSize": 78696
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -414,11 +414,11 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 50.5737419128418,
-    "y": 42.12336730957031,
-    "z": 32.996910095214844
+    "x": 50.71980667114258,
+    "y": 42.220848083496094,
+    "z": 34.028968811035156
    },
-   "wdRadius": 81.69345092773438
+   "wdRadius": 82.14852905273438
   },
   "aabbBounds": {
    "__type__": "AABB",
@@ -426,12 +426,12 @@
    "wp": {
     "x": 47.20790481567383,
     "y": 49.65684509277344,
-    "z": 22.043581008911133
+    "z": 22.04359245300293
    },
    "wvExt": {
     "x": 51.618587493896484,
     "y": 52.147789001464844,
-    "z": 25.36536979675293
+    "z": 25.365358352661133
    }
   },
   "nLowQualityLOD": 1,
@@ -450,7 +450,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3570419382,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -485,7 +485,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3624814296,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

@@ -107,7 +107,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -233,7 +233,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -359,7 +359,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -485,7 +485,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -611,7 +611,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -767,7 +767,7 @@
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -854,7 +854,7 @@
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -874,7 +874,7 @@
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -892,7 +892,7 @@
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -945,6 +945,11 @@
    "__type__": "AppearanceLook",
    "__typeHash__": 3138400357,
    "szLookName": 2058911266
+  },
+  {
+   "__type__": "AppearanceLook",
+   "__typeHash__": 3138400357,
+   "szLookName": 876655527
   }
  ],
  "ptAppearanceMaterials": [
@@ -952,7 +957,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3690977368,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -1019,6 +1024,32 @@
       "__targetFileName__": "base/meta/Material/mnt_stor032_cat_sprinting_initialBurstMesh.mat",
       "groupName": "Material",
       "name": "mnt_stor032_cat_sprinting_initialBurstMesh"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 3,
+     "snoMaterial": {
+      "__raw__": 2647329,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/mnt_stor009_chimera_glowBlue_sprint_mat.mat",
+      "groupName": "Material",
+      "name": "mnt_stor009_chimera_glowBlue_sprint_mat"
      },
      "snoOverrideMaterial": null,
      "snoCloth": null,

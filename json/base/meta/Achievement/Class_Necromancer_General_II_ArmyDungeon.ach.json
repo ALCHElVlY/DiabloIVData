@@ -8,7 +8,7 @@
  "uMinRequiredCriteria": 0,
  "snoSupersedes": null,
  "uFlags": 32,
- "uPlatformFlags": 15,
+ "uPlatformFlags": 31,
  "arLinkedAchievements": [],
  "arCriteriaList": [
   {
@@ -81,7 +81,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false,
+    "bUsesOperand": 0,
     "uTimerDuration": "0"
    },
    "tAdvanceEvent": {
@@ -509,7 +509,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "tFailEvent": {
     "__type__": "CriteriaEvent",
@@ -576,7 +576,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "uFlags": 10
   },
@@ -650,7 +650,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false,
+    "bUsesOperand": 0,
     "uTimerDuration": "0"
    },
    "tAdvanceEvent": {
@@ -853,7 +853,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "tFailEvent": {
     "__type__": "CriteriaEvent",
@@ -920,7 +920,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "uFlags": 10
   },
@@ -994,7 +994,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false,
+    "bUsesOperand": 0,
     "uTimerDuration": "0"
    },
    "tAdvanceEvent": {
@@ -1377,7 +1377,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "tFailEvent": {
     "__type__": "CriteriaEvent",
@@ -1444,7 +1444,7 @@
     "gbidChallengerRiftDivision": null,
     "gbidDesignerVariable": null,
     "uOperand": "0",
-    "bUsesOperand": false
+    "bUsesOperand": 0
    },
    "uFlags": 10
   }
@@ -1526,6 +1526,11 @@
   "__type__": "SteamAchievementDefinition",
   "__typeHash__": 1583864588,
   "sIdentifier": ""
+ },
+ "tUbiConnectAchievement": {
+  "__type__": "UbiConnectAchievementDefinition",
+  "__typeHash__": 1031186332,
+  "uIdentifier": 0
  },
  "uLevel": 0,
  "uMinLevel": 0,

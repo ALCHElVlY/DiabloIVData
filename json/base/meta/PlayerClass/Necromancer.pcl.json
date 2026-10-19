@@ -54,7 +54,7 @@
      "__type__": "PlayerClassCoreStatBenefitEntry",
      "__typeHash__": 2507153527,
      "eContributingCoreStat": 1,
-     "flContributionScalar": 1.25,
+     "flContributionScalar": 1.625,
      "eBenefitCondition": 0,
      "unk_aae71b4": 0
     }
@@ -243,7 +243,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 8
@@ -324,7 +324,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 12
@@ -428,7 +428,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 1
@@ -509,7 +509,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 18
@@ -597,7 +597,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 22
@@ -701,7 +701,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 1
@@ -811,7 +811,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 28
@@ -907,7 +907,7 @@
          "__type__": "PlayerLevelSubcondition",
          "__typeHash__": 1516041750,
          "dwType": 1516041750,
-         "bNegate": false,
+         "bNegate": 0,
          "nMaxDepth": 12,
          "eComparisonOp": 5,
          "nLevel": 32
@@ -7000,43 +7000,48 @@
    "__typeHash__": 866553347,
    "snoHead": {
     "__raw__": 2335366,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Necro_245_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Necro_245_stor"
    },
    "snoTorso": {
     "__raw__": 2335372,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Necro_245_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Necro_245_stor"
    },
    "snoFeet": {
     "__raw__": 2335390,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Necro_245_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Necro_245_stor"
    },
    "snoHands": {
     "__raw__": 2335378,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Necro_245_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Necro_245_stor"
    },
    "snoLegs": {
     "__raw__": 2335384,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Necro_245_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Necro_245_stor"
    },
    "snoMainHand": null,
    "snoOffHand": null,
@@ -8407,6 +8412,354 @@
    "snoOneHandOff": null,
    "snoDye": null,
    "szName": 2870457001
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2578667,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Necro_276_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Necro_276_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2578674,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Necro_276_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Necro_276_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2578701,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Necro_276_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Necro_276_stor"
+   },
+   "snoHands": {
+    "__raw__": 2578680,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Necro_276_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Necro_276_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2578693,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Necro_276_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Necro_276_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870457031
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2578954,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Necro_277_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Necro_277_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2578960,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Necro_277_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Necro_277_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2578979,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Necro_277_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Necro_277_stor"
+   },
+   "snoHands": {
+    "__raw__": 2578966,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Necro_277_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Necro_277_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2578973,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Necro_277_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Necro_277_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870457032
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2650042,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Helm_Legendary_Generic_060"
+   },
+   "snoTorso": {
+    "__raw__": 2650046,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Chest_Legendary_Generic_060"
+   },
+   "snoFeet": {
+    "__raw__": 2650054,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Boots_Legendary_Generic_060"
+   },
+   "snoHands": {
+    "__raw__": 2650038,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Gloves_Legendary_Generic_060"
+   },
+   "snoLegs": {
+    "__raw__": 2650050,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Pants_Legendary_Generic_060"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 329676677
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2590124,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Necro_273_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Necro_273_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2590141,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Necro_273_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Necro_273_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2590161,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Necro_273_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Necro_273_stor"
+   },
+   "snoHands": {
+    "__raw__": 2590147,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Necro_273_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Necro_273_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2590155,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Necro_273_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Necro_273_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870457028
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2599391,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Necro_274_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Necro_274_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2599397,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Necro_274_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Necro_274_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2599415,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Necro_274_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Necro_274_stor"
+   },
+   "snoHands": {
+    "__raw__": 2599403,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Necro_274_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Necro_274_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2599409,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Necro_274_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Necro_274_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870457029
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2575675,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Necro_275_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Necro_275_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2575682,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Necro_275_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Necro_275_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2575702,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Necro_275_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Necro_275_stor"
+   },
+   "snoHands": {
+    "__raw__": 2575688,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Necro_275_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Necro_275_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2575695,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Necro_275_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Necro_275_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870457030
   }
  ],
  "arAvailableParagonBoards": [
@@ -8510,7 +8863,7 @@
   "groupName": "Actor",
   "name": "resourceOrb_necromancer"
  },
- "unk_63df9da": false,
+ "unk_63df9da": 0,
  "snoInventoryUIWorld": {
   "__raw__": 328970,
   "__group__": 48,
@@ -8773,7 +9126,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363042,
       "__group__": 140,
@@ -8848,8 +9201,8 @@
       "name": "Clean"
      },
      "snoJewelry": null,
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -8924,7 +9277,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363044,
       "__group__": 140,
@@ -8991,8 +9344,8 @@
       "groupName": "Jewelry",
       "name": "Global_12"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -9067,7 +9420,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363045,
       "__group__": 140,
@@ -9150,8 +9503,8 @@
       "groupName": "Jewelry",
       "name": "Global_02"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -9226,7 +9579,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363043,
       "__group__": 140,
@@ -9301,8 +9654,8 @@
       "groupName": "Jewelry",
       "name": "Global_19"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -9377,7 +9730,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363042,
       "__group__": 140,
@@ -9444,8 +9797,8 @@
       "groupName": "Jewelry",
       "name": "Global_16"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    },
    {
@@ -9520,7 +9873,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363044,
       "__group__": 140,
@@ -9587,8 +9940,8 @@
       "groupName": "Jewelry",
       "name": "Global_17"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    },
    {
@@ -9663,7 +10016,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363045,
       "__group__": 140,
@@ -9746,8 +10099,8 @@
       "groupName": "Jewelry",
       "name": "Global_25"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    },
    {
@@ -9822,7 +10175,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363043,
       "__group__": 140,
@@ -9897,8 +10250,8 @@
       "name": "Fine_FuManchu"
      },
      "snoJewelry": null,
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    }
   ]

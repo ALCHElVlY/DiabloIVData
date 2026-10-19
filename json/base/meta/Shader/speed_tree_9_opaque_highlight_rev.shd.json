@@ -15,7 +15,7 @@
     "__typeHash__": 3352174724,
     "nSortPriorityOffset": 0,
     "eCullMode": 2,
-    "fZBufferWriteEnable": false,
+    "fZBufferWriteEnable": 0,
     "eZBufferCompareFunc": 5,
     "flZBias": 0,
     "flZSlopeScaleBias": 0,
@@ -24,7 +24,7 @@
     "tStencilParams": {
      "__type__": "StencilParams",
      "__typeHash__": 1922961974,
-     "fStencilBufferEnable": false,
+     "fStencilBufferEnable": 0,
      "dwStencilBufferRefValue": 0,
      "dwStencilReadMask": 255,
      "dwStencilWriteMask": 255,
@@ -37,28 +37,28 @@
      "eBackStencilOpFail": 1,
      "eBackStencilOpZFail": 1
     },
-    "fAlphaTestEnable": false,
+    "fAlphaTestEnable": 0,
     "eAlphaTestCompareFunc": 5,
     "bAlphaTestRefValue": 25,
-    "fAlphaMaskEnable": false,
+    "fAlphaMaskEnable": 0,
     "eFillMode": 0,
-    "fIndependentAlphaBlendEnable": false,
+    "fIndependentAlphaBlendEnable": 0,
     "arAlphaBlend": [
      {
       "__type__": "AlphaBlendFactors",
       "__typeHash__": 3409962653,
-      "fAlphaBlendEnable": false,
+      "fAlphaBlendEnable": 0,
       "eBlendOp": 1,
       "eSrcBlendFactor": 5,
       "eDestBlendFactor": 6,
-      "fSeparateAlphaBlendEnable": false,
+      "fSeparateAlphaBlendEnable": 0,
       "eBlendOpAlpha": 1,
       "eSrcBlendFactorAlpha": 5,
       "eDestBlendFactorAlpha": 6,
-      "fRWriteEnable": true,
-      "fGWriteEnable": true,
-      "fBWriteEnable": true,
-      "fAWriteEnable": true
+      "fRWriteEnable": 1,
+      "fGWriteEnable": 1,
+      "fBWriteEnable": 1,
+      "fAWriteEnable": 1
      }
     ]
    },
@@ -96,7 +96,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-4cb8933ce23f01a8",
+       "dwKey": "445ce5d67ddb6cc0",
        "pdwUsedConstants": [
         536887296,
         0,
@@ -166,7 +166,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "7f2f1da0bdc3e76e",
+       "dwKey": "77dec6be2e7f3382",
        "pdwUsedConstants": [
         536887296,
         0,
@@ -236,7 +236,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "4ee2b55a11dd2fea",
+       "dwKey": "6474a705dd51f5e2",
        "pdwUsedConstants": [
         536887296,
         0,
@@ -306,7 +306,7 @@
        "__typeHash__": 1801469402,
        "pShaderProgram": [],
        "pStateObject": [],
-       "dwKey": "-67eac123498d48d3",
+       "dwKey": "-50c61aba8a996a9d",
        "pdwUsedConstants": [
         536887296,
         0,
@@ -680,9 +680,9 @@
    }
   }
  ],
- "unk_a0d6c95": false,
- "unk_860effa": false,
- "unk_2f4ebc8": false,
+ "unk_a0d6c95": 0,
+ "unk_860effa": 0,
+ "unk_2f4ebc8": 0,
  "arDisabledShaderFX": [],
  "arRemappedShaderFX": [],
  "szCachedShaderName": "speed_tree_9_opaque_highlight_rev",
@@ -695,7 +695,7 @@
    "__typeHash__": 1028015787,
    "__type__": "DT_BYTE",
    "dataOffset": 32,
-   "dataSize": 29338
+   "dataSize": 29354
   }
  }
 }

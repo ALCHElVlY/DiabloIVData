@@ -54,7 +54,7 @@
      "__type__": "PlayerClassCoreStatBenefitEntry",
      "__typeHash__": 2507153527,
      "eContributingCoreStat": 2,
-     "flContributionScalar": 1.25,
+     "flContributionScalar": 1.625,
      "eBenefitCondition": 0,
      "unk_aae71b4": 0
     }
@@ -411,7 +411,7 @@
        "__type__": "PlayerLevelSubcondition",
        "__typeHash__": 1516041750,
        "dwType": 1516041750,
-       "bNegate": false,
+       "bNegate": 0,
        "nMaxDepth": 12,
        "eComparisonOp": 5,
        "nLevel": 15
@@ -432,7 +432,7 @@
        "__type__": "PlayerLevelSubcondition",
        "__typeHash__": 1516041750,
        "dwType": 1516041750,
-       "bNegate": false,
+       "bNegate": 0,
        "nMaxDepth": 12,
        "eComparisonOp": 5,
        "nLevel": 30
@@ -453,7 +453,7 @@
        "__type__": "PlayerLevelSubcondition",
        "__typeHash__": 1516041750,
        "dwType": 1516041750,
-       "bNegate": false,
+       "bNegate": 0,
        "nMaxDepth": 12,
        "eComparisonOp": 5,
        "nLevel": 50
@@ -4359,43 +4359,48 @@
    "__typeHash__": 866553347,
    "snoHead": {
     "__raw__": 2530862,
-    "__encrypted__": "ecc85fe0f1c9e803",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Warlock_176_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Warlock_176_stor"
    },
    "snoTorso": {
     "__raw__": 2530872,
-    "__encrypted__": "ecc85fe0f1c9e803",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Warlock_176_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Warlock_176_stor"
    },
    "snoFeet": {
     "__raw__": 2530891,
-    "__encrypted__": "ecc85fe0f1c9e803",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Warlock_176_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Warlock_176_stor"
    },
    "snoHands": {
     "__raw__": 2530879,
-    "__encrypted__": "ecc85fe0f1c9e803",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Warlock_176_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Warlock_176_stor"
    },
    "snoLegs": {
     "__raw__": 2530885,
-    "__encrypted__": "ecc85fe0f1c9e803",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Warlock_176_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Warlock_176_stor"
    },
    "snoMainHand": null,
    "snoOffHand": null,
@@ -4522,6 +4527,238 @@
    "snoOneHandOff": null,
    "snoDye": null,
    "szName": 2870455937
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2650042,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Helm_Legendary_Generic_060"
+   },
+   "snoTorso": {
+    "__raw__": 2650046,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Chest_Legendary_Generic_060"
+   },
+   "snoFeet": {
+    "__raw__": 2650054,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Boots_Legendary_Generic_060"
+   },
+   "snoHands": {
+    "__raw__": 2650038,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Gloves_Legendary_Generic_060"
+   },
+   "snoLegs": {
+    "__raw__": 2650050,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Pants_Legendary_Generic_060"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 329676677
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2529616,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Warlock_173_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Warlock_173_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2529624,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Warlock_173_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Warlock_173_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2529647,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Warlock_173_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Warlock_173_stor"
+   },
+   "snoHands": {
+    "__raw__": 2529631,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Warlock_173_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Warlock_173_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2529638,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Warlock_173_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Warlock_173_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870455939
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2604393,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Warlock_182_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Warlock_182_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2604399,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Warlock_182_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Warlock_182_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2604417,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Warlock_182_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Warlock_182_stor"
+   },
+   "snoHands": {
+    "__raw__": 2604405,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Warlock_182_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Warlock_182_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2604411,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Warlock_182_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Warlock_182_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870455971
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2595645,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Warlock_181_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Warlock_181_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2595651,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Warlock_181_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Warlock_181_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2595669,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Warlock_181_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Warlock_181_stor"
+   },
+   "snoHands": {
+    "__raw__": 2595657,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Warlock_181_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Warlock_181_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2595663,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Warlock_181_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Warlock_181_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870455970
   }
  ],
  "arAvailableParagonBoards": [
@@ -4625,7 +4862,7 @@
   "groupName": "Actor",
   "name": "resourceOrb_warlock"
  },
- "unk_63df9da": true,
+ "unk_63df9da": 1,
  "snoInventoryUIWorld": {
   "__raw__": 2522955,
   "__group__": 48,
@@ -4888,7 +5125,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363045,
       "__group__": 140,
@@ -4955,8 +5192,8 @@
       "groupName": "Jewelry",
       "name": "Global_18"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -5015,7 +5252,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363043,
       "__group__": 140,
@@ -5082,8 +5319,8 @@
       "groupName": "Jewelry",
       "name": "Global_30"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -5142,7 +5379,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363044,
       "__group__": 140,
@@ -5217,8 +5454,8 @@
       "groupName": "Jewelry",
       "name": "Global_00"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -5277,7 +5514,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363042,
       "__group__": 140,
@@ -5360,8 +5597,8 @@
       "groupName": "Jewelry",
       "name": "Global_03"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -5420,7 +5657,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363042,
       "__group__": 140,
@@ -5487,8 +5724,8 @@
       "groupName": "Jewelry",
       "name": "Global_03"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -5547,7 +5784,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363043,
       "__group__": 140,
@@ -5622,8 +5859,8 @@
       "groupName": "Jewelry",
       "name": "Global_12"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -5682,7 +5919,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363044,
       "__group__": 140,
@@ -5757,8 +5994,8 @@
       "groupName": "Jewelry",
       "name": "Global_11"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -5817,7 +6054,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363045,
       "__group__": 140,
@@ -5900,8 +6137,8 @@
       "groupName": "Jewelry",
       "name": "Global_05"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    }
   ]

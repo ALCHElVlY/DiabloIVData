@@ -42,9 +42,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -53,8 +53,8 @@
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(3, 0.1, 0.13)",
-     "compiled": "BgAAAAAAQEAGAAAAzczMPQYAAAC4HgU+AQAAAGgAAAAAAAAA"
+     "value": "FloatRandomRangeWithIntervalUniqueAffixPityBonus(3, 0.07, 0.09)",
+     "compiled": "BgAAAAAAQEAGAAAAKVyPPQYAAADsUbg9AQAAAGgAAAAAAAAA"
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -122,7 +122,7 @@
  "arEnableCondition": [],
  "arItemTags": [],
  "arAffixTags": [],
- "bIsTemperedAffix": false,
+ "bIsTemperedAffix": 0,
  "unk_31946e4": -1,
  "gbidSealAffixNameTag": null
 }

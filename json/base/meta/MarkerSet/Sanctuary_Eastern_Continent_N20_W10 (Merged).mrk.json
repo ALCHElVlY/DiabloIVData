@@ -47,7 +47,7 @@
      "dwType": 294654905,
      "nHeightSampleDensity": 2,
      "unk_b677151": 4,
-     "unk_615a884": false,
+     "unk_615a884": 0,
      "snoBaseMaterial": {
       "__raw__": 60107,
       "__group__": 57,
@@ -318,7 +318,7 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 232212,
+           "nIndexOffset": 224532,
            "nIndexCount": 1536
           }
          ],
@@ -569,13 +569,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 224532,
+           "nIndexOffset": 226068,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 227604,
+           "nIndexOffset": 238356,
            "nIndexCount": 1536
           }
          ],
@@ -841,7 +841,7 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 233748,
+           "nIndexOffset": 239892,
            "nIndexCount": 1536
           }
          ],
@@ -1028,13 +1028,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 235284,
+           "nIndexOffset": 232212,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 238356,
+           "nIndexOffset": 241428,
            "nIndexCount": 1536
           }
          ],
@@ -1212,7 +1212,7 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 239892,
+           "nIndexOffset": 235284,
            "nIndexCount": 3072
           },
           {
@@ -1430,7 +1430,7 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 247572,
+           "nIndexOffset": 253716,
            "nIndexCount": 1536
           }
          ],
@@ -1633,13 +1633,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 249108,
+           "nIndexOffset": 247572,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 252180,
+           "nIndexOffset": 258324,
            "nIndexCount": 1536
           }
          ],
@@ -1881,13 +1881,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 253716,
+           "nIndexOffset": 255252,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 256788,
+           "nIndexOffset": 261396,
            "nIndexCount": 1536
           }
          ],
@@ -2138,13 +2138,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 258324,
+           "nIndexOffset": 250644,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 261396,
+           "nIndexOffset": 259860,
            "nIndexCount": 1536
           }
          ],
@@ -8226,13 +8226,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 376596,
+           "nIndexOffset": 373524,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 384276,
+           "nIndexOffset": 376596,
            "nIndexCount": 1536
           }
          ],
@@ -8492,13 +8492,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 379668,
+           "nIndexOffset": 378132,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 385812,
+           "nIndexOffset": 381204,
            "nIndexCount": 1536
           }
          ],
@@ -8740,13 +8740,13 @@
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 373524,
+           "nIndexOffset": 382740,
            "nIndexCount": 3072
           },
           {
            "__type__": "MarkerHeightFieldIBInfo",
            "__typeHash__": 3208997398,
-           "nIndexOffset": 382740,
+           "nIndexOffset": 385812,
            "nIndexCount": 1536
           }
          ],
@@ -9099,7 +9099,7 @@
      "dwMarkerDecalFlags": 0,
      "flAngleThreshold": 3.1415927410125732,
      "nSortPriOffset": 0,
-     "bDieOverride": true,
+     "bDieOverride": 1,
      "ptRunTimeMaterialValues": []
     }
    ],
@@ -10240,8 +10240,8 @@
         "__type__": "TriggerConditions",
         "__typeHash__": 888408526,
         "flChance": 1,
-        "bMute": false,
-        "bMuteExternal": false,
+        "bMute": 0,
+        "bMuteExternal": 0,
         "tDelay": 0,
         "tImpactVelocityRange": {
          "rangeValue1": 0,
@@ -10255,10 +10255,10 @@
         "dwConditionFlags": 1038,
         "ePlayerCountCondition": 0,
         "ePerformanceBehavior": 0,
-        "unk_b41b571": []
+        "trackConditionToggles": []
        },
-       "fGenerated": false,
-       "fInCreation": false,
+       "fGenerated": 0,
+       "fInCreation": 0,
        "dwParentActorID": 4294967295,
        "tDuration": 0,
        "dwTriggerFlags": 98304,
@@ -10275,7 +10275,7 @@
        },
        "nPreviousInTrack": -1,
        "nNextInTrack": -1,
-       "fPlayOnOwner": true,
+       "fPlayOnOwner": 1,
        "dwActorID": 0,
        "snoname": {
         "__raw__": 1081632,
@@ -10315,24 +10315,24 @@
        "flAttractorVolumeRadius": 0,
        "flAttractorVolumeHeight": 0,
        "dwSeed": 0,
-       "fBillboard": false,
+       "fBillboard": 0,
        "eAddType": 0,
-       "fDoNotParent": false,
-       "fKeepOriginal": false,
-       "fEnableMovement": false,
-       "unk_773852b": false,
-       "unk_62ab747": true,
-       "unk_cb43646": false,
+       "fDoNotParent": 0,
+       "fKeepOriginal": 0,
+       "fEnableMovement": 0,
+       "unk_773852b": 0,
+       "unk_62ab747": 1,
+       "unk_cb43646": 0,
        "eAppearanceOverrideType": 0,
        "eAppearanceOverrideInventorySlot": -1,
        "snoAppearanceOverride": null,
-       "fRandomLook": false,
+       "fRandomLook": 0,
        "tLookLink": {
         "__type__": "LookLink",
         "__typeHash__": 2394153027,
         "dwLookHash": 0
        },
-       "fOverrideActorVariant": false,
+       "fOverrideActorVariant": 0,
        "eVariantTypeOverride": 0,
        "snoAnimSetOverride": null,
        "snoPlayerAnimSetOverrides": [],
@@ -10340,7 +10340,7 @@
        "dwShaderMapOverride": 4294967295,
        "nPlayerIndex": 0,
        "flScale": 1,
-       "unk_ebd19c": false,
+       "unk_ebd19c": 0,
        "szSpawnLocatorName": 0,
        "vecScalar": {
         "x": 1,

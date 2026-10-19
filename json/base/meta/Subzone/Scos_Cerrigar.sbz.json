@@ -354,17 +354,39 @@
     "groupName": "MarkerSet",
     "name": "Scos_Cerrigar (PTR_CheatVendor)"
    }
+  },
+  {
+   "__type__": "SubzoneWorldMarkerSetEntry",
+   "__typeHash__": 1107537454,
+   "snoWorld": {
+    "__raw__": 69068,
+    "__group__": 48,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/World/Sanctuary_Eastern_Continent.wrl",
+    "groupName": "World",
+    "name": "Sanctuary_Eastern_Continent"
+   },
+   "snoMarkerSet": {
+    "__raw__": 2662292,
+    "__group__": 24,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/MarkerSet/Scos_Cerrigar (S15).mrk",
+    "groupName": "MarkerSet",
+    "name": "Scos_Cerrigar (S15)"
+   }
   }
  ],
  "dwFlags": 0,
- "bHasWorldEvent": false,
- "bHasZoneEvent": false,
- "bKeyedDungeonOnly": false,
- "bAlwaysPrivate": false,
- "bIgnoreFavoriteWaypointLevelArea": false,
- "unk_4770c5d": false,
+ "bHasWorldEvent": 0,
+ "bHasZoneEvent": 0,
+ "bKeyedDungeonOnly": 0,
+ "bAlwaysPrivate": 0,
+ "bIgnoreFavoriteWaypointLevelArea": 0,
+ "unk_4770c5d": 0,
  "dwOverrideDifficultyTier": 0,
- "bRandomPrimaryWorld": false,
+ "bRandomPrimaryWorld": 0,
  "snoSpecifiedWorld": null,
  "snoDestLevelArea": null,
  "dwEntranceNameToFind": 4294967295,
@@ -372,6 +394,14 @@
  "snoSecondaryDestLevelArea": null,
  "dwSecondaryEntranceNameToFind": 4294967295,
  "eOverrideWorldTier": -1,
+ "bOverrideZoneLoadingImages": 0,
+ "unk_da28c47": 0,
+ "tSubzoneStaticLoadingImages": {
+  "__type__": "StaticLoadingImages",
+  "__typeHash__": 600875676,
+  "arExteriorImages": [],
+  "arDungeonImages": []
+ },
  "gbidSubzoneQuestUIOverrides": null,
  "arForcedPrefetchData": [
   {
@@ -397,8 +427,8 @@
       "name": "HarvestNode_Herb_Scos_HowlerMoss"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -413,8 +443,8 @@
       "name": "HarvestNode_Herb_Common_Gallowvine"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -429,8 +459,8 @@
       "name": "wildlife_quillrat_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -445,8 +475,8 @@
       "name": "wildlife_serpent_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -461,8 +491,8 @@
       "name": "wildlife_bear_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -477,8 +507,8 @@
       "name": "wildlife_fly_swarm_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -493,8 +523,8 @@
       "name": "wildlife_beast_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -509,8 +539,8 @@
       "name": "ambient_raven"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -525,8 +555,8 @@
       "name": "ambient_turtle"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -541,8 +571,8 @@
       "name": "treasure_goblin"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     }
    ]
   },
@@ -569,8 +599,8 @@
       "name": "HarvestNode_Herb_Scos_HowlerMoss"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -585,8 +615,8 @@
       "name": "HarvestNode_Herb_Common_Gallowvine"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -601,8 +631,8 @@
       "name": "wildlife_quillrat_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -617,8 +647,8 @@
       "name": "wildlife_serpent_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -633,8 +663,8 @@
       "name": "wildlife_bear_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -649,8 +679,8 @@
       "name": "wildlife_fly_swarm_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -665,8 +695,8 @@
       "name": "wildlife_beast_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -681,8 +711,8 @@
       "name": "ambient_raven"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -697,8 +727,8 @@
       "name": "ambient_turtle"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -713,8 +743,8 @@
       "name": "treasure_goblin"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     }
    ]
   },
@@ -741,8 +771,8 @@
       "name": "Sanctuary_Eastern_Continent_N05_E05"
      },
      "eVariantType": 0,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -757,8 +787,8 @@
       "name": "HarvestNode_Herb_Scos_HowlerMoss"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -773,8 +803,8 @@
       "name": "HarvestNode_Herb_Common_Gallowvine"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -789,8 +819,8 @@
       "name": "wildlife_quillrat_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -805,8 +835,8 @@
       "name": "wildlife_serpent_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -821,8 +851,8 @@
       "name": "wildlife_bear_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -837,8 +867,8 @@
       "name": "wildlife_fly_swarm_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -853,8 +883,8 @@
       "name": "wildlife_beast_scos"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -869,8 +899,8 @@
       "name": "ambient_raven"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -885,8 +915,8 @@
       "name": "ambient_turtle"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     },
     {
      "__type__": "ForcedPrefetchEntry",
@@ -901,8 +931,8 @@
       "name": "treasure_goblin"
      },
      "eVariantType": 1,
-     "unk_b6c4659": false,
-     "unk_2003f22": false
+     "unk_b6c4659": 0,
+     "unk_2003f22": 0
     }
    ]
   }

@@ -50,11 +50,11 @@
  },
  "snoWorldDevStartLocation": null,
  "snoLevelArea": null,
- "unk_14dee1b": false,
+ "unk_14dee1b": 0,
  "flParticipationRadius": 12,
  "ePersistentEventType": -1,
  "eSubzoneModifierRequiredWorldTier": 0,
- "fPrioritySideQuest": false,
+ "fPrioritySideQuest": 0,
  "ePrioritySideQuestType": 0,
  "snoBountySubzone": {
   "__raw__": 1381484,
@@ -84,7 +84,7 @@
    "dwUID": 0,
    "dwFlags": 2,
    "dwRestrictions": 0,
-   "unk_baaed01": false,
+   "unk_baaed01": 0,
    "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
@@ -113,7 +113,7 @@
         "eEventType": 74,
         "dwListenerFlags": 0,
         "snoCondition": null,
-        "unk_c3ba01d": false,
+        "unk_c3ba01d": 0,
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
@@ -139,8 +139,8 @@
          "y": 0
         },
         "flRadius": 0,
-        "bValid": false,
-        "bManuallySpecified": false
+        "bValid": 0,
+        "bManuallySpecified": 0
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
@@ -148,7 +148,7 @@
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
-       "unk_301d18": false,
+       "unk_301d18": 0,
        "unk_896a0c5": {
         "__type__": "UIImageHandleReference",
         "__typeHash__": 1797021084,
@@ -163,15 +163,15 @@
         "x": 0,
         "y": 0
        },
-       "unk_9d6e5b3": false,
+       "unk_9d6e5b3": 0,
        "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
+       "unk_5698d08": 0,
+       "unk_77b5dc7": 0,
        "unk_146ba45": 0,
        "snoHeaderDisplayCondition": null
       }
      ],
-     "bGiveFirstTimeReward": false,
+     "bGiveFirstTimeReward": 0,
      "tFirstTimeReward": {
       "__type__": "QuestReward",
       "__typeHash__": 3387295447,
@@ -193,15 +193,15 @@
     "hImageHandle": 0
    },
    "snoAudioContext": null,
-   "unk_1907e03": false,
+   "unk_1907e03": 0,
    "hOverrideIconTracked": 0,
    "hOverrideIconUntracked": 0,
    "snoOverrideParticleOverheadQuestProgressTracked": null,
    "snoOverrideParticleOverheadQuestProgressUntracked": null,
-   "unk_564e7d5": false,
-   "unk_eff642d": false,
-   "unk_fc27941": false,
-   "unk_e692de6": false,
+   "unk_564e7d5": 0,
+   "unk_eff642d": 0,
+   "unk_fc27941": 0,
+   "unk_e692de6": 0,
    "dwBackgroundProgressBarSourceCallbackUID": 4294967295,
    "dwForegroundProgressBarSourceCallbackUID": 4294967295,
    "flProgressBarFlashThreshold": 0,
@@ -220,7 +220,7 @@
    "dwUID": 5,
    "dwFlags": 0,
    "dwRestrictions": 0,
-   "unk_baaed01": false,
+   "unk_baaed01": 0,
    "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
@@ -249,7 +249,7 @@
         "eEventType": 36,
         "dwListenerFlags": 0,
         "snoCondition": null,
-        "unk_c3ba01d": false,
+        "unk_c3ba01d": 0,
         "flCooldownSeconds": 0,
         "arEventFilters": [
          {
@@ -321,8 +321,8 @@
          "y": 0
         },
         "flRadius": 0,
-        "bValid": false,
-        "bManuallySpecified": false
+        "bValid": 0,
+        "bManuallySpecified": 0
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
@@ -330,7 +330,7 @@
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
-       "unk_301d18": false,
+       "unk_301d18": 0,
        "unk_896a0c5": {
         "__type__": "UIImageHandleReference",
         "__typeHash__": 1797021084,
@@ -345,15 +345,15 @@
         "x": 0,
         "y": 0
        },
-       "unk_9d6e5b3": false,
+       "unk_9d6e5b3": 0,
        "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
+       "unk_5698d08": 0,
+       "unk_77b5dc7": 0,
        "unk_146ba45": 0,
        "snoHeaderDisplayCondition": null
       }
      ],
-     "bGiveFirstTimeReward": false,
+     "bGiveFirstTimeReward": 0,
      "tFirstTimeReward": {
       "__type__": "QuestReward",
       "__typeHash__": 3387295447,
@@ -380,7 +380,7 @@
         "eEventType": 89,
         "dwListenerFlags": 0,
         "snoCondition": null,
-        "unk_c3ba01d": false,
+        "unk_c3ba01d": 0,
         "flCooldownSeconds": 0,
         "arEventFilters": [
          {
@@ -444,20 +444,32 @@
         "eType": 0,
         "vPolygonPoints": [
          {
-          "x": 1513.52001953125,
-          "y": -143.75799560546875
+          "x": 1543.219970703125,
+          "y": -150.38499450683594
+         },
+         {
+          "x": 1491.1199951171875,
+          "y": -253.88800048828125
          },
          {
           "x": 1489.719970703125,
           "y": -255.01499938964844
          },
          {
-          "x": 1262.3699951171875,
-          "y": -332.031005859375
+          "x": 1303.56005859375,
+          "y": -366.3139953613281
          },
          {
-          "x": 1215.780029296875,
-          "y": -346.0929870605469
+          "x": 1270.93994140625,
+          "y": -379.9330139160156
+         },
+         {
+          "x": 1238.75,
+          "y": -383.1059875488281
+         },
+         {
+          "x": 1211.5699462890625,
+          "y": -370.00799560546875
          },
          {
           "x": 1177.2900390625,
@@ -468,8 +480,12 @@
           "y": 23.895099639892578
          },
          {
-          "x": 1190.739990234375,
-          "y": 46.266300201416016
+          "x": 1188.8599853515625,
+          "y": 46.46689987182617
+         },
+         {
+          "x": 1190.510009765625,
+          "y": 47.91239929199219
          },
          {
           "x": 1211.050048828125,
@@ -484,21 +500,33 @@
           "y": 81.59089660644531
          },
          {
-          "x": 1398.02001953125,
-          "y": -10.38479995727539
+          "x": 1352.1300048828125,
+          "y": 24.606800079345703
          },
          {
-          "x": 1450.72998046875,
-          "y": -59.40620040893555
+          "x": 1405.469970703125,
+          "y": -14.111599922180176
+         },
+         {
+          "x": 1466.4200439453125,
+          "y": -68.67520141601562
+         },
+         {
+          "x": 1528.6400146484375,
+          "y": -128.38099670410156
+         },
+         {
+          "x": 1542.8299560546875,
+          "y": -147.1179962158203
          }
         ],
         "vCenterPos": {
-         "x": 1338.800048828125,
-         "y": -132.25103759765625
+         "x": 1353.64990234375,
+         "y": -150.75753784179688
         },
-        "flRadius": 246.70286560058594,
-        "bValid": true,
-        "bManuallySpecified": false
+        "flRadius": 261.2613220214844,
+        "bValid": 1,
+        "bManuallySpecified": 0
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
@@ -516,7 +544,7 @@
        ],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
-       "unk_301d18": false,
+       "unk_301d18": 0,
        "unk_896a0c5": {
         "__type__": "UIImageHandleReference",
         "__typeHash__": 1797021084,
@@ -531,10 +559,10 @@
         "x": 0,
         "y": 0
        },
-       "unk_9d6e5b3": false,
+       "unk_9d6e5b3": 0,
        "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
+       "unk_5698d08": 0,
+       "unk_77b5dc7": 0,
        "unk_146ba45": 0,
        "snoHeaderDisplayCondition": null
       },
@@ -550,7 +578,7 @@
         "eEventType": 89,
         "dwListenerFlags": 0,
         "snoCondition": null,
-        "unk_c3ba01d": false,
+        "unk_c3ba01d": 0,
         "flCooldownSeconds": 0,
         "arEventFilters": [
          {
@@ -614,53 +642,85 @@
         "eType": 0,
         "vPolygonPoints": [
          {
-          "x": 1513.52001953125,
-          "y": -143.75799560546875
+          "x": 1543.219970703125,
+          "y": -150.38499450683594
+         },
+         {
+          "x": 1491.1199951171875,
+          "y": -253.88800048828125
          },
          {
           "x": 1489.719970703125,
           "y": -255.01499938964844
          },
          {
-          "x": 1262.3699951171875,
-          "y": -332.031005859375
+          "x": 1303.56005859375,
+          "y": -366.3139953613281
          },
          {
-          "x": 1215.780029296875,
-          "y": -346.0929870605469
+          "x": 1270.93994140625,
+          "y": -379.9330139160156
+         },
+         {
+          "x": 1238.75,
+          "y": -383.1059875488281
+         },
+         {
+          "x": 1211.5699462890625,
+          "y": -370.00799560546875
          },
          {
           "x": 1177.2900390625,
           "y": -302.00299072265625
          },
          {
-          "x": 1209.3800048828125,
-          "y": -8.151530265808105
+          "x": 1188.8599853515625,
+          "y": 46.46689987182617
          },
          {
-          "x": 1238.3499755859375,
-          "y": 61.52259826660156
+          "x": 1190.510009765625,
+          "y": 47.91239929199219
+         },
+         {
+          "x": 1212.530029296875,
+          "y": 61.4822998046875
+         },
+         {
+          "x": 1239.3599853515625,
+          "y": 72.9437026977539
          },
          {
           "x": 1265.739990234375,
           "y": 81.59089660644531
          },
          {
-          "x": 1398.02001953125,
-          "y": -10.38479995727539
+          "x": 1352.1300048828125,
+          "y": 24.606800079345703
          },
          {
-          "x": 1450.72998046875,
-          "y": -59.40620040893555
+          "x": 1405.469970703125,
+          "y": -14.111599922180176
+         },
+         {
+          "x": 1466.4200439453125,
+          "y": -68.67520141601562
+         },
+         {
+          "x": 1528.6400146484375,
+          "y": -128.38099670410156
+         },
+         {
+          "x": 1542.8299560546875,
+          "y": -147.1179962158203
          }
         ],
         "vCenterPos": {
-         "x": 1345.405029296875,
-         "y": -132.25103759765625
+         "x": 1360.2550048828125,
+         "y": -150.75753784179688
         },
-        "flRadius": 250.06202697753906,
-        "bValid": true,
-        "bManuallySpecified": false
+        "flRadius": 264.91131591796875,
+        "bValid": 1,
+        "bManuallySpecified": 0
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
@@ -678,7 +738,7 @@
        ],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
-       "unk_301d18": false,
+       "unk_301d18": 0,
        "unk_896a0c5": {
         "__type__": "UIImageHandleReference",
         "__typeHash__": 1797021084,
@@ -693,15 +753,15 @@
         "x": 0,
         "y": 0
        },
-       "unk_9d6e5b3": false,
+       "unk_9d6e5b3": 0,
        "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
+       "unk_5698d08": 0,
+       "unk_77b5dc7": 0,
        "unk_146ba45": 0,
        "snoHeaderDisplayCondition": null
       }
      ],
-     "bGiveFirstTimeReward": false,
+     "bGiveFirstTimeReward": 0,
      "tFirstTimeReward": {
       "__type__": "QuestReward",
       "__typeHash__": 3387295447,
@@ -736,7 +796,7 @@
          "groupName": "Condition",
          "name": "Season_Active_Season04"
         },
-        "unk_c3ba01d": false,
+        "unk_c3ba01d": 0,
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
@@ -754,8 +814,8 @@
          "y": 0
         },
         "flRadius": 0,
-        "bValid": false,
-        "bManuallySpecified": false
+        "bValid": 0,
+        "bManuallySpecified": 0
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
@@ -763,7 +823,7 @@
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
-       "unk_301d18": false,
+       "unk_301d18": 0,
        "unk_896a0c5": {
         "__type__": "UIImageHandleReference",
         "__typeHash__": 1797021084,
@@ -778,15 +838,15 @@
         "x": 0,
         "y": 0
        },
-       "unk_9d6e5b3": false,
+       "unk_9d6e5b3": 0,
        "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
+       "unk_5698d08": 0,
+       "unk_77b5dc7": 0,
        "unk_146ba45": 0,
        "snoHeaderDisplayCondition": null
       }
      ],
-     "bGiveFirstTimeReward": false,
+     "bGiveFirstTimeReward": 0,
      "tFirstTimeReward": {
       "__type__": "QuestReward",
       "__typeHash__": 3387295447,
@@ -808,15 +868,15 @@
     "hImageHandle": 0
    },
    "snoAudioContext": null,
-   "unk_1907e03": false,
+   "unk_1907e03": 0,
    "hOverrideIconTracked": 0,
    "hOverrideIconUntracked": 0,
    "snoOverrideParticleOverheadQuestProgressTracked": null,
    "snoOverrideParticleOverheadQuestProgressUntracked": null,
-   "unk_564e7d5": false,
-   "unk_eff642d": false,
-   "unk_fc27941": false,
-   "unk_e692de6": false,
+   "unk_564e7d5": 0,
+   "unk_eff642d": 0,
+   "unk_fc27941": 0,
+   "unk_e692de6": 0,
    "dwBackgroundProgressBarSourceCallbackUID": 4294967295,
    "dwForegroundProgressBarSourceCallbackUID": 4294967295,
    "flProgressBarFlashThreshold": 0,
@@ -835,7 +895,7 @@
    "dwUID": 8,
    "dwFlags": 12,
    "dwRestrictions": 0,
-   "unk_baaed01": false,
+   "unk_baaed01": 0,
    "unk_3b0b41a": null,
    "eType": 0,
    "arCallbackSets": [
@@ -857,7 +917,7 @@
         "eEventType": 74,
         "dwListenerFlags": 0,
         "snoCondition": null,
-        "unk_c3ba01d": false,
+        "unk_c3ba01d": 0,
         "flCooldownSeconds": 0,
         "arEventFilters": [],
         "unk_492729e": [],
@@ -875,8 +935,8 @@
          "y": 0
         },
         "flRadius": 0,
-        "bValid": false,
-        "bManuallySpecified": false
+        "bValid": 0,
+        "bManuallySpecified": 0
        },
        "arRegionOverrides": [],
        "nValidRegionOverrides": 0,
@@ -884,7 +944,7 @@
        "arSubzones": [],
        "eProgressDisplayStyle": 0,
        "eProgressBarSource": 0,
-       "unk_301d18": false,
+       "unk_301d18": 0,
        "unk_896a0c5": {
         "__type__": "UIImageHandleReference",
         "__typeHash__": 1797021084,
@@ -899,15 +959,15 @@
         "x": 0,
         "y": 0
        },
-       "unk_9d6e5b3": false,
+       "unk_9d6e5b3": 0,
        "unk_b3ec93": 0,
-       "unk_5698d08": false,
-       "unk_77b5dc7": false,
+       "unk_5698d08": 0,
+       "unk_77b5dc7": 0,
        "unk_146ba45": 0,
        "snoHeaderDisplayCondition": null
       }
      ],
-     "bGiveFirstTimeReward": false,
+     "bGiveFirstTimeReward": 0,
      "tFirstTimeReward": {
       "__type__": "QuestReward",
       "__typeHash__": 3387295447,
@@ -929,15 +989,15 @@
     "hImageHandle": 0
    },
    "snoAudioContext": null,
-   "unk_1907e03": false,
+   "unk_1907e03": 0,
    "hOverrideIconTracked": 0,
    "hOverrideIconUntracked": 0,
    "snoOverrideParticleOverheadQuestProgressTracked": null,
    "snoOverrideParticleOverheadQuestProgressUntracked": null,
-   "unk_564e7d5": false,
-   "unk_eff642d": false,
-   "unk_fc27941": false,
-   "unk_e692de6": false,
+   "unk_564e7d5": 0,
+   "unk_eff642d": 0,
+   "unk_fc27941": 0,
+   "unk_e692de6": 0,
    "dwBackgroundProgressBarSourceCallbackUID": 4294967295,
    "dwForegroundProgressBarSourceCallbackUID": 4294967295,
    "flProgressBarFlashThreshold": 0,
@@ -956,7 +1016,7 @@
    "dwUID": 11,
    "dwFlags": 0,
    "dwRestrictions": 0,
-   "unk_baaed01": false,
+   "unk_baaed01": 0,
    "unk_3b0b41a": null,
    "eType": 3,
    "arCallbackSets": [],
@@ -972,15 +1032,15 @@
     "hImageHandle": 0
    },
    "snoAudioContext": null,
-   "unk_1907e03": false,
+   "unk_1907e03": 0,
    "hOverrideIconTracked": 0,
    "hOverrideIconUntracked": 0,
    "snoOverrideParticleOverheadQuestProgressTracked": null,
    "snoOverrideParticleOverheadQuestProgressUntracked": null,
-   "unk_564e7d5": false,
-   "unk_eff642d": false,
-   "unk_fc27941": false,
-   "unk_e692de6": false,
+   "unk_564e7d5": 0,
+   "unk_eff642d": 0,
+   "unk_fc27941": 0,
+   "unk_e692de6": 0,
    "dwBackgroundProgressBarSourceCallbackUID": 4294967295,
    "dwForegroundProgressBarSourceCallbackUID": 4294967295,
    "flProgressBarFlashThreshold": 0,
@@ -1005,11 +1065,11 @@
   "arSeasons": []
  },
  "dwRestrictions": 0,
- "unk_baaed01": false,
+ "unk_baaed01": 0,
  "unk_3b0b41a": null,
  "unk_9c72d73": [],
  "gbidZoneEventConfig": null,
- "unk_376dcd8": false,
+ "unk_376dcd8": 0,
  "eSimQuestPhase": 0,
  "snoAudioContext": null,
  "arAllReferencedItems": [],
@@ -1018,7 +1078,7 @@
   "__typeHash__": 1797021084,
   "hImageHandle": 0
  },
- "unk_313dbf6": false,
+ "unk_313dbf6": 0,
  "nPhasePreloadDepth": 1,
  "dwRegionSourceCallbackUID": 10,
  "snoDPOWorld": null,

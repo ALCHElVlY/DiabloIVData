@@ -66,9 +66,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -104,8 +104,16 @@
  "arConditionalSkillTags": [],
  "arEnableCondition": [],
  "arItemTags": [],
- "arAffixTags": [],
- "bIsTemperedAffix": false,
+ "arAffixTags": [
+  {
+   "__raw__": 856790375,
+   "__type__": "DT_GBID",
+   "__typeHash__": 1028170061,
+   "group": 125,
+   "name": "Charm_Affix_Reroll"
+  }
+ ],
+ "bIsTemperedAffix": 0,
  "unk_31946e4": -1,
  "gbidSealAffixNameTag": null
 }

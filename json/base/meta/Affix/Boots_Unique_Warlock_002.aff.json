@@ -42,9 +42,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -53,8 +53,8 @@
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.8, 1)",
-     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAADNzEw/BgAAAAAAgD8BAAAAZwAAAAAAAAA="
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 2, 2.8)",
+     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAAAAAABABgAAADMzM0ABAAAAZwAAAAAAAAA="
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -66,9 +66,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": false,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -77,8 +77,8 @@
     "dwID": 0,
     "nParam": 1023877371,
     "szAttributeFormula": {
-     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 0.8, 1)",
-     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAADNzEw/BgAAAAAAgD8BAAAAZwAAAAAAAAA="
+     "value": "FloatRangeWithIntervalUniqueAffixPityBonus(SharedRandomFloat(), 10, 2, 2.8)",
+     "compiled": "AQAAAFMAAAAGAAAAAAAgQQYAAAAAAABABgAAADMzM0ABAAAAZwAAAAAAAAA="
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -89,8 +89,8 @@
   }
  ],
  "arStaticValues": [
-  10,
-  0.25
+  0.5,
+  0.5
  ],
  "snoPassivePower": {
   "__raw__": 2560022,
@@ -110,7 +110,7 @@
  "arEnableCondition": [],
  "arItemTags": [],
  "arAffixTags": [],
- "bIsTemperedAffix": false,
+ "bIsTemperedAffix": 0,
  "unk_31946e4": -1,
  "gbidSealAffixNameTag": null
 }

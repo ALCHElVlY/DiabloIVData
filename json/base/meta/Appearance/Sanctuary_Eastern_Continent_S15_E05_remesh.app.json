@@ -38,12 +38,12 @@
      "__type__": "AABB",
      "__typeHash__": 2408934,
      "wp": {
-      "x": 46.57292556762695,
+      "x": 46.58197784423828,
       "y": 47.52167892456055,
       "z": 26.37384796142578
      },
      "wvExt": {
-      "x": 55.15140151977539,
+      "x": 55.16045379638672,
       "y": 52.31589889526367,
       "z": 26.881797790527344
      }
@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -114,14 +114,14 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 46.57292556762695,
+          "x": 46.58197784423828,
           "y": 47.52167892456055,
-          "z": 30.099506378173828
+          "z": 30.091524124145508
          },
          "wvExt": {
-          "x": 55.15140151977539,
+          "x": 55.16045379638672,
           "y": 52.31589889526367,
-          "z": 23.156139373779297
+          "z": 23.164121627807617
          }
         },
         "ptShapes": {
@@ -154,9 +154,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 22234,
+          "nVertCount": 21691,
           "nVertOffset": 0,
-          "nIndexCount": 47532,
+          "nIndexCount": 46518,
           "nIndexOffset": 0
          }
         ],
@@ -224,7 +224,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -273,9 +273,9 @@
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
           "nVertCount": 6516,
-          "nVertOffset": 800424,
+          "nVertOffset": 780876,
           "nIndexCount": 16260,
-          "nIndexOffset": 47532
+          "nIndexOffset": 46518
          }
         ],
         "wpFixedPointPosOffset": {
@@ -374,13 +374,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 1035000
+        "dataSize": 1015452
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -395,12 +395,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 1035040,
-        "dataSize": 127584
+        "dataOffset": 1015488,
+        "dataSize": 125556
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -543,7 +543,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -557,7 +557,7 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -592,22 +592,22 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 47.44717788696289,
-    "y": 54.703128814697266,
-    "z": 34.257171630859375
+    "x": 46.491981506347656,
+    "y": 48.858001708984375,
+    "z": 30.23630142211914
    },
-   "wdRadius": 81.42252349853516
+   "wdRadius": 76.49412536621094
   },
   "aabbBounds": {
    "__type__": "AABB",
    "__typeHash__": 2408934,
    "wp": {
-    "x": 46.57292556762695,
+    "x": 46.58197784423828,
     "y": 47.52167892456055,
     "z": 26.37384796142578
    },
    "wvExt": {
-    "x": 55.15140151977539,
+    "x": 55.16045379638672,
     "y": 52.31589889526367,
     "z": 26.881797790527344
    }
@@ -628,7 +628,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3045825697,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -663,7 +663,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3639288067,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

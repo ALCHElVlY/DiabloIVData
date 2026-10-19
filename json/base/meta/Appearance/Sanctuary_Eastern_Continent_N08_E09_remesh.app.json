@@ -38,12 +38,12 @@
      "__type__": "AABB",
      "__typeHash__": 2408934,
      "wp": {
-      "x": 42.961647033691406,
+      "x": 42.96866226196289,
       "y": 48.53208923339844,
       "z": 2.676177978515625
      },
      "wvExt": {
-      "x": 55.13091278076172,
+      "x": 55.1379280090332,
       "y": 55.19957733154297,
       "z": 11.17153549194336
      }
@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -114,12 +114,12 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 42.961647033691406,
+          "x": 42.96866226196289,
           "y": 48.53208923339844,
           "z": 2.676177978515625
          },
          "wvExt": {
-          "x": 55.13091278076172,
+          "x": 55.1379280090332,
           "y": 55.19957733154297,
           "z": 11.17153549194336
          }
@@ -154,9 +154,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 19066,
+          "nVertCount": 19003,
           "nVertOffset": 0,
-          "nIndexCount": 41502,
+          "nIndexCount": 41544,
           "nIndexOffset": 0
          }
         ],
@@ -224,7 +224,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -232,14 +232,14 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 47.90766143798828,
-          "y": 48.01622009277344,
-          "z": 1.2687015533447266
+          "x": 47.961090087890625,
+          "y": 48.02640914916992,
+          "z": 1.2730484008789062
          },
          "wvExt": {
-          "x": 48.429481506347656,
-          "y": 48.49961853027344,
-          "z": 1.837442398071289
+          "x": 48.48291015625,
+          "y": 48.4896354675293,
+          "z": 1.8330955505371094
          }
         },
         "ptShapes": {
@@ -272,10 +272,10 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 601,
-          "nVertOffset": 686376,
-          "nIndexCount": 1620,
-          "nIndexOffset": 41502
+          "nVertCount": 597,
+          "nVertOffset": 684108,
+          "nIndexCount": 1668,
+          "nIndexOffset": 41544
          }
         ],
         "wpFixedPointPosOffset": {
@@ -374,13 +374,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 708012
+        "dataSize": 705600
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -395,12 +395,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 708048,
-        "dataSize": 86244
+        "dataOffset": 705632,
+        "dataSize": 86424
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -543,7 +543,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -557,7 +557,7 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -592,22 +592,22 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 45.55413055419922,
-    "y": 50.6485710144043,
-    "z": -0.3241323232650757
+    "x": 44.67237854003906,
+    "y": 51.789833068847656,
+    "z": -0.31696617603302
    },
-   "wdRadius": 71.99752807617188
+   "wdRadius": 73.42686462402344
   },
   "aabbBounds": {
    "__type__": "AABB",
    "__typeHash__": 2408934,
    "wp": {
-    "x": 42.961647033691406,
+    "x": 42.96866226196289,
     "y": 48.53208923339844,
     "z": 2.676177978515625
    },
    "wvExt": {
-    "x": 55.13091278076172,
+    "x": 55.1379280090332,
     "y": 55.19957733154297,
     "z": 11.17153549194336
    }
@@ -628,7 +628,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 1689253666,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -663,7 +663,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 377722948,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

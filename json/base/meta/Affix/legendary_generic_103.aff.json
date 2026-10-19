@@ -45,9 +45,9 @@
  "dwAllowedQualityLevels": 0,
  "eAffixType": 0,
  "arMaxLegendaryRanks": [
+  4,
   2,
-  2,
-  3,
+  6,
   16,
   0,
   0
@@ -56,9 +56,9 @@
   {
    "__type__": "ItemAffixAttribute",
    "__typeHash__": 501899601,
-   "bIgnoreLegendaryScaling": false,
-   "bLowerIsBetter": true,
-   "bIgnoreAffixBonuses": false,
+   "bIgnoreLegendaryScaling": 0,
+   "bLowerIsBetter": 0,
+   "bIgnoreAffixBonuses": 0,
    "tAttribute": {
     "__type__": "AttributeSpecifier",
     "__typeHash__": 3218190286,
@@ -67,8 +67,8 @@
     "dwID": 0,
     "nParam": -1,
     "szAttributeFormula": {
-     "value": "6-(CurrentLegendaryRank()-1)",
-     "compiled": "BgAAAAAAwEABAAAAVAAAAAYAAAAAAIA/DAAAAAwAAAAAAAAA"
+     "value": "10+(CurrentLegendaryRank()-1)",
+     "compiled": "BgAAAAAAIEEBAAAAVAAAAAYAAAAAAIA/DAAAAAsAAAAAAAAA"
     },
     "gbidFormula": null,
     "szFlatAttribLevelFormula": {
@@ -79,6 +79,7 @@
   }
  ],
  "arStaticValues": [
+  6,
   4
  ],
  "snoPassivePower": {
@@ -114,13 +115,6 @@
    "name": "FILTER_Build_All_Generic"
   },
   {
-   "__raw__": 1277787765,
-   "__type__": "DT_GBID",
-   "__typeHash__": 1028170061,
-   "group": 56,
-   "name": "Keyword_Injured"
-  },
-  {
    "__raw__": 3376308945,
    "__type__": "DT_GBID",
    "__typeHash__": 1028170061,
@@ -142,7 +136,7 @@
  "arEnableCondition": [],
  "arItemTags": [],
  "arAffixTags": [],
- "bIsTemperedAffix": false,
+ "bIsTemperedAffix": 0,
  "unk_31946e4": -1,
  "gbidSealAffixNameTag": null
 }

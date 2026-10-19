@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -224,7 +224,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -350,7 +350,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -468,7 +468,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 1,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -594,7 +594,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -712,7 +712,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 1,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -838,7 +838,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -956,7 +956,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 1,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -1082,7 +1082,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 0,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -1200,7 +1200,7 @@
         "nVertBufferIndex": 1,
         "nIndexBufferIndex": 1,
         "nBaseLODSubObjectIndex": 1,
-        "unk_a1b71f5": 0,
+        "nSubObjectBoneParentIndex": 0,
         "nSubObjectMaxLOD": 0,
         "dwShaderMapOverride": 0,
         "snoCampaignVisibilityCondition": null,
@@ -1356,7 +1356,7 @@
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkVertexBuffer",
@@ -1443,7 +1443,7 @@
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -1463,7 +1463,7 @@
        }
       },
       "ibid": -1,
-      "fOptional": true
+      "fOptional": 1
      },
      {
       "__type__": "GeoChunkIndexBuffer",
@@ -1481,7 +1481,7 @@
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -1624,7 +1624,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -1638,7 +1638,935 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 550415160,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 780682296,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 1.2999999523162842
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 2366464462,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 899481535,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 3918454775,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1373392553,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 2378592676,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 127468149,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1289372842,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 4036545548,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 760346490,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 3615289755,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 760403069,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 2331521859,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 543141696,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 585752080,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 3504624360,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 3636304447,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 2712549526,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1970773229,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 609699182,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1970829808,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 924169363,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 274763203,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1433762267,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1410062708,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1327944173,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1410210544,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1969125202,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1144786049,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 1347375027,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
+      "transform": {
+       "__type__": "PRTransform",
+       "__typeHash__": 2588169118,
+       "q": {
+        "__type__": "bcQuat",
+        "__typeHash__": 3955716320,
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+       },
+       "wp": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+       }
+      }
+     },
+     {
+      "__type__": "Hardpoint",
+      "__typeHash__": 2160968233,
+      "tInfo": {
+       "__type__": "HardpointInfo",
+       "__typeHash__": 3639515093,
+       "dwHash": 3092546280,
+       "dwHashFlag": 0
+      },
+      "nBoneIndex": -1,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -1714,7 +2642,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3690977368,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -1775,7 +2703,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 555287715,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

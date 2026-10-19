@@ -38,13 +38,13 @@
      "__type__": "AABB",
      "__typeHash__": 2408934,
      "wp": {
-      "x": 54.37290954589844,
-      "y": 82.65116882324219,
+      "x": 54.398807525634766,
+      "y": 82.64946746826172,
       "z": 15.697785377502441
      },
      "wvExt": {
-      "x": 57.04728698730469,
-      "y": 93.14875793457031,
+      "x": 57.073184967041016,
+      "y": 93.15045928955078,
       "z": 16.314964294433594
      }
     },
@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -114,13 +114,13 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 54.37290954589844,
-          "y": 82.65116882324219,
+          "x": 54.398807525634766,
+          "y": 82.64946746826172,
           "z": 15.697785377502441
          },
          "wvExt": {
-          "x": 57.04728698730469,
-          "y": 93.14875793457031,
+          "x": 57.073184967041016,
+          "y": 93.15045928955078,
           "z": 16.314964294433594
          }
         },
@@ -154,9 +154,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 2770,
+          "nVertCount": 2709,
           "nVertOffset": 0,
-          "nIndexCount": 7386,
+          "nIndexCount": 7332,
           "nIndexOffset": 0
          }
         ],
@@ -256,13 +256,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 99720
+        "dataSize": 97524
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -277,12 +277,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 99760,
-        "dataSize": 14772
+        "dataOffset": 97568,
+        "dataSize": 14664
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -425,7 +425,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -439,7 +439,7 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -474,23 +474,23 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 51.786643981933594,
-    "y": 91.43611907958984,
-    "z": 21.025157928466797
+    "x": 53.55341339111328,
+    "y": 91.13441467285156,
+    "z": 21.277362823486328
    },
-   "wdRadius": 107.90003967285156
+   "wdRadius": 108.56547546386719
   },
   "aabbBounds": {
    "__type__": "AABB",
    "__typeHash__": 2408934,
    "wp": {
-    "x": 54.37290954589844,
-    "y": 82.65116882324219,
+    "x": 54.398807525634766,
+    "y": 82.64946746826172,
     "z": 15.697785377502441
    },
    "wvExt": {
-    "x": 57.04728698730469,
-    "y": 93.14875793457031,
+    "x": 57.073184967041016,
+    "y": 93.15045928955078,
     "z": 16.314964294433594
    }
   },
@@ -510,7 +510,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 2480285908,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

@@ -3086,6 +3086,7 @@ UIWrapPanelStyleOptionalFieldMapDefaults
 UInt64DataMessage
 UInt64DataResponse
 UberMaterial
+UbiConnectAchievementDefinition
 UnassignSkillMessage
 UniqueOperatorChestGizmoData
 UpdateConvAutoAdvanceMessage
@@ -3099,6 +3100,7 @@ ValidComponent
 ValidComponents
 VariantContainer
 VariantDataBase
+VariantDataBool
 VariantDataFloat
 VariantDataFloatRange
 VariantDataFloatWithRange
@@ -3762,6 +3764,7 @@ arForcedGbidAffixFamily
 arForcedLabels
 arForcedMonsterTags
 arForcedPrefetchData
+arFreeProducts
 arFunctionHandles
 arFunctions
 arFutureProducts
@@ -4199,6 +4202,7 @@ arSteps
 arStoreAnimSets
 arStoreCountrySpecificData
 arStoreDisclaimerData
+arStorePrevewCameraPositioning
 arStorePreviewCameraPositioning
 arStorePreviewCameraPositioning2
 arStrings
@@ -4513,6 +4517,7 @@ bHideMainHand
 bHideOffhand
 bHideRewardNotification
 bHideSheathed
+bHideWeaponSNO
 bHideWhenZero
 bHideWorldTierUI
 bHighlight
@@ -4661,7 +4666,9 @@ bOverridePosition
 bOverrideProcChance
 bOverrideRewardDropLevel
 bOverrideSceneCollision
+bOverrideSocketType
 bOverrideTextColor
+bOverrideZoneLoadingImages
 bPassabilityDestEnabled
 bPassabilityDuringEnabled
 bPassword
@@ -5198,6 +5205,7 @@ dwQuantity
 dwQuestHash
 dwRandomSeed
 dwRank
+dwReferencedQuestChainCount
 dwReferencedQuestCount
 dwRegionSourceCallbackUID
 dwReliquaryCategoryIndex
@@ -5850,6 +5858,7 @@ eSlotRestriction
 eSmoothing
 eSnoGroup
 eSocketTarget
+eSocketTargetOverride
 eSolverOverride
 eSoundType
 eSource
@@ -6076,6 +6085,8 @@ fGustStrengthMin
 fHardpointOffsetsHinting
 fHasGlobalMarkers
 fHasGraph
+fHasHardMax
+fHasHardMin
 fHasService
 fHasZoneMap
 fHealer
@@ -6290,6 +6301,7 @@ fUseShapeCollision
 fUseStringListName
 fUsesGraph
 fVOPlaysOnPlayer
+fValue
 fVendor
 fVisibilityIsQuestRestricted
 fVisibleToAll
@@ -6454,6 +6466,7 @@ flChance
 flChanceForSplash
 flChanceIncrease
 flChanceOverride
+flChanceToMakeUnmodifiable
 flCharmRarityBonusChance
 flChatFadeDuration
 flChatFadeInDuration
@@ -8106,6 +8119,7 @@ m_stiffness
 m_transform1
 m_transform2
 m_type
+m_uuid
 m_vertexCount
 m_volume
 mapConversationToPower
@@ -8604,6 +8618,7 @@ nStaticGoldAmount
 nStaticValue
 nStaticXPAmount
 nStepUID
+nSubObjectBoneParentIndex
 nSubObjectMaxLOD
 nSummonMaxConcurrent
 nSummonMaxTotal
@@ -9911,6 +9926,7 @@ snoNewClothParameters
 snoNewPhysicsParameters
 snoNightmareSigil
 snoNightmareSigilZones
+snoNintendoTracker
 snoNodeRefundSound
 snoNonParticipatingEffectGroup
 snoNormal
@@ -10071,6 +10087,7 @@ snoProductBnet
 snoProductNintendo
 snoProductPS
 snoProductSteam
+snoProductUbiConnect
 snoProductXbox
 snoProgressActor
 snoProgressBackgroundTiledStyle
@@ -10260,6 +10277,7 @@ snoSubstituteItem
 snoSubtitles
 snoSubzone
 snoSubzoneDefault
+snoSubzoneDefaultDungeonEntrance
 snoSuffix
 snoSummonActor
 snoSummonPower
@@ -10391,6 +10409,7 @@ snoTwoHandSlash
 snoUI
 snoUIItem
 snoUIRActor
+snoUbiConnectTracker
 snoUltimate
 snoUniqueLandSoundEffect
 snoUniquePickupEffect
@@ -10876,6 +10895,8 @@ tBuffToApply
 tBuffs
 tCameraPositioningOverride
 tCameraState
+tCampaignCodexConnectorAvailable
+tCampaignCodexConnectorUnavailable
 tCampaignData
 tCampsDiscovered
 tCapsule
@@ -11266,6 +11287,7 @@ tName
 tNameInfo
 tNecroData
 tNecroPet
+tNintendoTrackers
 tNitSettings
 tNoFXIndicesInfo
 tNoSpawnSet
@@ -11620,6 +11642,7 @@ tStyle
 tStyleOverrides
 tSubstitutionCountRange
 tSubzoneMarkerSets
+tSubzoneStaticLoadingImages
 tSummonRange
 tSummonedActors
 tSunIntensity
@@ -11681,6 +11704,8 @@ tUIRoot
 tUScaleScalar
 tUTransVelScalar
 tUberMaterial
+tUbiConnectAchievement
+tUbiConnectTrackers
 tUnequipSound
 tUniqueLootBeam
 tUnlockCondition
@@ -11754,6 +11779,7 @@ tooltipTextStringLabel
 top
 topPadding
 totalDuration
+trackConditionToggles
 trailBase
 transInitialOffset
 transform
@@ -11798,6 +11824,7 @@ uGuid
 uHash
 uHeroId
 uID
+uIdentifier
 uItemACD
 uKeyedDungeonTier
 uKickTicks

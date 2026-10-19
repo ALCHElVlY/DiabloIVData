@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -262,7 +262,7 @@
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -282,7 +282,7 @@
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -425,7 +425,7 @@
     "tGroundNormalTests": {
      "__type__": "GroundNormalTests",
      "__typeHash__": 1266660523,
-     "bEnabled": false,
+     "bEnabled": 0,
      "ptGroundTests": []
     },
     "ptHardpoints": [
@@ -439,7 +439,7 @@
        "dwHashFlag": 0
       },
       "nBoneIndex": -1,
-      "bIgnoreParentOrientation": false,
+      "bIgnoreParentOrientation": 0,
       "transform": {
        "__type__": "PRTransform",
        "__typeHash__": 2588169118,
@@ -533,6 +533,11 @@
    "__type__": "AppearanceLook",
    "__typeHash__": 3138400357,
    "szLookName": 1089552571
+  },
+  {
+   "__type__": "AppearanceLook",
+   "__typeHash__": 3138400357,
+   "szLookName": 1385414070
   }
  ],
  "ptAppearanceMaterials": [
@@ -540,7 +545,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3928354039,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -711,6 +716,32 @@
       "__targetFileName__": "base/meta/Material/Scos_Building_Roof_Thatch_Edge_Side_Sticks_B_Coast_Moss.mat",
       "groupName": "Material",
       "name": "Scos_Building_Roof_Thatch_Edge_Side_Sticks_B_Coast_Moss"
+     },
+     "snoOverrideMaterial": null,
+     "snoCloth": null,
+     "snoHighQualityClothOverride": null,
+     "arMountedClothOverrides": [
+      null,
+      null,
+      null,
+      null
+     ],
+     "snoEffectGroup": null,
+     "arAnimClothOverrides": [],
+     "arVariantMaterials": []
+    },
+    {
+     "__type__": "SubObjectAppearance",
+     "__typeHash__": 2088474641,
+     "dwFlags": 1,
+     "snoMaterial": {
+      "__raw__": 2612093,
+      "__group__": 57,
+      "__type__": "DT_SNO",
+      "__typeHash__": 2764331143,
+      "__targetFileName__": "base/meta/Material/S15_Tristram_Building_Roof_Thatch_Edge_Side_Sticks_B_Straw_Moss.mat",
+      "groupName": "Material",
+      "name": "S15_Tristram_Building_Roof_Thatch_Edge_Side_Sticks_B_Straw_Moss"
      },
      "snoOverrideMaterial": null,
      "snoCloth": null,

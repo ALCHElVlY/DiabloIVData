@@ -54,7 +54,7 @@
      "__type__": "PlayerClassCoreStatBenefitEntry",
      "__typeHash__": 2507153527,
      "eContributingCoreStat": 2,
-     "flContributionScalar": 1.25,
+     "flContributionScalar": 1.625,
      "eBenefitCondition": 0,
      "unk_aae71b4": 0
     }
@@ -431,7 +431,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -473,7 +473,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -515,7 +515,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -557,7 +557,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -599,7 +599,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -641,7 +641,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -683,7 +683,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -725,7 +725,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -767,7 +767,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -809,7 +809,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -851,7 +851,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -893,7 +893,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -935,7 +935,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -977,7 +977,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -1019,7 +1019,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -1061,7 +1061,7 @@
         "__type__": "ReputationLevelSubcondition",
         "__typeHash__": 3070558196,
         "dwType": 3070558196,
-        "bNegate": false,
+        "bNegate": 0,
         "nMaxDepth": 12,
         "eComparisonOp": 5,
         "tPair": {
@@ -7049,43 +7049,48 @@
    "__typeHash__": 866553347,
    "snoHead": {
     "__raw__": 2334384,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Druid_235_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Druid_235_stor"
    },
    "snoTorso": {
     "__raw__": 2334390,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Druid_235_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Druid_235_stor"
    },
    "snoFeet": {
     "__raw__": 2334408,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Druid_235_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Druid_235_stor"
    },
    "snoHands": {
     "__raw__": 2334396,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Druid_235_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Druid_235_stor"
    },
    "snoLegs": {
     "__raw__": 2334402,
-    "__encrypted__": "f159f1f70eabaab1",
     "__group__": 73,
     "__type__": "DT_SNO",
     "__typeHash__": 2764331143,
-    "groupName": "Item"
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Druid_235_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Druid_235_stor"
    },
    "snoMainHand": null,
    "snoOffHand": null,
@@ -7644,6 +7649,180 @@
    "snoOneHandOff": null,
    "snoDye": null,
    "szName": 2870456960
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2590419,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Druid_255_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Druid_255_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2590425,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Druid_255_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Druid_255_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2590443,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Druid_255_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Druid_255_stor"
+   },
+   "snoHands": {
+    "__raw__": 2590431,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Druid_255_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Druid_255_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2590437,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Druid_255_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Druid_255_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456964
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2599228,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Cosmetic_Druid_256_stor.itm",
+    "groupName": "Item",
+    "name": "Helm_Cosmetic_Druid_256_stor"
+   },
+   "snoTorso": {
+    "__raw__": 2599234,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Cosmetic_Druid_256_stor.itm",
+    "groupName": "Item",
+    "name": "Chest_Cosmetic_Druid_256_stor"
+   },
+   "snoFeet": {
+    "__raw__": 2599252,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Cosmetic_Druid_256_stor.itm",
+    "groupName": "Item",
+    "name": "Boots_Cosmetic_Druid_256_stor"
+   },
+   "snoHands": {
+    "__raw__": 2599240,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Cosmetic_Druid_256_stor.itm",
+    "groupName": "Item",
+    "name": "Gloves_Cosmetic_Druid_256_stor"
+   },
+   "snoLegs": {
+    "__raw__": 2599246,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Cosmetic_Druid_256_stor.itm",
+    "groupName": "Item",
+    "name": "Pants_Cosmetic_Druid_256_stor"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 2870456965
+  },
+  {
+   "__type__": "ItemTier",
+   "__typeHash__": 866553347,
+   "snoHead": {
+    "__raw__": 2650042,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Helm_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Helm_Legendary_Generic_060"
+   },
+   "snoTorso": {
+    "__raw__": 2650046,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Chest_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Chest_Legendary_Generic_060"
+   },
+   "snoFeet": {
+    "__raw__": 2650054,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Boots_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Boots_Legendary_Generic_060"
+   },
+   "snoHands": {
+    "__raw__": 2650038,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Gloves_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Gloves_Legendary_Generic_060"
+   },
+   "snoLegs": {
+    "__raw__": 2650050,
+    "__group__": 73,
+    "__type__": "DT_SNO",
+    "__typeHash__": 2764331143,
+    "__targetFileName__": "base/meta/Item/Pants_Legendary_Generic_060.itm",
+    "groupName": "Item",
+    "name": "Pants_Legendary_Generic_060"
+   },
+   "snoMainHand": null,
+   "snoOffHand": null,
+   "snoTwoHandBlunt": null,
+   "snoTwoHandSlash": null,
+   "snoTwoHandRanged": null,
+   "snoOneHandMain": null,
+   "snoOneHandOff": null,
+   "snoDye": null,
+   "szName": 329676677
   }
  ],
  "arAvailableParagonBoards": [
@@ -7747,7 +7926,7 @@
   "groupName": "Actor",
   "name": "resourceOrb_druid"
  },
- "unk_63df9da": false,
+ "unk_63df9da": 0,
  "snoInventoryUIWorld": {
   "__raw__": 328578,
   "__group__": 48,
@@ -8018,7 +8197,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363042,
       "__group__": 140,
@@ -8085,8 +8264,8 @@
       "groupName": "Jewelry",
       "name": "Global_07"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -8169,7 +8348,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363044,
       "__group__": 140,
@@ -8228,8 +8407,8 @@
       "groupName": "Jewelry",
       "name": "Global_07"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -8312,7 +8491,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363045,
       "__group__": 140,
@@ -8387,8 +8566,8 @@
       "groupName": "Jewelry",
       "name": "Global_02"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -8471,7 +8650,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363043,
       "__group__": 140,
@@ -8546,8 +8725,8 @@
       "groupName": "Jewelry",
       "name": "Global_19"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": true
+     "unk_23f8995": 0,
+     "unk_35e41c8": 1
     }
    },
    {
@@ -8630,7 +8809,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363042,
       "__group__": 140,
@@ -8705,8 +8884,8 @@
       "groupName": "Jewelry",
       "name": "Global_12"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    },
    {
@@ -8789,7 +8968,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363044,
       "__group__": 140,
@@ -8864,8 +9043,8 @@
       "groupName": "Jewelry",
       "name": "Global_03"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    },
    {
@@ -8948,7 +9127,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": false,
+     "nIsFemale": 0,
      "snoFace": {
       "__raw__": 1363045,
       "__group__": 140,
@@ -9031,8 +9210,8 @@
       "groupName": "Jewelry",
       "name": "Global_24"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    },
    {
@@ -9115,7 +9294,7 @@
     "tIconicLook": {
      "__type__": "IconicLookData",
      "__typeHash__": 1636896932,
-     "nIsFemale": true,
+     "nIsFemale": 1,
      "snoFace": {
       "__raw__": 1363043,
       "__group__": 140,
@@ -9190,8 +9369,8 @@
       "groupName": "Jewelry",
       "name": "Global_02"
      },
-     "unk_23f8995": false,
-     "unk_35e41c8": false
+     "unk_23f8995": 0,
+     "unk_35e41c8": 0
     }
    }
   ]

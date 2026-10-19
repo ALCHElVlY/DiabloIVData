@@ -106,7 +106,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -154,7 +154,7 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 21152,
+          "nVertCount": 21147,
           "nVertOffset": 0,
           "nIndexCount": 50508,
           "nIndexOffset": 0
@@ -224,7 +224,7 @@
         "nVertBufferIndex": 0,
         "nIndexBufferIndex": 0,
         "nBaseLODSubObjectIndex": -1,
-        "unk_a1b71f5": -1,
+        "nSubObjectBoneParentIndex": -1,
         "nSubObjectMaxLOD": -1,
         "dwShaderMapOverride": 4294967295,
         "snoCampaignVisibilityCondition": null,
@@ -232,13 +232,13 @@
          "__type__": "AABB",
          "__typeHash__": 2408934,
          "wp": {
-          "x": 48.007850646972656,
-          "y": 47.99833679199219,
+          "x": 48.00537109375,
+          "y": 47.98407745361328,
           "z": 15.370601654052734
          },
          "wvExt": {
-          "x": 48.576881408691406,
-          "y": 48.550376892089844,
+          "x": 48.57464599609375,
+          "y": 48.563514709472656,
           "z": 29.729084014892578
          }
         },
@@ -272,9 +272,9 @@
           "__type__": "SubObjectSegment",
           "__typeHash__": 1370930836,
           "pBoneIDs": [],
-          "nVertCount": 2204,
-          "nVertOffset": 761472,
-          "nIndexCount": 7524,
+          "nVertCount": 2239,
+          "nVertOffset": 761292,
+          "nIndexCount": 7554,
           "nIndexOffset": 50508
          }
         ],
@@ -374,13 +374,13 @@
         "__typeHash__": 1028015787,
         "__type__": "DT_BYTE",
         "dataOffset": 32,
-        "dataSize": 840816
+        "dataSize": 841896
        }
       },
       "vbid": -1,
       "baid": -1,
       "unk_4c43adc": 0,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptChunkIndexBuffers": [
@@ -395,12 +395,12 @@
        "value": {
         "__typeHash__": 1028759507,
         "__type__": "DT_WORD",
-        "dataOffset": 840848,
-        "dataSize": 116064
+        "dataOffset": 841936,
+        "dataSize": 116124
        }
       },
       "ibid": -1,
-      "fOptional": false
+      "fOptional": 0
      }
     ],
     "ptLODDistancePerSubObject": []
@@ -414,11 +414,11 @@
    "__type__": "Sphere",
    "__typeHash__": 3384912071,
    "wpCenter": {
-    "x": 52.88127517700195,
-    "y": 66.8033447265625,
-    "z": 21.543201446533203
+    "x": 52.57860565185547,
+    "y": 69.05783081054688,
+    "z": 21.914512634277344
    },
-   "wdRadius": 86.87564849853516
+   "wdRadius": 88.38775634765625
   },
   "aabbBounds": {
    "__type__": "AABB",
@@ -450,7 +450,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 2507365442,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {
@@ -485,7 +485,7 @@
    "__type__": "AppearanceMaterial",
    "__typeHash__": 4040942623,
    "dwMaterialHash": 3871757668,
-   "fPersonaMaterial": false,
+   "fPersonaMaterial": 0,
    "dwPersona": 0,
    "ptSOAs": [
     {

@@ -5,11 +5,12 @@
  "__typeHash__": 2145577021,
  "eType": 0,
  "dwFlags": 34633001,
- "dwFlagsEx": 503587072,
+ "dwFlagsEx": 503587136,
  "dwFlagsEx2": 32,
  "tSystemDuration": 0.20000000298023224,
  "tOutroDuration": 0.10000000149011612,
  "tPrepumpDuration": 0,
+ "unk_adcf5bd": 5,
  "eRenderDistance": 1,
  "eUVFlippingMode": 0,
  "tSystemDurationScalar": {
@@ -440,7 +441,7 @@
  "flExplosionFriction": 0.10000000149011612,
  "flMass": 0.45399999618530273,
  "dwMaxSystems": 0,
- "flLowFXMultiplier": 1,
+ "flLowFXMultiplier": 0.5,
  "flClutterZOffset": 0,
  "snoActor": null,
  "tLookLink": {
@@ -503,7 +504,7 @@
      }
     ]
    },
-   "fEvenDistribution": true,
+   "fEvenDistribution": 1,
    "pathRadius": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
@@ -551,8 +552,8 @@
      }
     ]
    },
-   "fEnableEdgeWidth": false,
-   "fEnableOuterEdge": false,
+   "fEnableEdgeWidth": 0,
+   "fEnableOuterEdge": 0,
    "pathEdgeWidth": {
     "__type__": "InterpolationPath_float",
     "__typeHash__": 3422409450,
@@ -1430,7 +1431,7 @@
   "y": 0,
   "z": 0
  },
- "unk_3610d96": false,
+ "unk_3610d96": 0,
  "unk_a70d91e": 0,
  "wdBoundingRadius": 3,
  "unk_a79a409": 0.5,
@@ -1438,7 +1439,7 @@
  "dwMinSize": 0,
  "dwMaxSize": 0,
  "flDistanceFromCamera": 15,
- "flNearSpawnRadius": 1,
+ "flNearSpawnRadius": 2,
  "unk_63d7722": 16,
  "snoVectorField": null,
  "vecVectorFieldDim": {

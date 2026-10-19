@@ -40,8 +40,8 @@
       "__type__": "TriggerConditions",
       "__typeHash__": 888408526,
       "flChance": 1,
-      "bMute": false,
-      "bMuteExternal": false,
+      "bMute": 0,
+      "bMuteExternal": 0,
       "tDelay": 0,
       "tImpactVelocityRange": {
        "rangeValue1": 0,
@@ -55,10 +55,10 @@
       "dwConditionFlags": 1038,
       "ePlayerCountCondition": 0,
       "ePerformanceBehavior": 0,
-      "unk_b41b571": []
+      "trackConditionToggles": []
      },
-     "fGenerated": false,
-     "fInCreation": false,
+     "fGenerated": 0,
+     "fInCreation": 0,
      "dwParentActorID": 4294967295
     }
    ],
@@ -92,8 +92,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": true,
-       "bMuteExternal": false,
+       "bMute": 1,
+       "bMuteExternal": 0,
        "tDelay": 0.9000000357627869,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -107,10 +107,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "dwTriggerFlags": 0,
       "dwTriggerFlagsEx": 4,
@@ -136,8 +136,8 @@
       "eHitFlashCurve": 1,
       "dwID": 0,
       "nMaxHitFlash": 0,
-      "fIsCombatHitFlash": false,
-      "unk_b19da4b": false
+      "fIsCombatHitFlash": 0,
+      "unk_b19da4b": 0
      }
     ],
     "tCooldown": 0,
@@ -169,8 +169,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": true,
-       "bMuteExternal": false,
+       "bMute": 1,
+       "bMuteExternal": 0,
        "tDelay": 0.9500000476837158,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -184,10 +184,10 @@
        "dwConditionFlags": 14,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tDuration": 0,
       "dwTriggerFlags": 2097152,
@@ -204,7 +204,7 @@
       },
       "nPreviousInTrack": -1,
       "nNextInTrack": -1,
-      "fPlayOnOwner": true,
+      "fPlayOnOwner": 1,
       "dwActorID": 0,
       "snoname": {
        "__raw__": 1943286,
@@ -242,24 +242,24 @@
       "flAttractorVolumeRadius": 0.20000000298023224,
       "flAttractorVolumeHeight": 0,
       "dwSeed": 0,
-      "fBillboard": false,
+      "fBillboard": 0,
       "eAddType": 0,
-      "fDoNotParent": false,
-      "fKeepOriginal": false,
-      "fEnableMovement": false,
-      "unk_773852b": false,
-      "unk_62ab747": true,
-      "unk_cb43646": false,
+      "fDoNotParent": 0,
+      "fKeepOriginal": 0,
+      "fEnableMovement": 0,
+      "unk_773852b": 0,
+      "unk_62ab747": 1,
+      "unk_cb43646": 0,
       "eAppearanceOverrideType": 0,
       "eAppearanceOverrideInventorySlot": -1,
       "snoAppearanceOverride": null,
-      "fRandomLook": false,
+      "fRandomLook": 0,
       "tLookLink": {
        "__type__": "LookLink",
        "__typeHash__": 2394153027,
        "dwLookHash": 0
       },
-      "fOverrideActorVariant": false,
+      "fOverrideActorVariant": 0,
       "eVariantTypeOverride": 0,
       "snoAnimSetOverride": null,
       "snoPlayerAnimSetOverrides": [],
@@ -267,7 +267,7 @@
       "dwShaderMapOverride": 4294967295,
       "nPlayerIndex": 0,
       "flScale": 1,
-      "unk_ebd19c": false,
+      "unk_ebd19c": 0,
       "szSpawnLocatorName": 0,
       "vecScalar": {
        "x": 1,
@@ -383,8 +383,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": true,
-       "bMuteExternal": false,
+       "bMute": 1,
+       "bMuteExternal": 0,
        "tDelay": 0.7000000476837158,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -398,10 +398,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tDuration": 0.7333333492279053,
       "dwTriggerFlags": 0,
@@ -425,7 +425,7 @@
        "__typeHash__": 2394153027,
        "dwLookHash": 2741663667
       },
-      "fAffectOwner": true
+      "fAffectOwner": 1
      }
     ],
     "tCooldown": 0,
@@ -457,8 +457,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 0.9000000357627869,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -472,26 +472,26 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
-      "fPlayOnOwner": true,
-      "fOverrideScalarValues": false,
-      "fOverridePowerEffectSize": false,
-      "fOverridePowerEffectIntensity": false,
-      "fOverridePowerEffectDuration": false,
-      "fOverridePowerEffectLength": false,
-      "fOverridePowerEffectWidth": false,
-      "fOverridePowerEffectHeight": false,
-      "fOverrideHardpoint": true,
-      "fOverrideHardpointsTargetType": false,
-      "fOverrideEffectGroupID": false,
+      "fPlayOnOwner": 1,
+      "fOverrideScalarValues": 0,
+      "fOverridePowerEffectSize": 0,
+      "fOverridePowerEffectIntensity": 0,
+      "fOverridePowerEffectDuration": 0,
+      "fOverridePowerEffectLength": 0,
+      "fOverridePowerEffectWidth": 0,
+      "fOverridePowerEffectHeight": 0,
+      "fOverrideHardpoint": 1,
+      "fOverrideHardpointsTargetType": 0,
+      "fOverrideEffectGroupID": 0,
       "unk_e312e34": 0,
       "dwActorID": 0,
       "dwID": 0,
-      "unk_9758f2e": false,
+      "unk_9758f2e": 0,
       "unk_574dd8b": 0,
       "snoEffectGroup": {
        "__raw__": 1952693,
@@ -622,8 +622,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": true,
-       "bMuteExternal": false,
+       "bMute": 1,
+       "bMuteExternal": 0,
        "tDelay": 0.8666667342185974,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -637,26 +637,26 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
-      "fPlayOnOwner": true,
-      "fOverrideScalarValues": false,
-      "fOverridePowerEffectSize": false,
-      "fOverridePowerEffectIntensity": false,
-      "fOverridePowerEffectDuration": false,
-      "fOverridePowerEffectLength": false,
-      "fOverridePowerEffectWidth": false,
-      "fOverridePowerEffectHeight": false,
-      "fOverrideHardpoint": false,
-      "fOverrideHardpointsTargetType": false,
-      "fOverrideEffectGroupID": false,
+      "fPlayOnOwner": 1,
+      "fOverrideScalarValues": 0,
+      "fOverridePowerEffectSize": 0,
+      "fOverridePowerEffectIntensity": 0,
+      "fOverridePowerEffectDuration": 0,
+      "fOverridePowerEffectLength": 0,
+      "fOverridePowerEffectWidth": 0,
+      "fOverridePowerEffectHeight": 0,
+      "fOverrideHardpoint": 0,
+      "fOverrideHardpointsTargetType": 0,
+      "fOverrideEffectGroupID": 0,
       "unk_e312e34": 0,
       "dwActorID": 0,
       "dwID": 0,
-      "unk_9758f2e": false,
+      "unk_9758f2e": 0,
       "unk_574dd8b": 0,
       "snoEffectGroup": {
        "__raw__": 1945278,
@@ -787,8 +787,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 0.20000001788139343,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -802,10 +802,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -820,7 +820,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -863,8 +863,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 0.3333333432674408,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -878,10 +878,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -896,7 +896,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -939,8 +939,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 3.7333335876464844,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -954,10 +954,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -972,7 +972,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -1015,8 +1015,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 3.9666669368743896,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1030,10 +1030,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -1048,7 +1048,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -1091,8 +1091,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 5.133333683013916,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1106,10 +1106,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -1124,7 +1124,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -1167,8 +1167,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 5.266666889190674,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1182,10 +1182,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -1200,7 +1200,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -1243,8 +1243,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 6.966667175292969,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1258,10 +1258,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -1276,7 +1276,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -1319,8 +1319,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 6.733333587646484,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1334,10 +1334,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -1352,7 +1352,7 @@
       "szFoleyTypeTag": 1150272262,
       "snoFoleySoundTable": null,
       "unk_e6137fe": 15,
-      "fMustAttach": false,
+      "fMustAttach": 0,
       "dwID": 0,
       "tCleanup": {
        "__type__": "TriggerCleanup",
@@ -1395,8 +1395,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 1.5666667222976685,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1410,10 +1410,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "dwID": 0,
       "snoname": {
@@ -1449,13 +1449,13 @@
       ],
       "dwTriggerFlags": 0,
       "dwTriggerFlagsEx": 0,
-      "fRandomLook": false,
+      "fRandomLook": 0,
       "tLookLink": {
        "__type__": "LookLink",
        "__typeHash__": 2394153027,
        "dwLookHash": 0
       },
-      "fOverrideActorVariant": false,
+      "fOverrideActorVariant": 0,
       "eVariantTypeOverride": 0,
       "dwSegmentsStep": 0,
       "dwShaderMapOverride": 4294967295,
@@ -1569,8 +1569,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 5.833333492279053,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1584,10 +1584,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "dwID": 0,
       "snoname": {
@@ -1623,13 +1623,13 @@
       ],
       "dwTriggerFlags": 0,
       "dwTriggerFlagsEx": 0,
-      "fRandomLook": false,
+      "fRandomLook": 0,
       "tLookLink": {
        "__type__": "LookLink",
        "__typeHash__": 2394153027,
        "dwLookHash": 0
       },
-      "fOverrideActorVariant": false,
+      "fOverrideActorVariant": 0,
       "eVariantTypeOverride": 0,
       "dwSegmentsStep": 0,
       "dwShaderMapOverride": 4294967295,
@@ -1743,8 +1743,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": true,
-       "bMuteExternal": false,
+       "bMute": 1,
+       "bMuteExternal": 0,
        "tDelay": 0.8500000238418579,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1758,10 +1758,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "dwActorID": 0,
       "snoAppearance": {
@@ -1778,7 +1778,7 @@
        "__typeHash__": 2394153027,
        "dwLookHash": 80066341
       },
-      "fAffectOwner": true
+      "fAffectOwner": 1
      }
     ],
     "tCooldown": 0,
@@ -1810,8 +1810,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 1.7666667699813843,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1825,10 +1825,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -1884,8 +1884,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 5.000000476837158,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1899,10 +1899,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -1958,8 +1958,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 0.3333333432674408,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -1973,10 +1973,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
@@ -2032,8 +2032,8 @@
        "__type__": "TriggerConditions",
        "__typeHash__": 888408526,
        "flChance": 1,
-       "bMute": false,
-       "bMuteExternal": false,
+       "bMute": 0,
+       "bMuteExternal": 0,
        "tDelay": 3.9333336353302,
        "tImpactVelocityRange": {
         "rangeValue1": 0,
@@ -2047,10 +2047,10 @@
        "dwConditionFlags": 1038,
        "ePlayerCountCondition": 0,
        "ePerformanceBehavior": 0,
-       "unk_b41b571": []
+       "trackConditionToggles": []
       },
-      "fGenerated": false,
-      "fInCreation": false,
+      "fGenerated": 0,
+      "fInCreation": 0,
       "dwParentActorID": 4294967295,
       "tHardpointLink": {
        "__type__": "HardpointLink",
