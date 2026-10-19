@@ -1,0 +1,62 @@
+name: Publish data API
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'json/**'
+      - 'buildVersion.txt'
+      - 'api/**'
+      - '.github/workflows/publish-api.yml'
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: Commit to build; defaults to the triggering commit.
+        type: string
+        required: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # The json/ tree is ~18 GB. Start with just the build script, then let it
+      # choose the few hundred MB it actually publishes.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ inputs.ref || github.sha }}
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /api/
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Check out published data
+        run: node api/build.mjs --print-sparse | git sparse-checkout set --no-cone --stdin
+
+      - run: node api/build.mjs
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: api/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
