@@ -1,8 +1,10 @@
 import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
+import { existsSync } from 'node:fs';
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { RESOLVER_FILES, RESOLVER_GROUPS, createGame, extraFiles, resolveAll } from './lib/resolve/index.mjs';
 
 const API_VERSION = 1;
 const PART_LIMIT_BYTES = 50 * 1024 * 1024;
@@ -89,6 +91,8 @@ async function main() {
     throw new Error(`Bundled groups not found under json/: ${missing.join(', ')}`);
   }
 
+  manifest.data = await buildResolved(tree, manifest);
+
   await writeJson(path.join(apiRoot, 'manifest.json'), manifest);
   await writeJson(path.join(apiRoot, 'latest.json'), {
     apiVersion: manifest.apiVersion,
@@ -103,7 +107,8 @@ async function main() {
 
   console.log(`Built API v${API_VERSION} for data ${manifest.dataVersion} (${sourceCommit.slice(0, 7)})`);
   console.log(`${BUNDLED_GROUPS.length} bundled groups (${(bundledBytes / 1024 / 1024).toFixed(1)} MB), `
-    + `${tree.groups.size - BUNDLED_GROUPS.length} indexed groups -> ${path.relative(repoRoot, distRoot)}`);
+    + `${tree.groups.size - BUNDLED_GROUPS.length} indexed groups, `
+    + `${Object.keys(manifest.data).length} resolved endpoints -> ${path.relative(repoRoot, distRoot)}`);
 }
 
 /**
@@ -142,13 +147,13 @@ function readTree() {
 }
 
 function printSparsePatterns(tree) {
-  const patterns = ['/api/', '/buildVersion.txt'];
+  const patterns = ['/api/', '/buildVersion.txt', ...RESOLVER_FILES.map(file => `/${file}`)];
 
   for (const table of tree.tables) {
     patterns.push(`/${table.path}`);
   }
 
-  for (const key of BUNDLED_GROUPS) {
+  for (const key of new Set([...BUNDLED_GROUPS, ...RESOLVER_GROUPS])) {
     const group = tree.groups.get(key);
 
     if (group) {
@@ -157,6 +162,63 @@ function printSparsePatterns(tree) {
   }
 
   console.log(patterns.join('\n'));
+}
+
+/**
+ * Writes the readable, cross-referenced endpoints under data/. Single files
+ * the resolvers need from large groups (a few dozen Actor records) are added
+ * to a sparse checkout first.
+ */
+async function buildResolved(tree) {
+  const game = createGame(repoRoot);
+
+  ensureFiles(tree, extraFiles(game));
+  game.repo.refresh();
+
+  console.log('Resolving readable data:');
+  const endpoints = resolveAll(game, message => console.log(message));
+  const result = {};
+
+  for (const endpoint of endpoints) {
+    const relative = `data/${endpoint.name}.json`;
+    const records = Array.isArray(endpoint.data) ? endpoint.data.length : undefined;
+    const bytes = await writeJson(path.join(apiRoot, relative), endpoint.data);
+
+    result[endpoint.name] = {
+      path: relative,
+      description: endpoint.description,
+      sha256: sha256(bytes),
+      bytes: bytes.length,
+      ...(records === undefined ? {} : { records }),
+    };
+  }
+
+  return result;
+}
+
+/** Checks out individual json/ files that a sparse checkout is missing. */
+function ensureFiles(tree, refs) {
+  const missing = [];
+
+  for (const ref of refs) {
+    const file = tree.groups.get(`base/${ref.group}`)?.files.find(f => f.name === ref.name);
+
+    if (file && !existsSync(path.join(repoRoot, file.path))) {
+      missing.push(`/${file.path}`);
+    }
+  }
+
+  if (missing.length === 0) {
+    return;
+  }
+
+  console.log(`Checking out ${missing.length} extra files for the resolver`);
+
+  try {
+    execFileSync('git', ['sparse-checkout', 'add', '--stdin'], { cwd: repoRoot, input: missing.join('\n'), stdio: ['pipe', 'inherit', 'inherit'] });
+  } catch (error) {
+    console.warn(`Could not check out extra files (${error.message}); some boss details will be missing.`);
+  }
 }
 
 async function readVersion() {
@@ -298,6 +360,10 @@ function renderIndex(manifest) {
 <ul>
 <li><a href="api/v${manifest.apiVersion}/latest.json">latest.json</a></li>
 <li><a href="api/v${manifest.apiVersion}/manifest.json">manifest.json</a></li>
+</ul>
+<h2>Readable data</h2>
+<ul>
+${Object.entries(manifest.data || {}).map(([name, entry]) => `<li><a href="api/v${manifest.apiVersion}/${entry.path}">${name}</a> - ${entry.description}</li>`).join('\n')}
 </ul>
 </body>
 </html>

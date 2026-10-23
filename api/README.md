@@ -9,7 +9,125 @@ GitHub's "Sync fork" API and, if anything changed, rebuilds and redeploys the AP
 
 **Base URL:** `https://alchelvly.github.io/DiabloIVData/api/v1/`
 
-## How the data is split
+The API has two layers:
+
+- **Readable data** (`data/…`): one record per aspect, item, boss and so on, with every
+  cross-reference followed, English text filled in and values computed. Start here.
+- **Raw files** (`groups/…`, `index/…`, `tables/…`): the parser's output exactly as it is in
+  `json/`, for anything the readable layer doesn't cover.
+
+## Readable data
+
+| Path | Records | What's in it |
+|---|---|---|
+| `data/aspects.json` | ~600 | Legendary aspects: name, class, category, allowed slots, description with value ranges, values per rank, where the Codex entry comes from |
+| `data/uniques.json` | ~1,200 | Unique and mythic items: unique power text, stat affixes, item type, classes, which boss loot pools they are in |
+| `data/items.json` | ~12,000 | Every item definition resolved the same way (bases, legendaries, consumables, keys, charms, …) |
+| `data/affixes.json` | ~6,300 | Every affix: text, value ranges, item-power brackets for stat rolls, slots, classes |
+| `data/skills.json` | ~500 | Class skills and passives: name, tags, cost, cooldown, description, modifiers |
+| `data/bosses.json` | ~10 | Lair and pinnacle bosses: lair, altar, keys, hoard chests, unique drop pool |
+| `data/loot.json` | — | Unique loot pools for each source, and every boss hoard with its key cost |
+| `data/item-types.json` | ~160 | Item types with English names and labels |
+| `data/classes.json` | 8 | Classes, with the index used by per-class arrays |
+
+Each file is a JSON array (`loot.json` is an object). `manifest.json` lists them under `data`
+with the same `path`, `sha256`, `bytes` and `records` fields as the bundles, so the update
+steps below work for them too.
+
+### Where each record comes from
+
+Nothing in these files is typed in by hand. Each one is assembled from several game files:
+
+- **Aspects:** `Aspect` → its `Affix` (values, slots, classes, category tags) → the affix's
+  English `StringList` (name and description) → `TrackedReward` (Codex source) → `World`
+  strings (dungeon name).
+- **Items:** `Item` → `ItemType` (+ `ItemLabels`) → each forced and inherent `Affix` → its
+  strings, or `AttributeDescriptions` for plain stat affixes → `AttributeFormulas` for
+  item-power brackets → `ItemFamilies` for loot pools.
+- **Bosses:** the boss's `Boss_*` quest → its monster, altar and hoard actors → the lair's
+  `World` and `LevelArea` → the summoning `Recipe` → `ItemFamilies` for the unique pool.
+- **Skills:** each class `SkillKit` + `SkillTreeRewards` → `Power` (tags, cost, formulas) →
+  the power's strings.
+
+### Example: one aspect
+
+```json
+{
+  "id": "Asp_Legendary_Barb_001",
+  "name": "Aspect of Berserk Ripping",
+  "class": "Barbarian",
+  "category": "Offensive",
+  "slots": ["Weapon", "Gloves", "Amulet", "Ring"],
+  "description": "While Berserking, your direct damage inflicts 40–55% bonus Bleeding damage over 5 seconds.",
+  "keywords": ["Berserking"],
+  "values": [
+    { "attribute": "Affix_Value_1", "min": 0.4, "max": 0.55, "scaling": "rank",
+      "formula": "0.39+CurrentLegendaryRank()*0.01" }
+  ],
+  "ranks": { "min": 1, "max": 16, "caps": [16, 13, 21, 16] },
+  "byRank": [{ "rank": 1, "values": [{ "attribute": "Affix_Value_1", "min": 0.4, "max": 0.4 }] }, "…"],
+  "codex": { "source": "dungeon", "dungeon": { "id": "DGN_Step_Mournfield", "name": "Mournfield" } },
+  "affix": "legendary_barb_001"
+}
+```
+
+### Example: one boss
+
+```json
+{
+  "id": "Boss_WT4_Duriel",
+  "name": "Duriel",
+  "displayName": "Tormented Echo of Duriel",
+  "location": { "world": { "id": "Boss_WT4_Duriel", "name": "Gaping Crevasse" } },
+  "altar": { "id": "Boss_WT4_Duriel", "name": "Pestilent Altar" },
+  "summon": [{ "recipe": "BossSummoning_UberDuriel",
+    "requires": [{ "item": "BossSummoning_Greater_LairKey", "name": "Greater Lair Key", "quantity": 1 }] }],
+  "chests": [{ "id": "EGB_Chest_Duriel_Tormented", "name": "Duriel's Hoard",
+    "requires": [{ "item": "BossSummoning_Greater_LairKey", "name": "Greater Lair Key", "quantity": 1 }] }],
+  "loot": { "pool": "DurielUniques",
+    "uniques": [{ "id": "Ring_Unique_Sorc_100", "name": "Blue Rose", "quality": "Unique", "classes": ["Sorcerer"] }, "…"] }
+}
+```
+
+### Reading the values
+
+- **`description`** is plain text. Colour and style tags are removed and placeholders are
+  replaced by numbers. A range such as `40–55%` covers every possible roll or rank.
+  `descriptionMarkup` keeps the original text with its tags, if you want to render colours.
+- **`[x]`** after a number means a multiplicative bonus, as in the game's tooltips.
+- **`#`** stands for a number the game works out per character while you play (your weapon
+  damage, attack speed, skill damage). Those placeholders are listed in `unresolvedValues`.
+- **`(… of weapon damage)`** marks damage that scales with your weapon. The share is shown,
+  not a fixed number.
+- **`values[]`** holds each affix value as `min`/`max` in the game's own units (0.4 = 40%).
+  `scaling` says what moves it:
+  - `rank`: the aspect rank. `byRank` lists the values at every rank.
+  - `roll`: a random roll when the item drops.
+  - `itemPower`: item power. `byItemPower` (in `affixes.json`) lists every bracket, and the
+    top-level `min`/`max` use the highest one (or the item's fixed item power).
+  - `fixed`: always the same.
+- **`ranks.caps`** are the per-aspect rank caps from the data (`arMaxLegendaryRanks`). Ranges
+  use 1 to the first cap. The game files don't say what the other caps are for.
+- **Skill numbers** are at rank 1, with no upgrades, items or paragon applied.
+- **Ancestral items** boost some powers (`AncestralAffixScalar…`). Values here are for the
+  base item.
+
+### Limits of the game data
+
+- **Drop tables.** The game files don't include treasure classes, the tables of drop weights.
+  Blizzard keeps them on the server. Loot here is the pool of uniques tagged for each source
+  (`ItemFamilies`) plus what each hoard costs to open. Drop chances aren't in the data.
+- **Monster stats.** Health and damage scaling for bosses are server-side too.
+- **World bosses** and other bosses without a `Boss_*` quest aren't in `bosses.json` yet. Their
+  unique pools are still in `loot.json` (for example `AstarothUniques`, `WorldUniques`).
+- Some records are leftovers or placeholders in the game files (names like `[PH]` or `[WIP]`).
+  They are included as-is.
+
+The resolver code lives in [`lib/`](lib): `formula.mjs` evaluates the game's formulas,
+`text.mjs` renders tooltip markup, `affix.mjs` describes any affix, and `resolve/` builds each
+endpoint.
+
+## How the raw files are split
 
 The `json/` tree has about 850,000 files (around 18 GB), far more than GitHub Pages can host.
 It is published in three ways:
@@ -28,7 +146,8 @@ the whole group on Pages.
 | Path | Description |
 |---|---|
 | `latest.json` | Small version stamp. Poll this to check for updates. |
-| `manifest.json` | Every group and table, with paths, hashes, sizes and counts. |
+| `manifest.json` | Every readable endpoint, group and table, with paths, hashes, sizes and counts. |
+| `data/<name>.json` | A readable endpoint (see [Readable data](#readable-data)). |
 | `groups/<source>/<Group>.json` | A bundled group: `{ "<snoName>": record, … }`. |
 | `groups/<source>/<Group>.<n>.json` | Part `n` (from 1) of a bundle bigger than 50 MB. Today only `base/Power` is split. |
 | `index/<source>/<Group>.json` | Sorted SNO names in an indexed group. |
@@ -108,7 +227,7 @@ relative to the base URL. `sha256` is the hash of the exact bytes served.
 
 1. GET `latest.json`. If `sourceCommit` matches your cached value, you're done.
 2. Otherwise GET `manifest.json`.
-3. For each bundle part you use, download it only if its `sha256` differs from your cached copy.
+3. For each `data` file or bundle part you use, download it only if its `sha256` differs from your cached copy.
    Verify the hash after downloading.
 4. Store the new `sourceCommit`.
 
@@ -144,7 +263,8 @@ reference. `szText` can contain formatting tags such as `{c_mythic}` and `{if:�
 
 ```bash
 curl -s https://alchelvly.github.io/DiabloIVData/api/v1/latest.json
-curl -s https://alchelvly.github.io/DiabloIVData/api/v1/groups/base/Aspect.json
+curl -s https://alchelvly.github.io/DiabloIVData/api/v1/data/aspects.json
+curl -s https://alchelvly.github.io/DiabloIVData/api/v1/data/bosses.json
 ```
 
 ## Building locally
@@ -156,6 +276,8 @@ node api/build.mjs
 This writes the site to `api/dist/`, which is gitignored. It needs only Node and git, and reads
 the file list from git, so it also works from a sparse checkout. `node api/build.mjs
 --print-sparse` prints the paths the build reads, which is how the workflow checks out only those.
+In a sparse checkout the build also adds the few dozen single `Actor` files the boss resolver
+needs, with `git sparse-checkout add`.
 
 ## Notes
 
