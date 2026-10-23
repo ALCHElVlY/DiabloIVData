@@ -4,7 +4,7 @@ import { existsSync } from 'node:fs';
 import { mkdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { RESOLVER_FILES, RESOLVER_GROUPS, createGame, extraFiles, resolveAll } from './lib/resolve/index.mjs';
+import { RESOLVER_FILES, RESOLVER_GROUPS, RESOLVER_PATTERNS, createGame, extraFiles, resolveAll } from './lib/resolve/index.mjs';
 
 const API_VERSION = 1;
 const PART_LIMIT_BYTES = 50 * 1024 * 1024;
@@ -165,6 +165,8 @@ function printSparsePatterns(tree) {
     }
   }
 
+  patterns.push(...RESOLVER_PATTERNS);
+
   console.log(patterns.join('\n'));
 }
 
@@ -291,9 +293,12 @@ function diffHashes(previous, current) {
 /** Checks out individual json/ files that a sparse checkout is missing. */
 function ensureFiles(tree, refs) {
   const missing = [];
+  const byName = new Map();
 
   for (const ref of refs) {
-    const file = tree.groups.get(`base/${ref.group}`)?.files.find(f => f.name === ref.name);
+    const key = `base/${ref.group}`;
+    if (!byName.has(key)) byName.set(key, new Map((tree.groups.get(key)?.files || []).map(f => [f.name, f])));
+    const file = byName.get(key).get(ref.name);
 
     if (file && !existsSync(path.join(repoRoot, file.path))) {
       missing.push(`/${file.path}`);

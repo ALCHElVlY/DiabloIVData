@@ -48,6 +48,7 @@ function describeNode(game, id, node) {
     snoId: node.__snoID__,
     name: name ?? id,
     rarity: node.bHasSocket ? 'Socket' : node.bIsGate ? 'Gate' : /^StartNode/.test(id) ? 'Start' : rarity,
+    image: game.images.first(node.hIcon, node.hIconMask),
     class: classFromId(id),
     stats: stats?.values.map((value, index) => compact({
       ...value,
@@ -95,6 +96,7 @@ export function resolveParagonBoards(game) {
       snoId: board.__snoID__,
       name: game.nameOf('ParagonBoard', id) ?? id,
       class: classFromId(id),
+      image: game.images.get(board.legendaryNodeIcon),
       width,
       height: rows.length,
       legendaryNodes: legendary.map(n => ({ id: n, name: game.nameOf('ParagonNode', n) ?? n })),
@@ -126,6 +128,11 @@ export function resolveParagonGlyphs(game) {
       snoId: glyph.__snoID__,
       name: game.nameOf('ParagonGlyph', id) ?? id,
       rarity: GLYPH_RARITY[glyph.eRarity],
+      // arIcons holds one icon per glyph rarity (Magic, Rare, Legendary).
+      image: game.images.first([...(glyph.arIcons || [])].reverse()),
+      imagesByRarity: Object.fromEntries((glyph.arIcons || [])
+        .map((handle, index) => [GLYPH_RARITY[index], game.images.get(handle)])
+        .filter(([rarity, image]) => rarity && image)),
       classes: game.classes(glyph.fUsableByClass),
       affixes: (glyph.arAffixes || []).map(ref => glyphAffix(game, ref?.name)).filter(Boolean),
       season: game.seasons.tag('ParagonGlyph', id, { requirements: glyph.tRequirementsToBeActive }),

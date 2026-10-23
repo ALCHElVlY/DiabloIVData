@@ -1,4 +1,5 @@
 import { Game } from '../game.mjs';
+import { Images, itemActorFiles } from '../images.mjs';
 import { Repo } from '../repo.mjs';
 import { resolveAspects } from './aspects.mjs';
 import { bossActorFiles, resolveBosses } from './bosses.mjs';
@@ -34,6 +35,9 @@ export const RESOLVER_GROUPS = [
   'enUS_Text/StringList',
 ];
 
+/** Extra sparse-checkout patterns: the UI texture atlases that hold icons. */
+export const RESOLVER_PATTERNS = ['/json/base/meta/Texture/2DUI*', '/json/base/meta/Texture/2DInventory*'];
+
 /** Root-level files the resolver reads. */
 export const RESOLVER_FILES = ['attributes.json'];
 
@@ -41,12 +45,13 @@ export function createGame(repoRoot) {
   const repo = new Repo(repoRoot);
   const game = new Game(repo, repoRoot);
   game.seasons = new Seasons(game);
+  game.images = new Images(repo);
   return game;
 }
 
 /** Individual files to fetch before resolving: [{ group, name }] under json/base/meta. */
 export function extraFiles(game) {
-  return bossActorFiles(game);
+  return [...bossActorFiles(game), ...itemActorFiles(game.repo)];
 }
 
 /**

@@ -85,6 +85,7 @@ export function resolveSkills(game) {
       name: text(strings.name ?? strings.Name) ?? powerId,
       class: info.className,
       kind: info.kind,
+      image: game.images.get(power.hIconNormal),
       category: game.skillTagName(power.tPrimaryTag?.gbidSkillTag?.name) ?? undefined,
       tags: (power.arSkillTags || [])
         .filter(t => t?.gbidSkillTag && !t.bSearchOnly)

@@ -32,6 +32,7 @@ export function resolveAspects(game) {
       class: classes.length === 1 ? classes[0] : (classes.length ? null : 'Generic'),
       classes,
       category: game.aspectCategory(affix),
+      image: game.images.get(aspect.hIconOverride),
       slots,
       description: described.description,
       descriptionMarkup: described.descriptionMarkup,

@@ -76,6 +76,38 @@ Every record has a `season` block:
 `seasons.json` has one record per season, with its blessings, the name of its power set
 ("Prime Evil Powers") and the ids of its powers and season-only items.
 
+### Images
+
+Records that have an icon in the game carry an `image`:
+
+```json
+"image": {
+  "texture": "2DUI_Aspect_Barb_Offensive_Icons",
+  "textureSnoId": 1955578,
+  "textureSize": { "width": 2688, "height": 192 },
+  "frame": { "x": 398, "y": 2, "width": 128, "height": 128 },
+  "handle": 678284105
+}
+```
+
+Icons in the game are packed into atlas textures. `texture` names the atlas and `frame` is the
+icon's rectangle in it, in pixels. To get the icon, crop that rectangle out of the atlas image.
+
+- **Where images come from:** aspects, skills, seasonal powers, paragon nodes, glyphs and
+  boards use their own icon handle. Items use their inventory image, then their set-charm icon,
+  then the icon on the item's actor. Some items look different for each class (Andariel's
+  Visage, for example). Those also have `imagesByClass`, keyed by class name. Glyphs have
+  `imagesByRarity`. Seasons have `image` and `sigilIcon`.
+- **Coverage:** every aspect, seasonal power, rune, rune word, tempering manual, paragon node
+  and glyph has an image, and nearly every skill does. About 980 of 1,240 uniques do. The ones
+  without an image are mostly placeholders (`…_95`, `[PH]`) and unique charms, which have no
+  icon of their own in the files.
+- **No pixels here:** the game files describe the textures, but the repository doesn't contain
+  their image data. The parser only extracts metadata, and `texture/` is empty. You need the
+  atlas images from your own extraction or from a host that has them. Set `API_IMAGE_URL` when
+  building, for example `https://example.com/d4tex/{texture}.png`, and every image also gets
+  a `url`.
+
 ### Syncing to a database
 
 - Every record has a `hash` of its content. Update a row only when its hash changes.

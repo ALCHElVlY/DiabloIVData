@@ -1,5 +1,5 @@
 import { describeAffix } from '../affix.mjs';
-import { ITEM_QUALITY } from '../game.mjs';
+import { CLASS_ORDER, ITEM_QUALITY } from '../game.mjs';
 import { byName, compact, itemTypeInfo, text } from './common.mjs';
 
 /**
@@ -27,6 +27,7 @@ export function resolveItem(game, id, item, families = familyNames(game)) {
   const quality = ITEM_QUALITY[item.eMagicType] ?? String(item.eMagicType);
   const mythic = quality === 'Mythic';
   const itemPower = item.nFixedIPowerLevel || undefined;
+  const images = game.images.itemImages(item, CLASS_ORDER);
 
   const describe = ref => {
     const affix = repo.deref(ref);
@@ -61,6 +62,8 @@ export function resolveItem(game, id, item, families = familyNames(game)) {
     name: text(strings.Name) ?? null,
     quality,
     itemType: itemTypeInfo(game, item.snoItemType),
+    image: images.image,
+    imagesByClass: images.byClass,
     classes: game.classes(item.fUsableByClass),
     requiredLevel: item.nExplicitRequiredLevel || undefined,
     itemPower,
