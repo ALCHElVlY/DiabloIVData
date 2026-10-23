@@ -80,6 +80,7 @@ export function resolveBosses(game) {
       altar: altars[0],
       summon,
       chests,
+      season: game.seasons.tag('Quest', questId),
       loot: pool && {
         pool: pool.id,
         uniques: pool.items,

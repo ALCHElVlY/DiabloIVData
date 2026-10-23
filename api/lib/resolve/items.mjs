@@ -1,6 +1,6 @@
 import { describeAffix } from '../affix.mjs';
 import { ITEM_QUALITY } from '../game.mjs';
-import { byName, compact, itemTypeInfo, seasons, text } from './common.mjs';
+import { byName, compact, itemTypeInfo, text } from './common.mjs';
 
 /**
  * Every item definition, with its English name, type, quality, classes and
@@ -74,7 +74,7 @@ export function resolveItem(game, id, item, families = familyNames(game)) {
     lootPools: lootPools.map(pool => ({ id: pool, name: families.get(pool) ?? pool })),
     baseItem: item.snoBaseItem?.name,
     setBonus: item.snoSetItemBonus?.name,
-    seasons: seasons(item.tRequirementsToBeActive),
+    season: game.seasons.tag('Item', id, { requirements: item.tRequirementsToBeActive, seasonItem: item.bSeasonItem }),
     charmRarity: item.eCharmRarity || undefined,
   });
 }

@@ -9,6 +9,9 @@ export const CLASS_ORDER = ['Sorcerer', 'Druid', 'Barbarian', 'Rogue', 'Necroman
 /** eDamageType. */
 export const DAMAGE_TYPES = ['Physical', 'Fire', 'Lightning', 'Cold', 'Poison', 'Shadow'];
 
+/** Resource types (PlayerClass.tPrimaryResource.eType, attribute parameter type 7). */
+export const RESOURCE_TYPES = { 0: 'Mana', 1: 'Fury', 3: 'Energy', 4: 'Combo Points', 5: 'Spirit', 6: 'Essence', 7: 'Vigor', 9: 'Faith', 10: 'Wrath' };
+
 /** ItemDefinition.eMagicType. */
 export const ITEM_QUALITY = { 0: 'Common', 1: 'Legendary', 2: 'Unique', 3: 'Set', 4: 'Mythic' };
 
@@ -28,6 +31,7 @@ const CATEGORY_TAGS = {
 /** attributes.json eParameterType values this resolver knows how to name. */
 const PARAM_DAMAGE_TYPE = 0;
 const PARAM_SKILL_TAG = 32;
+const PARAM_RESOURCE = 7;
 const PARAM_SNO = new Set([5, 13, 23]);
 
 /**
@@ -140,6 +144,11 @@ export class Game {
 
     if (type === PARAM_DAMAGE_TYPE) {
       const name = DAMAGE_TYPES[param] ?? String(param);
+      return { key: name, name };
+    }
+
+    if (type === PARAM_RESOURCE) {
+      const name = RESOURCE_TYPES[param] ?? `Resource ${param}`;
       return { key: name, name };
     }
 

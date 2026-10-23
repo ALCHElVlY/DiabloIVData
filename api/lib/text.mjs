@@ -84,7 +84,7 @@ export function renderText(template, options = {}) {
   const keywords = [];
 
   for (const match of text.matchAll(/\{c_important\}([\s\S]*?)\{\/c(?:_important)?\s*\}/gi)) {
-    const clean = match[1].replace(/\{[^}]*\}/g, '').trim();
+    const clean = match[1].replace(/\{[^}]*\}/g, '').replace(/\|4[^:;]*[:;]([^;]*);?/g, '$1').trim();
     if (clean && clean.length < 60) keywords.push(clean);
   }
 

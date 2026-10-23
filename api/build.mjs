@@ -91,7 +91,9 @@ async function main() {
     throw new Error(`Bundled groups not found under json/: ${missing.join(', ')}`);
   }
 
-  manifest.data = await buildResolved(tree, manifest);
+  const resolved = await buildResolved(tree, manifest);
+  manifest.currentSeason = resolved.currentSeason;
+  manifest.data = resolved.data;
 
   await writeJson(path.join(apiRoot, 'manifest.json'), manifest);
   await writeJson(path.join(apiRoot, 'latest.json'), {
@@ -100,7 +102,9 @@ async function main() {
     d4Build: manifest.d4Build,
     sourceCommit: manifest.sourceCommit,
     generatedAt: manifest.generatedAt,
+    currentSeason: manifest.currentSeason,
     manifest: 'manifest.json',
+    changes: manifest.data.changes?.path,
   });
   await writeFile(path.join(distRoot, 'index.html'), renderIndex(manifest));
   await writeFile(path.join(distRoot, '.nojekyll'), '');
@@ -169,7 +173,7 @@ function printSparsePatterns(tree) {
  * the resolvers need from large groups (a few dozen Actor records) are added
  * to a sparse checkout first.
  */
-async function buildResolved(tree) {
+async function buildResolved(tree, manifest) {
   const game = createGame(repoRoot);
 
   ensureFiles(tree, extraFiles(game));
@@ -177,23 +181,111 @@ async function buildResolved(tree) {
 
   console.log('Resolving readable data:');
   const endpoints = resolveAll(game, message => console.log(message));
-  const result = {};
+  const hashes = {};
+  const data = {};
 
   for (const endpoint of endpoints) {
-    const relative = `data/${endpoint.name}.json`;
-    const records = Array.isArray(endpoint.data) ? endpoint.data.length : undefined;
-    const bytes = await writeJson(path.join(apiRoot, relative), endpoint.data);
+    hashes[endpoint.name] = addRecordHashes(endpoint);
+    data[endpoint.name] = await writeEndpoint(endpoint.name, endpoint.description, endpoint.data);
+  }
 
-    result[endpoint.name] = {
-      path: relative,
-      description: endpoint.description,
-      sha256: sha256(bytes),
-      bytes: bytes.length,
-      ...(records === undefined ? {} : { records }),
-    };
+  const current = { dataVersion: manifest.dataVersion, sourceCommit: manifest.sourceCommit, endpoints: hashes };
+  const previous = await fetchPreviousHashes();
+
+  data.hashes = await writeEndpoint('hashes', 'Hash of every record by endpoint and id, for incremental sync', current);
+  data.changes = await writeEndpoint('changes', 'Records added, removed or changed since the previously published build', diffHashes(previous, current));
+
+  return { data, currentSeason: game.seasons.current };
+}
+
+async function writeEndpoint(name, description, payload) {
+  const relative = `data/${name}.json`;
+  const bytes = await writeJson(path.join(apiRoot, relative), payload);
+
+  return {
+    path: relative,
+    description,
+    sha256: sha256(bytes),
+    bytes: bytes.length,
+    ...(Array.isArray(payload) ? { records: payload.length } : {}),
+  };
+}
+
+/**
+ * Gives every record a short content hash (`hash`) so a client can upsert
+ * only what changed. Returns { id: hash } for the endpoint.
+ */
+function addRecordHashes(endpoint) {
+  const result = {};
+
+  if (!Array.isArray(endpoint.data)) {
+    result[endpoint.name] = recordHash(endpoint.data);
+    return result;
+  }
+
+  for (const record of endpoint.data) {
+    record.hash = recordHash(record);
+    result[record.id] = record.hash;
   }
 
   return result;
+}
+
+function recordHash(record) {
+  const { hash, ...rest } = record;
+  return createHash('sha256').update(JSON.stringify(rest)).digest('hex').slice(0, 16);
+}
+
+/**
+ * The previously published hashes.json, from API_PREVIOUS_URL or this
+ * repository's GitHub Pages site. Null when there is none or it can't be reached.
+ */
+async function fetchPreviousHashes() {
+  let base = process.env.API_PREVIOUS_URL;
+
+  if (!base) {
+    try {
+      const [owner, repo] = readRepository().split('/');
+      base = `https://${owner.toLowerCase()}.github.io/${repo}/api/v${API_VERSION}/`;
+    } catch {
+      return null;
+    }
+  }
+
+  const url = new URL('data/hashes.json', base.endsWith('/') ? base : `${base}/`);
+
+  try {
+    const response = await fetch(url, { signal: AbortSignal.timeout(20000) });
+    if (!response.ok) {
+      console.log(`No previous hashes at ${url} (${response.status}); changes.json will list everything as added.`);
+      return null;
+    }
+    return await response.json();
+  } catch (error) {
+    console.log(`Could not fetch previous hashes from ${url} (${error.message}); changes.json will list everything as added.`);
+    return null;
+  }
+}
+
+function diffHashes(previous, current) {
+  const endpoints = {};
+
+  for (const [name, now] of Object.entries(current.endpoints)) {
+    const before = previous?.endpoints?.[name] ?? {};
+    const added = Object.keys(now).filter(id => !(id in before));
+    const removed = Object.keys(before).filter(id => !(id in now));
+    const changed = Object.keys(now).filter(id => id in before && before[id] !== now[id]);
+
+    if (added.length || removed.length || changed.length) {
+      endpoints[name] = { added, removed, changed };
+    }
+  }
+
+  return {
+    from: previous ? { dataVersion: previous.dataVersion, sourceCommit: previous.sourceCommit } : null,
+    to: { dataVersion: current.dataVersion, sourceCommit: current.sourceCommit },
+    endpoints,
+  };
 }
 
 /** Checks out individual json/ files that a sparse checkout is missing. */

@@ -25,14 +25,67 @@ The API has two layers:
 | `data/items.json` | ~12,000 | Every item definition resolved the same way (bases, legendaries, consumables, keys, charms, …) |
 | `data/affixes.json` | ~6,300 | Every affix: text, value ranges, item-power brackets for stat rolls, slots, classes |
 | `data/skills.json` | ~500 | Class skills and passives: name, tags, cost, cooldown, description, modifiers |
+| `data/runes.json` | ~60 | Condition and effect runes: text, rarity, Offering generated or spent |
+| `data/runewords.json` | ~20 | Rune word recipes: runes in order, valid bases, resulting stats |
+| `data/tempering.json` | ~550 | Tempering manuals: category, tier, classes, slots and every affix the recipe can add |
+| `data/paragon-boards.json` | ~80 | Boards as a grid of node ids, with legendary node, glyph socket and gate positions |
+| `data/paragon-nodes.json` | ~570 | Nodes: stats, threshold requirements, legendary node powers |
+| `data/paragon-glyphs.json` | ~160 | Glyphs and their affixes, with values at level 1 and per level |
+| `data/seasonal-powers.json` | ~190 | Season mechanic powers, such as Season 15's Prime Evil Powers |
+| `data/seasons.json` | 15 | Every season: name, theme, blessings, power set, season-only items |
 | `data/bosses.json` | ~10 | Lair and pinnacle bosses: lair, altar, keys, hoard chests, unique drop pool |
 | `data/loot.json` | — | Unique loot pools for each source, and every boss hoard with its key cost |
 | `data/item-types.json` | ~160 | Item types with English names and labels |
 | `data/classes.json` | 8 | Classes, with the index used by per-class arrays |
+| `data/hashes.json` | — | Hash of every record, by endpoint and id |
+| `data/changes.json` | — | What was added, removed or changed since the previous published build |
 
-Each file is a JSON array (`loot.json` is an object). `manifest.json` lists them under `data`
-with the same `path`, `sha256`, `bytes` and `records` fields as the bundles, so the update
-steps below work for them too.
+Each file is a JSON array of records with a unique `id` (`loot`, `hashes` and `changes` are
+objects). `manifest.json` lists them under `data` with the same `path`, `sha256`, `bytes` and
+`records` fields as the bundles, so the update steps below work for them too.
+
+### Season-only data
+
+Every record has a `season` block:
+
+```json
+"season": { "seasonal": true, "seasons": [15], "current": true,
+            "source": ["requirement", "seasonItemFlag"], "introducedInSeason": 15 }
+```
+
+- **`seasonal`** is `true` only when the game data marks the record as season-only.
+  `source` says how:
+  - `requirement`: the record lists the seasons it is active in.
+  - `seasonFile`: the season's definition lists it (seasonal powers).
+  - `seasonItemFlag`: the item is flagged as season-realm only.
+  - `runes`: a rune word that needs season-only runes.
+  - `usedOnlyBySeasonalItems`: an affix that only appears on season-only items.
+  - `namePrefix`: the season number came from the `S15_` style name, because the data
+    flags the record as seasonal without naming the season.
+- **`seasons`** lists the season numbers it belongs to.
+- **`current`** is `true` when that includes the newest season in this build.
+  `currentSeason` in `latest.json` and `manifest.json` gives that number. The game files don't
+  say which season is live, so this is the highest season they define.
+- **`introducedInSeason`** comes from an `S<n>_` name prefix. It says when something was added,
+  not that it is season-only. Many `S04_` affixes are permanent, for example.
+- **`newInCurrentSeason`** is `true` when `introducedInSeason` is the newest season. Some new
+  seasonal items, such as Season 15's Annihilus charm, carry no season flag in the files at all
+  (their drops come from server-side tables). This flag is the only sign of them, so use it to
+  find "this season's new stuff".
+
+`seasons.json` has one record per season, with its blessings, the name of its power set
+("Prime Evil Powers") and the ids of its powers and season-only items.
+
+### Syncing to a database
+
+- Every record has a `hash` of its content. Update a row only when its hash changes.
+- `data/hashes.json` maps each endpoint's ids to their hashes, so you can compare without
+  downloading the full files.
+- `data/changes.json` lists the `added`, `removed` and `changed` ids for each endpoint since
+  the previously published build, with the data version and commit of both builds. The build
+  reads the previous `hashes.json` from this site. Set `API_PREVIOUS_URL` to use another
+  base URL. On the first build, or when the site can't be reached, `from` is `null` and
+  everything is listed as added.
 
 ### Where each record comes from
 
@@ -48,6 +101,13 @@ Nothing in these files is typed in by hand. Each one is assembled from several g
   `World` and `LevelArea` → the summoning `Recipe` → `ItemFamilies` for the unique pool.
 - **Skills:** each class `SkillKit` + `SkillTreeRewards` → `Power` (tags, cost, formulas) →
   the power's strings.
+- **Seasons:** `Season` definitions → their `CollectiblePower` powers → each power's `Power`
+  formulas and strings. Season-only items come from the item tagging above.
+- **Runes and rune words:** rune `Item`s → their strings. Horadric Cube `Recipe`s → the runes
+  and base they take → the resulting `Item`'s affixes.
+- **Tempering:** manual `Item` → its `Recipe`'s tempering data → each tempered `Affix`.
+- **Paragon:** `ParagonBoard` grids → `ParagonNode` (attributes, `ParagonThreshold`, legendary
+  `Power`) and `ParagonGlyph` → `ParagonGlyphAffix`.
 
 ### Example: one aspect
 
@@ -108,7 +168,12 @@ Nothing in these files is typed in by hand. Each one is assembled from several g
   - `fixed`: always the same.
 - **`ranks.caps`** are the per-aspect rank caps from the data (`arMaxLegendaryRanks`). Ranges
   use 1 to the first cap. The game files don't say what the other caps are for.
-- **Skill numbers** are at rank 1, with no upgrades, items or paragon applied.
+- **Skill numbers** are at rank 1, with no upgrades, items or paragon applied. Seasonal
+  powers and legendary paragon nodes use the same rules.
+- **Paragon values** that depend on the game's paragon power budget
+  (`ParagonPowerBudgetMultiplier…()`) show as `#`. The stat keeps its `formula` so you can see
+  the base coefficient. Glyph affixes give `atLevel1` and `perLevel`, and their descriptions show
+  level 1.
 - **Ancestral items** boost some powers (`AncestralAffixScalar…`). Values here are for the
   base item.
 
@@ -168,7 +233,9 @@ minified. Records keep the parser's metadata fields (`__fileName__`, `__snoID__`
   "d4Build": 73224,
   "sourceCommit": "ea1636f03fe4e007c7e3596650f7a8f31516f2f2",
   "generatedAt": "2026-10-19T03:23:47.571Z",
-  "manifest": "manifest.json"
+  "currentSeason": 15,
+  "manifest": "manifest.json",
+  "changes": "data/changes.json"
 }
 ```
 

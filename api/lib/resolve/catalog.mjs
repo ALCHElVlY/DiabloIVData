@@ -1,6 +1,6 @@
 import { describeAffix } from '../affix.mjs';
-import { CLASS_ORDER } from '../game.mjs';
-import { byName, compact, seasons } from './common.mjs';
+import { CLASS_ORDER, RESOURCE_TYPES } from '../game.mjs';
+import { byName, compact } from './common.mjs';
 import { lootPools } from './bosses.mjs';
 
 export function resolveClasses(game) {
@@ -11,6 +11,7 @@ export function resolveClasses(game) {
       snoId: record?.__snoID__,
       index,
       name: game.nameOf('PlayerClass', name) ?? name,
+      resource: RESOURCE_TYPES[record?.tPrimaryResource?.eType],
     });
   });
 }
@@ -26,15 +27,25 @@ export function resolveItemTypes(game) {
       name: game.nameOf('ItemType', id) ?? id,
       labels: game.itemLabelNames(type?.arItemLabels),
       classes: game.classes(type?.fUsableByClass),
-      seasons: seasons(type?.tRequirementsToBeActive),
+      season: game.seasons.tag('ItemType', id, { requirements: type?.tRequirementsToBeActive }),
     });
   }).sort(byName);
 }
 
 /** Every affix: legendary/unique powers, stat rolls, tempers, runes, … */
-export function resolveAffixes(game) {
+export function resolveAffixes(game, items = []) {
   const { repo } = game;
   const result = [];
+
+  // An affix that only season-only items use is season-only too.
+  const usedBy = new Map();
+  for (const item of items) {
+    for (const affix of [item.power, ...(item.affixes || []), ...(item.implicitAffixes || [])]) {
+      if (!affix?.id) continue;
+      if (!usedBy.has(affix.id)) usedBy.set(affix.id, []);
+      usedBy.get(affix.id).push(item.season);
+    }
+  }
 
   for (const id of repo.names('Affix')) {
     const affix = repo.get('Affix', id);
@@ -53,10 +64,25 @@ export function resolveAffixes(game) {
       itemPower: { min: affix.nItemPowerMin, max: affix.nItemPowerMax },
       skillTags: (affix.arAffixSkillTags || []).map(tag => tag?.name).filter(Boolean),
       passivePower: affix.snoPassivePower?.name,
+      season: affixSeason(game, id, usedBy.get(id)),
     }));
   }
 
   return result;
+}
+
+function affixSeason(game, id, itemSeasons) {
+  const own = game.seasons.tag('Affix', id);
+  if (own.seasonal || !itemSeasons?.length || !itemSeasons.every(s => s?.seasonal)) return own;
+
+  const seasons = [...new Set(itemSeasons.flatMap(s => s.seasons || []))].sort((a, b) => a - b);
+  return compact({
+    seasonal: true,
+    seasons,
+    current: seasons.includes(game.seasons.current) || undefined,
+    source: ['usedOnlyBySeasonalItems'],
+    introducedInSeason: own.introducedInSeason,
+  });
 }
 
 /**

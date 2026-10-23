@@ -1,5 +1,5 @@
 import { describeAffix } from '../affix.mjs';
-import { byName, compact, seasons, text } from './common.mjs';
+import { byName, compact, text } from './common.mjs';
 
 const SOURCE = { 0: 'drop', 2: 'dungeon', 4: 'seasonJourney' };
 
@@ -44,7 +44,7 @@ export function resolveAspects(game) {
       itemPower: { min: affix.nItemPowerMin, max: affix.nItemPowerMax },
       affix: affixRef.name,
       passivePower: affix.snoPassivePower?.name,
-      seasons: seasons(affix.tRequirementsToBeActive),
+      season: game.seasons.tag('Aspect', id, { alsoNames: [affixRef.name] }),
       unresolvedValues: described.unresolvedValues,
     }));
   }
