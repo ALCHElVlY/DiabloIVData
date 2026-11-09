@@ -1,11 +1,5 @@
-# d4data static API
-
-A read-only JSON API over the parsed Diablo IV data in this repository, published to GitHub Pages
-by [`publish-api.yml`](../.github/workflows/publish-api.yml).
-
-The fork mirrors [DiabloTools/d4data](https://github.com/DiabloTools/d4data) through
-[`sync-upstream.yml`](../.github/workflows/sync-upstream.yml). Every 6 hours that workflow calls
-GitHub's "Sync fork" API and, if anything changed, rebuilds and redeploys the API.
+# DiabloIV Static Data API
+A read-only JSON API over the parsed Diablo IV data in this repository.
 
 **Base URL:** `https://alchelvly.github.io/DiabloIVData/api/v1/`
 
@@ -108,39 +102,6 @@ icon's rectangle in it, in pixels. To get the icon, crop that rectangle out of t
   building, for example `https://example.com/d4tex/{texture}.png`, and every image also gets
   a `url`.
 
-### Syncing to a database
-
-- Every record has a `hash` of its content. Update a row only when its hash changes.
-- `data/hashes.json` maps each endpoint's ids to their hashes, so you can compare without
-  downloading the full files.
-- `data/changes.json` lists the `added`, `removed` and `changed` ids for each endpoint since
-  the previously published build, with the data version and commit of both builds. The build
-  reads the previous `hashes.json` from this site. Set `API_PREVIOUS_URL` to use another
-  base URL. On the first build, or when the site can't be reached, `from` is `null` and
-  everything is listed as added.
-
-### Where each record comes from
-
-Nothing in these files is typed in by hand. Each one is assembled from several game files:
-
-- **Aspects:** `Aspect` → its `Affix` (values, slots, classes, category tags) → the affix's
-  English `StringList` (name and description) → `TrackedReward` (Codex source) → `World`
-  strings (dungeon name).
-- **Items:** `Item` → `ItemType` (+ `ItemLabels`) → each forced and inherent `Affix` → its
-  strings, or `AttributeDescriptions` for plain stat affixes → `AttributeFormulas` for
-  item-power brackets → `ItemFamilies` for loot pools.
-- **Bosses:** the boss's `Boss_*` quest → its monster, altar and hoard actors → the lair's
-  `World` and `LevelArea` → the summoning `Recipe` → `ItemFamilies` for the unique pool.
-- **Skills:** each class `SkillKit` + `SkillTreeRewards` → `Power` (tags, cost, formulas) →
-  the power's strings.
-- **Seasons:** `Season` definitions → their `CollectiblePower` powers → each power's `Power`
-  formulas and strings. Season-only items come from the item tagging above.
-- **Runes and rune words:** rune `Item`s → their strings. Horadric Cube `Recipe`s → the runes
-  and base they take → the resulting `Item`'s affixes.
-- **Tempering:** manual `Item` → its `Recipe`'s tempering data → each tempered `Affix`.
-- **Paragon:** `ParagonBoard` grids → `ParagonNode` (attributes, `ParagonThreshold`, legendary
-  `Power`) and `ParagonGlyph` → `ParagonGlyphAffix`.
-
 ### Example: one aspect
 
 ```json
@@ -220,10 +181,6 @@ Nothing in these files is typed in by hand. Each one is assembled from several g
 - Some records are leftovers or placeholders in the game files (names like `[PH]` or `[WIP]`).
   They are included as-is.
 
-The resolver code lives in [`lib/`](lib): `formula.mjs` evaluates the game's formulas,
-`text.mjs` renders tooltip markup, `affix.mjs` describes any affix, and `resolve/` builds each
-endpoint.
-
 ## How the raw files are split
 
 The `json/` tree has about 850,000 files (around 18 GB), far more than GitHub Pages can host.
@@ -234,9 +191,6 @@ It is published in three ways:
 | **Bundled groups** | Gameplay groups (items, affixes, aspects, powers, paragon, English strings, …) | One file per group on Pages: `groups/<source>/<Group>.json` |
 | **Indexed groups** | Every other group (textures, actors, scenes, sounds, …) | Name list on Pages: `index/<source>/<Group>.json`. Files come from GitHub, pinned to the commit. |
 | **Tables** | Top-level files such as `snoGroups`, `GBID`, `eGameBalanceType` | Small ones: `tables/<name>.json`. Files over 5 MB are linked to GitHub instead. |
-
-The bundled list is `BUNDLED_GROUPS` in [`build.mjs`](build.mjs). Move a group into it to publish
-the whole group on Pages.
 
 ## Endpoints
 
@@ -377,11 +331,3 @@ the file list from git, so it also works from a sparse checkout. `node api/build
 --print-sparse` prints the paths the build reads, which is how the workflow checks out only those.
 In a sparse checkout the build also adds the few dozen single `Actor` files the boss resolver
 needs, with `git sparse-checkout add`.
-
-## Notes
-
-- The workflows add new files only, so syncing with upstream never conflicts. Don't edit
-  upstream-owned files in this fork.
-- `GITHUB_TOKEN` cannot change files under `.github/workflows/`. If an upstream update touches
-  upstream's own workflow (`ci.yml`), the sync will fail. Use **Sync fork** on GitHub to bring that
-  update in by hand.
